@@ -1,0 +1,407 @@
+
+body { 
+    width: 85%; 
+    min-width: 634px; 
+/*    width: 634px;  */
+    margin:0 auto; 
+    font-family:  /*verdana, */ arial, helvetica, sans-serif;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
+.flag { float: left; }
+.copyright { float: left; }
+
+img { border: none; }
+
+.top {
+  border: none;
+  height: 13px;
+  font-size: 0;
+  margin: 3px 0 4px 0;
+  background-image: url('/delad/grafik/head_topgrid_2003.gif');
+  background-repeat: no-repeat; 
+}
+
+
+.innehall_ram {
+  width: 100%;
+/*
+  padding: 0px 0px 0px 0px;
+  margin-top: 0px;
+*/
+  margin-bottom: 0px;
+ border-style: solid;
+  border-width: 1px;
+  border-color: #C8C8C8 #C8C8C8 white #C8C8C8;
+
+}
+
+
+.innehall {
+   font-size:12px;
+   text-align: left;
+   margin: 0px 10px 10px 10px;
+   height:auto;
+   vertical-align: top;
+   padding: 5px 15px 0 15px;
+   line-height: 1.3;
+}
+
+.innehall h1 {
+  color: #9c112e;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.innehall h2 {
+  color: #676767;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.innehall h3{
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.innehall h4{
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.meny {
+  FONT-FAMILY:  /*verdana, */ arial, helvetica, sans-serif;
+   font-size:11px;
+  COLOR: #1954A6;
+   text-align: left;
+  TEXT-DECORATION: none;
+  background-color: #D9D9D9;
+  width: 140px;
+   vertical-align: top;
+   margin: 0px 0px 0px 0px;
+/*   padding: 12px 0px 0px 0px;*/
+   padding: 5px 0px 5px 0px;
+   border-bottom: 1px solid #C8C8C8;
+}
+
+.meny a:link, .meny a:visited {
+  COLOR: #1954A6;
+}
+
+.menybg {
+  width: 129px;
+  background-color: #E9E9E9;
+}
+
+.menybg img {
+   float: right;
+   padding-top:2px;
+  padding-right: 2px;
+}
+
+.meny1{
+    background:#D9D9D9;
+    font-weight: bold;
+  padding: 0px  0px  0px  0px;
+}
+
+.meny2{
+    background:#E5E5E5;
+    font-weight: normal;
+  padding: 0px  0px  0px  0px;
+}
+
+.meny3{
+    background:#FFFFFF;
+    font-weight: normal;
+  padding: 0px  0px  0px  0px;
+}
+
+.menyrubrik {
+  FONT-WEIGHT: bold;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+
+
+.meny_hr {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 3px;  /* var 6px */
+  font-size: 0pt
+}
+
+.menyval1 {
+  FONT-WEIGHT: bold;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+
+.menyval2 {
+  padding-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  
+}
+
+.menyval3 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+}
+
+
+.meny_streck_over {
+  height: 1px;
+  background-color: #C8C8C8;
+  font-size:0;
+}  
+
+.meny_slut2 {
+  height: 4px;
+  background:#E5E5E5;
+  border-bottom: solid white 1px;
+  font-size:0;
+}  
+
+.meny_slut3 {
+  height: 3px;
+  background-color: #FFFFFF; 
+  font-size:0;
+}  
+
+
+/* sidhuvudet */
+.huvudstreck_vitt_med_rutor {
+    width: 100%;
+    height: 13px;
+    font-size: 1%;
+    margin-bottom: 4px;
+background:url(/delad/grafik/head_topgrid_2003.gif);
+  background-repeat: no-repeat; 
+  background-position:right;
+}
+
+.sidhuvudlankfet {
+    height: 15px;
+    font-family: /*verdana, */arial, helvetica, sans-serif;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 0px;    
+    margin-bottom: 0px;
+    font-weight:bold;
+    vertical-align: baseline;
+    background:#b2b3b5;
+}
+
+.sidhuvudlankfet img { /* for language flag */
+  padding-top:2px;
+}
+
+.sidhuvudlankfet a {
+     padding-right: 6px; 
+    padding-left: 6px; 
+    text-decoration: none;   
+    color:#ffffff;
+}
+
+.huvudstreck_smalt {
+    font-size:1%;
+    margin-top:2px;
+    margin-bottom:2px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.huvud {
+    height: 80px;
+    width: 100%;
+    background:url(/delad/grafik/rutor2_2003.gif);
+    background-repeat: no-repeat;
+    margin-bottom:20px;
+}
+
+.kth_logo{
+    margin-top:10px;
+    width: 70px;
+    float:left;
+}
+
+
+.huvudtext {
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    display:inline;
+    COLOR: #808080;
+   float: right;
+   text-align:right;
+   margin-right:5px;
+   font-size:14px; /* var 12 */
+   padding-top:10px; /* var 20px */
+   font-weight:bold; /* var normal */
+/* ändringar för KTH CSC nedan */
+/*
+   font-size:16px;
+   padding: 45px 5px 0px 0px;
+   font-weight:bold;
+*/
+}
+
+.huvudtext a:link, .huvudtext a:visited {
+text-decoration: none;
+    COLOR: #808080;
+}
+
+.huvudtext strong { 
+    font-size:16px;
+}
+
+
+.huvudbild
+{
+    margin-left: 2px;
+    float:right;
+}
+
+
+.sokvag_nedflyttad{    FONT-FAMILY: /*verdana, */arial, helvetica, sans-serif;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: normal;
+    COLOR: #1954A6; 
+}
+
+.sokvag_nedflyttad A:link, .sokvag_nedflyttad A:visited
+{
+
+      COLOR: #1954A6;  TEXT-DECORATION: underline; 
+}
+
+.inriktningsingress{
+   font-size:larger;
+/*   background: #AAFFAA; */
+   padding: 3mm;
+   border: green solid 3px;
+}
+
+
+/* sidfoten */
+.fotstreck_smalt {
+    width:100%; 
+    height:20px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+
+.fotstreck_gratt_med_rutor {
+    width:100%; 
+    margin-bottom:2px;
+    margin-top:2px; 
+    height:14px;
+    font-size: 0px;
+
+    background:url(/delad/grafik/first_grid_down1_2003.gif);
+  background-repeat: no-repeat; 
+
+    background-color:#b2b3b5;
+}
+
+.fotstreck_vitt_med_rutor {
+    width:100%; 
+    font-size:1%;
+    height:6px;
+  background:url(/delad/grafik/first_grid_down2_2003.gif);
+  background-repeat: no-repeat; 
+  background-position:right;
+}
+
+
+
+
+.sidfottext { 
+    margin-top:4px;
+    width:100%;
+    font-size:10px;
+    text-align:right;
+    color: #808080;
+}
+
+/************* utskriftsformat ************************/
+@media print {
+
+body{
+   width:90%;
+}
+
+.meny {width:0px}
+.menybg { display: none; }
+.sidhuvudlankfet { display: none; }
+
+.huvudstreck_vitt_med_rutor { display: none; }		
+
+.huvudstreck_smalt { display: none; }		
+
+.huvud {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+img.kth_logo{
+    float:none;
+    margin:0 auto;
+/*    padding-left: 255px; */  /* (634-80)/2 */
+}
+
+
+.huvudtext {
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    display:inline;
+    COLOR: #808080;
+   text-align:center;
+   font-size:12px;
+   display: none;
+}
+
+.huvudtext a:link, .huvudtext a:visited {
+text-decoration: none;
+    COLOR: #808080;
+}
+
+.huvudtext strong { 
+    font-size:16px;
+}
+
+
+.huvudbild { display: none; }
+
+
+.fotstreck_smalt { display: none; }
+
+.fotstreck_gratt_med_rutor {  display: none; }
+
+.fotstreck_vitt_med_rutor {  display: none; }
+
+.sidfottext { 
+    margin-top:4px;
+    width:100%;
+    font-size:10px;
+    text-align:right;
+    color: black;
+}
+
+
+.innehall_ram { border: none; }
+
+.innehall h1 { color: black; }
+
+}
