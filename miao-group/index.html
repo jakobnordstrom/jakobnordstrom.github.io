@@ -120,22 +120,25 @@ Jakob Nordström: MIAO group</title>
   <a href="https://barc.ku.dk/">BARC</a>).
 
 </p><p>
+
+  The MIAO research group has a unique profile in that we are doing
+  cutting-edge research both on the mathematical foundations of
+  efficient computation and on state-of-the-art practical algorithms
+  for real-world problems.
+
+  This creates a special environment, where we do not only conduct
+  in-depth research on different theoretical and applied topics, but
+  where different lines of research cross-fertilise each other and
+  unexpected and exciting synergies often arise.
   
-  The MIAO research group has a fairly unusual profile in that we are
-  doing cutting-edge research both on deeply theoretical, mathematical
-  problems concerning the foundations of efficient computations and on
-  the design of state-of-the-art applied algorithms that are meant to
-  run blisteringly fast in practice.
-  
-  
-  Much of the activities of the group revolve around powerful
-  algorithmic paradigms such as, e.g., Boolean satisfiability (SAT)
-  solving, Gröbner basis computations, integer linear
-  programming, constraint programming, and semidefinite
-  programming. This leads to classic questions in computational
-  complexity theory — though often with new, interesting twists
-  — but also involves work on devising new algorithmic
-  approaches that can exploit the power of such paradigms in practice.
+  Much of the  activities of the group revolve around powerful algorithmic
+  paradigms such as, e.g., Boolean satisfiability (SAT) solving,
+  Gr&ouml;bner basis computations, integer linear programming, and constraint
+  programming. This leads to classical
+  questions in computational complexity theory&mdash;though often with
+  new, fascinating twists&mdash;but also involves work on devising
+  clever algorithms that can exploit the power of such paradigms in
+  practice.
 
 </p><p>
 
@@ -154,40 +157,42 @@ Jakob Nordström: MIAO group</title>
   connections to other areas such as, e.g., circuit complexity,
   communication complexity, hardness of approximation, and finite
   model theory, and so we are also interested in such areas.
+</p>
 
-</p><p>
+<p>
 
   On the practical side, we want to gain a more rigorous scientific
-  understanding, and improve the performance, of state-of-the-art
-  solvers for combinatorial optimization problems.  We are
-  particularly interested in harnessing powerful mathematical tools
-  such as Gröbner bases or 0-1 integer linear programming (also known
-  as pseudo-Boolean solving) to achieve exponential improvements in
-  performance, which seems possible in theory but has so far been hard
-  to achieve in practice.
+  understanding, and improve the performance, of modern algorithms for
+  automated reasoning and combinatorial optimization.
+
+  We are particularly interested in harnessing powerful mathematical
+  tools such as Gröbner bases or 0-1 integer linear programming (also
+  known as pseudo-Boolean solving) to achieve exponential improvements
+  in performance, which seems possible in theory but has so far been
+  hard to achieve in practice.
 
   Our most active line of work right now is focusing on
   combining ideas from SAT solving and mixed integer linear
   programming (MIP) to construct a new 0-1 integer linear programming
   solver
-  <em><a href="https://gitlab.com/MIAOresearch/roundingsat">RoundingSat</a></em>. This solver is already state of the art in pseudo-Boolean solving,
+  <em><a href="https://gitlab.com/MIAOresearch/roundingsat">RoundingSat</a></em>.
+  This solver is already world-leading when it comes to pseudo-Boolean solving,
   but our goal is to develop it further, integrating ideas also from
-  MaxSAT solving, MIP solving,
-  satisfiability modulo theories (SMT) solving,   
-  and   constraint programming (CP), ultimately hoping to go
-  significantly beyond the current  state of the art.
+  MaxSAT solving, MIP solving, satisfiability modulo theories (SMT)
+  solving, and constraint programming (CP), ultimately hoping to go
+  significantly beyond the current state of the art.
+</p>
 
-</p><p>
-
-  Quite
-  recently, we have begun investigating how to verify the
-  correctness of state-of-the-art algorithms for combinatorial
+<p>  
+  Quite recently, we have also begun making investigations into, and
+  have had some research breakthrough on,
+  how to  verify the correctness of state-of-the-art algorithms for  combinatorial
   optimization.  Such algorithms are often highly complex, and even
   mature commercial solvers are known to sometimes produce wrong
-  results.  What we are working on is to redesign state-of-the-art
+  results.  What we are working on is to enhance the currently best
   combinatorial solvers to make them <em>certifying</em>, i.e., so that
   they  output not only a solution but also a simple, machine-verifiable
-  proof that the claimed solution is correct and complete—this is also
+  proof that the claimed solution is correct and complete&mdash;this is also
   known as <em>proof logging</em>.
   For such a certifying solver, the workflow becomes as follows:
   </p><ol>
