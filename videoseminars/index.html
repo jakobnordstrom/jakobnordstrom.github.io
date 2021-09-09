@@ -66,7 +66,7 @@ Jakob Nordström: Video seminars</title>
 
   <h2>Upcoming video seminars</h2>
   
-  
+<!--  
 <p>
   <em>
     It seems that the MIAO video seminars have mostly switched to
@@ -74,6 +74,7 @@ Jakob Nordström: Video seminars</title>
     All times below are in the Central European time zone (with or without daylight savings as appropriate).
   </em>
 </p>
+-->
 
 <p>
 
@@ -84,36 +85,45 @@ Jakob Nordström: Video seminars</title>
   
   <li>
     <p>
-      Monday Sep 6 at 14:00
-      <br>
+      Friday Sep 17 <br>
       <strong>
-	Lifting with sunflowers
-      </strong>
-      <br>
-      (Ian Mertz, University of Toronto)
+	Estimating the Size of Unions of Sets in Streaming Model
+      </strong> <br>
+      (Kuldeep S. Meel, National University of Singapore)
+    </p>
+
+    <p>
+      Feeling tired of complicated theorems with complicated proofs?
+      Fret not; this week will be different: A simple theorem with a simpler
+      proof for a general problem. I will make a case for our PODS-21 paper
+      to be the simplest paper ever accepted at PODS.
     </p>
     
     <p>
-      Lifting theorems are an important class of techniques which
-      can transform functions which are hard for weak computation
-      models into functions which are hard for strong computation
-      models. Starting with Raz and McKenzie (1999), there has been
-      a flurry of work proving query-to-communication lifting
-      theorems, which translate lower bounds on query complexity to
-      lower bounds for the corresponding communication model. In
-      this talk I will present a simplified proof of deterministic
-      query-to-communication lifting. Our proof uses elementary
-      counting together with a novel connection to the sunflower
-      lemma.	
+      A set is Delphic if it supports efficient membership, sampling, and
+      counting calls. The notion of Delphic sets captures several well-known
+      problems, such as Klee's measure, distinct elements, and model
+      counting of DNF formulas.  We will discuss estimation of the size of
+      the union of Delphic sets wherein each set is implicitly (and
+      succinctly) represented, and comes in a streaming fashion.
     </p>
-
-  <li>
+    
     <p>
-      Friday Sep 17 <br>
-      <strong>
-	Title TBD
-      </strong> <br>
-      (Kuldeep S. Meel, National University of Singapore)
+      The primary contribution of our work is a simple, elegant, and
+      efficient sampling-based algorithm for the estimation of the union in
+      the streaming setting. Our algorithm has worst case space
+      complexity and update time that is logarithmic in the size of the
+      universe and stream size. Consequently, our algorithm provides the
+      first algorithm with a linear dependence on <em>d</em> for Klee's measure
+      problem in streaming setting for <em>d>1</em>, thereby settling the open
+      problem of Woodruff and Tirthpura (PODS-12). The Klee's measure
+      problem corresponds to computation of volume of multi-dimension
+      axis-aligned rectangles, i.e., every <em>d</em>-dimension axis-aligned
+      rectangle can be defined as <em>[a_1,b_1]</em> x <em>[a_2,b_2]</em> x &hellip; x <em>[a_d, b_d]</em>.
+    </p>
+    
+    <p>
+      (Joint work with N.V. Vinodchandran and Sourav Chakraborty.)
     </p>
     
   <li>
@@ -235,6 +245,33 @@ Jakob Nordström: Video seminars</title>
   
 
 <ul>
+
+    <li>
+    <p>
+      Monday Sep 6 at 14:00
+      <br>
+      <strong>
+	Lifting with sunflowers
+      </strong>
+      (<a href="https://youtu.be/NRFZekCsG1I">video</a>)	
+      <br>
+      (Ian Mertz, University of Toronto)
+    </p>
+    
+    <p>
+      Lifting theorems are an important class of techniques which
+      can transform functions which are hard for weak computation
+      models into functions which are hard for strong computation
+      models. Starting with Raz and McKenzie (1999), there has been
+      a flurry of work proving query-to-communication lifting
+      theorems, which translate lower bounds on query complexity to
+      lower bounds for the corresponding communication model. In
+      this talk I will present a simplified proof of deterministic
+      query-to-communication lifting. Our proof uses elementary
+      counting together with a novel connection to the sunflower
+      lemma.	
+    </p>
+
 
   <li>
     <p>
