@@ -136,24 +136,48 @@ Jakob Nordström: Video seminars</title>
       Monday Sep 20 at 14:00
       <br>
       <strong>
-	The KRW conjecture
+	KRW composition theorems via lifting
       </strong>
       <br>
       (Or Meir, University of Haifa)
     </p>
     
     <p>
-      Proving super-logarithmic lower bounds on the depth of
-      circuits is one of the main frontiers of circuit
-      complexity. In 1991, Karchmer, Raz and Wigderson observed that
-      we could resolve this question by proving the following
-      conjecture: Given two boolean functions <em>f</em>,<em>g</em>, the depth
-      complexity of their composition is about the sum of their
-      individual depth complexities. While we cannot prove the
-      conjecture yet, there has been some exciting progress toward
-      such a proof, some of it in the last few years. In this talk,
-      I will survey the known results and propose future directions
-      for research on the KRW conjecture.
+      One of the major open problems in complexity theory is proving
+      super-logarithmic lower bounds on the depth of circuits (i.e., separating
+      <em>P</em> from <em>NC</em><sup>0</sup>).
+      Karchmer, Raz, and Wigderson (Computational
+      Complexity 5(3/4), 1995) suggested approaching this problem by proving
+      that depth complexity behaves "as expected" with respect to 
+      composition of functions. They showed that the validity of this
+      conjecture would separate
+      <em>P</em> from <em>NC</em><sup>0</sup>).
+      Several works have made
+      progress toward resolving this conjecture by proving special cases. In
+      particular, these works proved the KRW conjecture for every outer
+      function, but only for few inner functions.  Thus, it is an important
+      challenge to prove the KRW conjecture for a wider range of inner
+      functions.
+    </p>
+    
+    <p>      
+      In this work, we extend significantly the range of inner
+      functions that can be handled. First, we consider the monotone
+      version of the KRW conjecture. We prove it for every monotone
+      inner function whose depth complexity can be lower bounded via a
+      query-to-communication lifting theorem. This allows us to handle
+      several new and well-studied functions such as the
+      <em>s</em>-<em>t</em>-connectivity, clique, and generation functions.
+    </p>
+    
+    <p>
+      In order to carry this progress back to the non-monotone
+      setting,we introduce a new notion of semi-monotone composition,
+      which combines the non-monotone complexity of the outer function
+      with the monotone complexity of the inner function. In this
+      setting, we prove the KRW conjecture for a similar selection of
+      inner functions, but only for a specific choice of the outer
+      function.
     </p>
 
   <li>
@@ -1139,7 +1163,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2021-09-13
+Updated 2021-09-14
 </div>
 <!--/eri-no-index-->
 
