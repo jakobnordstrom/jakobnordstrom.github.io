@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="http://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../../index-filer/kod-html.css">
+
+
+<title>
+  Divide and Conquer: Towards Faster Pseudo-Boolean Solving
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="http://www.jakobnordstrom.se">Jakob Nordström</a>
+  /
+  Supplementary material for
+  <em>Divide and Conquer: Towards Faster Pseudo-Boolean Solving</em>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<H1>
+  Supplementary material for
+  <em>Divide and Conquer: Towards Faster Pseudo-Boolean Solving</em>
+</H1>
+
+<p>
+
+
+<p>
+This page contains supplementary material for the paper
+</p>
+
+<ul>
+
+
+
+
+<li>
+Jan Elffers
+and 
+Jakob Nordstr&ouml;m.
+<strong>
+  Divide and Conquer: Towards Faster Pseudo-Boolean Solving.
+</strong>
+In
+<em>Proceedings of the 27th International Joint Conference on
+  Artificial Intelligence and the
+  23rd European Conference on Artificial Intelligence
+  (IJCAI-ECAI&nbsp;'18),</em>
+pages 1291-1299,
+July 2018.
+
+
+</ul>
+</p>
+
+<h2>Solvers</h2>
+
+<h3>RoundingSat</h3>
+<p>The Linux 64-bit binary (statically built) for this solver can be found at <a href="http://www.jakobnordstrom.se/publications/RoundingSat/roundingsat.zip">http://www.jakobnordstrom.se/publications/RoundingSat/roundingsat.zip</a>.</p>
+
+<p>We invoked the solver using <tt>./roundingsat &lt; input.opb</tt>.
+
+<p>
+  The source code for the current version of RoundingSat can be found
+  at
+  <a href="https://gitlab.com/MIAOresearch/roundingsat">gitlab.com/MIAOresearch/roundingsat</a>.
+
+</p>
+
+<h3>Sat4j</h3>
+<p>The source code for this solver can be found at <a href="https://gitlab.ow2.org/sat4j/sat4j">https://gitlab.ow2.org/sat4j/sat4j</a>.
+We used commit <tt>53fc413b</tt> of the master branch.</p>
+
+<p>We built the solver by typing <tt>ant pseudo</tt> in the root directory, which generates a file <tt>sat4j-pb.jar</tt>.
+We invoked the solver using:
+<ul>
+  <li><tt>java -jar sat4j-pb.jar Resolution input.opb</tt> (for the resolution-based solver);</li>
+  <li><tt>java -jar sat4j-pb.jar CuttingPlanes input.opb</tt> (for the cutting planes-based solver);</li>
+  <li><tt>java -jar sat4j-pb.jar Both input.opb</tt> (for the solver running the resolution-based solver and the cutting planes-based solver in parallel).</li>
+</ul>
+
+<h3>OpenWBO</h3>
+<p>The source code for this solver can be found <a href="https://github.com/sat-group/open-wbo">https://github.com/sat-group/open-wbo</a>.
+We used commit <tt>89dd2fe</tt> of the master branch.</p>
+
+<p>We built the solver by typing <tt>make rs</tt> in the root directory.
+We invoked the solver using <tt>./open-wbo_static -formula=1 input.opb</tt>.
+
+<h2>Complete Data from the Experiments for the Conference Version</h2>
+<p>
+
+<p>
+The experimental data and scripts to generate the tables in the paper can be found at <a href="http://www.jakobnordstrom.se/publications/RoundingSat/experiments-zipfile.zip">http://www.jakobnordstrom.se/publications/RoundingSat/experiments-zipfile.zip</a>.
+</p>
+
+
+<h2>Formula Instances</h2>
+<p>
+The PB competition benchmarks we have run on can be found at <a href="http://www.cril.univ-artois.fr/PB16/">http://www.cril.univ-artois.fr/PB16/</a> (follow the links to earlier PB competitions to download older benchmarks).
+
+<!--  MAYBE NOT NEEDED IF WE CAN GIVE A LINK -->
+  <!--
+<a href="fixedBandwidth.zip" target="_blank">Fixed bandwidth formulas</a><br>
+<a href="subsetCardinalityGraph.zip" target="_blank">Subset cardinality formulas on double cover of random 4-regular graph (SC(G))</a><br>
+<a href="subsetCardinalitySigma.zip" target="_blank">Subset cardinality formulas on random partitions (SC*(&sigma;))</a><br>
+<a href="tseitin.zip" target="_blank">Tseitin formulas</a><br>
+<a href="random3cnf.zip" target="_blank">Random 3-CNF formulas</a><br>
+
+-->
+  
+<p>
+
+
+
+<!-- Do not change below this point (except for date) -->
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+Updated 2021-11-19
+</div>
+<!--/eri-no-index-->
+
+
+
+<!-- Default Statcounter code for Jakob's GitHub webpages
+https://jakobnordstrom.github.io -->
+<script type="text/javascript">
+var sc_project=12521096; 
+var sc_invisible=1; 
+var sc_security="a648a4cc"; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12521096/0/a648a4cc/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+

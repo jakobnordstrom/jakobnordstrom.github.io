@@ -1,0 +1,254 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+#Setup
+
+You need to adjust the storage path here, then you can run all chunks.
+
+```{r}
+saveDir <- "/home/stephan/no_backup/evaluationResults/pb_eval/"
+csvFile <- paste(saveDir,"results.csv.gz", sep = "")
+rdataFile <- paste(saveDir, "pb-eval.rdata.gz", sep = "")
+```
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(tidyselect)
+library(ggplot2)
+library(party)
+library(scales)
+
+# Custom Theme (based on https://rpubs.com/Koundy/71792)
+theme_Publication <- function(base_size=10, base_family="Helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1), hjust = 0.5),
+               plot.subtitle = element_text(hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "bottom",
+               legend.direction = "horizontal",
+               legend.key.size= unit(1.5, "lines"),
+               legend.spacing = unit(0, "cm"),
+               legend.title = element_text(face = "italic", size = rel(1)),
+               plot.margin=unit(c(1,4,1,2),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+theme_set(theme_Publication())
+# scale_colour_discrete <- function(...) scale_color_brewer(..., palette="PuOr")
+# color brewer based color scheme /http://colorbrewer2.org
+scale_colour_discrete <- function (...) scale_colour_manual(..., values = c("#e66101","#fdb863","#b2abd2","#5e3c99"))
+
+legendInBox <- function(pos = c(0,0)) theme(legend.position = pos, legend.direction = "vertical", legend.box.background = element_rect(colour = "#000000"), legend.key.size = unit(0.9, "lines"))
+update_geom_defaults("point", list(size = 0.7))
+```
+
+```{r, echo=FALSE}
+if (!file.exists(rdataFile) || as.POSIXct(file.info(csvFile)$ctime) > as.POSIXct(file.info(rdataFile)$ctime)) {
+  df <- read.csv(csvFile)
+  save(df, file=rdataFile, compress="gzip")
+} else {
+  load(rdataFile)
+}
+df <- df %>% filter(configuration.solver.name != "sat4j" | param.rounding.weaken.priority != "satisfied") %>% droplevels()
+df <- df %>% mutate(stats.result = recode(stats.result, UNSATISFIABLE="unsat", SATISFIABLE="sat", .default="unknown")) %>%
+  mutate(instance.id = group_indices(., instance.subfamily, instance.scaling)) %>%
+  mutate(param.id = group_indices_(., .dots=vars_select(names(df), matches("param\\..*")))) %>%
+  mutate(isPureDiv = param.round.reason == "divide-v1" & param.saturate.conflict.side == "false") %>%
+  mutate(isPureSat = param.round.reason == "never" & param.saturate.conflict.side == "true" & 'param.weaken-nonimplied' != "round")
+
+df <- df %>% mutate(mode = ifelse(isPureDiv,"division", ifelse(isPureSat, "saturation", "mixed")))
+```
+
+
+```{r, echo=FALSE}
+df <- df %>% mutate(stats.par2 = ifelse(stats.result == "unknown", 2*5000, runInfo.userTime))
+df <- df %>% mutate(stats.parPlot = ifelse(stats.result == "unknown", 1*5000, runInfo.userTime))
+df <- df %>% mutate(param.coeflim.small = factor(param.coeflim.small), param.coeflim = factor(param.coeflim))
+
+paramsWithNoAlternative <- vars_select(names(df[, sapply(df, nlevels) <= 1]), matches("(param\\..*)"))
+paramsWithAlternative <- vars_select(names(df[, sapply(df, nlevels) > 1]), matches("(param\\..*)"))
+```
+
+# Division-Friendly Formulas
+
+```{r}
+seed = 1
+
+mydf = df %>% filter(
+  mode != "mixed"
+  & instance.seed == seed
+  # & stats.result == "unsat"
+)
+
+data <- mydf %>% filter(
+  instance.subfamily == "ssc-recoverInput-random-bipartite-almost-d-regular_d4"
+) %>% group_by(instance.scaling, mode) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot))
+
+data_clausal <- mydf %>% filter(
+  instance.subfamily == "ssc-cnf-random-bipartite-almost-d-regular_d4"
+) %>% group_by(instance.scaling) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot))
+
+data_clausal <- data_clausal %>% mutate(mode = "clausal")
+
+data_native <- mydf %>% filter(
+  instance.subfamily == "ssc-random-bipartite-almost-d-regular_d4"
+) %>% group_by(instance.scaling, mode) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot)) %>%
+  group_by(instance.scaling) %>%
+  summarize(minConf = max(minConf), minTime = max(minTime))
+
+data_native <- data_native %>% mutate(mode = "unobfuscated")
+
+data <- union(data, data_clausal)
+data <- union(data, data_native)
+
+data <- data %>% mutate(mode = factor(mode, levels(factor(mode))[c(2,3,1,4)]))
+
+ggplot(data, aes(y = minTime, x = instance.scaling, color = mode, linetype = mode, shape = mode, size = mode)) +
+  geom_line(size = 0.7) +
+  geom_point() + 
+  labs(x = "Scaling parameter", y = "CPU time in s", size = "Legend:", color = "Legend:", shape = "Legend:", linetype = "Legend:", title = "Division-Friendly Formulas") +
+  scale_linetype_manual(values=c("solid", "41", "3111", "11"))+
+  scale_color_manual(values=c("#e66101","#5e3c99","#fdb863","#b2abd2")) + 
+
+  scale_shape_manual(values=c(4,17,16,15)) +
+  scale_size_manual(values=c(2, 2.5, 2, 2))+
+  theme(legend.position=c(0.45,-0.4),
+        plot.margin=unit(c(1,4,10,2),"mm"),
+        legend.margin = margin(0,0,0,0),
+        legend.key.size= unit(1.3, "lines"),
+        legend.spacing.x = unit(1, "mm")) +
+ggsave(filename = "sscVB.pdf", units = "cm", device = "pdf", width = 10, height = 6)
+```
+
+## Plot for Presentation
+
+```{r}
+seed = 1
+
+mydf = df %>% filter(
+  mode != "mixed"
+  & instance.seed == seed
+  # & stats.result == "unsat"
+)
+
+data <- mydf %>% filter(
+  instance.subfamily == "ssc-recoverInput-random-bipartite-almost-d-regular_d4"
+  & mode == "saturation"
+) %>% group_by(instance.scaling, mode) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot)) %>%
+  mutate(mode = ifelse(mode == "division", "divison VBS", "saturation virtual best solver"))
+
+
+
+bestSolver <- mydf %>% filter(
+  
+)
+
+data_clausal <- mydf %>% filter(
+  instance.subfamily == "ssc-cnf-random-bipartite-almost-d-regular_d4"
+) %>% group_by(instance.scaling) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot))
+
+data_clausal <- data_clausal %>% mutate(mode = "clausal")
+
+data_native <- mydf %>% filter(
+  instance.subfamily == "ssc-random-bipartite-almost-d-regular_d4"
+) %>% group_by(instance.scaling, mode) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot)) %>%
+  group_by(instance.scaling) %>%
+  summarize(minConf = max(minConf), minTime = max(minTime))
+
+data_native <- data_native %>% mutate(mode = "unobfuscated")
+
+
+minDiv = mydf %>% filter(
+  instance.subfamily == "ssc-recoverInput-random-bipartite-almost-d-regular_d4"
+  & mode == "division"
+) %>% group_by(param.id) %>% summarize(s = sum(stats.par2)) %>% filter(s == min(s)) %>% select(param.id);
+
+minDivData = mydf %>% filter(
+  instance.subfamily == "ssc-recoverInput-random-bipartite-almost-d-regular_d4"
+  & param.id == minDiv$param.id[1]
+) %>% mutate(minTime = stats.parPlot, minConf=stats.conflicts, mode="division best solver") %>% select(minTime, minConf, instance.scaling, mode)
+
+data <- union(data, minDivData)
+
+data <- data %>% mutate(mode = factor(mode, levels(factor(mode))[c(2,3,1,4)]))
+
+ggplot(data, aes(y = minTime, x = instance.scaling, color = mode, linetype = mode, shape = mode, size = mode)) +
+  geom_line(size = 0.7) +
+  geom_point() + 
+  labs(x = "Scaling parameter", y = "CPU time in s", size = "Legend:", color = "Legend:", shape = "Legend:", linetype = "Legend:",
+       title = "Crafted Formulas Easy for Division") +
+  scale_linetype_manual(values=c("solid", "41", "3111", "11"))+
+  scale_color_manual(values=c("#e66101","#5e3c99","#fdb863","#b2abd2")) + 
+  scale_shape_manual(values=c(4,17,16,15)) +
+  scale_size_manual(values=c(2, 2.5, 2, 2))+
+  theme(legend.position=c(0.45,-0.4),
+        plot.margin=unit(c(1,4,10,2),"mm"),
+        legend.margin = margin(0,0,0,0),
+        legend.key.size= unit(1.3, "lines"),
+        legend.spacing.x = unit(1, "mm")) +
+ggsave(filename = "sscVB_simple.pdf", units = "cm", device = "pdf", width = 10, height = 6)
+```
+
+#Saturation-Friendly Formulas
+
+```{r}
+myDf = df %>% filter(
+  mode != "mixed"
+  # & stats.result == "unsat"
+)
+
+data_split <- myDf %>% filter(
+  instance.subfamily == "bound_matrix_strong_diagonal_split"
+) %>% group_by(instance.scaling, mode) %>% summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot))
+
+data_nonSplit <- myDf %>% filter(
+  instance.subfamily == "bound_matrix_strong_diagonal"
+) %>% group_by(instance.scaling, mode) %>% 
+  summarize(minConf = min(stats.conflicts), minTime = min(stats.parPlot)) %>%
+  group_by(instance.scaling) %>% 
+  summarize(minConf = max(minConf), minTime = max(minTime))
+
+data_nonSplit <- data_nonSplit %>% mutate(mode = "unobfuscated")
+
+data <- union(data_split, data_nonSplit)
+
+ggplot(data, aes(y = minTime + 0.001, x = instance.scaling, color = mode, linetype = mode, shape = mode)) +
+  geom_line() +
+  geom_point(size = 2) + 
+  labs(x = "Scaling parameter R", y = bquote(bold("CPU time in s")), color = "Legend:", shape = "Legend:", linetype = "Legend:", title = "Saturation-Friendly Formulas") +
+  scale_colour_manual(values = c("#e66101","#b2abd2","#fdb863","#5e3c99")) + 
+  scale_y_log10(breaks = c(1,10,10^2,10^3,5000),
+         labels = c(math_format(10^.x)(0), math_format(10^.x)(1), math_format(10^.x)(2), math_format(10^.x)(3), "timeout")) + 
+  scale_x_log10(breaks = c(1,10,20,30)) +
+  theme(legend.margin = margin(-5,0,0,0))
+ggsave(filename = "bound_matrix_time.pdf", units = "cm", device = "pdf", width = 10, height = 6)
+```
+
