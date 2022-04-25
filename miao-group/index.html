@@ -162,17 +162,24 @@ Jakob Nordström: MIAO group</title>
 </p>
 
 <p>
-
   On the practical side, we want to gain a more rigorous scientific
   understanding, and improve the efficiency, of modern algorithms for
   automated reasoning and combinatorial optimization.
 
+  We are particularly interested in designing algorithms that can
+  exploit sophisticated mathematical techniques to achieve exponential
+  improvements in performance compared to the current state of the
+  art&mdash;something that theoretical research suggests should be
+  possible, but that has so far been hard to achieve in practice.
+  
+<!--
   We are particularly interested in harnessing powerful mathematical
   tools such as Gröbner bases or 0-1 integer linear programming (also
   known as pseudo-Boolean solving) to achieve exponential improvements
   in real-world performance, which seems possible in theory but has so far been
   hard to achieve in practice.
-
+-->
+  
   Our most active line of work right now is focusing on
   combining ideas from SAT solving and mixed integer linear
   programming (MIP) to construct a new 0-1 integer linear programming
@@ -186,15 +193,16 @@ Jakob Nordström: MIAO group</title>
 </p>
 
 <p>  
-  Quite recently, we have also begun making investigations into, and
-  have had some research breakthrough on,
-  how to  verify the correctness of state-of-the-art algorithms for  combinatorial
-  optimization.  Such algorithms are often highly complex, and even
-  mature commercial solvers are known to sometimes produce wrong
-  results.  What we are working on is to enhance the currently best
+  Quite recently, we have also begun investigating, and have had some
+  research breakthroughs on, how to verify the correctness of
+  state-of-the-art algorithms for combinatorial optimization.  Such
+  algorithms are often highly complex, and even mature commercial
+  solvers are known to sometimes produce wrong results.
+
+  What we are working on is to enhance the currently best
   combinatorial solvers to make them <em>certifying</em>, i.e., so that
   they  output not only a solution but also a simple, machine-verifiable
-  proof that the claimed solution is correct and complete&mdash;this is also
+  proof that the claimed solution is correct&mdash;this is also
   known as <em>proof logging</em>.
   For such a certifying solver, the workflow becomes as follows:
   </p><ol>
@@ -212,12 +220,12 @@ Jakob Nordström: MIAO group</title>
   generate and should require  low overhead on the solver side, but should
   also be very  easy to check   efficiently on the proof checker side,
   and should still   provide 100% formal guarantees of correctness.
-  Our research in this area is still very much work in progress, but
-  our tool 
+
+  Our research in this area is still very much work in progress, but our tool 
   <em><a href="https://gitlab.com/MIAOresearch/VeriPB">VeriPB</a></em>
   can already provide efficient proof logging for some
-  solving techniques that have long remained beyond the reach of other tools.
-  We recently received a prestigious
+  solving techniques that have long remained beyond the reach of other tools,
+  and very recently we received a prestigious
   <em>AAAI&nbsp;'22 Distinguished Paper Award</em>
   for this work.
 </p>    
@@ -2245,7 +2253,7 @@ pages 401-416, January 2011.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2022-03-08
+Updated 2022-04-25
 </div>
 <!--/eri-no-index-->
 
