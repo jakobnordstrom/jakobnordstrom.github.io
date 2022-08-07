@@ -119,9 +119,22 @@ Jakob Nordström: MIAO group</title>
   research group is based on both sides of the Öresund Bridge at
   <a href="https://www.lunduniversity.lu.se/">Lund University</a>
   and the
-  <a href="https://www.ku.dk/english/">University of Copenhagen</a>
-  (where we are friendly neighbours with
-  <a href="https://barc.ku.dk/">BARC</a>).
+  <a href="https://www.ku.dk/english/">University of Copenhagen</a>.
+
+
+  We are closely affiliated with the
+  <a href="https://barc.ku.dk/">Basic Algorithms Research Copenhagen (BARC) centre</a>,
+  and are part of a world-leading environment in algorithms and
+  complexity theory encompassing also the
+  <a href="https://en.itu.dk/">IT University of Copenhagen</a> and the
+  <a href="https://www.dtu.dk/english">Technical University of Denmark (DTU)</a>.
+
+  We aim to attract top talent from around the world to an ambitious,
+  creative, collaborative, and fun environment. Using the power of
+  mathematics, we strive to create fundamental breakthroughs in
+  algorithms and complexity theory. While the focus in on foundational
+  research, we do have a track record of surprising algorithmic
+  discoveries leading to major industrial applications.
 </p>
 
 <p>	    
@@ -182,9 +195,8 @@ Jakob Nordström: MIAO group</title>
   hard to achieve in practice.
 -->
   
-  Our most active line of work right now is focusing on
-  combining ideas from SAT solving and mixed integer linear
-  programming (MIP) to construct a new 0-1 integer linear programming
+  Combining ideas from SAT solving and mixed integer linear
+  programming (MIP), we have constructed a new 0-1 integer linear programming
   solver
   <em><a href="https://gitlab.com/MIAOresearch/roundingsat">RoundingSat</a></em>.
   This solver is already world-leading when it comes to pseudo-Boolean solving,
@@ -197,17 +209,18 @@ Jakob Nordström: MIAO group</title>
 <p>  
   Quite recently, we have also begun investigating, and have had some
   research breakthroughs on, how to verify the correctness of
-  state-of-the-art algorithms for combinatorial optimization.  Such
-  algorithms are often highly complex, and even mature commercial
-  solvers are known to sometimes produce wrong results.
+  state-of-the-art algorithms for combinatorial solving and
+  optimization.  Such algorithms are often highly complex, and even
+  mature commercial solvers are known to sometimes produce wrong
+  results.
 
-  What we are working on is to enhance the currently best
-  combinatorial solvers to make them <em>certifying</em>, i.e., so that
-  they  output not only a solution but also a simple, machine-verifiable
-  proof that the claimed solution is correct&mdash;this is also
-  known as <em>proof logging</em>.
+  Our goal is to design a new generation of <em>certifying</em>
+  combinatorial solvers with so-called <em>proof logging</em>, meaning
+  that the solvers output
+  not only a solution but also a simple, machine-verifiable
+  proof that the claimed solution is correct.
   For such a certifying solver, the workflow becomes as follows:
-  </p><ol>
+</p><ol>
     <li>
       Run the solver on a problem instance to obtain not only a
       solution, but also a proof of correctness.
@@ -217,22 +230,22 @@ Jakob Nordström: MIAO group</title>
     </li><li>
       Accept the solution if the proof checker says that the proof is valid.
   </li></ol>
-  
+<p>  
   Importantly, these machine-verifiable proofs should be very easy to
   generate and should require  low overhead on the solver side, but should
   also be very  easy to check   efficiently on the proof checker side,
   and should still   provide 100% formal guarantees of correctness.
-
-  Our research in this area is still very much work in progress, but our tool 
+  
+  This work has only started, but our tool
   <em><a href="https://gitlab.com/MIAOresearch/VeriPB">VeriPB</a></em>
   can already provide efficient proof logging for some
   solving techniques that have long remained beyond the reach of other tools,
-  and very recently we received prestigious
+  and we have recently received prestigious
   <em>AAAI&nbsp;'22 distinguished paper</em>
   and
   <em>SAT&nbsp;'22 best paper</em>
   awards
-  for this work.
+  for our work.  
 </p>    
 
 <h2>Principal Investigator</h2>
