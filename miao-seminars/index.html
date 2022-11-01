@@ -210,11 +210,34 @@ Jakob Nordström: MIAO seminars</title>
 	Friday Nov 18 at 14:00 
 	<br>
 	<strong>
-	  Title TBD
+	  Lower bounds for algebraic formulas
 	</strong>
 	<br>
 	(Srikanth Srinivasan, Aarhus University)
     </p>      
+      
+      <p>
+	Say we have a multivariate polynomial <em>P(x_1,..., x_n)</em>. An
+	algebraic formula for <em>P</em> is just an algebraic expression for <em>P</em> with
+	nested additions and multiplications. A small formula for <em>P</em> implies an
+	efficient algorithm for evaluating <em>P</em>, and so a lower bound on the size
+	of any such expression implies that <em>P</em> is possibly hard to evaluate.
+      </p>
+      
+      <p>
+	How would you show that your favourite polynomial <em>P</em> has no small
+	formula? In this talk, we will see a technique (building on works of
+	Nisan, Wigderson and Raz) for doing this that combines some linear
+	algebra with random restrictions, which are a classical tool in
+	circuit complexity. This helps us prove lower bounds for special kinds
+	of algebraic formulas, called set-multilinear formulas.
+      </p>
+      
+      <p>
+	Based on joint work with Nutan Limaye (ITU) and Sébastien Tavenas
+	(USMB, Univ Grenoble). The paper can be found at
+	<a href="https://eccc.weizmann.ac.il/report/2021/094/">eccc.weizmann.ac.il/report/2021/094/</a>.
+      </p>
 
 
     <li>
@@ -231,7 +254,40 @@ Jakob Nordström: MIAO seminars</title>
 	Jakob Nordström, University of Copenhagen and Lund University)
       </p>      
       
+      <p>
+	Modern combinatorial optimization has had a major impact in
+	science and industry, but there is a quite poor scientific
+	understanding how state-of-the-art algorithms, so-called
+	combinatorial solvers, work. More importantly, even mature
+	commercial solvers are known to sometimes produce wrong
+	results, which can be fatal for some types of applications.
+      </p>
 
+      <p>	
+	One way to address this problem is to enhance combinatorial
+	solvers with <em>proof logging</em>, meaning that they output
+	not only a result but also a proof of correctness. One can
+	then feed the problem, result, and proof to a dedicated
+	proof checker to verify that there are no errors. Crucially,
+	such proofs should require low overhead to generate and be
+	easy to check, but should supply 100% guarantees of
+	correctness.
+      </p>
+
+      <p>
+	In this tutorial, we will survey recent progress on proof
+	logging techniques for Boolean satisfiability (SAT) solving,
+	pseudo-Boolean optimization, and constraint programming. We
+	will argue that moving from the clausal reasoning employed in
+	SAT proof logging to so-called pseudo-Boolean reasoning using
+	0-1 integer linear constraints seems to hit a sweet spot
+	between on the one hand making proofs simple and easy to
+	verify and on the other hand providing sufficient expressive
+	power to support the sophisticated reasoning in more general
+	combinatorial optimization paradigms.
+      </p>
+      
+      
     <li>
       <p>
 	Tuesday Dec 6 at 14:00 in Copenhagen and on Zoom
@@ -1980,7 +2036,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2022-10-28
+Updated 2022-10-31
 </div>
 <!--/eri-no-index-->
 
