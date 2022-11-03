@@ -164,7 +164,55 @@ Jakob Nordström: MIAO seminars</title>
 
     <li>
       <p>
-	Monday Nov 14 at 14:00 in Copenhagen and on Zoom
+	Monday Nov 21 at 14:00 in Copenhagen and on Zoom
+	<br>
+	<strong>
+	  Bounded depth proof for Tseitin formulas on the grid; revisited
+	</strong>
+	<br>
+	(Kilian Risse, KTH Royal Institute of Technology)
+      </p>      
+      
+      <p>
+	In this seminar we are going to study the Frege proof system: a Frege
+	refutation of a CNF formula <em>F</em> is a sequence of Boolean formulas, where
+	each formula is either a clause from <em>F</em> or follows from two previously
+	derived formulas according to some derivation rule. The final formula
+	in the sequence should be the constant false formula so that if the
+	derivation rules are sound, then we can conclude that <em>F</em> has no
+	satisfying assignment. The length of a refutation is the number of
+	formulas in the sequence, the depth is the maximum (logical) depth of
+	any formula occurring and, similarly, the line-size is the maximum
+	size of any formula in the sequence.
+      </p>      
+      
+      <p>	
+	We consider Frege refutations restricted to depth <em>d</em> and line-size
+	<em>M</em> of the Tseitin formula defined over the <em>n</em> &#215; <em>n</em> grid and show
+	that such refutations are of length exponential in
+	<em>n / (</em>log <em>M)</em><sup><em>{O(d)}</em></sup>. This improves upon a recent result of
+	[Pitassi et al. '21]. The key technical step is a
+	multi-switching lemma extending the switching lemma of
+	[Håstad '17] for a space of restrictions related to the
+	Tseitin contradiction.
+      </p>      
+      
+      <p>	
+	The first hour includes a gentle introduction to the Frege proof system
+	and covers the necessary background to prove our lower bounds. In the
+	second hour we are going to start with a sketch of the single switching
+	lemma and, if time permits, we then cover the proof of the
+	multi-switching lemma.
+      </p>      
+      
+      <p>	
+	Based on joint work with Johan Håstad. Preprint available at
+	<a href="https://arxiv.org/abs/2209.05839">arxiv.org/abs/2209.05839</a>.	
+      </p>
+      
+    <li>
+      <p>
+	Friday Nov 25 at 14:00 in Copenhagen and on Zoom
 	<br>
 	<strong>
 	  SoS degree lower bound for exact clique
@@ -203,54 +251,6 @@ Jakob Nordström: MIAO seminars</title>
 	degree can achieve. I will review the recent strongest version
 	of this result, where SoS could fully employ all the
 	constraints, including the one for the objective value.
-      </p>
-      
-    <li>
-      <p>
-	Friday Nov 18 at 14:00  in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  Lower bounds for algebraic formulas
-	</strong>
-	<br>
-	(Srikanth Srinivasan, Aarhus University)
-    </p>      
-      
-      <p>
-	Say we have a multivariate polynomial <em>P(x_1,..., x_n)</em>. An
-	algebraic formula for <em>P</em> is just an algebraic expression for <em>P</em> with
-	nested additions and multiplications. A small formula for <em>P</em> implies an
-	efficient algorithm for evaluating <em>P</em>, and so a lower bound on the size
-	of any such expression implies that <em>P</em> is possibly hard to evaluate.
-      </p>
-      
-      <p>
-	How would you show that your favourite polynomial <em>P</em> has no small
-	formula? In this talk, we will see a technique (building on works of
-	Nisan, Wigderson and Raz) for doing this that combines some linear
-	algebra with random restrictions, which are a classical tool in
-	circuit complexity. This helps us prove lower bounds for special kinds
-	of algebraic formulas, called set-multilinear formulas.
-      </p>
-      
-      <p>
-	Based on joint work with Nutan Limaye (ITU) and Sébastien Tavenas
-	(USMB, Univ Grenoble). The paper can be found at
-	<a href="https://eccc.weizmann.ac.il/report/2021/094/">eccc.weizmann.ac.il/report/2021/094/</a>.
-      </p>
-
-    <li>
-      <p>
-	Monday Nov 21 at 14:00 in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  Bounded depth proof for Tseitin formulas on the grid; revisited
-	</strong>
-	<br>
-	(Kilian Risse, KTH Royal Institute of Technology)
-      </p>      
-      
-      <p>
       </p>
       
     <li>
@@ -301,6 +301,40 @@ Jakob Nordström: MIAO seminars</title>
       </p>
       
       
+    <li>
+      <p>
+	Thursday Dec 1 at 14:00  in Copenhagen and on Zoom
+	<br>
+	<strong>
+	  Lower bounds for algebraic formulas
+	</strong>
+	<br>
+	(Srikanth Srinivasan, Aarhus University)
+    </p>      
+      
+      <p>
+	Say we have a multivariate polynomial <em>P(x_1,..., x_n)</em>. An
+	algebraic formula for <em>P</em> is just an algebraic expression for <em>P</em> with
+	nested additions and multiplications. A small formula for <em>P</em> implies an
+	efficient algorithm for evaluating <em>P</em>, and so a lower bound on the size
+	of any such expression implies that <em>P</em> is possibly hard to evaluate.
+      </p>
+      
+      <p>
+	How would you show that your favourite polynomial <em>P</em> has no small
+	formula? In this talk, we will see a technique (building on works of
+	Nisan, Wigderson and Raz) for doing this that combines some linear
+	algebra with random restrictions, which are a classical tool in
+	circuit complexity. This helps us prove lower bounds for special kinds
+	of algebraic formulas, called set-multilinear formulas.
+      </p>
+      
+      <p>
+	Based on joint work with Nutan Limaye (ITU) and Sébastien Tavenas
+	(USMB, Univ Grenoble). The paper can be found at
+	<a href="https://eccc.weizmann.ac.il/report/2021/094/">eccc.weizmann.ac.il/report/2021/094/</a>.
+      </p>
+
     <li>
       <p>
 	Tuesday Dec 6 at 14:00 in Copenhagen and on Zoom
@@ -2018,7 +2052,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2022-11-02
+Updated 2022-11-03
 </div>
 <!--/eri-no-index-->
 
