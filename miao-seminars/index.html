@@ -100,14 +100,14 @@ Jakob Nordström: MIAO seminars</title>
   MIAO Research YouTube channel
   <a href="https://youtube.com/@MIAOresearch">youtube.com/@MIAOresearch</a>.
 </p>
-  
+
 <p>
   All seminar times below are in the Central European Time Zone
   (with daylight saving time observed from the last Sunday in March to
   the last Sunday in October).
 </p>
 
-  <h2>Upcoming seminars</h2>
+<h2>Upcoming seminars</h2>
   
 <!--
 <p>
@@ -121,223 +121,230 @@ Jakob Nordström: MIAO seminars</title>
 </p>
 -->
 
-<p>
-
-  <ul>
-      
-    <li>
-      <p>
-	Monday Nov 21 at 14:00 in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  Bounded depth proof for Tseitin formulas on the grid; revisited
-	</strong>
-	<br>
-	(Kilian Risse, KTH Royal Institute of Technology)
-      </p>      
-      
-      <p>
-	In this seminar we are going to study the Frege proof system: a Frege
-	refutation of a CNF formula <em>F</em> is a sequence of Boolean formulas, where
-	each formula is either a clause from <em>F</em> or follows from two previously
-	derived formulas according to some derivation rule. The final formula
-	in the sequence should be the constant false formula so that if the
-	derivation rules are sound, then we can conclude that <em>F</em> has no
-	satisfying assignment. The length of a refutation is the number of
-	formulas in the sequence, the depth is the maximum (logical) depth of
-	any formula occurring and, similarly, the line-size is the maximum
-	size of any formula in the sequence.
-      </p>      
-      
-      <p>	
-	We consider Frege refutations restricted to depth <em>d</em> and line-size
-	<em>M</em> of the Tseitin formula defined over the <em>n</em> &#215; <em>n</em> grid and show
-	that such refutations are of length exponential in
-	<em>n / (</em>log <em>M)</em><sup><em>{O(d)}</em></sup>. This improves upon a recent result of
-	[Pitassi et al. '21]. The key technical step is a
-	multi-switching lemma extending the switching lemma of
-	[Håstad '17] for a space of restrictions related to the
-	Tseitin contradiction.
-      </p>      
-      
-      <p>	
-	The first hour includes a gentle introduction to the Frege proof system
-	and covers the necessary background to prove our lower bounds. In the
-	second hour we are going to start with a sketch of the single switching
-	lemma and, if time permits, we then cover the proof of the
-	multi-switching lemma.
-      </p>      
-      
-      <p>	
-	Based on joint work with Johan Håstad. Preprint available at
-	<a href="https://arxiv.org/abs/2209.05839">arxiv.org/abs/2209.05839</a>.	
-      </p>
-      
-    <li>
-      <p>
-	Friday Nov 25 at 14:00 in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  SoS degree lower bound for exact clique
-	</strong>
-	<br>
-	(Shuo Pang, University of Copenhagen)
-      </p>      
-
-      <p>
-	Consider the claim that "the graph <em>G</em> is <em>w</em>-clique-free", where <em>w</em> is a
-	fixed parameter greater than, say, 2 log <em>n</em>. We know by simple
-	counting that the claim is true with high probability over
-	<em>G</em> &sim;
-	<em>G(n,1/2)</em>, but how about proving it for the given sample
-	<em>G</em> &mdash; is it almost always hard?
-      </p>      
-
-      <p>	
-	A closely related algorithmic problem is called <em>planted
-	clique</em>. It asks to devise an efficient algorithm whose
-	acceptance rates differ significantly with respect to samples from
-	<em>G(n,1/2)</em> and from <em>G(n,1/2,w)</em>, where the latter distribution
-	draws a graph from <em>G(n,1/2)</em> and then independently "plants" a
-	random <em>w</em>-clique. The current state-of-the-art polynomial-time
-	algorithm only succeeds when <em>w</em> is as large as &Omega;(sqrt(<em>n</em>)),
-	and its correctness relies on degree 2 Sum-of-Squares proofs
-	(SoS). This connection, among others, motivated the study of a
-	cleanly formulated proof-theoretic question: Can higher degree
-	SoS do better on average, i.e., prove "<em>G</em> is <em>w</em>-clique-free" for
-	significantly smaller <em>w</em> and most <em>G</em> from <em>G(n,1/2)</em>?
-      </p>      
-
-      <p>	
-	After a long line of work, it turns out <em>w</em>=sqrt(<em>n</em>) is
-	essentially the optimal value that SoS proofs of a reasonable
-	degree can achieve. I will review the recent strongest version
-	of this result, where SoS could fully employ all the
-	constraints, including the one for the objective value.
-      </p>
-      
-    <li>
-      <p>
-	Monday Nov 28 at 14:00 on Zoom
-	<br>
-	<strong>
-	  Combinatorial solving with provably correct results
-	</strong>
-	<br>
-	(Bart Bogaerts, Vrije Universiteit Brussel;
-	Ciaran McCreesh, University of Glasgow;
-	and 
-	Jakob Nordström, University of Copenhagen and Lund University)
-      </p>      
-      
-      <p>
-	Modern combinatorial optimization has had a major impact in
-	science and industry, but there is a quite poor scientific
-	understanding how state-of-the-art algorithms, so-called
-	combinatorial solvers, work. More importantly, even mature
-	commercial solvers are known to sometimes produce wrong
-	results, which can be fatal for some types of applications.
-      </p>
-
-      <p>	
-	One way to address this problem is to enhance combinatorial
-	solvers with <em>proof logging</em>, meaning that they output
-	not only a result but also a proof of correctness. One can
-	then feed the problem, result, and proof to a dedicated
-	proof checker to verify that there are no errors. Crucially,
-	such proofs should require low overhead to generate and be
-	easy to check, but should supply 100% guarantees of
-	correctness.
-      </p>
-
-      <p>
-	In this tutorial, we will survey recent progress on proof
-	logging techniques for Boolean satisfiability (SAT) solving,
-	pseudo-Boolean optimization, and constraint programming. We
-	will argue that moving from the clausal format employed in
-	SAT proof logging to so-called pseudo-Boolean reasoning using
-	0-1 integer linear constraints seems to hit a sweet spot
-	between on the one hand making proofs simple and easy to
-	verify and on the other hand providing sufficient expressive
-	power to support the sophisticated reasoning in more general
-	combinatorial optimization paradigms.
-      </p>
-      
-      
-    <li>
-      <p>
-	Thursday Dec 1 at 14:00  in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  Lower bounds for algebraic formulas
-	</strong>
-	<br>
-	(Srikanth Srinivasan, Aarhus University)
-    </p>      
-      
-      <p>
-	Say we have a multivariate polynomial <em>P(x_1,..., x_n)</em>. An
-	algebraic formula for <em>P</em> is just an algebraic expression for <em>P</em> with
-	nested additions and multiplications. A small formula for <em>P</em> implies an
-	efficient algorithm for evaluating <em>P</em>, and so a lower bound on the size
-	of any such expression implies that <em>P</em> is possibly hard to evaluate.
-      </p>
-      
-      <p>
-	How would you show that your favourite polynomial <em>P</em> has no small
-	formula? In this talk, we will see a technique (building on works of
-	Nisan, Wigderson and Raz) for doing this that combines some linear
-	algebra with random restrictions, which are a classical tool in
-	circuit complexity. This helps us prove lower bounds for special kinds
-	of algebraic formulas, called set-multilinear formulas.
-      </p>
-      
-      <p>
-	Based on joint work with Nutan Limaye (ITU) and Sébastien Tavenas
-	(USMB, Univ Grenoble). The paper can be found at
-	<a href="https://eccc.weizmann.ac.il/report/2021/094/">eccc.weizmann.ac.il/report/2021/094/</a>.
-      </p>
-
-    <li>
-      <p>
-	Tuesday Dec 6 at 14:00 in Copenhagen and on Zoom
-	<br>
-	<strong>
-	  Title TBD
-	</strong>
-	<br>
-	(Matti Järvisalo, University of Helsinki)
+<ul>
+  
+  <li>
+    <p>
+      Monday Nov 21 at 14:00 in Copenhagen and on Zoom
+      <br>
+      <strong>
+	Bounded depth proof for Tseitin formulas on the grid; revisited
+      </strong>
+      <br>
+      (Kilian Risse, KTH Royal Institute of Technology)
     </p>      
     
-
-    <li>
-      <p>
-	Wednesday Dec 7 at 14:00 in Lund and on Zoom
-	<br>
-	<strong>
-	  Title TBD
-	</strong>
-	<br>
-	(Jeremias Berg, University of Helsinki)
+    <p>
+      In this seminar we are going to study the Frege proof system: a Frege
+      refutation of a CNF formula <em>F</em> is a sequence of Boolean formulas, where
+      each formula is either a clause from <em>F</em> or follows from two previously
+      derived formulas according to some derivation rule. The final formula
+      in the sequence should be the constant false formula so that if the
+      derivation rules are sound, then we can conclude that <em>F</em> has no
+      satisfying assignment. The length of a refutation is the number of
+      formulas in the sequence, the depth is the maximum (logical) depth of
+      any formula occurring and, similarly, the line-size is the maximum
+      size of any formula in the sequence.
     </p>      
-
-    <li>
-      <p>
-	Monday Jan 9 at 14:00 on Zoom
-	<br>
-	<strong>
-	  Title TBD
-	</strong>
-	<br>
-	(Margarita Paz Castro, Pontificia Universidad Católica de Chile)
+    
+    <p>	
+      We consider Frege refutations restricted to depth <em>d</em> and line-size
+      <em>M</em> of the Tseitin formula defined over the <em>n</em> &#215; <em>n</em> grid and show
+      that such refutations are of length exponential in
+      <em>n / (</em>log <em>M)</em><sup><em>{O(d)}</em></sup>. This improves upon a recent result of
+      [Pitassi et al. '21]. The key technical step is a
+      multi-switching lemma extending the switching lemma of
+      [Håstad '17] for a space of restrictions related to the
+      Tseitin contradiction.
     </p>      
-      
+    
+    <p>	
+      The first hour includes a gentle introduction to the Frege proof system
+      and covers the necessary background to prove our lower bounds. In the
+      second hour we are going to start with a sketch of the single switching
+      lemma and, if time permits, we then cover the proof of the
+      multi-switching lemma.
+    </p>      
+    
+    <p>	
+      Based on joint work with Johan Håstad. Preprint available at
+      <a href="https://arxiv.org/abs/2209.05839">arxiv.org/abs/2209.05839</a>.	
+    </p>
+    
+  <li>
+    <p>
+      Friday Nov 25 at 14:00 in Copenhagen and on Zoom
+      <br>
+      <strong>
+	SoS degree lower bound for exact clique
+      </strong>
+      <br>
+      (Shuo Pang, University of Copenhagen)
+    </p>      
+    
+    <p>
+      Consider the claim that "the graph <em>G</em> is <em>w</em>-clique-free", where <em>w</em> is a
+      fixed parameter greater than, say, 2 log <em>n</em>. We know by simple
+      counting that the claim is true with high probability over
+      <em>G</em> &sim;
+      <em>G(n,1/2)</em>, but how about proving it for the given sample
+      <em>G</em> &mdash; is it almost always hard?
+    </p>      
+    
+    <p>	
+      A closely related algorithmic problem is called
+      <em>planted clique</em>. It asks to devise an efficient algorithm whose
+      acceptance rates differ significantly with respect to samples from
+      <em>G(n,1/2)</em> and from <em>G(n,1/2,w)</em>, where the latter distribution
+      draws a graph from <em>G(n,1/2)</em> and then independently "plants" a
+      random <em>w</em>-clique. The current state-of-the-art polynomial-time
+      algorithm only succeeds when <em>w</em> is as large as &Omega;(sqrt(<em>n</em>)),
+      and its correctness relies on degree 2 Sum-of-Squares proofs
+      (SoS). This connection, among others, motivated the study of a
+      cleanly formulated proof-theoretic question: Can higher degree
+      SoS do better on average, i.e., prove "<em>G</em> is <em>w</em>-clique-free" for
+      significantly smaller <em>w</em> and most <em>G</em> from <em>G(n,1/2)</em>?
+    </p>      
+    
+    <p>	
+      After a long line of work, it turns out <em>w</em>=sqrt(<em>n</em>) is
+      essentially the optimal value that SoS proofs of a reasonable
+      degree can achieve. I will review the recent strongest version
+      of this result, where SoS could fully employ all the
+      constraints, including the one for the objective value.
+    </p>
+    
+  <li>
+    <p>
+      Monday Nov 28 at 14:00 on Zoom
+      <br>
+      <strong>
+	Combinatorial solving with provably correct results
+      </strong>
+      <br>
+      (Bart Bogaerts, Vrije Universiteit Brussel;
+      Ciaran McCreesh, University of Glasgow;
+      and 
+      Jakob Nordström, University of Copenhagen and Lund University)
+    </p>      
+    
+    <p>
+      Modern combinatorial optimization has had a major impact in
+      science and industry, but there is a quite poor scientific
+      understanding how state-of-the-art algorithms, so-called
+      combinatorial solvers, work. More importantly, even mature
+      commercial solvers are known to sometimes produce wrong
+      results, which can be fatal for some types of applications.
+    </p>
+    
+    <p>	
+      One way to address this problem is to enhance combinatorial
+      solvers with <em>proof logging</em>, meaning that they output
+      not only a result but also a proof of correctness. One can
+      then feed the problem, result, and proof to a dedicated
+      proof checker to verify that there are no errors. Crucially,
+      such proofs should require low overhead to generate and be
+      easy to check, but should supply 100% guarantees of
+      correctness.
+    </p>
+    
+    <p>
+      In this tutorial, we will survey recent progress on proof
+      logging techniques for Boolean satisfiability (SAT) solving,
+      pseudo-Boolean optimization, and constraint programming. We
+      will argue that moving from the clausal format employed in
+      SAT proof logging to so-called pseudo-Boolean reasoning using
+      0-1 integer linear constraints seems to hit a sweet spot
+      between on the one hand making proofs simple and easy to
+      verify and on the other hand providing sufficient expressive
+      power to support the sophisticated reasoning in more general
+      combinatorial optimization paradigms.
+    </p>
+    
+    
+  <li>
+    <p>
+      Thursday Dec 1 at 14:00  in Copenhagen and on Zoom
+      <br>
+      <strong>
+	Lower bounds for algebraic formulas
+      </strong>
+      <br>
+      (Srikanth Srinivasan, Aarhus University)
+    </p>      
+    
+    <p>
+      Say we have a multivariate polynomial <em>P(x_1,..., x_n)</em>. An
+      algebraic formula for <em>P</em> is just an algebraic expression for <em>P</em> with
+      nested additions and multiplications. A small formula for <em>P</em> implies an
+      efficient algorithm for evaluating <em>P</em>, and so a lower bound on the size
+      of any such expression implies that <em>P</em> is possibly hard to evaluate.
+    </p>
+    
+    <p>
+      How would you show that your favourite polynomial <em>P</em> has no small
+      formula? In this talk, we will see a technique (building on works of
+      Nisan, Wigderson and Raz) for doing this that combines some linear
+      algebra with random restrictions, which are a classical tool in
+      circuit complexity. This helps us prove lower bounds for special kinds
+      of algebraic formulas, called set-multilinear formulas.
+    </p>
+    
+    <p>
+      Based on joint work with Nutan Limaye (ITU) and Sébastien Tavenas
+      (USMB, Univ Grenoble). The paper can be found at
+      <a href="https://eccc.weizmann.ac.il/report/2021/094/">eccc.weizmann.ac.il/report/2021/094/</a>.
+    </p>
+    
+  <li>
+    <p>
+      Tuesday Dec 6 at 14:00 in Copenhagen and on Zoom
+      <br>
+      <strong>
+	Title TBD
+      </strong>
+      <br>
+      (Matti Järvisalo, University of Helsinki)
+    </p>      
+    
+    
+  <li>
+    <p>
+      Wednesday Dec 7 at 14:00 in Lund and on Zoom
+      <br>
+      <strong>
+	Title TBD
+      </strong>
+      <br>
+      (Jeremias Berg, University of Helsinki)
+    </p>      
+    
+  <li>
+    <p>
+      Monday Jan 9 at 14:00 on Zoom
+      <br>
+      <strong>
+	Cut generation procedures via decision diagrams
+      </strong>
+      <br>
+      (Margarita Paz Castro, Pontificia Universidad Católica de Chile)
+    </p>      
+    
+    <p>
+      Decision diagrams (DDs) are graphical structures that can
+      encode complex combinatorial problems as network flow
+      problems. This talk explains how to leverage this network flow
+      reformulation to create valid inequalities for integer
+      programming problems. We review the main components behind
+      several cutting plane algorithms based on DDs and present
+      recent advances in the field.
+    </p>
 </ul>
 
 
 <h2>MIAO seminars autumn 2022</h2>
-  
-<ul>
+
+  <ul>
 
     <li>
       <p>
