@@ -125,7 +125,9 @@ Jakob Nordström: MIAO seminars</title>
   
   <li>
     <p>
-      Monday Nov 21 at 14:00 in Copenhagen and on Zoom
+      Monday Nov 21 at 14:00 
+      seminar room N116A&amp;B, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
       <br>
       <strong>
 	Bounded depth proof for Tseitin formulas on the grid; revisited
@@ -173,7 +175,10 @@ Jakob Nordström: MIAO seminars</title>
     
   <li>
     <p>
-      Friday Nov 25 at 14:00 in Copenhagen and on Zoom
+      Friday Nov 25 at 14:00
+      in Auditorium No. 5, Hans Christian Ørsted Building,
+      Universitetsparken 5, University of Copenhagen,
+      and on Zoom
       <br>
       <strong>
 	SoS degree lower bound for exact clique
@@ -301,11 +306,50 @@ Jakob Nordström: MIAO seminars</title>
       Tuesday Dec 6 at 14:00 in Copenhagen and on Zoom
       <br>
       <strong>
-	Title TBD
+	The implicit hitting set approach and its instantiation for pseudo-Boolean optimization
       </strong>
       <br>
-      (Matti Järvisalo, University of Helsinki)
-    </p>      
+      (Matti Järvisalo and Jeremias Berg, University of Helsinki)
+    </p>
+
+
+    <p>      
+      The so-called implicit hitting set (IHS) approach offers a
+      generic framework for developing practical algorithms for
+      solving various types of optimization problems, the decision
+      problems counterparts of which are NP-complete or presumable
+      even harder. With firm fundamental basis in so-called hitting
+      set duality, successful instantiations for IHS have been
+      developed for a range of computationally hard problems,
+      including different declarative optimization paradigms
+      (including MaxSAT, MaxSMT, answer set optimization,
+      finite-domain constraint optimization) as well as for various
+      specific problems setting (including causal discovery,
+      inconsistency analysis in (quantified) propositional logic, and
+      propositional abduction among others), by making use of
+      state-of-the-art integer programming systems and declarative
+      approaches to inconsistency analysis.
+    </p>
+    
+    <p>
+      The goals of this two-part talk are to (1) provide a generic
+      introduction to IHS with a high-level survey on its successful
+      applications, and to (2) describe in more detail a
+      recently-developed practical IHS-instantiation in the realm of
+      pseudo-Boolean optimization (PBO, aka 0-1 integer programming).
+    </p>
+    
+    <p>
+      The second part of the talk is based on:
+    </p>
+    <ul>
+      <li>
+	Pavel Smirnov, Jeremias Berg, Matti Järvisalo:
+	Improvements to the Implicit Hitting Set Approach to Pseudo-Boolean Optimization. SAT 2022.
+      <li>
+	Pavel Smirnov, Jeremias Berg, Matti Järvisalo: 
+	Pseudo-Boolean Optimization by Implicit Hitting Sets. CP 2021.
+    </ul>
     
     
   <li>
@@ -313,11 +357,87 @@ Jakob Nordström: MIAO seminars</title>
       Wednesday Dec 7 at 14:00 in Lund and on Zoom
       <br>
       <strong>
-	Title TBD
+	MaxSAT-based bi-objective Boolean optimization 
       </strong>
       <br>
-      (Jeremias Berg, University of Helsinki)
-    </p>      
+      (Christoph Jabs, University of Helsinki)
+    </p>
+    
+    <p>      
+      We explore a maximum satisfiability (MaxSAT) based approach to
+      bi-objective optimization. Bi-objective optimization refers to
+      the task of finding so-called Pareto-optimal solutions in terms
+      of two objective functions. Bi-objective optimization problems
+      naturally arise in various real-world settings. For example, in
+      the context of learning interpretable representations, such as
+      decision rules, from data, one wishes to balance between two
+      objectives, the classification error and the size of the
+      representation. Our approach is generally applicable to
+      bi-objective optimizations which allow for propositional
+      encodings. The approach makes heavy use of incremental Boolean
+      satisfiability (SAT) solving and draws inspiration from modern
+      MaxSAT solving approaches. In particular, we describe several
+      variants of the approach which arise from different approaches
+      to MaxSAT solving. In addition to computing a single
+      representative solution per each point of the Pareto front, the
+      approach allows for enumerating all Pareto-optimal solutions. We
+      empirically compare the efficiency of the approach to recent
+      competing approaches, showing practical benefits of our approach
+      in the contexts of learning interpretable classification rules
+      and bi-objective set covering.
+    </p>
+
+    <p>      
+      The talk is based on:
+      <ul>
+	<li>
+	  Christoph Jabs, Jeremias Berg, Andreas Niskanen, Matti Järvisalo:
+	  MaxSAT-Based Bi-Objective Boolean Optimization. SAT 2022.
+      </ul>
+          
+  <li>
+    <p>
+      Wednesday Dec 7 at 15:00 in Lund and on Zoom
+      <br>
+      <strong>
+	Refined core relaxation for core-guided MaxSAT solving	
+      </strong>
+      <br>
+      (Hannes Ihalainen, University of Helsinki)
+    </p>
+
+    <p>
+      Maximum satisfiability (MaxSAT) is a viable approach to solving
+      NP-hard optimization problems. In the realm of core-guided
+      MaxSAT solving&mdash;one of the most effective MaxSAT solving
+      paradigms today&mdash;algorithmic variants employing so-called soft
+      cardinality constraints have proven very effective. In this
+      work, propose to combine weight-aware core extraction (WCE)&mdash;a
+      recently proposed approach that enables relaxing multiple cores
+      instead of a single one during iterations of core-guided
+      search&mdash;with a novel form of structure sharing in the
+      cardinality-based core relaxation steps performed in core-guided
+      MaxSAT solvers. In particular, the proposed form of structure
+      sharing is enabled by WCE, which has so-far not been widely
+      integrated to MaxSAT solvers, and allows for introducing fewer
+      variables and clauses during the MaxSAT solving process. Our
+      results show that the proposed techniques allow for avoiding
+      potential overheads in the context of soft cardinality
+      constraint based core-guided MaxSAT solving both in theory and
+      in practice. In particular, the combination of WCE and structure
+      sharing improves the runtime performance of a state-of-the-art
+      core-guided MaxSAT solver implementing the central OLL
+      algorithm.
+    </p>
+
+    <p>
+      The talk is based on:
+    </p>
+    <ul>
+      <li>
+	Hannes Ihalainen, Jeremias Berg, Matti Järvisalo:
+	Refined Core Relaxation for Core-Guided MaxSAT Solving. CP 2021.
+    </ul>
     
   <li>
     <p>
@@ -2069,7 +2189,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2022-11-09
+Updated 2022-11-15
 </div>
 <!--/eri-no-index-->
 
