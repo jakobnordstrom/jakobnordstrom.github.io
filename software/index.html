@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="http://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../index-filer/kod-html.css">
+
+
+<title>
+  Jakob Nordström: Software
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="http://www.jakobnordstrom.se">Jakob Nordström</a>
+/ Software </span>
+</td>
+</tr>
+</tbody></table>
+
+
+<h1>Software</h1>
+
+<p>
+  On this webpage you find the most important pieces of software
+  produced by the MIAO group with collaborators.
+
+  In addition to what is listed below, you can always check out our
+  GitLab repository
+  <a href="https://gitlab.com/MIAOresearch/software">gitlab.com/MIAOresearch/software</a>.
+
+  All of this is research-grade software, with some more rough edges than would ideally be the case,
+  but if you need bleeding edge technology, perhaps it could be worth checking out. &#128521;
+</p>
+
+<p>
+  Also, if you have any questions about our tools, or any bug reports,
+  or anything else, please don't hesitate to let us know.
+
+  Although we are a research group, and have very limited resources for
+  software maintenance, we are still trying to do our best to produce
+  high-quality code.  
+</p>
+
+
+
+<h2>
+<A NAME="RoundingSat"></A>
+RoundingSat
+</h2>
+
+
+<p>
+  <a href="https://gitlab.com/MIAOresearch/software/roundingsat"><strong>RoundingSat</strong></a>
+  is a
+  solver and optimization engine
+  for pseudo-Boolean formulas, i.e., 0-1 integer linear programs.
+</p>
+
+<p>
+  The basic pseudo-Boolean solver combines conflict-driven search
+  based on the cutting planes proof system with techniques from integer
+  linear programming (ILP) such as linear programming relaxations and
+  cut generation.
+
+  The optimization engine implements linear SAT-UNSAT search (a.k.a. model-improving search) and core-guided search
+  using the solver as an oracle.
+</p>
+
+<p>
+  Some publications that describe features available in the public version of RoundingSat,
+  and that we would ask you to cite if you use RoundingSat in your work, are listed below.
+  (<strong>Please note</strong>
+  that the name of the solver is <strong><em>RoundingSat</em></strong> and nothing else
+  &mdash;
+  there is no version of the solver called "HYBRID" or anything else, although for some mysterious reason
+  some other reasearch papers have invented this name for the optimization engine based on RoundingSat.)
+
+  
+</p>
+
+<ul>
+  <li>    
+    Jan Elffers and Jakob Nordström.
+    <strong>Divide and Conquer: Towards Faster Pseudo-Boolean Solving.</strong>
+    In
+    <em>Proceedings of the 27th International Joint Conference on
+      Artificial Intelligence (IJCAI&nbsp;'18),</em>
+    pages 1291-1299, July 2018.
+    <a href="../docs/publications/DivideAndConquer_IJCAI.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+  <li>
+    Jo Devriendt.
+    <strong>
+      Watched Propagation of 0-1 Integer Linear Constraints.
+    </strong>
+    In
+    <em>Proceedings of the 26th International Conference on
+      Principles and Practice of Constraint Programming (CP&nbsp;'20),</em>
+    Lecture Notes in Computer Science, volume 12333,
+    pages 160-176, September 2020.
+    <a href="../docs/publications/Devriendt20_WatchedPropagation.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+  <li>
+    Jo Devriendt, Stephan Gocht,  Emir Demirovi&cacute;, 
+    Jakob Nordström, and Peter Stuckey.
+    <strong>
+      Cutting to the Core of Pseudo-Boolean Optimization:
+      Combining Core-Guided Search with Cutting Planes Reasoning.
+    </strong>
+    In
+    <em>Proceedings of the
+      35th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'21),</em>
+    pages 3750-3758,
+    February 2021.
+    <a href="../docs/publications/CuttingToTheCore_AAAI.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    
+    
+  <li>
+    Jo Devriendt, Ambros Gleixner, and Jakob Nordström.
+    <strong>
+      Learn to Relax: Integrating 0-1 Integer Linear Programming
+      with Conflict-Driven Pseudo-Boolean Search.
+    </strong>
+    <em>Constraints,</em>
+    January 2021.
+    (Special issue for <em>CPAIOR&nbsp;'20.</em>)
+    <a href="../docs/publications/LearnToRelax_Constraints.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+</ul>
+
+<p>
+  Some experimental features that have not (or at least not yet) made it into the main branch of the solver
+  are described in the following papers:
+</p>
+
+<ul>
+
+  <li>
+    Jan Elffers and Jakob Nordström.
+    <strong>
+      A Cardinal Improvement to Pseudo-Boolean Solving.
+    </strong>
+    In
+    <em>Proceedings of the
+      34th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'20),</em>
+    pages 1495-1503,
+    February 2020.
+    <a href="../docs/publications/CardinalImprovementPB_AAAI.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+  <li>
+    Buser Say, Jo Devriendt, Jakob Nordström, and Peter Stuckey.
+    <strong>
+      Theoretical and Experimental Results for Planning with Learned
+      Binarized Neural Network Transition Models. 
+    </strong>
+    In
+    <em>Proceedings of the 26th International Conference on
+      Principles and Practice of Constraint Programming (CP&nbsp;'20),</em>
+    Lecture Notes in Computer Science, volume 12333,
+    pages 917-934, September 2020.
+    <a href="../docs/publications/PlanningLearnedBNNs_CP.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+</ul>
+
+
+
+<h2>
+<A NAME="VeriPB"></A>
+VeriPB
+</h2>
+
+<p>
+  <a href="https://gitlab.com/MIAOresearch/software/VeriPB"><strong>VeriPB</strong></a>
+  is a verifier for pseudo-Boolean proofs.
+  The proof format is based on the cutting planes proof system studied in proof complexity,
+  enhanced with some extension rules to support derivation steps like definitions of new variables.
+  This proof system turns out to be quite a convenient foundation for so-called certifying solvers
+  in combinatorial solving and optimization paradigms like:
+</p>
+
+<ul>
+  <li>
+    Boolean satisfiability (SAT) solving
+    
+  <li>
+    MaxSAT solving and (linear) pseudo-Boolean optimization
+    
+  <li>
+    Subgraph solving algorithms (for, e.g.,  clique, subgraph isomorphism, and maximum common subgraph)
+    
+  <li>
+    Constraint programming solvers
+    
+</ul>
+
+<p>
+  All of this is a very active area of research, and the MIAO group with collaborators have so far published the following papers:
+</p>
+
+<ul>
+  
+  <li>
+    Jan Elffers, Stephan Gocht, Ciaran McCreesh, and Jakob Nordström.
+    <strong>
+      Justifying All Differences Using Pseudo-Boolean Reasoning.
+    </strong>
+    In
+    <em>Proceedings of the
+      34th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'20),</em>
+    pages 1486-1494,
+    February 2020.
+    <a href="../docs/publications/JustifyingAllDifferences_AAAI.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+  <li>
+    Stephan Gocht, Ciaran McCreesh, and Jakob Nordström.
+    <strong>Subgraph Isomorphism Meets Cutting Planes:
+      Solving with Certified Solutions.</strong>
+    In
+    <em>Proceedings of the 29th International Joint Conference on
+      Artificial Intelligence (IJCAI&nbsp;'20),</em>
+    pages 1134-1140, 
+    July 2020.
+    <a href="../docs/publications/SubgraphIsoMeetsCP_IJCAI.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+    
+  <li>
+    Stephan Gocht, Ross McBride, Ciaran McCreesh,
+    Jakob Nordström, Patrick Prosser, and James Trimble.
+    <strong>Certifying Solvers for Clique and Maximum
+      Common (Connected) Subgraph Problems.</strong>
+    In
+    <em>Proceedings of the 26th International Conference on
+      Principles and Practice of Constraint Programming (CP&nbsp;'20),</em>
+    Lecture Notes in Computer Science, volume 12333,
+    pages 338-357, September 2020.
+    <a href="../docs/publications/CertifyingSolversCliqueMCCS_CP.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
+
+      <li>	     
+    Stephan Gocht and Jakob Nordström.
+    <strong>
+      Certifying Parity Reasoning Efficiently Using Pseudo-Boolean Proofs.
+    </strong>
+    In
+    <em>Proceedings of the
+      35th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'21),</em>
+    pages 3768-3777,
+    February 2021.  
+    <a href="../docs/publications/CertifyingParityReasoning_AAAI.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+
+  <li>
+    Bart Bogaerts, Stephan Gocht, Ciaran McCreesh, and Jakob Nordström.
+    <strong>
+      Certified Symmetry and Dominance Breaking for Combinatorial Optimisation.
+    </strong>
+    In
+    <em>Proceedings of the
+      36th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'22),</em>
+    pages 3698-3707,
+    February 2022.
+    <a href="../docs/publications/CertifiedSymmetryDominanceBreaking_AAAI.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    <em>AAAI&nbsp;'22 distinguished paper award</em>.
+
+  <li>
+    Stephan Gocht, Ruben Martins, Jakob Nordström, and Andy Oertel.
+    <strong>Certified CNF Translations for Pseudo-Boolean Solving.</strong>
+    In
+    <em>Proceedings of the 25th International Conference on
+      Theory and Applications of Satisfiability Testing (SAT&nbsp;'22),</em>
+    Leibniz International Proceedings in Informatics (LIPIcs),
+    volume 236, pages 16:1-16:25,
+    August 2022.
+    <a href="../docs/publications/CertifiedCNFtranslations_SAT.pdf"><img src="pdf.gif" alt="PDF" border=0></a>    
+    <em>SAT&nbsp;'22 best paper award</em>.
+  
+</ul>
+
+
+
+<h2>
+<A NAME="CNFgen"></A>
+CNFgen
+</h2>
+
+<p>
+  <a href="https://massimolauria.net/cnfgen/"><strong>CNFgen</strong></a>
+  is a tool for generating combinatorial (a.k.a. crafted)
+  formulas in conjunctive normal form (CNF) in the standard DIMACS format used by SAT solvers.
+  The formulas have been collected from the proof complexity
+  literature, and many of them encode combinatorial principles that
+  are known to be tricky, or even very hard, for conflict-driven clause learning (CDCL) solvers.
+  The main developer and maintainer of CNFgen is
+  <a href="https://massimolauria.net/">Massimo Lauria</a>, a former postdoc in our research group.
+</p>
+
+<p>
+  If you use CNFgen, please cite the paper:
+</p>
+  <ul>
+    <li>
+      Massimo Lauria, Jan Elffers, Jakob Nordström, and Marc Vinyals.
+      <strong>CNFgen: A Generator of Crafted Benchmarks.</strong>
+      In 
+      <em>Proceedings of the 20th International Conference on 
+	Theory and Applications of Satisfiability Testing (SAT&nbsp;'17),</em> 
+      Lecture Notes in Computer Science, volume 10491,
+      pages 464-473, August 2017.
+      <a href="../docs/publications/CNFgen_SAT.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>      
+    </ul>
+
+
+
+</p>
+
+<!-- Do not change below this point (except for date) -->
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+Updated 2022-11-22
+</div>
+<!--/eri-no-index-->
+
+
+
+<!-- Default Statcounter code for Jakob's GitHub webpages
+https://jakobnordstrom.github.io -->
+<script type="text/javascript">
+var sc_project=12521096; 
+var sc_invisible=1; 
+var sc_security="a648a4cc"; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12521096/0/a648a4cc/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+
