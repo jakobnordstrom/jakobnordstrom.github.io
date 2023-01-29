@@ -209,15 +209,50 @@ Jakob Nordström: MIAO seminars</title>
     
   <li>
     <p>
-      Tuesday Feb 28 at 14:00 
+      Tuesday Feb 28 at 14:00
+      on Zoom
       <br>
       <strong>
-	Title TBA
+	Introducing Intel&reg; SAT solver
       </strong>
       <br>
-      (Alexander Nadel, Intel)
+      (Alexander Nadel, Intel &amp; Technion)
     </p>      
-    
+
+    <p> 
+      We introduce Intel&reg; SAT Solver (IntelSAT) &mdash; an
+      open-source CDCL SAT solver, recently written from scratch and
+      released at SAT 2022 conference. IntelSAT is optimized for
+      applications which generate many mostly satisfiable incremental
+      SAT queries.
+    </p>      
+
+    <p>
+      The first part of our talk will include a brief self-contained
+      introduction into CDCL SAT solving, required to understand the
+      algorithms in IntelSAT, followed by a high-level review of these
+      algorithms and experimental results. In the second part of our
+      talk, we will discuss more gory details along the following
+      lines.
+    </p>      
+
+    <p>
+      IntelSAT applies the following Incremental Lazy Backtracking
+      (ILB) principle: in-between incremental SAT queries, backtrack
+      only when necessary and to the highest possible decision
+      level. ILB is enabled by a novel reimplication procedure, which
+      can reimply an assigned literal at a lower level without
+      backtracking. Reimplication also helped us to restore the
+      following two properties, lost in the modern solvers with the
+      introduction of chronological backtracking: no assigned literal
+      can be implied at a lower level, conflict analysis always starts
+      with a clause falsified at the lowest possible level. In
+      addition, we apply some new heuristics. Integrating IntelSAT
+      into the MaxSAT solver TT-Open-WBO-Inc resulted in a significant
+      performance boost on incomplete unweighted MaxSAT Evaluation
+      benchmarks and improved the state-of-the-art in anytime
+      unweighted MaxSAT solving.
+    </p>
     
 </ul>
 
@@ -2353,7 +2388,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2023-01-26
+Updated 2023-01-29
 </div>
 <!--/eri-no-index-->
 
