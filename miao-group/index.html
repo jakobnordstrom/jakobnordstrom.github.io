@@ -46,6 +46,17 @@ Jakob Nordström: MIAO group</title>
 
 <ul>
   <li>
+    During the spring of 2023 we are enjoying the
+    <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023">Meta-Complexity</a>
+    program and the
+    <a href="https://simons.berkeley.edu/programs/extended-reunion-satisfiability">extended
+      reunion of the program
+      <em>Satisfiability: Theory, Practice, and Beyond</em></a>
+    at the
+    <a href="https://simons.berkeley.edu/">Simons Institute for the Theory of Computing</a>
+    at UC Berkeley.
+
+  <li>
     We are happy to welcome our new members
     postdoc <strong>Shuo Pang</strong>
     and PhD student <strong>Noel Arteche</strong>!
@@ -141,7 +152,8 @@ Jakob Nordström: MIAO group</title>
   creative, collaborative, and fun environment. Using the power of
   mathematics, we strive to create fundamental breakthroughs in
   algorithms and complexity theory. While the focus in on foundational
-  research, we do have a track record of surprising algorithmic
+  research, algorithms and complexity researchers in Copenhagen
+  have a track record of surprising algorithmic
   discoveries leading to major industrial applications.
 </p>
 
@@ -209,8 +221,9 @@ Jakob Nordström: MIAO group</title>
   <em><a href="https://gitlab.com/MIAOresearch/roundingsat">RoundingSat</a></em>.
   This solver is already world-leading when it comes to pseudo-Boolean solving,
   but our goal is to develop it further, integrating ideas also from
-  MaxSAT solving, MIP solving, and possibly also satisfiability modulo theories (SMT)
-  solving and constraint programming (CP), ultimately hoping to go
+  MaxSAT solving, MIP solving, and possibly also
+  <!-- satisfiability modulo theories (SMT)  solving and  -->
+  constraint programming (CP), ultimately hoping to go
   significantly beyond the current state of the art.
 </p>
 
@@ -225,35 +238,41 @@ Jakob Nordström: MIAO group</title>
   Our goal is to design a new generation of <em>certifying</em>
   combinatorial solvers with so-called <em>proof logging</em>, meaning
   that the solvers output
-  not only a solution but also a simple, machine-verifiable
-  proof that the claimed solution is correct.
+  not only a result but also a simple, machine-verifiable
+  proof that the claimed result is correct.
   For such a certifying solver, the workflow becomes as follows:
 </p><ol>
     <li>
       Run the solver on a problem instance to obtain not only a
-      solution, but also a proof of correctness.
+      computed result, but also a proof of correctness.
     </li><li>
-      Feed the problem, the solution, and the proof to a special,
+      Feed the problem, the result, and the proof of correctness to a special,
       dedicated <em>proof checker</em> for verification.
     </li><li>
-      Accept the solution if the proof checker says that the proof is valid.
+      Accept the result if the proof checker says that the proof is valid.
   </li></ol>
 <p>  
   Importantly, these machine-verifiable proofs should be very easy to
   generate and should require  low overhead on the solver side, but should
   also be very  easy to check   efficiently on the proof checker side,
   and should still   provide 100% formal guarantees of correctness.
-  
-  This work has only started, but our tool
+
+  This might sound just a little bit too good to be true, but the tool
   <em><a href="https://gitlab.com/MIAOresearch/VeriPB">VeriPB</a></em>
-  can already provide efficient proof logging for some
+  that we have developed can now provide efficient proof logging for some
   solving techniques that have long remained beyond the reach of other tools,
   and we have recently received prestigious
   <em>AAAI&nbsp;'22 distinguished paper</em>
   and
   <em>SAT&nbsp;'22 best paper</em>
   awards
-  for our work.  
+  for our work.
+  <em>VeriPB</em> is now
+  <a href="https://satcompetition.github.io/2023/checkers.html">officially proposed</a>
+  as one of the proof checkers in the upcoming
+  <a href="https://satcompetition.github.io/2023/">SAT Competition 2023</a>
+  for Boolean satisfiability solving.
+  
 </p>    
 
 <h2>Principal Investigator</h2>
@@ -2374,7 +2393,7 @@ pages 401-416, January 2011.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2023-02-18
+Updated 2023-03-05
 </div>
 <!--/eri-no-index-->
 
