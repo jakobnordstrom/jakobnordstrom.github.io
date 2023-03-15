@@ -34,8 +34,8 @@ Karp-Lipton theorem, Meyer's theorem, Shannon's lower bound                     
 Polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>, randomized reductions                     $ Ch 7     $ NotesLec11.pdf
 Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>)     $ Ch 8     $ NotesLec14.pdf
 <em>coNP</em> &sube; <em>IP</em> (cont.), <em>MIP</em>, <em>PCP</em>                                             $ Chs 8-9  $ NotesLec15.pdf
-Monotone circuits, clique lower bound                                                                            $ Ch 14    $
-Clique lower bound for monotone circuits (cont.)                                                                 $ Ch 14    $
+Monotone circuits, clique lower bound                                                                            $ Ch 14    $ NotesLec16.pdf
+Clique lower bound for monotone circuits (cont.)                                                                 $ Ch 14    $ NotesLec17.pdf
 Proof complexity, resolution, interpolation, clique-colouring                                                    $          $
 Clique-colouring lower bound (cont.)                                                                             $          $
 Backup lecture                                                                                                   $          $
