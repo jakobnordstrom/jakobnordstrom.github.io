@@ -36,6 +36,6 @@ Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>c
 <em>coNP</em> &sube; <em>IP</em> (cont.), <em>MIP</em>, <em>PCP</em>                                             $ Chs 8-9  $ NotesLec15.pdf
 Monotone circuits, clique lower bound                                                                            $ Ch 14    $ NotesLec16.pdf
 Clique lower bound for monotone circuits (cont.)                                                                 $ Ch 14    $ NotesLec17.pdf
-Proof complexity, resolution, interpolation, clique-colouring                                                    $          $ NotesLec17.pdf
-Clique-colouring lower bound (cont.)                                                                             $          $
+Proof complexity, resolution, interpolation, clique-colouring                                                    $          $ NotesLec18.pdf
+Clique-colouring lower bound (cont.)                                                                             $          $ NotesLec19.pdf
 Backup lecture                                                                                                   $          $
