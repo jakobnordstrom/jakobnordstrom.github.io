@@ -39,3 +39,7 @@ Clique lower bound for monotone circuits (cont.)                                
 Proof complexity, resolution, interpolation, clique-colouring lower bound                                        $ <a href="#Pud97">[Pud97]</a> $ NotesLec18.pdf
 Clique-colouring lower bound for resolution (cont.)                                                              $ <a href="#Pud97">[Pud97]</a> $ NotesLec19.pdf
 Pigeonhole principle lower bound for resolution                                                                  $ <a href="#Hak85">[Hak85]</a>, <a href="#Pud00">[Pud00]</a> $ NotesLec20.pdf
+
+********************
+
+Final lectures hacked by hand --- didn't have time to check how to adapt the C++ code
