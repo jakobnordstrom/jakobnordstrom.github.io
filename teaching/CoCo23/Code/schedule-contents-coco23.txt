@@ -22,7 +22,7 @@ Thursday $ Mar 30 $ 15-17 $ Zoom
 Intro to complexity theory, course overview, Turing machines, undecidability                                     $ Chs 0-1  $ NotesLec01.pdf
 Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                            $ Chs 1-2  $ NotesLec02.pdf
 <em>NP</em>-completeness, Cook-Levin theorem, decision vs. search                                                $ Ch 2     $ NotesLec03.pdf
-<em>NP></em>-reductions,  <em>coNP</em>, <em>EXP</em>, <em>NEXP</em>                                             $ Ch 2     $ NotesLec03.pdf
+<em>NP</em>-reductions,  <em>coNP</em>, <em>EXP</em>, <em>NEXP</em>                                             $ Ch 2     $ NotesLec03.pdf
 Diagonalization, time hierarchy theorems, Ladner's theorem                                                       $ Ch 3     $ NotesLec04.pdf
 Oracle TMs, limits of diagonalization, space complexity                                                          $ Chs 3-4  $ NotesLec05.pdf
 <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                                  $ Chs 3-4  $ NotesLec05.pdf
