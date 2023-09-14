@@ -326,38 +326,47 @@ Jakob Nordström: MIAO group</title>
   mature commercial solvers are known to sometimes produce wrong
   results.
 
-  Our goal is to design a new generation of <em>certifying</em>
+  Our goal is to usher in a new generation of <em>certifying</em>
   combinatorial solvers with so-called <em>proof logging</em>, meaning
   that the solvers output
   not only a result but also a simple, machine-verifiable
   proof that the claimed result is correct.
   For such a certifying solver, the workflow becomes as follows:
-</p><ol>
-    <li>
-      Run the solver on a problem instance to obtain not only a
-      computed result, but also a proof of correctness.
-    </li><li>
-      Feed the problem, the result, and the proof of correctness to a special,
-      dedicated <em>proof checker</em> for verification.
-    </li><li>
-      Accept the result if the proof checker says that the proof is valid.
-  </li></ol>
-<p>  
+</p>
+
+<ol>
+  <li>
+    Run the solver on a problem instance to obtain not only a
+    computed result, but also a proof of correctness.
+  </li><li>
+    Feed the problem, the result, and the proof of correctness to a special,
+    dedicated <em>proof checker</em> for verification.
+  </li><li>
+    Accept the result if the proof checker says that the proof is valid.
+  </li>
+</ol>
+
+<p>
   Importantly, these machine-verifiable proofs should be very easy to
-  generate and should require  low overhead on the solver side, but should
-  also be very  easy to check   efficiently on the proof checker side,
-  and should still   provide 100% formal guarantees of correctness.
+  generate and should require low overhead on the solver side, but
+  should also be very easy to check efficiently on the proof checker
+  side, and should still provide 100% formal guarantees of
+  correctness.
 
   This might sound just a little bit too good to be true, but the tool
   <em><a href="https://gitlab.com/MIAOresearch/software/VeriPB">VeriPB</a></em>
-  that we have developed can now provide efficient proof logging for some
-  solving techniques that have long remained beyond the reach of other tools,
+  that we have developed can now provide efficient proof logging for
+  several combinatorial solving paradigms that have previously been beyond reach,
   and we have recently received several prestigious awards for our work.
-  <em>VeriPB</em>  was also
-  <a href="https://satcompetition.github.io/2023/checkers.html">officially proposed</a>
-  as one of the proof checkers in the 
-  <a href="https://satcompetition.github.io/2023/">SAT Competition 2023</a>
-  for Boolean satisfiability solving.
+
+  <em>VeriPB</em>  was also used as one of the
+  <a href="https://satcompetition.github.io/2023/checkers.html">proof checkers</a>
+  in the 
+  <a href="https://satcompetition.github.io/2023/">SAT Competition 2023</a>,
+  allowing solver authors for the first time to use also the most
+  advanced SAT techniques (such as Gaussian elimination and fully
+  general symmetry breaking) that have lacked efficient support in
+  previous SAT proof logging tools.
 
   See our video tutorial 
   <a href="https://youtu.be/s_5BIi4I22w"><strong>
@@ -2570,7 +2579,7 @@ pages 401-416, January 2011.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2023-09-13
+Updated 2023-09-14
 </div>
 <!--/eri-no-index-->
 
