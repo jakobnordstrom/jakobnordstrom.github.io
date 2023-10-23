@@ -111,18 +111,182 @@ Jakob Nordström: MIAO seminars</title>
 
 <h2>Upcoming seminars</h2>
 
-
+<!--
 <p>
   <em>
-    The MIAO seminars are about to switch to
-    <!-- have switched to -->
+    The MIAO seminars
+    are about to switch to
+    have switched to
     vacation mode, but we plan to be back in September.
   </em>
 </p>
-
+-->
 
 <ul>
+  <li>      
+    <p>
+      Thursday Oct 19 at 14:00
+      in seminar room N116A&amp;B, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
+      <br>
+      <strong>
+	Randomness gives little advantage for decision tree size
+      </strong>	
+      <br>
+      (Yogesh Dahiya, Institute of Mathematical Sciences, Chennai)
+    </p>
+
+    <p>
+      Nisan's classic result [SICOMP '91] shows that the deterministic
+      decision tree depth complexity of a total Boolean function is at
+      most the cube of its randomized decision tree depth complexity.
+      However, the role
+      of randomness on decision tree size complexity has not been explored.
+      Adding to Nisan's result, we show that the logarithm of the
+      deterministic decision tree size complexity of any total Boolean
+      function is at most the fourth power of the logarithm of its
+      bounded-error randomized decision tree size complexity, up to a
+      polylogarithmic factor in the input dimension. Drawing an analogy, one
+      can associate the depth of a decision tree with time complexity and
+      its size with space complexity. Consequently, Nisan's result can be
+      viewed as derandomizing time, while our result can be seen as
+      derandomizing space.
+    </p>
+
+    <p>
+      Our result has several implications for
+      derandomizing query complexity in more generalized variants of
+      decision trees. Specifically, we show that for total Boolean
+      functions:
+    </p>
+    <ul>
+      <li>
+	The deterministic AND-OR query complexity is at most the fourth
+	power of its randomized counterpart, ignoring a polylog n
+	factor.
+      <li>
+	The deterministic AND (OR) query complexity is at most the cube of
+	its randomized counterpart, ignoring a polylog n factor. This resolves
+	an open question by Knop, Lovett, McGuire, and Yuan [SIGACT
+	News '21].
+      <li>
+	Combining our result with Ehrenfeucht and Haussler's [Information and
+	Computation'89] work, we also get that the class of functions
+	computable by randomized decision trees of polynomial size is
+	PAC-learnable in quasi-polynomial time.
+    </ul>
+    <p>
+      To obtain our main result on
+      decision tree size, we use as an intermediate measure the block number
+      of a Boolean function, studied first by Midrijanis [Arxiv’05], which
+      can be thought of as a counting analogue of block sensitivity of a
+      Boolean function that played a central role in Nisan's aforementioned
+      result.
+    </p>
+
+    <p>
+
+      This is joint work with Arkadev Chattopadhyay, Nikhil Mande, Jaikumar
+      Radhakrishnan, and Swagato Sanyal that appeared in  STOC 2023.
+    </p>
   
+</ul>
+
+
+<h2>MIAO seminars autumn 2023</h2>
+
+<ul>
+  <li>      
+    <p>
+      Thursday Oct 19 at 14:00
+      in seminar room N116A&amp;B, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
+      <br>
+      <strong>
+	Constant-depth circuits vs. monotone circuits
+      </strong>
+      (<a href="https://youtu.be/DJ9QhWdM86Y">video</a>)	
+      <br>
+      (Bruno Pasqualotto Cavalar, University of Warwick)
+    </p>
+
+    <p>
+      We establish new separations between the power of monotone and general (non-monotone) Boolean circuits:
+    </p>
+    <ul>
+      <li>
+	For every k ≥ 1, there is a monotone function in AC0
+	(constant-depth poly-size circuits) that requires monotone
+	circuits of depth Ω(logkn). This significantly extends a
+	classical result of Okol’nishnikova (1982) and Ajtai and
+	Gurevich (1987). 
+      <li>
+	For every k ≥ 1, there is a monotone function in AC0[⊕]
+	(constant-depth poly-size circuits extended with parity gates)
+	that requires monotone circuits of size exp (Ω(logkn)). This
+	makes progress towards a question posed by Grigni and Sipser
+	(1992). 
+    </ul>
+    
+    <p>
+      Finally, we revisit our separation result against monotone
+      circuit size and investigate the limits of our approach, which
+      is based on a monotone lower bound for constraint satisfaction
+      problems established by Göös et al. (2019) via lifting
+      techniques. Adapting results of Schaefer (1978) and Allender et
+      al. (2009), we obtain an unconditional classification of the
+      monotone circuit complexity of Boolean-valued CSPs via their
+      polymorphisms. This result and the consequences we derive from
+      it might be of independent interest.
+    </p>
+
+  <li>      
+    <p>
+      Thursday Oct 12 at 14:00
+      in seminar room N116A&amp;B, Universitetsparken 1, University of Copenhagen
+      <br>
+      <strong>
+	Approximate lower bounds arguments
+      </strong>	
+      <br>
+      (Leonid Reyzin, Boston University)
+    </p>
+
+    <p>
+      Suppose a prover, in possession of a large body of valuable
+      evidence, wants to quickly convince a verifier by presenting
+      only a small portion of the evidence.
+    </p>
+
+    <p>
+      We define an Approximate Lower Bound Argument, or ALBA, which allows
+      the prover to do just that: to succinctly prove knowledge of a large
+      number of elements satisfying a predicate (or, more generally,
+      elements of a sufficient total weight in case of a weighted
+      predicate). The argument is approximate because there is a small gap
+      between what the prover actually knows and what the verifier is
+      convinced the prover knows. This gap enables very efficient schemes.
+    </p>
+
+    <p>
+      We present noninteractive constructions of ALBA in the random
+      oracle and uniform reference string models and show that our
+      proof sizes are nearly optimal. We also show how our
+      constructions can be made particularly communication-efficient
+      when the evidence is distributed among multiple provers, as in
+      the blockchain setting.
+    </p>
+
+    <p>
+      We demonstrate two very different applications of ALBAs: for
+      large-scale decentralized signatures and for proving universal
+      composability of succinct proofs.
+    </p>
+
+    <p>
+Joint work with Pyrros Chaidos, Aggelos Kiayias, and Anatoliy Zinovyev.
+    </p>
+    
 </ul>
 
 
@@ -2487,7 +2651,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2023-06-07
+Updated 2023-10-23
 </div>
 <!--/eri-no-index-->
 
