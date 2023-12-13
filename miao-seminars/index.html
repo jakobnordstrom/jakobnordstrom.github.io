@@ -235,10 +235,65 @@ Jakob Nordström: MIAO seminars</title>
       on Zoom
       <br>
       <strong>
-	Title TBD
+	Fourier growth of communication protocols for XOR functions
       </strong>
       <br>
       (Uma Girish, Princeton University)
+    </p>
+
+    <p>
+      Fourier growth of a Boolean function refers to the growth of the
+      sum of absolute values of the level-k Fourier
+      coeﬀicients. Intuitively, functions with small Fourier growth
+      cannot aggregate many weak signals in the input to obtain a
+      considerable effect on the output. Upper bounds on the Fourier
+      growth, even for the first few levels, have important
+      applications in pseudorandomness, learning theory, circuit lower
+      bounds and quantum-versus-classical separations. Tight bounds on
+      the Fourier growth have been extensively studied for various
+      computational models, including AC0 circuits, branching
+      programs, decision trees and parity decision trees.
+    </p>
+    
+    <p>
+      We study the Fourier growth of functions associated with
+      communication protocols. In our setting, Alice gets a bitstring
+      x and Bob gets a bitstring y, and together they wish to compute
+      a Boolean function that only depends on x+y (the point-wise
+      Alice's and Bob's inputs) while minimizing the amount of
+      communication. Such communication problems are referred to as
+      XOR functions and are central in the field of communication
+      complexity. If a protocol C computes an XOR function, then the
+      output C(x,y) of the protocol is a function of x + y. This
+      motivates us to study the XOR-fiber H of a communication
+      protocol C defined by H(z) := E[ C(x,y) | x + y = z]. XOR-fibers
+      of communication protocols form a powerful class of functions,
+      which includes decision trees and parity decision trees. Proving
+      tight bounds on the Fourier growth of XOR-fibers has
+      applications to the Gap-Hamming problem and improved quantum
+      versus classical separations in communication complexity.
+    </p>
+    
+    <p>
+      In this talk, we present improved Fourier growth bounds for the
+      XOR-fibers of randomized communication protocols that
+      communicate at most d bits. For the first level, we show a tight
+      O(sqrt{d}) bound. For the second level, we show an improved
+      O(d^{3/2}) bound. We conjecture that the optimal bound is
+      O(d.polylog(n)) and this is an open question.
+    </p>
+
+    <p>
+      Our proof relies on viewing the protocol and its Fourier
+      spectrum as a martingale. One crucial ingredient we use to
+      control the step sizes is a spectral notion of k-wise
+      independence. Loosely speaking, this corresponds to sets such
+      that the k-th moments of the uniform distribution on the set are
+      well-behaved in all directions. We show how imposing spectral
+      k-wise independence on Alice's and Bob's sets allows us to prove
+      bounds on the level-k Fourier growth of XOR-fibers. We also
+      provide a way of adaptively partitioning a large set into a few
+      spectrally k-wise independent sets.
     </p>
     
 </ul>
@@ -2845,7 +2900,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2023-12-12
+Updated 2023-12-13
 </div>
 <!--/eri-no-index-->
 
