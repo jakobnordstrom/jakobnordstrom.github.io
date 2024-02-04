@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../../index-filer/kod-html.css">
+
+
+<title>
+  Computability and Complexity (CoCo) 2024
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+  /   <a href="https://www.jakobnordstrom.se/teaching/">Teaching</a>
+  / Computability and Complexity (CoCo) 2024
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- BEGIN CONTENTS OF COMPUTABILITY AND COMPLEXITY (COCO) PAGE -->
+
+
+<h1>
+  Computability and Complexity (CoCo) 2024
+</h1>
+
+<p>
+
+<p>
+
+<!--
+<em>
+  Follow these shortcut links to go directly to
+  <a href="#news">course news</a>,  
+<a href="#short-overview">short overview of course</a>,
+<a href="#schedule">schedule</a>,
+<a href="#literature">course material</a>,
+and
+<a href="#psets">list of problem sets</a>.
+</em>
+-->
+
+<p>
+
+<!--
+<em>
+Go to the separate 
+<a href="administration/">administrative information page</a> 
+to find  information about
+<a href="administration/#instructor">instructors</a>,
+<a href="administration/#prerequisites">prerequisites</a>,
+<a href="administration/#outcomes">learning outcomes</a>,
+<a href="administration/#examination">examination</a>,
+and	
+<a href="administration/#psets">problem sets in general</a>
+(with a description of the
+ <a href="administration/#grading-process">grading and peer evaluation process</a>).
+</em>
+-->
+
+<p>
+
+<strong><em>This webpage provides all documentation and information
+    about the course. There is no additional information in the
+    <em>Absalon</em> system, but day-to-day messages about the course
+    and problem set submissions are dealt with there.
+</em></strong>
+
+
+<p>
+
+<h2><a name="short-overview">Short Overview of Course</a></h2>
+
+
+<p>
+
+Computers are everywhere today&mdash;at work, in our cars, in our
+living rooms, and in our pockets&mdash;and have changed the world
+beyond our wildest imagination. Yet these marvellous devices are, at
+the core, amazingly simple and stupid: all they can do is to
+mechanically shuffle zeros and ones around.
+
+What is the true potential of
+such automated computational devices? And what are the limits of what
+<!-- kind of problems can be solved -->
+can be done by mechanical calculations?
+
+<p>
+
+Computational complexity theory gives these deep and fascinating philosophical
+questions a crisp mathematical meaning.
+
+A <em>computational problem</em> is any task that is in principle amenable to
+being solved by a computer&mdash;i.e., it can be solved by mechanical
+application of mathematical steps.
+
+Complexity theory focuses on classifying computational problems
+according to their inherent difficulty, and on relating those classes
+of problems to each other.
+
+The goal is to understand the power of computers but also&mdash;and
+above all&mdash;the limitations of what problems can be solved by
+them, or more broadly by any type of automated computational process.
+
+A problem is regarded as inherently difficult if its solution requires
+unreasonably large resources regardless of which approach is used to
+solve it (i.e., no matter which algorithm is employed).  Complexity
+theory formalizes this notion by introducing mathematical models of
+computation and quantifying the amount of resources needed to solve
+the problems, such as running time, memory usage, parallelism,
+communication, et cetera.
+
+<p>
+
+This course will give an introduction to computational complexity
+theory, survey some of the major research results, and present some of
+the open problems that are the focus of current research. While the
+intention is to give a fairly broad coverage, there might be a 
+slight bias towards areas where the 
+<a href="https://di.ku.dk/english/research/ac/"> Algorithms and
+  Complexity Section</a>
+at DIKU has made significant contributions to the state of the art.
+
+<p>
+
+
+<h2><a name="schedule">Schedule and Course Contents</a></h2>
+
+<!-- START OF SCHEDULE SECTION -->
+
+<p>
+
+  This course
+  is
+  given in the first half of the spring semester (block 3) of 2024.
+  
+  It
+  has
+  a total of  21 lectures, with 2.5 lectures per week on average.
+
+
+<p>
+
+  In accordance with the
+  <a href="http://en.wikipedia.org/wiki/Academic_quarter_(class_timing)">academic 
+    quarter</a>
+  tradition,
+  all times are stated <em>cum tempore</em>,
+  so
+  10&nbsp;am 
+  in the lecture schedule below
+  actually means 10:15&nbsp;am et cetera. 
+  
+  The <strong>lectures</strong> will be in
+  <a href="https://maps.app.goo.gl/Y5Ndp8sve377hAy58">Auditorium 01
+    in the August Krogh Building</a>
+  at Universitetsparken 13.
+  
+  In addition to the lectures, there are
+  <strong>exercise classes</strong>
+  all Thursdays 15-17 (except week 13) in
+  <a href="https://maps.app.goo.gl/jwr4y7kNgMYxEpiF9">2.0.G.064/070
+    in the Niels Bohr Building</a>
+  at Jagtvej 155.
+
+<p>
+
+  Chapter numbers in the course planning below refer to the
+  <a href="#AB09">Arora-Barak textbook</a>.
+  
+  The general idea behind the course
+  is
+  to go over (most of) the first 9 chapters in the
+  <a href="#AB09">textbook</a>,
+  getting a fairly good general overview of computational complexity theory,
+  and then spend  roughly the last third of the course on a selection of more "advanced" topics,
+  <!--
+      such as 
+      proof complexity, communication complexity, property testing, and 
+      hardness of approximation 
+    -->
+  where the textbook 
+  is
+  followed less closely.
+  
+<p>
+  
+  <em>Please note that the information below about what will be covered in
+  future lectures is a bit tentative, since the planning might be
+  slightly revised as we go along.</em>
+
+<!--
+The information below about the course planning (including what will
+be covered in future lectures) should now be fairly stable.
+-->
+
+
+<p>
+
+<!-- INCLUDE SCHEDULE BELOW THIS PART OF THE WEBPAGE -->

@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../../index-filer/kod-html.css">
+
+
+<title>
+  Computability and Complexity (CoCo) 2024
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+  /   <a href="https://www.jakobnordstrom.se/teaching/">Teaching</a>
+  / Computability and Complexity (CoCo) 2024
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- BEGIN CONTENTS OF COMPUTABILITY AND COMPLEXITY (COCO) PAGE -->
+
+
+<h1>
+  Computability and Complexity (CoCo) 2024
+</h1>
+
+<p>
+
+<p>
+
+<!--
+<em>
+  Follow these shortcut links to go directly to
+  <a href="#news">course news</a>,  
+<a href="#short-overview">short overview of course</a>,
+<a href="#schedule">schedule</a>,
+<a href="#literature">course material</a>,
+and
+<a href="#psets">list of problem sets</a>.
+</em>
+-->
+
+<p>
+
+<!--
+<em>
+Go to the separate 
+<a href="administration/">administrative information page</a> 
+to find  information about
+<a href="administration/#instructor">instructors</a>,
+<a href="administration/#prerequisites">prerequisites</a>,
+<a href="administration/#outcomes">learning outcomes</a>,
+<a href="administration/#examination">examination</a>,
+and	
+<a href="administration/#psets">problem sets in general</a>
+(with a description of the
+ <a href="administration/#grading-process">grading and peer evaluation process</a>).
+</em>
+-->
+
+<p>
+
+<strong><em>This webpage provides all documentation and information
+    about the course. There is no additional information in the
+    <em>Absalon</em> system, but day-to-day messages about the course
+    and problem set submissions are dealt with there.
+</em></strong>
+
+
+<p>
+
+<h2><a name="short-overview">Short Overview of Course</a></h2>
+
+
+<p>
+
+Computers are everywhere today&mdash;at work, in our cars, in our
+living rooms, and in our pockets&mdash;and have changed the world
+beyond our wildest imagination. Yet these marvellous devices are, at
+the core, amazingly simple and stupid: all they can do is to
+mechanically shuffle zeros and ones around.
+
+What is the true potential of
+such automated computational devices? And what are the limits of what
+<!-- kind of problems can be solved -->
+can be done by mechanical calculations?
+
+<p>
+
+Computational complexity theory gives these deep and fascinating philosophical
+questions a crisp mathematical meaning.
+
+A <em>computational problem</em> is any task that is in principle amenable to
+being solved by a computer&mdash;i.e., it can be solved by mechanical
+application of mathematical steps.
+
+Complexity theory focuses on classifying computational problems
+according to their inherent difficulty, and on relating those classes
+of problems to each other.
+
+The goal is to understand the power of computers but also&mdash;and
+above all&mdash;the limitations of what problems can be solved by
+them, or more broadly by any type of automated computational process.
+
+A problem is regarded as inherently difficult if its solution requires
+unreasonably large resources regardless of which approach is used to
+solve it (i.e., no matter which algorithm is employed).  Complexity
+theory formalizes this notion by introducing mathematical models of
+computation and quantifying the amount of resources needed to solve
+the problems, such as running time, memory usage, parallelism,
+communication, et cetera.
+
+<p>
+
+This course will give an introduction to computational complexity
+theory, survey some of the major research results, and present some of
+the open problems that are the focus of current research. While the
+intention is to give a fairly broad coverage, there might be a 
+slight bias towards areas where the 
+<a href="https://di.ku.dk/english/research/ac/"> Algorithms and
+  Complexity Section</a>
+at DIKU has made significant contributions to the state of the art.
+
+<p>
+
+
+<h2><a name="schedule">Schedule and Course Contents</a></h2>
+
+<!-- START OF SCHEDULE SECTION -->
+
+<p>
+
+  This course
+  is
+  given in the first half of the spring semester (block 3) of 2024.
+  
+  It
+  has
+  a total of  21 lectures, with 2.5 lectures per week on average.
+
+
+<p>
+
+  In accordance with the
+  <a href="http://en.wikipedia.org/wiki/Academic_quarter_(class_timing)">academic 
+    quarter</a>
+  tradition,
+  all times are stated <em>cum tempore</em>,
+  so
+  10&nbsp;am 
+  in the lecture schedule below
+  actually means 10:15&nbsp;am et cetera. 
+  
+  The <strong>lectures</strong> will be in
+  <a href="https://maps.app.goo.gl/Y5Ndp8sve377hAy58">Auditorium 01
+    in the August Krogh Building</a>
+  at Universitetsparken 13.
+  
+  In addition to the lectures, there are
+  <strong>exercise classes</strong>
+  all Thursdays 15-17 (except week 13) in
+  <a href="https://maps.app.goo.gl/jwr4y7kNgMYxEpiF9">2.0.G.064/070
+    in the Niels Bohr Building</a>
+  at Jagtvej 155.
+
+<p>
+
+  Chapter numbers in the course planning below refer to the
+  <a href="#AB09">Arora-Barak textbook</a>.
+  
+  The general idea behind the course
+  is
+  to go over (most of) the first 9 chapters in the
+  <a href="#AB09">textbook</a>,
+  getting a fairly good general overview of computational complexity theory,
+  and then spend  roughly the last third of the course on a selection of more "advanced" topics,
+  <!--
+      such as 
+      proof complexity, communication complexity, property testing, and 
+      hardness of approximation 
+    -->
+  where the textbook 
+  is
+  followed less closely.
+  
+<p>
+  
+  <em>Please note that the information below about what will be covered in
+  future lectures is a bit tentative, since the planning might be
+  slightly revised as we go along.</em>
+
+<!--
+The information below about the course planning (including what will
+be covered in future lectures) should now be fairly stable.
+-->
+
+
+<p>
+
+<!-- INCLUDE SCHEDULE BELOW THIS PART OF THE WEBPAGE -->
+</p><table border="0" cellpadding="2" cellspacing="0" width="100%"> 
+<tbody> 
+<tr> 
+<td bgcolor="#ccffff" width="9%"><em>&nbsp;Weekday</em></td> 
+<td bgcolor="#ccffff" width="7%"><em>Date</em></td> 
+<td bgcolor="#ccffff" width="6%"><em>Time</em></td> 
+<td bgcolor="#ccffff" width="6%"><em>Room</em></td> 
+<td align="right" bgcolor="#ccffff" width="3%"><em>#&nbsp;</em></td> 
+<td bgcolor="#ccffff" width="52%"><em>Plan of lectures</em></td> 
+<td bgcolor="#ccffff" width="17%"><em>References</em></td> 
+</tr> 
+ <tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ffffff" width="7%">Feb  6</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">1.</td> 
+<td bgcolor="#ffffff" width="52%">Intro to complexity theory, course overview, Turing machines, undecidability</td> 
+<td bgcolor="#ffffff" width="17%">Chs 0-1</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Feb  8</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">2.</td> 
+<td bgcolor="#ccffff" width="52%">Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation</td> 
+<td bgcolor="#ccffff" width="17%">Chs 1-2</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Feb  8</td> 
+<td bgcolor="#ffffff" width="6%">13-15</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">3.</td> 
+<td bgcolor="#ffffff" width="52%"><em>NP</em>-completeness, Cook-Levin theorem</td> 
+<td bgcolor="#ffffff" width="17%">Ch 2</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ccffff" width="7%">Feb 13</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">4.</td> 
+<td bgcolor="#ccffff" width="52%">Showing <em>NP</em>-completeness via reductions</td> 
+<td bgcolor="#ccffff" width="17%">Ch 2</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Feb 15</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">5.</td> 
+<td bgcolor="#ffffff" width="52%">Decision vs. seach, <em>coNP</em>, <em>EXP</em>, <em>NEXP</em></td> 
+<td bgcolor="#ffffff" width="17%">Ch 2</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Feb 15</td> 
+<td bgcolor="#ccffff" width="6%">13-15</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">6.</td> 
+<td bgcolor="#ccffff" width="52%">Diagonalization, time hierarchy theorems, Ladner's theorem</td> 
+<td bgcolor="#ccffff" width="17%">Ch 3</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ffffff" width="7%">Feb 20</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">7.</td> 
+<td bgcolor="#ffffff" width="52%">Oracle TMs, limits of diagonalization, space complexity</td> 
+<td bgcolor="#ffffff" width="17%">Chs 3-4</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Feb 22</td> 
+<td bgcolor="#ccffff" width="6%">13-15</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">8.</td> 
+<td bgcolor="#ccffff" width="52%"><em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness</td> 
+<td bgcolor="#ccffff" width="17%">Chs 3-4</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ffffff" width="7%">Feb 27</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">9.</td> 
+<td bgcolor="#ffffff" width="52%">Savitch's theorem, <em>L</em>, <em>NL</em>, Immerman-Szelepcs&eacute;nyi theorem</td> 
+<td bgcolor="#ffffff" width="17%">Ch 4</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Feb 29</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">10.</td> 
+<td bgcolor="#ccffff" width="52%">Immerman-Szelepcs&eacute;nyi theorem (cont.)</td> 
+<td bgcolor="#ccffff" width="17%">Chs 4-5</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Feb 29</td> 
+<td bgcolor="#ffffff" width="6%">13-15</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">11.</td> 
+<td bgcolor="#ffffff" width="52%">Polynomial hierarchy (<em>PH</em>), Boolean circuits, <em>P/poly</em></td> 
+<td bgcolor="#ffffff" width="17%">Chs 5-6</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ccffff" width="7%">Mar  5</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">12.</td> 
+<td bgcolor="#ccffff" width="52%">Karp-Lipton theorem, Meyer's theorem, Shannon's lower bound</td> 
+<td bgcolor="#ccffff" width="17%">Ch 6</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Mar  7</td> 
+<td bgcolor="#ffffff" width="6%">13-15</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">13.</td> 
+<td bgcolor="#ffffff" width="52%"><em>NC</em>, <em>AC</em>, parallel algorithms, <em>P</em>-completeness; randomized computation, <em>BPP</em></td> 
+<td bgcolor="#ffffff" width="17%">Chs 6-7</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ccffff" width="7%">Mar 12</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">14.</td> 
+<td bgcolor="#ccffff" width="52%">Polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>, randomized reductions</td> 
+<td bgcolor="#ccffff" width="17%">Ch 7</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Mar 14</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">15.</td> 
+<td bgcolor="#ffffff" width="52%">Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>)</td> 
+<td bgcolor="#ffffff" width="17%">Ch 8</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Mar 14</td> 
+<td bgcolor="#ccffff" width="6%">13-15</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">16.</td> 
+<td bgcolor="#ccffff" width="52%"><em>coNP</em> &sube; <em>IP</em> (cont.), <em>MIP</em>, <em>PCP</em></td> 
+<td bgcolor="#ccffff" width="17%">Chs 8-9</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ffffff" width="7%">Mar 19</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">17.</td> 
+<td bgcolor="#ffffff" width="52%">Bounded-depth circuits, <em>PARITY</em>∉<em>AC</em><sup>0</sup>, Håstad switching lemma</td> 
+<td bgcolor="#ffffff" width="17%">Ch 14</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Mar 21</td> 
+<td bgcolor="#ccffff" width="6%">13-15</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">18.</td> 
+<td bgcolor="#ccffff" width="52%"><em>ACC</em><sup>0</sup>, <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>, method of approximations</td> 
+<td bgcolor="#ccffff" width="17%">Ch 14</td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Tuesday</td> 
+<td bgcolor="#ffffff" width="7%">Apr  2</td> 
+<td bgcolor="#ffffff" width="6%">10-12</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">19.</td> 
+<td bgcolor="#ffffff" width="52%">Computational complexity of machine learning</td> 
+<td bgcolor="#ffffff" width="17%"></td> 
+</tr> 
+<tr>  
+<td bgcolor="#ccffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ccffff" width="7%">Apr  4</td> 
+<td bgcolor="#ccffff" width="6%">10-12</td> 
+<td bgcolor="#ccffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ccffff" width="3%">20.</td> 
+<td bgcolor="#ccffff" width="52%">Computational complexity of machine learning (cont.)</td> 
+<td bgcolor="#ccffff" width="17%"></td> 
+</tr> 
+<tr>  
+<td bgcolor="#ffffff" width="9%">&nbsp;Thursday</td> 
+<td bgcolor="#ffffff" width="7%">Apr  4</td> 
+<td bgcolor="#ffffff" width="6%">13-15</td> 
+<td bgcolor="#ffffff" width="6%">Aud 01</td> 
+<td align="right" bgcolor="#ffffff" width="3%">21.</td> 
+<td bgcolor="#ffffff" width="52%">Computational complexity of machine learning (cont.)</td> 
+<td bgcolor="#ffffff" width="17%"></td> 
+</tr> 
+</tbody> 
+ </table> 
+
+<!-- INCLUDE SCHEDULE ABOVE THIS PART OF THE WEBPAGE -->
+
+<p>
+
+
+  <h2><a name="instructors">Instructors</a></h2>
+
+<p>
+
+  The main instructor on the course is
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>.
+  Lectures will also be given by 
+  <a href="https://srikanth-srinivasan.bitbucket.io/">Srikanth Srinivasan</a>
+  and  
+  <a href="https://di.ku.dk/english/staff/vip/?pure=en/persons/786711">Amir Yehudayoff</a>.
+
+<p>
+
+  <a href="https://shuopang.net/">Shuo Pang</a>
+  will be co-instructor, helping out with grading of problem sets,
+  providing feedback, and answering questions at the exercise sessions.
+
+<p>
+  
+
+<h2><a name="literature">Course Material</a></h2>
+
+<h3><a name="textbooks">Textbook</a></h3>
+
+<p>
+
+We will mostly be following the book
+
+<ul>
+<li>
+<a name="AB09">[AB09]</a>
+<a href="http://www.cs.princeton.edu/theory/complexity/">Computational Complexity: 
+   A Modern Approach</a> 
+by Sanjeev Arora and Boaz Barak,
+</ul>
+except for towards the end of the course.
+
+<p>
+
+  <!--
+
+<h3><a name="research-articles">Research Articles</a></h3>
+-->
+
+<!-- START OF ARTICLE REFERENCES SECTION -->
+
+<!--
+<em>
+Please note that this section is being updated as we go along.
+</em>
+
+
+<p>
+
+  In a course like this, the intention is that some lectures will be partly
+  based on research articles.
+
+  In this installment of the course, we make use of the following
+  articles:
+
+<p>
+
+  <ul>
+
+    <li>
+      <a name="ABdR17">[ABdR+17]</a>      
+      Albert Atserias, Ilario Bonacina, Susanna F. de Rezende,
+      Massimo Lauria, Jakob Nordström, and Alexander Razborov:
+      <strong>Clique Is Hard on Average for Regular Resolution.</strong>
+      To appear in 
+      <em>Proceedings of the 50th Annual ACM Symposium on Theory of Computing
+	(STOC&nbsp;'18),</em>
+      June 2018.
+<li>      
+<a name="Hak85">[Hak85]</a>
+Armin Haken:
+<a href="http://www.sciencedirect.com/science/article/pii/0304397585901446"><strong>The Intractability of Resolution.</strong></a>
+<em>Theoretical Computer Science</em>,
+volume 39, pages 297&ndash;308, 1985.
+
+<li>
+<a name="Pud97">[Pud97]</a>
+Pavel Pudl&aacute;k:
+<a href="http://dx.doi.org/10.2307/2275583"><strong>Lower Bounds for Resolution and Cutting Plane Proofs and Monotone Computations.</strong></a>
+<em>Journal of Symbolic Logic</em>,
+volume 62, issue 3, pages 981&ndash;998, 1997.
+
+<li>
+<a name="Pud00">[Pud00]</a>
+Pavel Pudl&aacute;k:
+<a href="www.jstor.org/stable/2589349"><strong>Proofs as Games.</strong></a>
+<em>The American Mathematical Monthly</em>,
+volume 107, number 6, pages 541&ndash;550, 2000. 
+
+
+<li>
+<a name="RM99">[RM99]</a>
+Ran Raz and Pierre McKenzie:
+<a href="https://doi.org/10.1007/s004930050062"><strong>Separation of the
+Monotone NC Hierarchy.</strong></a>
+<em>Combinatorica,</em>
+volume 19, number 3, pages 403&ndash;435, 1999.
+
+<li>
+<a name="BCH+96">[BCH+96]</a>
+Mihir Bellare, Don Coppersmith, Johan Håstad, Marcos Kiwi, and Madhu Sudan:
+<a href="http://dx.doi.org/10.1109/SFCS.1995.492574"><strong>Linearity 
+Testing in Characteristic Two</strong></a> 
+<em>IEEE Transactions on Information Theory,</em>
+volume 42, number 6, pages 1781&ndash;1796, 1996.
+
+<li>
+<a name="DHK+12">[DHK+12]</a>
+Atish Das Sarma, Stephan Holzer, Liah Kor, Amos Korman, 
+Danupon Nanongkai, Gopal Pandurangan, David Peleg, and Roger Wattenhofer:
+<a href="http://epubs.siam.org/doi/abs/10.1137/11085178X"><strong>Distributed 
+Verification and Hardness of Distributed Approximation.</strong></a>
+SIAM Journal on Computing, volume 41, issue 5, pages 1235&ndash;1265, 2012.
+
+<li>
+<a name="Gol11">[Gol11]</a>
+Oded Goldreich: 
+<a href="http://dx.doi.org/10.1007/978-3-642-22670-0_31"><strong>A Brief 
+Introduction to Property Testing.</strong></a>
+<em>Lecture Notes in Computer Science,</em>
+volume 6650, pages 465&ndash;469, Springer Verlag, 2011.
+
+
+<li>
+<a name="Kho10">[Kho10]</a>
+Subhash Khot:
+<a href="http://dx.doi.org/10.1109/CCC.2010.19"><strong>On the Unique Games
+ Conjecture.</strong></a> 
+In
+<em>Proceedings of the IEEE 25th Annual Conference on Computational Complexity (CCC&nbsp;'10)</em>,
+pages 99&ndash;121, 2010.
+
+<li>
+<a name="KS92">[KS92]</a>
+Bala Kalyanasundaram and Georg Schnitger: 
+<a href="http://epubs.siam.org/doi/abs/10.1137/0405044"><strong>The 
+Probabilistic Communication Complexity of Set Intersection.</strong></a> 
+<em>SIAM Journal on Discrete Mathematics,</em>
+volume 5, issue 4, pages 545&ndash;557, 1992.
+
+<li>
+<a name="Raz92">[Raz92]</a>
+Alexander A. Razborov:
+<a href="http://www.sciencedirect.com/science/article/pii/030439759290260M"><strong>On 
+the Distributional Complexity of Disjointness.</strong></a>
+<em>Theoretical Computer Science,</em>
+volume 106, issue 2, pages 385&ndash;390, 1992.
+
+</ul>
+-->
+
+<p>
+
+  <!--
+  The  lectures will cover the material in the articles
+  that we need, so students are <strong><em>not</em></strong> required to read
+  these papers&mdash;the references are provided for completeness and for
+  students interested in further reading. However, for students interested in 
+  learning more, it should be noted that many of the proofs given in
+  class are actually <strong><em>not</em></strong> those found in the papers, and
+  more recent survey papers of an area are likely to be better reads
+  than the original research articles. Please do not hesitate to contact
+  the instructor if you are interested in specific references for some
+  specific area.
+    -->
+  
+<!--
+  Whenever available, the link is to the journal version (or full-length 
+  technical report), which means that the date of the paper can be a few
+  years later than that of the original conference publication.
+-->
+
+  <!--
+<p>
+
+Note that if you are not at the university, or if you are connected to the university
+network via wireless, then you might not be able to access the PDF
+files with the articles linked to above.
+One way around this problem is to search for the titles of the papers  
+in your favourite search engine&mdash;this should hopefully help you find
+free versions of the same papers on the webpages of the
+authors or similar.
+
+-->
+
+<p>
+
+
+<!-- END OF ARTICLE REFERENCES SECTION -->
+
+
+<p>
+
+<h3><a name="psets"></a>Problem Sets</h3>
+
+<p>
+
+  The course examination will be by a total of 4 problem sets.
+
+  You have to pass all problem sets to pass the course.
+
+  Problem sets will be posted on <em>Absalon</em> and below as the
+  course proceeds, at least one week before the submission deadline.
+
+<p>
+  
+<em>
+Links to the problem sets will appear as they are being posted.
+</em>
+
+<p>
+
+<em>
+  Please note that the dates given below for future problem sets are still somewhat tentative.
+</em>
+
+<!--
+<em>
+
+(though less so than before).
+
+The actual deadlines are somewhat configurable, and can be discussed in class. 
+
+The important thing is that we all agree on the deadlines beforehand, 
+and that once they are set we stick to them without exceptions.
+
+</em>
+-->
+
+<ul>
+
+  <li>
+    Problem set 1:
+    <!--
+    <a href="problemsets/ProblemSet1_2023.pdf">Problem set 1</a>
+    (last updated on February 19, 2023):
+    -->
+    Deadline <strong><em>Friday February 23.</em></strong> 
+
+  <li>
+    Problem set 2:
+    <!--
+    <a href="problemsets/ProblemSet2_2023.pdf">Problem set 2</a>
+    (last updated on February 19, 2023):
+    -->
+    Deadline <strong><em>Friday March 15.</em></strong> 
+
+  <li>
+    Problem set 3:
+    <!--
+    <a href="problemsets/ProblemSet3_2023.pdf">Problem set 3</a>
+    (last updated on March 19, 2023):
+    -->
+    Deadline <strong><em>Friday April 5.</em></strong> 
+
+  <li>
+    Problem set 4:
+    <!--
+    <a href="problemsets/ProblemSet4_2023.pdf">Problem set 4 </a>
+    (last updated on March 28, 2023):
+    -->
+    Deadline <strong><em>Friday April 19.</em></strong> 
+
+</ul>
+
+
+<h3><a name="pset-instructions"></a>Problem Set Instructions</h3>
+
+<p>
+  The following instructions apply for all problem sets.
+</p>
+
+
+<ol>
+
+  <li>
+    Please submit your solutions
+    via Absalon
+    as a PDF file.
+    State your name and e-mail address 
+    close to the top   of the first page.
+    Solutions should be written in LaTeX or some other math-aware
+    typesetting system with reasonable margins on all sides (at least 2.5&nbsp;cm).
+    Please try to be precise and to the point in your solutions and
+    refrain from vague statements.  Make sure to explain your reasoning.
+    <em>Write so that a fellow student of yours can read, understand, and
+      verify your solutions.</em>
+    
+  <li>
+    Submissions must be done on time. Blank submissions are not
+    acceptable and imply an automatic failure on the course.  Note,
+    however, that the submission deadline only specifies the date, and
+    not the time zone. You are free to submit according to whatever
+    time zone on earth you like, as long as the date in that time zone is correct.
+
+  <li>
+    The intention from the instructor side is to grade and return
+    submissions after a week.
+
+  <li>
+    The thresholds for grading are stated on the first page of the
+    problem set, and any adjustment of these thresholds will be
+    communicated on Absalon.  (The thresholds can only be adjusted
+    downwards and never upwards.)
+
+  <li>
+    Students who do not pass a problem set can make a
+    resubmission. Note that you can only resubmit solutions to
+    problems on the problem set that you actually worked on
+    before. That is, a resubmission can revise and correct a
+    previously submitted solution for a problem, but cannot compensate
+    for an initial blank submission for this problem.
+
+  <li>
+    The resubmission deadline is one week after the students have
+    received their graded problem sets back, unless communicated otherwise.
+    Resubmissions can only get grades in the lower half of the grading scale.
+
+  <li>
+    In order to pass the course, you need a passing grade on all problem sets.
+
+  <li>
+    In principle, the final grade will be the mean of the grades for all the problem sets.
+    That is, think of A=12, B=10, C=7, D=4, and E=02 as {5,4,3,2,1}, sum up, and divide by the number of psets.
+    If this mean is not integral, later psets will affect the rounding more than earlier psets.
+    
+  <li>
+    No copying or sharing of text, code, or similar is allowed, and also no use
+    of chatbots. Although you are encouraged to discuss with other
+    students, you have to write your own solution from scratch, and
+    understand all details of it fully.
+
+
+</ol>
+
+<p>
+  
+  <strong><em>Note that, as stated above,
+      solutions to the problem sets should be handed in
+      strictly by the deadlines</em></strong>. 
+
+  Being able to work towards a deadline and deliver the best possible
+  result within a given time frame (rather than a 100% polished product
+  that arrives too late) is an important skill, and is something that
+  you will have the opportunity to practise during the course.
+  
+  Having said that, 
+  exceptional circumstances, such as severe
+  illness, can be accepted as an excuse for late problem set
+  solutions. It should be emphasized, however, that lack of time due to
+  work outside the university or due to many parallel courses is
+  <strong><em>not</em></strong> 
+  considered as a legitimate reason for handing in problem
+  set solutions late.  
+
+  <em>If you feel that you have a good reason to hand in your
+  solutions late, make sure to contact the main instructor as soon as
+  possible.</em>
+
+
+</p>
+  
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- END CONTENTS OF COMPUTABILITY AND COMPLEXITY (COCO) PAGE -->
+<!-- Do not change below this point (except for date) -->
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+
+<!--
+    Use 
+    "date +'Updated %Y-%m-%d' "
+    to generate date string below
+-->
+Updated 2024-02-04
+
+
+</div>
+<!--/eri-no-index-->
+
+
+<!-- Default Statcounter code for Jakob's teaching webpages -->
+<script type="text/javascript">
+var sc_project=7373469;
+var sc_invisible=1;
+var sc_security="4929deba";
+var sc_remove_link=1;
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/7373469/0/4929deba/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+
