@@ -20,11 +20,11 @@ Thursday $ Mar 21 $ 13-15 $ Aud 01
 Tuesday  $ Apr  2 $ 10-12 $ Aud 01
 Thursday $ Apr  4 $ 10-12 $ Aud 01
 Thursday $ Apr  4 $ 13-15 $ Aud 01
-Intro to complexity theory, course overview, Turing machines, undecidability                                 $ Chs 0-1  $ 
-Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                        $ Chs 1-2  $ 
-<em>NP</em>-completeness, Cook-Levin theorem                                                                 $ Ch 2     $ 
-Showing <em>NP</em>-completeness via reductions                                                              $ Ch 2     $ 
-Decision vs. seach, <em>coNP</em>, <em>EXP</em>, <em>NEXP</em>                                               $ Ch 2     $ 
+Intro to complexity theory, course overview, Turing machines, undecidability                                 $ Chs 0-1  $ NotesLec01.pdf
+Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                        $ Chs 1-2  $ NotesLec02.pdf
+<em>NP</em>-completeness, Cook-Levin theorem, <em>coNP</em>                                                  $ Ch 2     $ NotesLec03.pdf
+Showing <em>NP</em>-completeness via reductions                                                              $ Ch 2     $ NotesLec04.pdf 
+Decision vs. seach, <em>EXP</em>, <em>NEXP</em>                                                              $ Ch 2     $ 
 Diagonalization, time hierarchy theorems, Ladner's theorem                                                   $ Ch 3     $ 
 Oracle TMs, limits of diagonalization, space complexity                                                      $ Chs 3-4  $ 
 <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                              $ Chs 3-4  $ 
