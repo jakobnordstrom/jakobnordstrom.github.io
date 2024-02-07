@@ -23,21 +23,21 @@ Thursday $ Apr  4 $ 13-15 $ Aud 01
 Intro to complexity theory, course overview, Turing machines, undecidability                                 $ Chs 0-1  $ NotesLec01.pdf
 Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                        $ Chs 1-2  $ NotesLec02.pdf
 <em>NP</em>-completeness, Cook-Levin theorem, <em>coNP</em>                                                  $ Ch 2     $ NotesLec03.pdf
-Showing <em>NP</em>-completeness via reductions                                                              $ Ch 2     $ NotesLec04.pdf 
-Decision vs. seach, <em>EXP</em>, <em>NEXP</em>                                                              $ Ch 2     $ 
+<em>NP</em>-reductions, decision vs. search, <em>EXP</em>, <em>NEXP</em>                                     $ Ch 2     $ NotesLec04.pdf
 Diagonalization, time hierarchy theorems, Ladner's theorem                                                   $ Ch 3     $ 
-Oracle TMs, limits of diagonalization, space complexity                                                      $ Chs 3-4  $ 
-<em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                              $ Chs 3-4  $ 
+Oracle TMs, limits of diagonalization                                                                        $ Ch 3     $ 
+Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                            $ Ch4      $ 
 Savitch's theorem, <em>L</em>, <em>NL</em>, Immerman-Szelepcs&eacute;nyi theorem                             $ Ch 4     $ 
 Immerman-Szelepcs&eacute;nyi theorem (cont.)                                                                 $ Chs 4-5  $ 
 Polynomial hierarchy (<em>PH</em>), Boolean circuits, <em>P/poly</em>                                        $ Chs 5-6  $ 
 Karp-Lipton theorem, Meyer's theorem, Shannon's lower bound                                                  $ Ch 6     $ 
-<em>NC</em>, <em>AC</em>, parallel algorithms, <em>P</em>-completeness; randomized computation, <em>BPP</em> $ Chs 6-7  $ 
-Polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>, randomized reductions                 $ Ch 7     $ 
-Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>) $ Ch 8     $ 
+Randomized computation, <em>BPP</em>, polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>  $ Ch 7     $ 
+Randomized reductions, interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>) $ Ch 8     $ 
 <em>coNP</em> &sube; <em>IP</em> (cont.), <em>MIP</em>, <em>PCP</em>                                         $ Chs 8-9  $ 
 Bounded-depth circuits, <em>PARITY</em>∉<em>AC</em><sup>0</sup>, Håstad switching lemma                      $ Ch 14    $
 <em>ACC</em><sup>0</sup>, <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>, method of approximations     $ Ch 14    $
+More about bounded-depth circuits                                                                            $ Ch 14    $
+TBD                                                                                                          $          $
 Computational complexity of machine learning                                                                 $          $
 Computational complexity of machine learning (cont.)                                                         $          $
 Computational complexity of machine learning (cont.)                                                         $          $
