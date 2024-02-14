@@ -24,8 +24,8 @@ Intro to complexity theory, course overview, Turing machines, undecidability    
 Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                        $ Chs 1-2  $ NotesLec02.pdf
 <em>NP</em>-completeness, Cook-Levin theorem,                                                                $ Ch 2     $ NotesLec03.pdf
 <em>NP</em>-reductions, <em>coNP</em>, decision vs. search                                                   $ Ch 2     $ NotesLec04.pdf
-<em>EXP</em> vs. <em>NEXP</em>, diagonalization, time hierarchy theorems, Ladner's theorem                    $ Chs 2-3  $ NotesLec05.pdf
-Oracle Turing machines, limits of diagonalization                                                            $ Ch 3     $ 
+<em>EXP</em> vs. <em>NEXP</em>, diagonalization, time hierarchy theorems, Ladner's theorem                   $ Chs 2-3  $ NotesLec05.pdf
+Oracle Turing machines, limits of diagonalization                                                            $ Ch 3     $ NotesLec06.pdf
 Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                            $ Ch4      $ 
 Savitch's theorem, <em>L</em>, <em>NL</em>, Immerman-Szelepcs&eacute;nyi theorem                             $ Ch 4     $ 
 Immerman-Szelepcs&eacute;nyi theorem (cont.)                                                                 $ Chs 4-5  $ 
