@@ -26,9 +26,9 @@ Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic comput
 <em>NP</em>-reductions, <em>coNP</em>, decision vs. search                                                   $ Ch 2     $ NotesLec04.pdf
 <em>EXP</em> vs. <em>NEXP</em>, diagonalization, time hierarchy theorems, Ladner's theorem                   $ Chs 2-3  $ NotesLec05.pdf
 Oracle Turing machines, limits of diagonalization                                                            $ Ch 3     $ NotesLec06.pdf
-Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                            $ Ch4      $ 
-Savitch's theorem, <em>L</em>, <em>NL</em>, Immerman-Szelepcs&eacute;nyi theorem                             $ Ch 4     $ 
-Immerman-Szelepcs&eacute;nyi theorem (cont.)                                                                 $ Chs 4-5  $ 
+Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                            $ Ch4      $ NotesLecs07-08.pdf
+Savitch's theorem, <em>L</em>, <em>NL</em>, Immerman-Szelepcs&eacute;nyi theorem                             $ Ch 4     $ NotesLecs07-08.pdf
+Immerman-Szelepcs&eacute;nyi theorem (cont.)                                                                 $ Chs 4-5  $ NotesLec09.pdf
 Polynomial hierarchy (<em>PH</em>), Boolean circuits, <em>P/poly</em>                                        $ Chs 5-6  $ 
 Karp-Lipton theorem, Meyer's theorem, Shannon's lower bound                                                  $ Ch 6     $ 
 Randomized computation, <em>BPP</em>, polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>  $ Ch 7     $ 
