@@ -29,8 +29,8 @@ Oracle Turing machines, limits of diagonalization                               
 Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                            $ Ch4      $ NotesLecs07-08.pdf
 Savitch's theorem, <em>L</em>, <em>NL</em>                                                                   $ Ch 4     $ NotesLecs07-08.pdf
 Immerman-Szelepcs&eacute;nyi theorem                                                                         $ Chs 4-5  $ NotesLec09.pdf
-Polynomial hierarchy (<em>PH</em>)                                                                           $ Ch 5     $
-Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems, Shannon's lower bound                               $ Ch 6     $ 
+Polynomial hierarchy (<em>PH</em>)                                                                           $ Ch 5     $ NotesLec10.pdf
+Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems, Shannon's lower bound                               $ Ch 6     $ NotesLec11.pdf
 Randomized computation, <em>BPP</em>, polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>  $ Ch 7     $
 Error reduction and applications                                                                             $ Ch 7     $
 Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>) $ Ch 8     $ 
