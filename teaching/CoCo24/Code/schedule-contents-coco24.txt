@@ -33,7 +33,7 @@ Polynomial hierarchy (<em>PH</em>)                                              
 Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems                                                      $ Ch 6     $ NotesLec11.pdf
 Randomized computation, <em>BPP</em>, polynomial identity testing, <em>RP</em>, <em>coRP</em>, <em>ZPP</em>  $ Ch 7     $ NotesLecs12-13.pdf
 Error reduction and applications                                                                             $ Ch 7     $ NotesLecs12-13.pdf
-Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>) $ Ch 8     $ 
+Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>) $ Ch 8     $ NotesLec14.pdf
 <em>coNP</em> &sube; <em>IP</em> (cont.), <em>MIP</em>, <em>PCP</em>                                         $ Chs 8-9  $ 
 Bounded-depth circuits, <em>PARITY</em>∉<em>AC</em><sup>0</sup>, Håstad switching lemma                      $ Ch 14    $
 <em>ACC</em><sup>0</sup>, <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>, method of approximations     $ Ch 14    $
