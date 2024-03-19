@@ -1,0 +1,43 @@
+21
+Tuesday  $ Feb  6 $ 10-12 $ Aud 01
+Thursday $ Feb  8 $ 10-12 $ Aud 01
+Thursday $ Feb  8 $ 13-15 $ Aud 01
+Tuesday  $ Feb 13 $ 10-12 $ Aud 01
+Thursday $ Feb 15 $ 10-12 $ Aud 01
+Thursday $ Feb 15 $ 13-15 $ Aud 01
+Tuesday  $ Feb 20 $ 10-12 $ Aud 01
+Thursday $ Feb 22 $ 13-15 $ Aud 01
+Tuesday  $ Feb 27 $ 10-12 $ Aud 01
+Thursday $ Feb 29 $ 10-12 $ Aud 01
+Thursday $ Feb 29 $ 13-15 $ Aud 01
+Tuesday  $ Mar  5 $ 10-12 $ Aud 01
+Thursday $ Mar  7 $ 13-15 $ Aud 01
+Tuesday  $ Mar 12 $ 10-12 $ Aud 01
+Thursday $ Mar 14 $ 10-12 $ Aud 01
+Thursday $ Mar 14 $ 13-15 $ Aud 01
+Tuesday  $ Mar 19 $ 10-12 $ Aud 01
+Thursday $ Mar 21 $ 13-15 $ Aud 01
+Tuesday  $ Apr  2 $ 10-12 $ Aud 01
+Thursday $ Apr  4 $ 10-12 $ Aud 01
+Thursday $ Apr  4 $ 13-15 $ Aud 01
+Intro to complexity theory, course overview, Turing machines, undecidability                                      $ Chs 0-1  $ NotesLec01.pdf
+Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic computation                             $ Chs 1-2  $ NotesLec02.pdf
+<em>NP</em>-completeness, Cook-Levin theorem                                                                      $ Ch 2     $ NotesLec03.pdf
+<em>NP</em>-reductions, <em>coNP</em>, decision vs. search                                                        $ Ch 2     $ NotesLec04.pdf
+<em>EXP</em> vs. <em>NEXP</em>, diagonalization, time hierarchy theorems, Ladner's theorem                        $ Chs 2-3  $ NotesLec05.pdf
+Oracle Turing machines, limits of diagonalization                                                                 $ Ch 3     $ NotesLec06.pdf
+Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                 $ Ch4      $ NotesLecs07-08.pdf
+Savitch's theorem, <em>L</em>, <em>NL</em>                                                                        $ Ch 4     $ NotesLecs07-08.pdf
+Immerman-Szelepcs&eacute;nyi theorem                                                                              $ Chs 4-5  $ NotesLec09.pdf
+Polynomial hierarchy (<em>PH</em>)                                                                                $ Ch 5     $ NotesLec10.pdf
+Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems                                                           $ Ch 6     $ NotesLec11.pdf
+Randomized computation, <em>BPP</em>, polynomial identity testing (PIT), <em>RP</em>, <em>coRP</em>, <em>ZPP</em> $ Ch 7     $ NotesLecs12-13.pdf
+Error reduction and applications                                                                                  $ Ch 7     $ NotesLecs12-13.pdf
+Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>)      $ Ch 8     $ NotesLec14.pdf
+<em>coNP</em> &sube; <em>IP</em> (cont.), zero-knowledge (ZK) proofs                                              $ Chs 8-9  $ NotesLec15.pdf
+Bounded-depth circuits, <em>PARITY</em>∉<em>AC</em><sup>0</sup>, Håstad's switching lemma                         $ Ch 14    $ NotesLec16.pdf
+Håstad's switching lemma (cont.); <em>ACC</em><sup>0</sup>, <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>  $ Ch 14    $ NotesLec17.pdf
+<em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em> (cont.), method of approximations                            $ Ch 14    $
+<em>PARITY</em> lower bound for formulas                                                                          $          $
+Sample complexity of learning, probably approximately correct (PAC) model                                         $          $
+Vapnik-Chervonenkis (VC) dimension; concluding remarks                                                            $          $
