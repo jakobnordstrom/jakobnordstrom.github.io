@@ -40,6 +40,6 @@ Bounded-depth circuits, <em>PARITY</em>∉<em>AC</em><sup>0</sup>, Håstad's swi
 Håstad's switching lemma (cont.)                                                                                      $ Ch 14    $ NotesLec17.pdf
 Bounded-depth circuits with MOD-gates, <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>, method of approximations $ Ch 14    $ NotesLec18.pdf
 <em>PARITY</em>∉<em>ACC</em><sup>0</sup><em>(3)</em>, method of approximations (cont.)                                $ Ch 14    $ NotesLec19.pdf
-<em>PARITY</em> lower bound for formulas                                                                              $          $
+Introduction to learning theory                                                                                       $          $
 Sample complexity of learning, probably approximately correct (PAC) model                                             $          $
 Vapnik-Chervonenkis (VC) dimension; concluding remarks                                                                $          $
