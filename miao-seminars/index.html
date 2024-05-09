@@ -134,103 +134,9 @@ Jakob Nordström: MIAO seminars</title>
   
   <li>
     <p>
-      Tuesday Apr 23 at 14:00
-      on Zoom
-      <br>
-      <strong>
-	Compressing CFI graphs and lower bounds for Weisfeiler-Leman refinements
-      </strong>
-      <br>
-      (Daniel Neuen, Universität Bremen)
-    </p>
-
-    <p>
-      The <em>k</em>-dimensional Weisfeiler-Leman (<em>k</em>-WL) algorithm is a simple
-      combinatorial algorithm that was originally designed as a graph
-      isomorphism heuristic. It naturally finds applications in
-      Babai's quasipolynomial time isomorphism algorithm, practical
-      isomorphism solvers, and algebraic graph theory. However, it
-      also has surprising connections to other areas such as logic,
-      proof complexity, combinatorial optimization, and machine
-      learning.
-    </p>
-
-    <p>
-      The algorithm iteratively computes a coloring of the <em>k</em>-tuples of
-      vertices of a graph. Since Fürer's linear lower bound [ICALP&nbsp;2001], it has been an open question whether there is a
-      super-linear lower bound for the iteration number for <em>k</em>-WL on
-      graphs. In this talk, I present a novel method of compressing
-      CFI graphs that leads to an &Omega;(<em>n</em><sup><em>k</em>/2</sup>)
-      lower bound for all <em>k</em>.
-    </p>
-    
-    <p>
-      Joint work with Martin Grohe, Moritz Lichter and Pascal Schweitzer
-      (published at FOCS&nbsp;2023).
-    </p>
-
-  <li>
-    <p>
-      Thursday Apr 25 at 16:00 <em>(note the time!)</em>
-      in seminar room E:1426, Ole Römers väg 3, Lund University,      
+      Thursday May 16 at 14:30 <em>(note the time!)</em>
+      in seminar room N116A, Universitetsparken 1, University of Copenhagen,
       and on Zoom
-      <br>
-      <strong>
-	Verifying a SAT solver from ground up
-      </strong>
-      <br>
-      (Mathias Fleury, Albert-Ludwigs-Universität Freiburg)
-    </p>
-
-    <p>
-      In this seminar, I will present my verified SAT solver, IsaSAT,
-      starting from an abstract CDCL calculus, through a more
-      pragmatic version PCDCL, down to reasonably efficient code using
-      a refinement chain. In the first part of the presentation, I
-      will present the general approach and the second part, I will
-      show more details how the refinement is done and what are the
-      critical parts where performance is lost.
-    </p>
-    
-  <li>
-    <p>
-      Friday Apr 26 at 14:00 
-      in seminar room E:2116, Ole Römers väg 3, Lund University,      
-      and on Zoom
-      <br>
-      <strong>
-	A crash course in answer-set programming
-      </strong>
-      <br>
-      (Markus Hecher, MIT)
-    </p>
-
-    <p>
-      In this talk we briefly showcase the answer set programming
-      (ASP) framework and demonstrate some use cases for rapid
-      prototyping. After introducing basic notation and extended
-      syntactic sugar, we will discuss the computational complexity of
-      different fragments of interest. In the propositional (ground)
-      case, ASP reaches up to the second level of the polynomial
-      hierarchy (third level for optimization). Since ASP enables the
-      use of first-order like variables, there are also fragments
-      reaching beyond NEXPTIME. In practice, this results in the
-      so-called ASP grounding bottleneck, as practical systems
-      typically comprise two phases: During grounding, first-order
-      like variables are instantiated with every potential domain
-      value, which is then followed by a (ground) solving
-      phase. However, if predicate arities are bounded (practically
-      well-motivated), compared to the ground case, complexity only
-      increases by one level in the polynomial hierarchy. Based on
-      these complexity results, we will briefly discuss recent works
-      that propose alternative grounding techniques by reducing from
-      simpler non-ground fragments to harder ground fragments.
-    </p>
-    
-  <li>
-    <p>
-      Thursday May 16 at 14:00
-      at the University of Copenhagen and on Zoom
       <br>
       <strong>
 	PPP is not Turing-closed in the black-box setting
@@ -272,6 +178,44 @@ Jakob Nordström: MIAO seminars</title>
       This talk will be mostly self-contained, assuming only familiarity with NP.
       Based on joint work with Stefan Grosser, Toniann Pitassi, and Robert Robere.
     </p>
+
+  <li>
+    <p>
+      Tuesday May 21 at 10:00 <em>(note the time!)</em>
+      in seminar room N116B, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
+      <br>
+      <strong>
+	Efficient algorithms for symmetry detection
+      </strong>
+      <br>
+      (Markus Anders, Technische Universität Darmstadt)
+    </p>
+
+    <p>
+      Exploitation of symmetry has a dramatic impact on the efficiency
+      of algorithms in various fields. Before symmetries of a
+      structure can be exploited, one first has to have algorithmic
+      means to find the symmetries efficiently. Typically, this is
+      achieved through modeling said structure as a graph, followed by
+      an application of a practical graph isomorphism solver such as
+      nauty, saucy, bliss, Traces, or dejavu.
+    </p>
+
+    <p>
+      In this talk, I will give an overview of recent progress on
+      practical graph isomorphism solvers. I present a theoretical
+      model which captures the backtracking behavior of all
+      state-of-the-art solvers, within which we prove probabilistic
+      strategies to be optimal up to logarithmic factors. Then, I
+      briefly discuss the design of the practical solver dejavu, which
+      is based on a near-optimal probabilistic backtracking strategy.
+    </p>
+
+    <p>
+      The material presented is based on joint work with Pascal&nbsp;Schweitzer.
+    </p>
+
 
   <li>
     <p>
@@ -327,7 +271,105 @@ Jakob Nordström: MIAO seminars</title>
 <h2>MIAO seminars spring 2024</h2>
 
 <ul>
+
+  <li>
+    <p>
+      Friday Apr 26 at 14:00 
+      in seminar room E:2116, Ole Römers väg 3, Lund University,      
+      and on Zoom
+      <br>
+      <strong>
+	A crash course in answer-set programming
+      </strong>
+      (<a href="https://youtu.be/upEoQSY_dOY">video</a>)
+      <br>
+      (Markus Hecher, MIT)
+    </p>
+
+    <p>
+      In this talk we briefly showcase the answer set programming
+      (ASP) framework and demonstrate some use cases for rapid
+      prototyping. After introducing basic notation and extended
+      syntactic sugar, we will discuss the computational complexity of
+      different fragments of interest. In the propositional (ground)
+      case, ASP reaches up to the second level of the polynomial
+      hierarchy (third level for optimization). Since ASP enables the
+      use of first-order like variables, there are also fragments
+      reaching beyond NEXPTIME. In practice, this results in the
+      so-called ASP grounding bottleneck, as practical systems
+      typically comprise two phases: During grounding, first-order
+      like variables are instantiated with every potential domain
+      value, which is then followed by a (ground) solving
+      phase. However, if predicate arities are bounded (practically
+      well-motivated), compared to the ground case, complexity only
+      increases by one level in the polynomial hierarchy. Based on
+      these complexity results, we will briefly discuss recent works
+      that propose alternative grounding techniques by reducing from
+      simpler non-ground fragments to harder ground fragments.
+    </p>
+      
+  <li>
+    <p>
+      Thursday Apr 25 at 16:00 <em>(note the time!)</em>
+      in seminar room E:1426, Ole Römers väg 3, Lund University,      
+      and on Zoom
+      <br>
+      <strong>
+	Verifying a SAT solver from ground up
+      </strong>
+      (<a href="https://youtu.be/-NTodQdAjgQ">video</a>)
+      <br>
+      (Mathias Fleury, Albert-Ludwigs-Universität Freiburg)
+    </p>
+
+    <p>
+      In this seminar, I will present my verified SAT solver, IsaSAT,
+      starting from an abstract CDCL calculus, through a more
+      pragmatic version PCDCL, down to reasonably efficient code using
+      a refinement chain. In the first part of the presentation, I
+      will present the general approach and the second part, I will
+      show more details how the refinement is done and what are the
+      critical parts where performance is lost.
+    </p>
   
+  <li>
+    <p>
+      Tuesday Apr 23 at 14:00
+      on Zoom
+      <br>
+      <strong>
+	Compressing CFI graphs and lower bounds for Weisfeiler-Leman refinements
+      </strong>
+      (<a href="https://youtu.be/69_7sPhWaSA">video</a>)       
+      <br>
+      (Daniel Neuen, Universität Bremen)
+    </p>
+
+    <p>
+      The <em>k</em>-dimensional Weisfeiler-Leman (<em>k</em>-WL) algorithm is a simple
+      combinatorial algorithm that was originally designed as a graph
+      isomorphism heuristic. It naturally finds applications in
+      Babai's quasipolynomial time isomorphism algorithm, practical
+      isomorphism solvers, and algebraic graph theory. However, it
+      also has surprising connections to other areas such as logic,
+      proof complexity, combinatorial optimization, and machine
+      learning.
+    </p>
+
+    <p>
+      The algorithm iteratively computes a coloring of the <em>k</em>-tuples of
+      vertices of a graph. Since Fürer's linear lower bound [ICALP&nbsp;2001], it has been an open question whether there is a
+      super-linear lower bound for the iteration number for <em>k</em>-WL on
+      graphs. In this talk, I present a novel method of compressing
+      CFI graphs that leads to an &Omega;(<em>n</em><sup><em>k</em>/2</sup>)
+      lower bound for all <em>k</em>.
+    </p>
+    
+    <p>
+      Joint work with Martin Grohe, Moritz Lichter and Pascal Schweitzer
+      (published at FOCS&nbsp;2023).
+    </p>
+
   <li>
     <p>
       Friday Mar 1 at 14:00
@@ -3229,7 +3271,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-04-19
+Updated 2024-05-09
 </div>
 <!--/eri-no-index-->
 
