@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../index-filer/kod-html.css">
+
+
+<title>
+Jakob Nordström: WHOOPS '24</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+/ WHOOPS '24 </span>
+</td>
+</tr>
+</tbody></table>
+
+<!--
+<a href="MIAOlogo.pdf"><img src="MIAOlogo.jpg" alt="MIAO group logo" width="300" border="0"></a>
+-->
+
+<!--
+    DOESN'T LOOK GOOD ON A SMALL SCREEN
+    <table border="0" width="100%"><tr><td>
+-->
+
+<h1>
+  1st International Workshop on Highlights in Organizing and Optimizing Proof-logging Systems
+  (WHOOPS&nbsp;'24)
+</h1>
+
+<h2>
+  <a name="background"></a>
+  Background
+</h2>
+
+<p>
+  Since the turn of the millennium there have been dramatic
+  improvements in algorithms for combinatorial solving and
+  optimization. The flipside of this is that as the methods get
+  increasingly sophisticated, it becomes increasingly harder to
+  avoid bugs sneaking in during algorithm design and implementation,
+  and it is well documented that even the most mature tools sometimes
+  return incorrect results. Software testing, while important, has not
+  been sufficient to resolve this problem, and formal verification
+  methods are far from being able to scale to the level of complexity
+  in modern combinatorial solvers. During the last ten years the
+  Boolean satisfiability (SAT) solving community has instead
+  successfully introduced
+  <em>proof logging</em>,
+  meaning that the SAT solvers have to output, along the answer to a
+  problem, a machine-verifiable proof that this answer is correct.
+  Such solvers are also referred to as <em>certifying algorithms</em>.
+</p>
+
+<p>
+
+  For a long time, attempts to extend proof logging to stronger
+  algorithmic paradigms such as SAT-based optimization (MaxSAT),
+  constraint programming, and mixed integer linear programming
+  met with very limited success.
+
+  This has changed in the last few years with the
+  introduction of
+  <em>pseudo-Boolean (PB) proof logging</em>.  Pseudo-Boolean proofs
+  operate with 0-1 integer linear inequalities using a version of the
+  cutting planes proof system, but have turned out to be a very
+  convenient format also for algorithms that reason in
+  terms of very different concepts.  The
+  <em><a href="https://gitlab.com/MIAOresearch/software/VeriPB">VeriPB</a></em>
+  tool developed by the
+  <em><a href="https://jakobnordstrom.se/miao-group/"> Mathematical Insights into
+      Algorithms for Optimization (MIAO)</a></em>
+  research group in Copenhagen/Lund
+  and its collaborators 
+  has so far been shown to support efficient proof logging not only for
+  advanced SAT solving techniques previously beyond reach (including
+  symmetry breaking),
+  but also for 
+  MaxSAT solving, subgraph solving, constraint programming, and
+  presolving techniques in 0-1 integer linear programming.
+  <!--
+  (see the
+  <a href="https://youtu.be/s_5BIi4I22w"><em>VeriPB</em> tutorial</a>
+  with
+  <a href="../docs/presentations/TutorialProofLogging_Nov2022.pdf">accompanying slides</a> 
+  for more information about this).
+  -->
+  <!--
+  <em>VeriPB</em> is currently being used and developed by a growing
+  number of research groups all over Europe.
+  -->
+</p>
+
+<p>
+  These developments have been so fast that the (somewhat spontaneous)
+  idea has arisen to gather researchers from all over Europe working on
+  pseudo-Boolean proof logging during the week May&nbsp;20-24
+  in Copenhagen. The intention is to have an informal workshop where
+  the attendees can learn about the latest news, hear about work that
+  is ongoing right now, do networking, and plan for future
+  collaborations. Reflecting the rather improvised nature of this
+  event, it has been named the <em>1st Workshop on Highlights in
+    Organizing and Optimizing Proof-logging Systems</em>, or
+  <em>WHOOPS&nbsp;'24</em> for short.
+  
+
+<h2>
+  <a name="program"></a>
+  Workshop Program
+</h2>
+
+<p>
+  During the first half of the week, we will have informal research
+  discussions interleaved with a couple of longer seminars.
+</p>
+
+<p>
+  On Thursday-Friday we will have a workshop with scheduled talks as
+  listed below.
+
+  The location will (tentatively) be somewhere in at the Department of
+  Computer Science (DIKU) at the University of Copenhagen at
+  <a href="https://maps.app.goo.gl/hvrzMQfWjHiQ5VDD8">Universitetsparken&nbsp;1</a>.
+</p>
+
+<p>
+  <em>
+    Please note that the schedule below is still tentative, and all titles
+    are provisional.
+  </em>
+</p>
+
+<table>
+  <tr>
+    <td colspan="3">
+      <strong>THURSDAY MAY 23</strong>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>09:45-10:00</strong></td>
+    <td>Welcome and presentation of participants</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>10:00-11:00</strong></td>
+    <td>A one-size-fits-all proof logging system?</td>
+    <td>Jakob Nordström</td>
+  </tr>
+  <tr>
+    <td><strong>11:00-12:00</strong></td>
+    <td>Symmetry and dominance breaking using pseudo-Boolean proof logging</td>
+    <td>Bart Bogaerts</td>
+  </tr>
+  <tr>
+    <td><strong>12:00-13:30</strong></td>
+    <td>
+      <em>Lunch</em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>13:30-14:30</strong></td>
+    <td>Pseudo-Boolean proof logging for things that don't look pseudo-Boolean</td>
+    <td>Ciaran McCreesh</td>
+  </tr>
+  <tr>
+    <td><strong>14:30-15:30</strong></td>
+    <td>Recent advances in proof logging for constraint programming</td>
+    <td>Matthew McIlree</td>
+  </tr>
+  <tr>
+    <td><strong>15:30-16:00</strong></td>
+    <td><em>Break</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>16:00-17:00</strong></td>
+    <td>Proof logging for maximum satisfiability (MaxSAT) solving</td>
+    <td>Dieter Vandersande</td>
+  </tr>
+  <tr>
+    <td><strong>17:00-18:00</strong></td>
+    <td>
+      Pitches and discussions about
+      future directions and
+      feature requests
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>18:15</strong></td>
+    <td><em>Leave for dinner at
+      <a href="https://www.madklubben.dk/en/restaurants/copenhagen/madklubben/osterbro">Madklubben
+	Østerbro</a>
+      at
+      <a href="https://maps.app.goo.gl/7BPCwgrwgRjwZrR76">Østerbrogade 79</a>
+      </em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3"> &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <strong>FRIDAY MAY 24</strong>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>10:00-11:00</strong></td>
+    <td>Proof logging for MaxSAT preprocessing</td>
+    <td>Hannes Ihalainen</td>
+  </tr>
+  <tr>
+    <td><strong>11:00-11:30</strong></td>
+    <td><em>Break</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>11:30-12:00</strong></td>
+    <td>Proof logging for presolving in 0-1 integer linear programming</td>
+    <td>Andy Oertel</td>
+  </tr>
+  <tr>
+    <td><strong>12:00-12:30</strong></td>
+    <td>Handling symmetries in subgraph finding</td>
+    <td>Joe Loughney</td>
+  </tr>
+  <tr>
+    <td><strong>12:30-13:00</strong></td>
+    <td>Pseudo-Boolean proof trimming</td>
+    <td>Arthur Gontier</td>
+  </tr>
+  <tr>
+    <td><strong>13:00</strong></td>
+    <td>
+      <em>Lunch and end of formal workshop</em>
+    </td>
+    <td></td>
+  </tr>
+
+</table>
+
+<h2>
+  <a name="about-miao"></a>About the MIAO Research Group</h2>
+
+<p>  
+  The
+  <em><a href="https://jakobnordstrom.se/miao-group/"> Mathematical Insights into
+    Algorithms for Optimization (MIAO)</a></em>
+  research group is based on both sides of the &Oslash;resund Bridge at
+  <a href="https://www.lunduniversity.lu.se/">Lund University</a>
+  and the
+  <a href="https://www.ku.dk/english/">University of Copenhagen</a>.
+
+  The  group has a unique profile in that we are doing
+  cutting-edge research both on the mathematical foundations of
+  efficient computation and on state-of-the-art practical algorithms
+  for real-world problems.
+  
+  This creates a very special environment, where we do not only conduct
+  in-depth research on different theoretical and applied topics, but
+  where different lines of research cross-fertilise each other and
+  unexpected and exciting synergies often arise.
+</p>
+
+<p>
+  We are closely affiliated with the
+  <a href="https://barc.ku.dk/">Basic Algorithms Research Copenhagen (BARC) centre</a>,
+  and are part of a world-leading environment in algorithms and
+  complexity theory encompassing also the
+  <a href="https://en.itu.dk/">IT University of Copenhagen</a> and the
+  <a href="https://www.dtu.dk/english">Technical University of Denmark (DTU)</a>.
+
+  We aim to attract top talent from around the world to an ambitious,
+  creative, collaborative, and fun environment. Using the power of
+  mathematics, we strive to create fundamental breakthroughs in
+  algorithms and complexity theory. While the focus in on foundational
+  research, algorithms and complexity researchers in Copenhagen
+  have a track record of surprising algorithmic
+  discoveries leading to major industrial applications.
+</p>
+
+<!--
+
+**********
+
+<p>
+  In the last few years we have also made
+  research breakthroughs on how to verify the correctness of
+  state-of-the-art algorithms for combinatorial solving and
+  optimization.  Such algorithms are often highly complex, and even
+  mature commercial solvers are known to sometimes produce wrong
+  results.
+
+  Our goal is to usher in a new generation of <em>certifying</em>
+  combinatorial solvers with so-called <em>proof logging</em>, meaning
+  that the solvers output
+  not only a result but also a simple, machine-verifiable
+  proof that the claimed result is correct.
+  For such a certifying solver, the workflow becomes as follows:
+</p>
+
+<ol>
+  <li>
+    Run the solver on a problem instance to obtain not only a
+    computed result, but also a proof of correctness.
+  </li><li>
+    Feed the problem, the result, and the proof of correctness to a special,
+    dedicated <em>proof checker</em> for verification.
+  </li><li>
+    Accept the result if the proof checker says that the proof is valid.
+  </li>
+</ol>
+
+<p>
+  Importantly, these machine-verifiable proofs should be very easy to
+  generate and should require low overhead on the solver side, but
+  should also be very easy to check efficiently on the proof checker
+  side, and should still provide 100% formal guarantees of
+  correctness.
+
+  This might sound just a little bit too good to be true, but the tool
+  <em><a href="https://gitlab.com/MIAOresearch/software/VeriPB">VeriPB</a></em>
+  that we have developed can now provide efficient proof logging for
+  several combinatorial solving paradigms that have previously been beyond reach,
+  and we have recently received several prestigious awards for our work.
+
+</p>    
+
+-->    
+
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+<!-- Do not change below this point (except for date) -->
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+Updated 2024-05-12
+</div>
+<!--/eri-no-index-->
+
+
+
+<!-- Default Statcounter code for Jakob's GitHub webpages
+https://jakobnordstrom.github.io -->
+<script type="text/javascript">
+var sc_project=12521096; 
+var sc_invisible=1; 
+var sc_security="a648a4cc"; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12521096/0/a648a4cc/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+
