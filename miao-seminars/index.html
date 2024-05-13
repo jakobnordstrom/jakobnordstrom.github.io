@@ -216,7 +216,70 @@ Jakob Nordström: MIAO seminars</title>
       The material presented is based on joint work with Pascal&nbsp;Schweitzer.
     </p>
 
+  <li>
+    <p>
+      Wednesday May 22 at 14:00
+      in seminar room N116A&amp;B, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
+      <br>
+      <strong>
+	Solving optimization problems by a sequence of decisions
+      </strong>
+<!--      (<a href="https://youtu.be/fcXAsIopo-A">video</a>) -->
+      <br>
+      (Jeremias Berg, University of Helsinki)
+    </p>
 
+    <p>
+      Computationally challenging optimization problems are common in
+      artificial intelligence and other real-world settings. Among the
+      several approaches to optimization problems that have been developed,
+      The declarative approach is arguably one of the most promising ones in
+      terms of allowing reasonable effectiveness and strong guarantees of
+      the trustworthiness of the solutions obtained, e.g., via
+      proof-logging.  In the declarative approach, an instance of the
+      optimization problem of interest is first represented as a set of
+      mathematical constraints and an objective function. Afterward, an
+      automated reasoning procedure (a solver) is invoked in order to
+      compute an optimal solution to the constraints. Finally, a solution to
+      the original problems is obtained from the solution to the constraint
+      instance.      
+    </p>
+      
+    <p>
+      Most state-of-the-art approaches to computing optimal solutions
+      of constraint instances reduce the optimization problem into a
+      sequence of decision problems, which are in turn tackled with decision
+      procedures for the constraint language being employed. A natural
+      example is the so-called solution-improving approach, which
+      iteratively queries a decision procedure for solutions of increasing
+      quality until no such solutions can be found. Other central examples
+      are the core-guided and implicit-hitting-set-based approaches that
+      refine the optimization instance based on small sources of
+      inconsistency (known as unsatisfiable cores) until a solution that
+      relaxes all inconsistencies in a cost-optimal way is found. The
+      solution-improving search, core-guided, and implicit
+      hitting-set-based, algorithms currently represent the state-of-the-art
+      in Maximum Satisfiability and pseudo-boolean Optimization. The
+      algorithms have also been successfully applied in Constraint
+      Programming and SMT.      
+    </p>
+      
+    <p>
+      In this seminar, I will present our recent work on a framework
+      that allows us to view solution-improving, core-guided, and
+      implicit-hitting-set-based search in a unified way. The
+      framework provides new insight into the relationship between the
+      three types of algorithms and also allows for a unified way of
+      proving the correctness of virtually all instantiations of them
+      that we are aware of. The constraint-agnostic framework can be
+      used to analyze MaxSAT, PBO, and (some of the) CP algorithms
+      that exist today. I will also highlight some interesting work,
+      such as the potential of using the framework as the basis of a
+      unified way of proof-logging optimization algorithms in various
+      paradigms.      
+    </p>
+      
   <li>
     <p>
       Monday Jun 10 at 14:00
@@ -3272,7 +3335,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-05-12
+Updated 2024-05-13
 </div>
 <!--/eri-no-index-->
 
