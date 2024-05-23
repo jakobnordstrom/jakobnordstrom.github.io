@@ -1,0 +1,65 @@
+
+
+
+
+Bart Bogaerts <bartbogaerts@gmail.com>
+
+Certified Symmetry Breaking with VeriPB 
+
+I will start by giving an overview of (static and dynamic) symmetry handling methods for SAT. Next, I will dive into details about strengthening rules in the VeriPB proof system and discuss every step of a detailed worked example, demonstrating how to do fully automated static symmetry breaking for SAT in a certified way.
+Finally, I will discuss an open challenge on how to get certification for a framework such as SAT modulo symmetries, and particularly, the question of what it even means to certify this method. 
+
+
+Arthur Gontier <Arthur.Gontier@glasgow.ac.uk>
+
+Proof trimming may be used to get a smaller proof, a shorter verification time or to gain some knowledge on the solving method that generated the proof. In this talk, we will present some early results of a trimmer we made for CP proofs on Subgraph Isomorphism Problems, and we open the discussion on several trimming ideas.
+
+
+Joseph Loughney <jpl9@st-andrews.ac.uk>
+
+Symmetry breaking in the subgraph isomorphism problem
+
+The Subgraph Isomorphism Problem has many applications, including bioinformatics, computer vision and graph databases. Current state-of-the-art solvers using constraints programming techniques can handle cases with up to 1000 pattern vertices and 10,000 target vertices. Symmetry breaking techniques have shown promising results in improving the efficiency of algorithms for similar combinatorial problems; presented here are two strategies for implementing symmetry breaking using stabiliser chains, alongside initial experimental results.
+
+
+Ciaran McCreesh <ciaran.mccreesh@glasgow.ac.uk>
+
+We've heard a lot about pseudo-Boolean proof logging, but what do we do if our problems aren't pseudo-Boolean and our solvers don't search for cutting planes proofs? I'll showcase a range of applications where VeriPB has been successfully deployed, including subgraph problems like maximum clique and subgraph isomorphism; constraint programming; and if time permits, dynamic programming. These results suggest that for some reason, extended cutting planes seems to be a really helpful way of certifying a wide range of techniques used in combinatorial solving algorithms.
+
+
+Matthew McIlree <matthew.j.mcilree@gmail.com>
+
+Proof logging for some interesting constraint propagation algorithms
+
+In this talk, I will explain some non-trivial propagators used in constraint programming solvers, and describe how they can be modified to justify their reasoning within the VeriPB proof system. 
+
+
+
+Andy Oertel <andy.oertel@cs.lth.se>
+
+Certifying MIP-based presolve reductions for 0–1 integer linear programs
+
+It is well known that reformulating the original problem can be crucial
+for the performance of mixed-integer programming (MIP) solvers. To
+ensure correctness, all transformations must preserve the feasibility
+status and optimal value of the problem, but there is currently no
+established methodology to express and verify the equivalence of two
+mixed-integer programs. In this work, we take a first step in this
+direction by showing how the correctness of MIP presolve reductions on
+0-1 integer linear programs can be certified by using (and suitably
+extending) the VeriPB tool for pseudo-Boolean proof logging. Our
+experimental evaluation on both decision and optimization instances
+demonstrates the computational viability of the approach and leads to
+suggestions for future revisions of the proof format that will help to
+reduce the verbosity of the certificates and to accelerate the
+certification and verification process further.
+
+
+
+Dieter Vandesande <Dieter.Vandesande@vub.be>
+
+Proof logging for MaxCDCL and BDDs
+
+In earlier work, MaxSAT solvers implementing both solution-improving and core-guided search have been made certifying using the VeriPB proof system. In this talk, I will show the recent developments and ongoing work on proof logging a solver implementing a third solving paradigm: Branch-and-Bound search. More specifically, will we cover the solver MaxCDCL, which combines Branch-and-Bound search with the power of clause learning as it is implemented in SAT solvers. MaxCDCL also makes use of a PB-to-CNF encoding based on BDD's, and we will also show how to provide proof logging for that.
+
+
