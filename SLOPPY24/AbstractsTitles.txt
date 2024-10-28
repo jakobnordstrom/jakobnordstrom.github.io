@@ -1,0 +1,45 @@
+
+
+
+
+Alexander Tesch
+
+TITLE: A MIP Perspective on Pseudo-Boolean Optimization
+
+ABSTRACT:
+
+In this talk, we address pseudo-Boolean optimization through the lense of Mixed-Integer Programming (MIP). In particular, we will present an alternative approach to PB conflict analysis which performs sequential lifting of the underlying knapsack polytopes of the reason and conflict constraints. We will give a first theoretical and practical comparison between our approach and a few more common approaches from the PB literature such as MIR cuts and (partial-) weakening. In the end, we also give an outlook on more advanced cut-generation techniques from the MIP literature that could be applied to PB conflict analysis and core-guided search.
+
+
+Jeremias Berg
+
+TITLE: Oracle-Based Local Search for Pseudo-Boolean Optimization
+
+ABSTRACT:
+
+Oracle-based local search is a recently proposed approach to anytime constraint optimization that aims to find good, though not provably, optimal solutions quickly. The approach can be seen as a type of stochastic local search in which a decision oracle for the underlying constraint language is used to move from solution to solution. Using highly effective CDCL SAT solvers as oracles, oracle-based local search has been highly successful in anytime maximum satisfiability (MaxSAT). Solvers implementing the approach regularly top the results of recent MaxSAT evaluations. 
+
+In this talk, I will outline our recent (published at ECAI 23) work in extending oracle-based Local Search to the more general paradigm of pseudo-Boolean optimization (PBO). As a basis for the approach, we use recent advances in practical approaches to checking the satisfiability of pseudo-Boolean constraints. We outline various heuristics within the oracle-based approach to anytime PBO solving and show that the approach compares in practice favorably and orthogonally,  both to a recently proposed local search approach for PBO that is in comparison to a more traditional instantiation of the stochastic local search paradigm and a recent exact PBO approach used as an anytime solver. 
+
+
+
+Pierre Montalbano
+
+TITLE: A Conflict-Free Learning Approach for  MILP and WCSP Optimisation 
+
+ABSTRACT:
+
+Weighted Constraint Satisfaction Problems (WCSP) are an extension of the classic Constraint Satisfaction Problem (CSP), where costs (or weights) are associated with constraint violations. The objective is to find an assignment that minimizes the total constraint violation. Solving WCSPs typically relies on backtracking search and constraint propagation to compute lower bounds. It has the ability to handle global constraints, but it often requires a dedicated algorithm to propagate them.
+
+Guided by the success of conflict-based learning methods in multiple domains (such as SAT, Pseudo-Boolean Optimization, or ILP), we designed a new conflict-free learning mechanism. This mechanism aims to memorize, through a linear constraint, the lower bounds of encountered sub-problems. If the same sub-problem (or a similar one) reappears in the search, propagating the previously learned constraint will help to obtain a stronger lower bound. This learning mechanism is conflict-free, meaning that it doesn't require a conflict to be triggered and can be used to learn a constraint at every node of a search tree.
+
+Our approach integrates techniques from CP, ILP, and PBO, and we show how it can be embedded inside a classic MILP solver before extending it to WCSP solvers. We implemented this learning mechanism in a simple solver performing branch-and-bound and using CPLEX to solve the LP at every node. We show that it can significantly decrease the number of visited nodes for the knapsack problem or kb-tree (instances with a bounded treewidth).
+
+
+Rui Zhao & Albert Oliveras
+
+TITLE: Faster unit propagation in pseudo-Boolean solving
+
+ABSTRACT:
+
+Unit propagation is known to be one of the most time-consuming procedures inside CDCL-based SAT solvers. Not surprisingly, it has been studied in depth and the two-watched-literal scheme, enhanced with implementation details boosting its performance, has emerged as the dominant method. In pseudo-Boolean solvers, the importance of unit propagation is similar, but no dominant method exists: counter propagation and watched-based extensions are efficient for different types of constraints, which has opened the door to hybrid methods. However, probably due to the higher complexity of implementing pseudo-Boolean solvers, research efforts have not focused much on concrete implementation details for unit propagation but rather on higher-level aspects of other procedures, such as conflict analysis. In this talk, we will present (i) a novel methodology to precisely assess the performance of propagation mechanisms, (ii) an evaluation of implementation variants of the propagation methods present in RoundingSat and (iii) a detailed analysis showing that hybrid methods outperform the ones based on a single technique. Our final conclusion will be that a carefully implemented hybrid propagation method is considerably faster than the preferred propagation mechanism in RoundingSat, and that this improvement leads to a better overall performance of the solver.

@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../index-filer/kod-html.css">
+
+
+<title>
+Jakob Nordström: SLOPPY '24</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+/ SLOPPY '24 </span>
+</td>
+</tr>
+</tbody></table>
+
+<!--
+<a href="MIAOlogo.pdf"><img src="MIAOlogo.jpg" alt="MIAO group logo" width="300" border="0"></a>
+-->
+
+<!--
+    DOESN'T LOOK GOOD ON A SMALL SCREEN
+    <table border="0" width="100%"><tr><td>
+-->
+
+<h1>
+  1st International Workshop on
+  Solving Linear Optimization Problems for Pseudo-Booleans and Yonder
+  (SLOPPY&nbsp;'24)
+</h1>
+
+<em>
+  Follow the links to read about the
+  <a href="#background">background</a>
+  and
+  <a href="#purpose">purpose</a>
+  of this workshop as well as about the 
+  <a href="#program">workshop program</a>
+  and
+  <a href="#practicalities">practicalities</a>
+  and the
+  <a href="#about-miao">MIAO research group</a>.
+</em>
+
+<h2>
+  <a name="background"></a>
+  Background
+</h2>
+
+
+<p>
+  <!--
+      Boolean satisfiability (SAT) solving is one of the most impressive
+      success stories in all of computer science.
+    -->
+  
+  The Boolean satisfiability (SAT) problem is one of the most
+  fascinating problems in computer science. Though it is deceptively
+  easy to state&mdash;given a formula in propositional logic, is it
+  possible to assign variables true and false so that the formula
+  evaluates to true?&mdash;it has been the focus of extensive research
+  ever since the dawn of computer science.
+
+  SAT was the first problem to be proven <em>NP</em>-complete, and a
+  widely accepted hypothesis is that it requires exponential time to
+  be solved in the worst case.  Yet since the turn of the millennium
+  there have been dramatic performance improvements of SAT solvers
+  based on <em>conflict-driven clause learning (CDCL)</em>, and today
+  CDCL solvers are routinely used to solve large-scale real-world
+  problems in, e.g., hardware and software verification, AI planning,
+  automated theorem proving, and many other areas.
+
+  This success has also led to exports of the conflict-driven paradigm
+  beyond SAT solving to different types of optimization problems.
+</p>
+
+<p>
+  A drawback with CDCL is that from a mathematical point of view the
+  method of reasoning is quite weak&mdash;it is based on
+  the <em>resolution</em> proof system,
+  for which exponential lower bounds are known even for simple combinatorial
+  principles.
+  Another issue is that problems to be solved have to be encoded in
+  <em>conjunctive normal form (CNF)</em> as a collection of disjunctive clauses,
+  which leads to a loss in information compared to higher-level constraints and further
+  hurts the reasoning power.
+  <!--
+      This can be addressed by using preprocessing techniques for, e.g.,
+      Gaussian elimination and cardinality reasoning, but these techniques
+      work only in limited cases and are again quite sensitive to the
+      exact encoding of the problem.
+    -->
+</p>
+
+<p>
+  An attractive option is to instead use (linear)
+  <em>pseudo-Boolean (PB) constraints</em>, i.e.,
+  0-1 integer linear inequalities.
+  Such constraints provide a succinct way of encoding a wide variety of computational tasks, 
+  including problems with objective functions to
+  be optimized.  Pseudo-Boolean constraints are more expressive than CNF,
+  but are close enough that CNF-based techniques can be harnessed to
+  attack pseudo-Boolean problems. The connection to integer linear
+  programming (ILP) makes it natural to also borrow insights from
+  this area. 
+  
+  Some pseudo-Boolean solvers are still based on resolution, in that
+  an important part of the solving process is to translate the input
+  to CNF and use the CDCL algorithm. Another
+  approach, however, is to go beyond resolution and build solvers using the
+  <em>cutting planes</em> proof system, which is known to be
+  exponentially stronger than resolution in theory.
+
+  Although harnessing this increased power algorithmically is a far
+  from trivial task, there have been notable successes with solvers
+  such as
+  <a href="https://www.sat4j.org/"><em>Sat4j</em></a>
+  developed  by
+  <a href="https://www.cril.univ-artois.fr/~leberre/">Daniel Le Berre</a>'s
+  group at Université d'Artois
+  and 
+  <a href="https://gitlab.com/MIAOresearch/software/roundingsat"><em>RoundingSat</em></a>
+  from the
+  <em><a href="https://jakobnordstrom.se/miao-group/"> Mathematical Insights into
+      Algorithms for Optimization (MIAO)</a></em>
+  group in Copenhagen/Lund,
+  as well as other tools developed on top of these solvers.
+</p>
+
+
+<h2>
+  <a name="purpose"></a>
+  Purpose of This Workshop
+</h2>
+
+<p>
+  To highlight and celebrate these developments, we are organizing an
+  informal workshop for people working on pseudo-Boolean solving and
+  optimization and related problems. The idea is to meet for a few days
+  where we can hear technical presentations of recent and ongoing
+  research, and also discuss the potential for collaboration on
+  research and/or solver development in different directions.
+
+  The workshop will focus on pseudo-Boolean solvers and techniques
+  that operate natively on 0-1 integer linear inequalities, rather
+  than with CNF encodings of such inequalities. However,
+  pseudo-Boolean techniques have recently come up also in contexts
+  such as mixed integer linear programming (MIP) and constraint
+  programming (CP), and CNF encodings can also be of interest even for
+  native pseudo-Boolean solvers, so the focus described above is
+  intended to be inclusive rather than exclusive.
+</p>
+
+<p>
+  Possible interesting topics for discussion could include, but would
+  not be limited to:
+</p>
+<ul>
+  <li> pseudo-Boolean conflict analysis and propagation,
+  <li> optimization techniques on top of pseudo-Boolean decision oracles (inspired by MaxSAT and other areas),
+  <li> proof logging techniques to make pseudo-Boolean solvers certifying,
+  <li> integration of techniques from MIP and CP,
+  <li> exports of techniques to MIP and CP.
+</ul>
+
+<p>
+  Clearly, the most important aspect of any endeavour like this is to
+  choose a suitable name for the event. It has been proposed that a title like
+  <em>Workshop on Solving Linear Optimization Problems for
+  Pseudo-Booleans and Yonder</em>, which obviously abbreviates
+  to <em>SLOPPY</em>, would convey well the goal of designing highly
+  efficient but sound combinatorial solvers that can ideally use proof
+  logging to generate provably correct results.
+
+</p>
+
+
+<h2>
+  <a name="program"></a>
+  Program
+</h2>
+
+<p>
+  The workshop will be held over three days, with a tutorial day on
+  Tuesday November 5 followed by two days of technical talks and
+  discussions on Wednesday November 6 and Thursday November 7.
+  Workshop participants are warmly welcome to visit for the full week
+  if so desired, however.
+
+</p>
+
+<p>
+  The workshop will be held at
+  the
+  <a href="https://cs.lth.se/english/">Department of  Computer Science</a>
+  at 
+  <a href="https://www.lunduniversity.lu.se/">Lund University</a>.
+  We will also try to stream most of the presentations over Zoom.
+  
+  Please contact
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
+  if you would be interested in participating in the workshop
+  (virtually or on site).
+</p>
+
+<p>
+  <em>
+    Please note that a couple of the titles in the schedule below are still provisional.
+  </em>
+</p>
+
+<table>
+  <tr>
+    <td colspan="3">
+      <strong>TUESDAY NOVEMBER 5 (TUTORIAL DAY) IN E:1426</strong>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>09:00-10:30</strong></td>
+    <td>Tutorial on Boolean Satisfiability (SAT) Solving</td>
+    <td>Jakob Nordström</td>
+  </tr>
+  <tr>
+    <td><strong>10:30-11:00</strong></td>
+    <td><em>Morning break</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>11:00-12:30</strong></td>
+    <td>Tutorial on Conflict-Driven Pseudo-Boolean Solving</td>
+    <td>Jakob Nordström</td>
+  </tr>
+  <tr>
+    <td><strong>12:30-14:00</strong></td>
+    <td>
+      <em>Lunch</em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>14:00-15:30</strong></td>
+    <td>Tutorial on Conflict-Driven Pseudo-Boolean Optimization</td>
+    <td>Jakob Nordström</td>
+  </tr>
+  <tr>
+    <td><strong>15:30-16:00</strong></td>
+    <td><em>Afternoon break</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>16:00-17:30</strong></td>
+    <td>Tutorial on Mixed Integer Linear Programming (MIP)
+      and Pseudo-Boolean Optimization</td>
+    <td>Jakob Nordström</td>
+  </tr>
+  <tr>
+    <td><strong>ca 19:15</strong></td>
+    <td><em>Leave for workshop dinner
+      </em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3"> &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <strong>WEDNESDAY NOVEMBER 6 IN E:1147</strong>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>09:00-10:00</strong></td>
+    <td>A MIP Perspective on Pseudo-Boolean Optimization</td>
+    <td>Alexander Tesch</td>
+  </tr>
+  <tr>
+    <td><strong>10:00-10:30</strong></td>
+    <td><em>Morning break with presentation of participants</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>10:30-11:30</strong></td>
+    <td>Oracle-Based Local Search for Pseudo-Boolean Optimization</td>
+    <td>Jeremias Berg</td>
+  </tr>
+  <tr>
+    <td><strong>11:30-12:30</strong></td>
+    <td>Branch-and-bound MaxSAT solving with <em>MaxCDCL</em></td>
+    <td>Jordi Coll</td>
+  </tr>
+  <tr>
+    <td><strong>12:30-14:00</strong></td>
+    <td>
+      <em>Lunch</em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>14:00-15:00</strong></td>
+    <td>A Conflict-Free Learning Approach for  MILP and WCSP Optimisation</td>
+    <td>Pierre Montalbano</td>
+  </tr>
+  <tr>
+    <td><strong>15:00-18:00</strong></td>
+    <td>
+      <em>Time for discussions in rooms
+	E:1147
+	and
+	E:2113C ("Small CS meeting room")</em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3"> &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <strong>THURSDAY NOVEMBER 7 IN E:1426</strong>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>09:00-10:00</strong></td>
+    <td>Faster Unit Propagation in Pseudo-Boolean Solving</td>
+    <td>Rui Zhao</td>
+  </tr>
+  <tr>
+    <td><strong>10:00-10:30</strong></td>
+    <td><em>Morning break</em></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>10:30-11:30</strong></td>
+    <td>Proof Logging for Branch-and-Bound MaxSAT with <em>MaxCDCL</em></td>
+    <td>Dieter Vandesande</td>
+  </tr>
+  <tr>
+    <td><strong>11:30-12:00</strong></td>
+    <td>Pseudo-Boolean Proof Logging for <em>Sat4j</em></td>
+    <td>Daniel Le Berre (over Zoom)</td>
+  </tr>
+  <tr>
+    <td><strong>12:00-12:30</strong></td>
+    <td>Pseudo-Boolean Proof Logging for <em>RoundingSat</em></td>
+    <td>Marc Vinyals</td>
+  </tr>
+  <tr>
+    <td><strong>12:30-14:00</strong></td>
+    <td>
+      <em>Lunch and end of workshop presentations</em>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>14:00-18:00</strong></td>
+    <td>
+      <em>Time for discussions in rooms
+	E:1426
+	and
+	E:2113C ("Small CS meeting room")</em>
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+<h2><a name="practicalities"></a>Practicalities</h2>
+
+<h3>Workshop Location</h3>
+
+<p>
+  The workshop will be held at
+  the
+  <a href="https://cs.lth.se/english/">Department of  Computer Science</a>
+  at 
+  <a href="https://www.lunduniversity.lu.se/">Lund University</a>
+  at
+  <a href="https://maps.app.goo.gl/c7jkwxJjso8xtvn28">Klas Anshelms väg&nbsp;10 /
+    Ole Römers väg&nbsp;3</a>.
+</p>
+
+<h3>Food and Accommodation</h3>
+
+<p>
+  Workshop lunches are at your own expense, but an option favoured by the MIAO group is
+  <a href="https://mersmak.me/vara-stallen/bryggan/">Bryggan</a>,
+  which is 
+  <a href="https://maps.app.goo.gl/Vg6SXQfK63wopyT58">just a few of minutes away by foot</a>
+  from the CS department.
+</p>
+
+<p>
+  Lund University has a guest house for visitors, which is not
+  superfancy but might be cheaper than hotel options. If you are
+  interested in inquiring whether it is possible to book a room at the
+  guest house, then please send a message to 
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
+  well ahead of time to get connected to Lund University administration.
+</p>
+
+<p>
+  There should also be a generous selection of hotels in Lund available at your favourite travel booking site.
+  Lund is a half-hour train ride away from
+  Copenhagen Airport and one hour away from central Copenhagen, where
+  hotels are likely to be markedly more expensive than
+  on the Swedish side of the Öresund Bridge.
+</p>
+
+<h3>Directions to Lund</h3>
+
+<p>
+  If you are travelling by air, the
+  <a href="https://www.cph.dk/en">Copenhagen Airport Kastrup (CPH)</a>
+  is probably the most convenient option, although
+  <a href="https://www.swedavia.com/malmo/">Malmö Airport (MMX)</a>
+  in Sturup might also be an alternative. From Copenhagen Airport you
+  take the train to Lund. From Malmö Airport there are
+  <a href="https://www.flygbussarna.se/en/malmo">airport buses</a>
+  to Malmö, and then you take a 10-minute train ride onwards to
+  Lund. Below follow directions to Lund from Copenhagen.
+</p>
+
+<p>
+  To get to the CS department at Lund University from Copenhagen Airport, take the
+  <a href="https://www.oresundstag.se/en">Öresund commuter train</a>
+  across the Öresund Bridge to Lund. <em>Please do
+  not forget to bring your passport along, as you will be crossing the
+  border between Sweden and Denmark and there are sometimes passport
+  controls.</em> All commuter trains from Copenhagen to any destination in
+  Sweden will pass through Lund ca 10 minutes after Malmö Central
+  Station.
+</p>
+
+<p>
+  The easiest way of buying tickets to Sweden might be to download the
+  <a href="https://www.skanetrafiken.se/appen/">Skånetrafiken app</a>.
+  You can adjust the settings so that you get e-mailed receipts for all purchases.
+  There are also ticket machines at Copenhagen Airport.  
+</p>
+
+<p>
+  The most convenient route onwards from Lund Central Station
+  would seem to be to 
+  <a href="https://maps.app.goo.gl/ypA4rLJLSSWHAfLR8">take the tram to the "Lund LTH" stop</a>,
+  which takes just a few minutes, and then walk from there a few
+  minutes minutes more.
+  If you are coming with the standard Öresund commuter train from
+  Copenhagen, then the local public transport in Lund is included in
+  your train ticket.
+</p>
+
+<p>
+  To reach the tram stop, take the stairs at the middle exit of the
+  platform at Lund Central Station (usually at the front of the train
+  in the direction of travel if you are coming from Copenhagen/Malmö,
+  or close to the first train cars), take a right, and then walk
+  straight out of the train station and cross one small and one
+  slightly larger street. Now you should see a bus stop to your left,
+  and some 20-30 meters behind that bus stop there is a tram station.
+</p>
+
+<p>
+  After getting off the tram at the "Lund LTH" stop, walk right to
+  John Ericssons väg and continue straight, then take a right before
+  you reach the Vattenhallen Science Center to reach the main entrance
+  at Klas Anshelms väg 10. To get to the MIAO research group, bear
+  right after you have entered the building and walk up the stairs one
+  floor up, take a left turn and then immediately a right turn &mdash; you
+  should now be in front of a locked door with a sign "Datavetenskap"
+  (i.e., Computer Science). If anyone is there and
+  opens for you, then just continue straight past a few doors until you see
+  offices with the MIAO logo.
+  Otherwise, try to text or call
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
+  or some other
+  <a href="https://jakobnordstrom.se/miao-group/#researchers">MIAO group member</a>.
+</p>
+
+<h2><a name="about-miao"></a>About the MIAO Research Group</h2>
+
+<p>  
+  The
+  <em><a href="https://jakobnordstrom.se/miao-group/"> Mathematical Insights into
+    Algorithms for Optimization (MIAO)</a></em>
+  research group is based on both sides of the Öresund Bridge at the
+  <a href="https://www.ku.dk/english/">University of Copenhagen</a>
+  and
+  <a href="https://www.lunduniversity.lu.se/">Lund University</a>.
+
+  The  group has a unique profile in that we are doing
+  cutting-edge research both on the mathematical foundations of
+  efficient computation and on state-of-the-art practical algorithms
+  for real-world problems.
+  
+  This creates a very special environment, where we do not only conduct
+  in-depth research on different theoretical and applied topics, but
+  where different lines of research cross-fertilise each other and
+  unexpected and exciting synergies often arise.
+</p>
+
+<p>
+  We are closely affiliated with the
+  <a href="https://barc.ku.dk/">Basic Algorithms Research Copenhagen (BARC) centre</a>,
+  and are part of a world-leading environment in algorithms and
+  complexity theory encompassing also the
+  <a href="https://en.itu.dk/">IT University of Copenhagen</a> and the
+  <a href="https://www.dtu.dk/english">Technical University of Denmark (DTU)</a>.
+
+  We aim to attract top talent from around the world to an ambitious,
+  creative, collaborative, and fun environment. Using the power of
+  mathematics, we strive to create fundamental breakthroughs in
+  algorithms and complexity theory. While the focus in on foundational
+  research, algorithms and complexity researchers in Copenhagen
+  have a track record of surprising algorithmic
+  discoveries leading to major industrial applications.
+</p>
+
+<!--
+
+**********
+
+<p>
+  In the last few years we have also made
+  research breakthroughs on how to verify the correctness of
+  state-of-the-art algorithms for combinatorial solving and
+  optimization.  Such algorithms are often highly complex, and even
+  mature commercial solvers are known to sometimes produce wrong
+  results.
+
+  Our goal is to usher in a new generation of <em>certifying</em>
+  combinatorial solvers with so-called <em>proof logging</em>, meaning
+  that the solvers output
+  not only a result but also a simple, machine-verifiable
+  proof that the claimed result is correct.
+  For such a certifying solver, the workflow becomes as follows:
+</p>
+
+<ol>
+  <li>
+    Run the solver on a problem instance to obtain not only a
+    computed result, but also a proof of correctness.
+  </li><li>
+    Feed the problem, the result, and the proof of correctness to a special,
+    dedicated <em>proof checker</em> for verification.
+  </li><li>
+    Accept the result if the proof checker says that the proof is valid.
+  </li>
+</ol>
+
+<p>
+  Importantly, these machine-verifiable proofs should be very easy to
+  generate and should require low overhead on the solver side, but
+  should also be very easy to check efficiently on the proof checker
+  side, and should still provide 100% formal guarantees of
+  correctness.
+
+  This might sound just a little bit too good to be true, but the tool
+  <em><a href="https://gitlab.com/MIAOresearch/software/VeriPB">VeriPB</a></em>
+  that we have developed can now provide efficient proof logging for
+  several combinatorial solving paradigms that have previously been beyond reach,
+  and we have recently received several prestigious awards for our work.
+
+</p>    
+
+-->    
+
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+<!-- Do not change below this point (except for date) -->
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+Updated 2024-10-28
+</div>
+<!--/eri-no-index-->
+
+
+<!-- Default Statcounter code for Jakob's GitHub webpages
+https://jakobnordstrom.github.io -->
+<script type="text/javascript">
+var sc_project=12521096; 
+var sc_invisible=1; 
+var sc_security="a648a4cc"; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12521096/0/a648a4cc/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+
