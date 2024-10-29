@@ -71,13 +71,14 @@ Jakob Nordström: SLOPPY '24</title>
     -->
   
   The Boolean satisfiability (SAT) problem is one of the most
-  fascinating problems in computer science. Though it is deceptively
+  fascinating problems in computer science and mathematics. Though it is deceptively
   easy to state&mdash;given a formula in propositional logic, is it
   possible to assign variables true and false so that the formula
   evaluates to true?&mdash;it has been the focus of extensive research
   ever since the dawn of computer science.
 
-  SAT was the first problem to be proven <em>NP</em>-complete, and a
+  SAT was the first problem to be proven <em>NP</em>-complete
+  in the early 1970s, and a
   widely accepted hypothesis is that it requires exponential time to
   be solved in the worst case.  Yet since the turn of the millennium
   there have been dramatic performance improvements of SAT solvers
@@ -98,8 +99,8 @@ Jakob Nordström: SLOPPY '24</title>
   principles.
   Another issue is that problems to be solved have to be encoded in
   <em>conjunctive normal form (CNF)</em> as a collection of disjunctive clauses,
-  which leads to a loss in information compared to higher-level constraints and further
-  hurts the reasoning power.
+  which leads to a loss in information compared to higher-level constraints and
+  negatively affects the reasoning power.
   <!--
       This can be addressed by using preprocessing techniques for, e.g.,
       Gaussian elimination and cardinality reasoning, but these techniques
@@ -113,7 +114,7 @@ Jakob Nordström: SLOPPY '24</title>
   <em>pseudo-Boolean (PB) constraints</em>, i.e.,
   0-1 integer linear inequalities.
   Such constraints provide a succinct way of encoding a wide variety of computational tasks, 
-  including problems with objective functions to
+  including problems with an objective function to
   be optimized.  Pseudo-Boolean constraints are more expressive than CNF,
   but are close enough that CNF-based techniques can be harnessed to
   attack pseudo-Boolean problems. The connection to integer linear
@@ -184,8 +185,8 @@ Jakob Nordström: SLOPPY '24</title>
   choose a suitable name for the event. It has been proposed that a title like
   <em>Workshop on Solving Linear Optimization Problems for
   Pseudo-Booleans and Yonder</em>, which obviously abbreviates
-  to <em>SLOPPY</em>, would convey well the goal of designing highly
-  efficient but sound combinatorial solvers that can ideally use proof
+  to <em>SLOPPY</em>, would convey well the goal of carefully designing highly
+  efficient but logically sound combinatorial solvers that can ideally use proof
   logging to generate provably correct results.
 
 </p>
@@ -598,7 +599,7 @@ Jakob Nordström: SLOPPY '24</title>
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-10-28
+Updated 2024-10-29
 </div>
 <!--/eri-no-index-->
 
