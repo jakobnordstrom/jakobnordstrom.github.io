@@ -1,33 +1,25 @@
 
 
+WEDNESDAY NOVEMBER 6 IN E:1147
 
-
-Alexander Tesch
-
-TITLE: A MIP Perspective on Pseudo-Boolean Optimization
-
-ABSTRACT:
+09:00-10:00: A MIP Perspective on Pseudo-Boolean Optimization (Alexander Tesch)
 
 In this talk, we address pseudo-Boolean optimization through the lense of Mixed-Integer Programming (MIP). In particular, we will present an alternative approach to PB conflict analysis which performs sequential lifting of the underlying knapsack polytopes of the reason and conflict constraints. We will give a first theoretical and practical comparison between our approach and a few more common approaches from the PB literature such as MIR cuts and (partial-) weakening. In the end, we also give an outlook on more advanced cut-generation techniques from the MIP literature that could be applied to PB conflict analysis and core-guided search.
 
 
-Jeremias Berg
+10:30-11:30: Oracle-Based Local Search for Pseudo-Boolean Optimization (Jeremias Berg)
 
-TITLE: Oracle-Based Local Search for Pseudo-Boolean Optimization
+Oracle-based local search is a recently proposed approach to anytime constraint optimization that aims to find good, though not provably, optimal solutions quickly. The approach can be seen as a type of stochastic local search in which a decision oracle for the underlying constraint language is used to move from solution to solution. Using highly effective CDCL SAT solvers as oracles, oracle-based local search has been highly successful in anytime maximum satisfiability (MaxSAT). Solvers implementing the approach regularly top the results of recent MaxSAT evaluations.
 
-ABSTRACT:
-
-Oracle-based local search is a recently proposed approach to anytime constraint optimization that aims to find good, though not provably, optimal solutions quickly. The approach can be seen as a type of stochastic local search in which a decision oracle for the underlying constraint language is used to move from solution to solution. Using highly effective CDCL SAT solvers as oracles, oracle-based local search has been highly successful in anytime maximum satisfiability (MaxSAT). Solvers implementing the approach regularly top the results of recent MaxSAT evaluations. 
-
-In this talk, I will outline our recent (published at ECAI 23) work in extending oracle-based Local Search to the more general paradigm of pseudo-Boolean optimization (PBO). As a basis for the approach, we use recent advances in practical approaches to checking the satisfiability of pseudo-Boolean constraints. We outline various heuristics within the oracle-based approach to anytime PBO solving and show that the approach compares in practice favorably and orthogonally,  both to a recently proposed local search approach for PBO that is in comparison to a more traditional instantiation of the stochastic local search paradigm and a recent exact PBO approach used as an anytime solver. 
+In this talk, I will outline our recent (published at ECAI 23) work in extending oracle-based Local Search to the more general paradigm of pseudo-Boolean optimization (PBO). As a basis for the approach, we use recent advances in practical approaches to checking the satisfiability of pseudo-Boolean constraints. We outline various heuristics within the oracle-based approach to anytime PBO solving and show that the approach compares in practice favorably and orthogonally,  both to a recently proposed local search approach for PBO that is in comparison to a more traditional instantiation of the stochastic local search paradigm and a recent exact PBO approach used as an anytime solver.
 
 
+11:30-12:30: Branch-and-Bound MaxSAT Solving with MaxCDCL (Jordi Coll)
 
-Pierre Montalbano
+MaxSAT is a widely studied NP-hard optimization problem due to its broad utility in modeling and solving diverse optimization problems of practical interest. Branch-and-Bound (BnB) MaxSAT solvers had shown to be an efficient approach to solving random and crafted instances, but had traditionally failed to be as competitive as SAT-based MaxSAT solvers when dealing with instances of industrial nature. However, this has changed recently with the introduction of the MaxCDCL algorithm, which effectively integrates clause learning into BnB to solve MaxSAT. In this talk we provide a detailed description of the MaxCDCL algorithm, deepen in relevant implementation details and show how this approach relates to and differs from other approaches to MaxSAT. We will place special emphasis on the lookahead procedure to compute a lower bound of the cost of a partial assignment —which is the core and distinguishing part of MaxCDCL— and its integration with a CDCL-based solver.
 
-TITLE: A Conflict-Free Learning Approach for  MILP and WCSP Optimisation 
 
-ABSTRACT:
+14:00-15:00: A Conflict-Free Learning Approach for MILP and WCSP Optimisation (Pierre Montalbano)
 
 Weighted Constraint Satisfaction Problems (WCSP) are an extension of the classic Constraint Satisfaction Problem (CSP), where costs (or weights) are associated with constraint violations. The objective is to find an assignment that minimizes the total constraint violation. Solving WCSPs typically relies on backtracking search and constraint propagation to compute lower bounds. It has the ability to handle global constraints, but it often requires a dedicated algorithm to propagate them.
 
@@ -35,11 +27,26 @@ Guided by the success of conflict-based learning methods in multiple domains (su
 
 Our approach integrates techniques from CP, ILP, and PBO, and we show how it can be embedded inside a classic MILP solver before extending it to WCSP solvers. We implemented this learning mechanism in a simple solver performing branch-and-bound and using CPLEX to solve the LP at every node. We show that it can significantly decrease the number of visited nodes for the knapsack problem or kb-tree (instances with a bounded treewidth).
 
+ 
+THURSDAY NOVEMBER 7 IN E:1426
 
-Rui Zhao & Albert Oliveras
-
-TITLE: Faster unit propagation in pseudo-Boolean solving
-
-ABSTRACT:
+09:00-10:00: Faster Unit Propagation in Pseudo-Boolean Solving (Rui Zhao)
 
 Unit propagation is known to be one of the most time-consuming procedures inside CDCL-based SAT solvers. Not surprisingly, it has been studied in depth and the two-watched-literal scheme, enhanced with implementation details boosting its performance, has emerged as the dominant method. In pseudo-Boolean solvers, the importance of unit propagation is similar, but no dominant method exists: counter propagation and watched-based extensions are efficient for different types of constraints, which has opened the door to hybrid methods. However, probably due to the higher complexity of implementing pseudo-Boolean solvers, research efforts have not focused much on concrete implementation details for unit propagation but rather on higher-level aspects of other procedures, such as conflict analysis. In this talk, we will present (i) a novel methodology to precisely assess the performance of propagation mechanisms, (ii) an evaluation of implementation variants of the propagation methods present in RoundingSat and (iii) a detailed analysis showing that hybrid methods outperform the ones based on a single technique. Our final conclusion will be that a carefully implemented hybrid propagation method is considerably faster than the preferred propagation mechanism in RoundingSat, and that this improvement leads to a better overall performance of the solver.
+
+
+10:30-11:30: Proof Logging for Branch-and-Bound MaxSAT with MaxCDCL (Dieter Vandesande)
+
+In earlier work, MaxSAT solvers implementing both solution-improving as well as core-guided search have been made certifying using the VeriPB proof system. In this talk, I will show the recent developments and ongoing work on proof logging a solver implementing a third solving paradigm: Branch-and-Bound search. More specifically, we will cover the solver MaxCDCL, which combines Branch-and-Bound search with the power of clause learning as it is implemented in SAT solvers.
+
+
+11:30-12:00: Proof Logging for RoundingSat (Marc Vinyals)
+
+We discuss how proof logging is implemented in RoundingSAT. While pseudo-Boolean conflict analysis can be logged using standard cutting planes rules, and this still applies to linear search optimisation, logging core-guided optimisation requires a more careful implementation. In particular, we discuss how to log lazy reified variables, objective reformulation, and hardening.
+
+
+12:00-12:30: Wishes for the VeriPB proof format (Daniel Le Berre)
+
+Two proofs logging have been added to Sat4j in 2024: idrup and VeriPB 2.0. The two proof formats had the common feature to encompass several calls to the SAT solver, contrariwise to UNSAT proofs certificates in DRUP or VeriPB 1.0: it required some small changes in Sat4j. When Sat4j was submitted to the PB evaluation, it happened that many simplifications and normalisations performed in Sat4j required a VeriPB justifications when using the cutting planes proof system but not the resolution based one. This prevented Sat4j CP to participate to the certified tracks. The presentation will  present some lessons learned when adding those proof formats in Sat4j and will focus on potential improvements in VeriPB to simplify its adoption by solvers designers.
+
+
