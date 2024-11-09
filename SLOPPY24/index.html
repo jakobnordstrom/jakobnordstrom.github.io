@@ -6,6 +6,19 @@
 <link rel="stylesheet" type="text/css" href="../index-filer/kod-html.css">
 
 
+<!-- BEGIN LOCAL CSS CODE -->
+<!-- Vertical adjustment in tables (height of cells chosen by visual inspection --- maybe PDF gif should be made smaller instead -->
+
+<style>
+  td {
+  height: 20px;
+  vertical-align: bottom;
+  }
+</style>
+
+<!-- END LOCAL CSS CODE -->
+
+
 <title>
 Jakob Nordström: SLOPPY '24</title>
 </head>
@@ -52,8 +65,10 @@ Jakob Nordström: SLOPPY '24</title>
   <a href="#purpose">purpose</a>
   of this workshop as well as about the 
   <a href="#program">workshop program</a>
-  and
-  <a href="#practicalities">practicalities</a>
+  with
+  <a href="#titles-abstracts">titles and abstracts</a> of contributed presentations,
+  workshop
+  <a href="#practicalities">practicalities</a>,
   and the
   <a href="#about-miao">MIAO research group</a>.
 </em>
@@ -194,7 +209,7 @@ Jakob Nordström: SLOPPY '24</title>
 
 <h2>
   <a name="program"></a>
-  Program
+  Workshop Program
 </h2>
 
 <p>
@@ -237,7 +252,10 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>09:00-10:30</strong></td>
-    <td>Tutorial on Boolean Satisfiability (SAT) Solving</td>
+    <td>
+      Tutorial on Boolean Satisfiability (SAT) Solving
+      <a href="../docs/presentations/SLOPPY24_Tutorial_1_SAT.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    </td>
     <td>Jakob Nordström</td>
   </tr>
   <tr>
@@ -247,7 +265,10 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>11:00-12:30</strong></td>
-    <td>Tutorial on Conflict-Driven Pseudo-Boolean Solving</td>
+    <td>
+      Tutorial on Conflict-Driven Pseudo-Boolean Solving
+      <a href="../docs/presentations/SLOPPY24_Tutorial_2_PBS.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    </td>
     <td>Jakob Nordström</td>
   </tr>
   <tr>
@@ -259,7 +280,10 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>14:00-15:30</strong></td>
-    <td>Tutorial on Conflict-Driven Pseudo-Boolean Optimization</td>
+    <td>
+      Tutorial on Conflict-Driven Pseudo-Boolean Optimization
+      <a href="../docs/presentations/SLOPPY24_Tutorial_3_PBO.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    </td>
     <td>Jakob Nordström</td>
   </tr>
   <tr>
@@ -269,13 +293,18 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>16:00-17:30</strong></td>
-    <td>Tutorial on Mixed Integer Linear Programming (MIP)
-      and Pseudo-Boolean Optimization</td>
+    <td>
+      Tutorial on Mixed Integer Linear Programming (MIP)
+      and Pseudo-Boolean Optimization
+          <a href="../docs/presentations/SLOPPY24_Tutorial_4_PBandMIP.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
+    </td>
     <td>Jakob Nordström</td>
   </tr>
   <tr>
     <td><strong>19:45</strong></td>
-    <td><em>Workshop dinner at <a href"https://www.matochdestillat.se/">Mat &amp; Destillat</a>.
+    <td><em>Workshop dinner at <a href="https://www.matochdestillat.se/">Mat &amp; Destillat</a>
+	at
+	<a href="https://maps.app.goo.gl/b2yHuy51U1YBA1LR7">Kyrkogatan 17</a> in downtown Lund	
       </em>
     </td>
     <td></td>
@@ -291,8 +320,12 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>09:00-10:00</strong></td>
-    <td>A MIP Perspective on Pseudo-Boolean Optimization</td>
-    <td>Alexander Tesch</td>
+    <td>
+      <a href="#alexander-tesch">A MIP Perspective on Pseudo-Boolean Optimization</a>
+    </td>
+    <td>
+      Alexander Tesch
+    </td>
   </tr>
   <tr>
     <td><strong>10:00-10:30</strong></td>
@@ -301,13 +334,21 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>10:30-11:30</strong></td>
-    <td>Oracle-Based Local Search for Pseudo-Boolean Optimization</td>
-    <td>Jeremias Berg</td>
+    <td>
+      <a href="#jeremias-berg">Oracle-Based Local Search for Pseudo-Boolean Optimization</a>
+    </td>
+    <td>
+      Jeremias Berg
+    </td>
   </tr>
   <tr>
     <td><strong>11:30-12:30</strong></td>
-    <td>Branch-and-Bound MaxSAT Solving with <em>MaxCDCL</em></td>
-    <td>Jordi Coll</td>
+    <td>
+      <a href="#jordi-coll">Branch-and-Bound MaxSAT Solving with <em>MaxCDCL</em></a>
+    </td>
+    <td>
+      Jordi Coll
+    </td>
   </tr>
   <tr>
     <td><strong>12:30-14:00</strong></td>
@@ -318,8 +359,12 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>14:00-15:00</strong></td>
-    <td>A Conflict-Free Learning Approach for  MILP and WCSP Optimisation</td>
-    <td>Pierre Montalbano</td>
+    <td>
+      <a href="#pierre-montalbano">A Conflict-Free Learning Approach for MILP and WCSP Optimisation</a>
+    </td>
+    <td>
+      Pierre Montalbano
+    </td>
   </tr>
   <tr>
     <td><strong>15:00-18:00</strong></td>
@@ -342,13 +387,21 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>09:00-10:00</strong></td>
-    <td>Faster Unit Propagation in Pseudo-Boolean Solving</td>
-    <td>Rui Zhao</td>
+    <td>
+      <a href="#rui-zhao">Faster Unit Propagation in Pseudo-Boolean Solving</a>
+    </td>
+    <td>
+      Rui Zhao
+    </td>
   </tr>
   <tr>
     <td><strong>10:00-11:00</strong></td>
-    <td>Proof Logging for Branch-and-Bound MaxSAT with <em>MaxCDCL</em></td>
-    <td>Dieter Vandesande</td>
+    <td>
+      <a href="#dieter-vandesande">Proof Logging for Branch-and-Bound MaxSAT with <em>MaxCDCL</em></a>
+    </td>
+    <td>
+      Dieter Vandesande
+    </td>
   </tr>
   <tr>
     <td><strong>11:00-11:30</strong></td>
@@ -357,13 +410,21 @@ Jakob Nordström: SLOPPY '24</title>
   </tr>
   <tr>
     <td><strong>11:30-12:00</strong></td>
-    <td>Pseudo-Boolean Proof Logging for <em>RoundingSat</em></td>
-    <td>Marc Vinyals</td>
+    <td>
+      <a href="#marc-vinyals">Pseudo-Boolean Proof Logging for <em>RoundingSat</em></a>
+    </td>
+    <td>
+      Marc Vinyals
+    </td>
   </tr>
   <tr>
     <td><strong>12:00-12:30</strong></td>
-    <td>Wishes for the <em>VeriPB</em> proof format</em></td>
-    <td>Daniel Le Berre [over Zoom]</td>
+    <td>
+      <a href="#daniel-le-berre">Wishes for the <em>VeriPB</em> proof format</a>
+    </td>
+    <td>
+      Daniel Le Berre [over Zoom]
+    </td>
   </tr>
   <tr>
     <td><strong>12:30-14:00</strong></td>
@@ -383,6 +444,203 @@ Jakob Nordström: SLOPPY '24</title>
     <td></td>
   </tr>
 </table>
+
+
+<h2><a name="titles-abstracts"></a>Titles and Abstracts of Contributed Presentations</h2>
+
+<h3>
+  <a name="alexander-tesch">Alexander Tesch (BoolAI):</a>
+  A MIP Perspective on Pseudo-Boolean Optimization
+</h3>
+
+<p>
+  In this talk, we address pseudo-Boolean optimization through the lense
+  of Mixed-Integer Programming (MIP). In particular, we will present an
+  alternative approach to PB conflict analysis which performs sequential
+  lifting of the underlying knapsack polytopes of the reason and
+  conflict constraints. We will give a first theoretical and practical
+  comparison between our approach and a few more common approaches from
+  the PB literature such as MIR cuts and (partial-) weakening. In the
+  end, we also give an outlook on more advanced cut-generation
+  techniques from the MIP literature that could be applied to PB
+  conflict analysis and core-guided search.
+</p>
+
+<h3>
+  <a name="jeremias-berg">Jeremias Berg (University of Helsinki):</a>
+  Oracle-Based Local Search for Pseudo-Boolean Optimization
+</h3>
+
+<p>
+  Oracle-based local search is a recently proposed approach to anytime
+  constraint optimization that aims to find good, though not provably,
+  optimal solutions quickly. The approach can be seen as a type of
+  stochastic local search in which a decision oracle for the underlying
+  constraint language is used to move from solution to solution. Using
+  highly effective CDCL SAT solvers as oracles, oracle-based local
+  search has been highly successful in anytime maximum satisfiability
+  (MaxSAT). Solvers implementing the approach regularly top the results
+  of recent MaxSAT evaluations.
+</p>
+
+<p>
+  In this talk, I will outline our recent (published at ECAI 23) work
+  in extending oracle-based Local Search to the more general paradigm
+  of pseudo-Boolean optimization (PBO). As a basis for the approach,
+  we use recent advances in practical approaches to checking the
+  satisfiability of pseudo-Boolean constraints. We outline various
+  heuristics within the oracle-based approach to anytime PBO solving
+  and show that the approach compares in practice favorably and
+  orthogonally, both to a recently proposed local search approach for
+  PBO that is in comparison to a more traditional instantiation of the
+  stochastic local search paradigm and a recent exact PBO approach
+  used as an anytime solver.
+</p>
+
+
+<h3>
+  <a name="jordi-coll">Jordi Coll (Universitat de Girona):</a>
+  Branch-and-Bound MaxSAT Solving with <em>MaxCDCL</em>
+</h3>
+
+<p>
+  MaxSAT is a widely studied NP-hard optimization problem due to its
+  broad utility in modeling and solving diverse optimization problems of
+  practical interest. Branch-and-Bound (BnB) MaxSAT solvers had shown to
+  be an efficient approach to solving random and crafted instances, but
+  had traditionally failed to be as competitive as SAT-based MaxSAT
+  solvers when dealing with instances of industrial nature. However,
+  this has changed recently with the introduction of the <em>MaxCDCL</em>
+  algorithm, which effectively integrates clause learning into BnB to
+  solve MaxSAT. In this talk we provide a detailed description of the
+  <em>MaxCDCL</em> algorithm, deepen in relevant implementation details and show
+  how this approach relates to and differs from other approaches to
+  MaxSAT. We will place special emphasis on the lookahead procedure to
+  compute a lower bound of the cost of a partial assignment&mdash;which is
+  the core and distinguishing part of <em>MaxCDCL</em>&mdash;and its integration with
+  a CDCL-based solver.
+</p>
+
+
+<h3>
+  <a name="pierre-montalbano">Pierre Montalbano (Université de Tours):</a>
+  A Conflict-Free Learning Approach for MILP and WCSP Optimisation
+</h3>
+
+<p>
+  Weighted Constraint Satisfaction Problems (WCSP) are an extension of
+  the classic Constraint Satisfaction Problem (CSP), where costs (or
+  weights) are associated with constraint violations. The objective is
+  to find an assignment that minimizes the total constraint
+  violation. Solving WCSPs typically relies on backtracking search and
+  constraint propagation to compute lower bounds. It has the ability
+  to handle global constraints, but it often requires a dedicated
+  algorithm to propagate them.
+</p>
+
+<p>
+  Guided by the success of conflict-based learning methods in multiple
+  domains (such as SAT, Pseudo-Boolean Optimization, or ILP), we
+  designed a new conflict-free learning mechanism. This mechanism aims
+  to memorize, through a linear constraint, the lower bounds of
+  encountered sub-problems. If the same sub-problem (or a similar one)
+  reappears in the search, propagating the previously learned
+  constraint will help to obtain a stronger lower bound. This learning
+  mechanism is conflict-free, meaning that it doesn't require a
+  conflict to be triggered and can be used to learn a constraint at
+  every node of a search tree.
+</p>
+
+<p>
+  Our approach integrates techniques from CP, ILP, and PBO, and we
+  show how it can be embedded inside a classic MILP solver before
+  extending it to WCSP solvers. We implemented this learning mechanism
+  in a simple solver performing branch-and-bound and using CPLEX to
+  solve the LP at every node. We show that it can significantly
+  decrease the number of visited nodes for the knapsack problem or
+  kb-tree (instances with a bounded treewidth).
+</p>
+ 
+
+<h3>
+  <a name="rui-zhao">Rui Zhao (Universitat Politècnica de Catalunya):</a>
+  Faster Unit Propagation in Pseudo-Boolean Solving
+</h3>
+
+<p>
+  Unit propagation is known to be one of the most time-consuming
+  procedures inside CDCL-based SAT solvers. Not surprisingly, it has
+  been studied in depth and the two-watched-literal scheme, enhanced
+  with implementation details boosting its performance, has emerged as
+  the dominant method. In pseudo-Boolean solvers, the importance of
+  unit propagation is similar, but no dominant method exists: counter
+  propagation and watched-based extensions are efficient for different
+  types of constraints, which has opened the door to hybrid
+  methods. However, probably due to the higher complexity of
+  implementing pseudo-Boolean solvers, research efforts have not
+  focused much on concrete implementation details for unit propagation
+  but rather on higher-level aspects of other procedures, such as
+  conflict analysis. In this talk, we will present (i) a novel
+  methodology to precisely assess the performance of propagation
+  mechanisms, (ii) an evaluation of implementation variants of the
+  propagation methods present in <em>RoundingSat</em> and (iii) a detailed
+  analysis showing that hybrid methods outperform the ones based on a
+  single technique. Our final conclusion will be that a carefully
+  implemented hybrid propagation method is considerably faster than
+  the preferred propagation mechanism in <em>RoundingSat</em>, and that this
+  improvement leads to a better overall performance of the solver.
+</p>
+
+<h3>
+  <a name="dieter-vandesande">Dieter Vandesande (Vrije Universiteit Brussel):</a>
+  Proof Logging for Branch-and-Bound MaxSAT with <em>MaxCDCL</em>
+</h3>
+
+<p>
+  In earlier work, MaxSAT solvers implementing both solution-improving
+  as well as core-guided search have been made certifying using the
+  <em>VeriPB</em> proof system. In this talk, I will show the recent
+  developments and ongoing work on proof logging a solver implementing
+  a third solving paradigm: Branch-and-Bound search. More
+  specifically, we will cover the solver <em>MaxCDCL</em>, which combines
+  Branch-and-Bound search with the power of clause learning as it is
+  implemented in SAT solvers.
+</p>
+
+<h3>
+  <a name="marc-vinyals">Marc Vinyals (University of Auckland):</a>
+  Proof Logging for <em>RoundingSat</em>
+</h3>
+
+<p>
+  We discuss how proof logging is implemented in RoundingSAT. While
+  pseudo-Boolean conflict analysis can be logged using standard
+  cutting planes rules, and this still applies to linear search
+  optimisation, logging core-guided optimisation requires a more
+  careful implementation. In particular, we discuss how to log lazy
+  reified variables, objective reformulation, and hardening.
+</p>
+
+<h3>
+  <a name="daniel-le-berre">Daniel Le Berre (Université d'Artois):</a>
+  Wishes for the <em>VeriPB</em> proof format
+</h3>
+
+<p>
+  Two proofs logging have been added to <em>Sat4j</em> in 2024: <em>IDRUP</em> and
+  <em>VeriPB</em> 2.0. The two proof formats had the common feature to
+  encompass several calls to the SAT solver, contrariwise to UNSAT
+  proofs certificates in <em>DRUP</em> or <em>VeriPB</em> 1.0: it required some small
+  changes in <em>Sat4j</em>. When <em>Sat4j</em> was submitted to the PB evaluation, it
+  happened that many simplifications and normalisations performed in
+  <em>Sat4j</em> required a <em>VeriPB</em> justifications when using the cutting planes
+  proof system but not the resolution based one. This prevented <em>Sat4j</em>
+  CP to participate to the certified tracks. The presentation will
+  present some lessons learned when adding those proof formats in
+  <em>Sat4j</em> and will focus on potential improvements in <em>VeriPB</em> to simplify
+  its adoption by solvers designers.
+</p>
+
 
 <h2><a name="practicalities"></a>Practicalities</h2>
 
@@ -602,7 +860,7 @@ Jakob Nordström: SLOPPY '24</title>
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-11-08
+Updated 2024-11-09
 </div>
 <!--/eri-no-index-->
 
@@ -623,6 +881,10 @@ src="https://c.statcounter.com/12521096/0/a648a4cc/1/"
 alt="Web Analytics Made Easy -
 StatCounter"></div></noscript>
 <!-- End of Statcounter Code -->
+
+
+
+
 
 
 </body></html>
