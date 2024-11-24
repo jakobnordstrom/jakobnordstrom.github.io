@@ -5,6 +5,18 @@
 <link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
 <link rel="stylesheet" type="text/css" href="../index-filer/kod-html.css">
 
+<!-- BEGIN LOCAL CSS CODE -->
+<!-- Vertical adjustment in tables (height of cells chosen by visual inspection --- maybe PDF gif should be made smaller instead -->
+
+<style>
+  td {
+  height: 20px;
+  vertical-align: bottom;
+  }
+</style>
+
+<!-- END LOCAL CSS CODE -->
+
 
 <title>
 Jakob Nordström: WHOOPS '24</title>
@@ -44,9 +56,22 @@ Jakob Nordström: WHOOPS '24</title>
   (WHOOPS&nbsp;'24)
 </h1>
 
+<em>
+  Follow the links to read about the
+  <a href="#background">background and purpose</a>
+  of this workshop,
+  the
+  <a href="#program">workshop program</a>
+  with
+  <a href="#titles-abstracts">titles and abstracts</a> of the presentations,
+  and the
+  <a href="#about-miao">MIAO research group</a>.
+</em>
+
+
 <h2>
   <a name="background"></a>
-  Background
+  Background and Purpose
 </h2>
 
 <p>
@@ -123,7 +148,7 @@ Jakob Nordström: WHOOPS '24</title>
 
 <h2>
   <a name="program"></a>
-  Program
+  Workshop Program
 </h2>
 
 <p>
@@ -147,17 +172,21 @@ Jakob Nordström: WHOOPS '24</title>
 
   We will also try to stream most of the presentations over Zoom.
 
+  <!--
   Please contact
   <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
   if you would be interested in participating in the workshop
   (virtually or on site).
+  -->
 </p>
 
+<!--
 <p>
   <em>
     Please note that most of the titles in the schedule below are still provisional.
   </em>
 </p>
+-->
 
 <table>
   <tr>
@@ -177,7 +206,7 @@ Jakob Nordström: WHOOPS '24</title>
   </tr>
   <tr>
     <td><strong>11:00-12:00</strong></td>
-    <td>Certified symmetry breaking with VeriPB</td>
+    <td>Certified symmetry breaking with <em>VeriPB</em></td>
     <td>Bart Bogaerts</td>
   </tr>
   <tr>
@@ -207,7 +236,7 @@ Jakob Nordström: WHOOPS '24</title>
   <tr>
     <td><strong>16:00-17:00</strong></td>
     <td>
-      Proof logging for MaxCDCL and BDDs
+      Proof logging for <em>MaxCDCL</em> and BDDs
     </td>
     <td>Dieter Vandersande</td>
   </tr>
@@ -279,6 +308,106 @@ Jakob Nordström: WHOOPS '24</title>
   </tr>
 
 </table>
+
+
+<h2><a name="titles-abstracts"></a>Titles and Abstracts of Presentations</h2>
+
+
+<h3>
+  <a name="jakob-nordström">Jakob Nordström:</a>
+  A one-size-fits-all proof logging system? 	
+</h3>
+
+<p>
+  This talk is intended to give an overview of <em>VeriPB</em>, a proof system based on pseudo-Boolean reasoning with 0-1 integer linear inequalities that seems well suited to provide a unified proof logging method for discrete combinatorial problems. We have implemented <em>VeriPB</em> proof logging, together with efficient proof checking, for state-of-the-art solvers in Boolean satisfiability (SAT) solving, SAT-based optimization (MaxSAT solving), graph solving, constraint programming, and a growing list of other combinatorial solving paradigms. We believe there are reasons to hope that ideas from <em>VeriPB</em> could be useful also in the context of mixed integer linear programming, satisfiability modulo theories (SMT) solving, automated planning, and possibly also other combinatorial solving paradigms, and will briefly review these and other future research directions in pseudo-Boolean proof logging.
+</p>
+
+<p>
+Based on joint work with Jeremias Berg, Bart Bogaerts, Jan Elffers, Ambros Gleixner, Stephan Gocht, Alexander Hoen, Hannes Ihalainen, Matti Järvisalo, Ciaran McCreesh, Matthew McIlree, Magnus O. Myreen, Andy Oertel, Yong Kiam Tan, and Dieter Vandesande.
+</p>
+
+<h3>
+  <a name="bart-bogaerts">Bart Bogaerts:</a>
+  Certified Symmetry Breaking with <em>VeriPB</em> 
+</h3>
+
+<p>
+I will start by giving an overview of (static and dynamic) symmetry handling methods for SAT. Next, I will dive into details about strengthening rules in the <em>VeriPB</em> proof system and discuss every step of a detailed worked example, demonstrating how to do fully automated static symmetry breaking for SAT in a certified way.
+Finally, I will discuss an open challenge on how to get certification for a framework such as SAT modulo symmetries, and particularly, the question of what it even means to certify this method. 
+</p>
+
+<h3>
+  <a name="ciaran-mccreesh">Ciaran McCreesh:</a>
+  Pseudo-Boolean proof logging for things that aren't pseudo-Boolean
+</h3>
+
+<p>
+We've heard a lot about pseudo-Boolean proof logging, but what do we do if our problems aren't pseudo-Boolean and our solvers don't search for cutting planes proofs? I'll showcase a range of applications where <em>VeriPB</em> has been successfully deployed, including subgraph problems like maximum clique and subgraph isomorphism; constraint programming; and if time permits, dynamic programming. These results suggest that for some reason, extended cutting planes seems to be a really helpful way of certifying a wide range of techniques used in combinatorial solving algorithms.
+</p>
+
+<h3>
+  <a name="matthew-mcilree">Matthew McIlree:</a>
+  Proof logging for some interesting constraint propagation algorithms
+</h3>
+
+<p>
+In this talk, I will explain some non-trivial propagators used in constraint programming solvers, and describe how they can be modified to justify their reasoning within the <em>VeriPB</em> proof system. 
+</p>
+
+<h3>
+  <a name="dieter-vandesande">Dieter Vandesande:</a>
+  Proof logging for <em>MaxCDCL</em> and BDDs
+</h3>
+
+<p>
+In earlier work, MaxSAT solvers implementing both solution-improving and core-guided search have been made certifying using the <em>VeriPB</em> proof system. In this talk, I will show the recent developments and ongoing work on proof logging a solver implementing a third solving paradigm: Branch-and-Bound search. More specifically, will we cover the solver <em>MaxCDCL</em>, which combines Branch-and-Bound search with the power of clause learning as it is implemented in SAT solvers. <em>MaxCDCL</em> also makes use of a PB-to-CNF encoding based on BDD's, and we will also show how to provide proof logging for that.
+</p>
+
+<h3>
+  <a name="hannes-ihalainen">Hannes Ihalainen:</a>
+  Certified MaxSAT preprocessing
+</h3>
+
+<p>
+Building on the progress in Boolean satisfiability (SAT) solving over the last decades, maximum satisfiability (MaxSAT) has become a viable approach for solving NP-hard optimization problems. However, ensuring correctness of MaxSAT solvers has remained a considerable concern. For SAT, this is largely a solved problem thanks to the use of proof logging, meaning that solvers emit machine-verifiable proofs to certify correctness. However, for MaxSAT, proof logging solvers have started being developed only very recently. Moreover, these nascent efforts have only targeted the core solving process, ignoring the preprocessing phase where input problem instances can be substantially reformulated before being passed on to the solver proper.
+</p>
+
+<p>
+In this work, we demonstrate how pseudo-Boolean proof logging can be used to certify the correctness of a wide range of modern MaxSAT preprocessing techniques. By combining and extending the <em>VeriPB</em> and <em>CakePB</em> tools, we provide formally verified end-to-end proof checking that the input and preprocessed output MaxSAT problem instances have the same optimal value. An extensive evaluation on applied MaxSAT benchmarks shows that our approach is feasible in practice.
+</p>
+
+<p>
+The talk is based on work: Hannes Ihalainen, Andy Oertel, Yong Kiam Tan, Jeremias Berg, Matti Järvisalo, Magnus O. Myreen, and Jakob Nordström: Certified MaxSAT Preprocessing. IJCAR 2024.
+</p>
+
+
+<h3>
+  <a name="andy-oertel">Andy Oertel:</a>
+  Certifying MIP-based presolve reductions for 0–1 integer linear programs
+</h3>
+
+<p>
+It is well known that reformulating the original problem can be crucial for the performance of mixed-integer programming (MIP) solvers. To ensure correctness, all transformations must preserve the feasibility status and optimal value of the problem, but there is currently no established methodology to express and verify the equivalence of two mixed-integer programs. In this work, we take a first step in this direction by showing how the correctness of MIP presolve reductions on 0-1 integer linear programs can be certified by using (and suitably extending) the <em>VeriPB</em> tool for pseudo-Boolean proof logging. Our experimental evaluation on both decision and optimization instances demonstrates the computational viability of the approach and leads to suggestions for future revisions of the proof format that will help to reduce the verbosity of the certificates and to accelerate the certification and verification process further.
+</p>
+
+<h3>
+  <a name="joseph-loughney">Joseph Loughney:</a>
+  Symmetry breaking in the subgraph isomorphism problem
+</h3>
+
+<p>
+The Subgraph Isomorphism Problem has many applications, including bioinformatics, computer vision and graph databases. Current state-of-the-art solvers using constraints programming techniques can handle cases with up to 1000 pattern vertices and 10,000 target vertices. Symmetry breaking techniques have shown promising results in improving the efficiency of algorithms for similar combinatorial problems; presented here are two strategies for implementing symmetry breaking using stabiliser chains, alongside initial experimental results.
+</p>
+
+<h3>
+  <a name="arthur-gontier">Arthur Gontier:</a>
+  Pseudo-Boolean proof trimming
+</h3>
+
+<p>
+Proof trimming may be used to get a smaller proof, a shorter verification time or to gain some knowledge on the solving method that generated the proof. In this talk, we will present some early results of a trimmer we made for CP proofs on Subgraph Isomorphism Problems, and we open the discussion on several trimming ideas.
+</p>
+
 
 <h2>
   <a name="about-miao"></a>About the MIAO Research Group</h2>
@@ -387,7 +516,7 @@ Jakob Nordström: WHOOPS '24</title>
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-05-24
+Updated 2024-11-24
 </div>
 <!--/eri-no-index-->
 
