@@ -135,84 +135,6 @@ Jakob Nordström: MIAO seminars</title>
 
   <li>
     <p>
-      Tuesday Apr 22 at 14:00
-      in seminar room N116, Universitetsparken 1, University of Copenhagen,
-      and on Zoom
-      <br>
-      <strong>
-	Catalytic computing: A primer
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/A0bRO0Esb5k">video</a>)
-	-->
-      <br>
-      (Ian Mertz, Charles University)
-    </p>
-
-    <p>
-      Can memory be useful even when it's already full? In the
-      catalytic computing model (Buhrman et al. 2014), we consider a
-      space bounded Turing machine with additional access to a much
-      larger hard drive, with the caveat that the initial contents of
-      this extra space must be restored after any computation. Despite
-      this restriction, catalytic computation gains surprising power
-      over ordinary space-bounded computation, even above and beyond
-      resources such as randomness and non-determinism.      
-    </p>
-
-    <p>
-      In this talk we will survey the field of catalytic
-      computation. We will cover the base catalytic model and where it
-      fits into traditional complexity theory; variants of the model,
-      such as lossy, randomized, non-deterministic, and non-uniform
-      catalytic computation; known techniques, such as register
-      programs and compress-or-random approaches; applications of
-      catalytic ideas to other settings; and potential directions for
-      the future of the field.      
-    </p>
-    
-  <li>
-    <p>
-      Wednesday Apr 23 at 14:00
-      in seminar room E:1426, Ole Römers väg 3, Lund University,      
-      and on Zoom
-      <br>
-      <strong>
-	Trustworthy formal methods for hardware design correctness
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/43uZTO-TUuk">video</a>)
-	  -->
-      <br>
-      (Zhengqi Yu, Institute of Science and Technology Austria)
-    </p>
-
-    <p>
-      As modern software and hardware systems grow in complexity, the
-      use of formal methods to ensure their correctness becomes ever
-      more critical. The implementation of these formal tools
-      themselves is complex and error-prone. One promising strategy in
-      automated reasoning is to have the verifier produce certificates
-      as proofs of correctness.
-    </p>
-
-    <p>
-      In this talk, I will present our work on establishing a
-      standardized certificate format for hardware model
-      checking—enabling both efficient certificate generation and
-      validation by an independent checker. I will discuss how we
-      revisited temporal decomposition as a powerful preprocessing
-      technique, and showcase some general strategies for certificate
-      generation. Additionally, I will share the success story of the
-      recent hardware model checking competition, where our
-      certification method was used to ensure the reliability of all
-      participating solvers. I will conclude by outlining the
-      challenges that remain in our pursuit of trusted hardware
-      verification and certification at scale.
-    </p>
-
-  <li>
-    <p>
       Thursday Apr 24 at 14:00
       in seminar room E:1426, Ole Römers väg 3, Lund University,      
       and on Zoom
@@ -330,7 +252,7 @@ Jakob Nordström: MIAO seminars</title>
       on Zoom
       <br>
       <strong>
-	Title TBD
+	Certifying the output of constraint programming solvers using proof logging
       </strong>
       <!--
 	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
@@ -339,6 +261,26 @@ Jakob Nordström: MIAO seminars</title>
       (Matthew McIlree, University of Glasgow)
     </p>
 
+    <p>
+      Constraint programming (CP) is a powerful paradigm for
+      expressing and solving satisfaction and optimisation problems
+      involving finite domain variables and high-level
+      constraints. But the implementation and engineering of CP
+      algorithms can be extremely complex, error-prone, and difficult
+      to test. We are much more likely to trust the output of a solver
+      if it can provide some kind of certificate of correctness via
+      proof logging.
+    </p>
+
+    <p>
+      In this talk, I will discuss the current state of research into
+      adding proof logging to CP solvers. I'll cover how we can prove
+      unsatisfiability and optimality; what makes this different from
+      established proof logging technology for SAT solvers; and the
+      efforts towards devising efficient justification procedures for
+      the huge variety of propagation algorithms available in the
+      modern CP repertoire.
+    </p>
     
 </ul>
 
@@ -346,6 +288,80 @@ Jakob Nordström: MIAO seminars</title>
 <h2>MIAO seminars spring 2025</h2>
 
 <ul>
+
+  <li>
+    <p>
+      Wednesday Apr 23 at 14:00
+      in seminar room E:1426, Ole Römers väg 3, Lund University,      
+      and on Zoom
+      <br>
+      <strong>
+	Trustworthy formal methods for hardware design correctness
+      </strong>
+      <br>
+      (Emily Yu, Institute of Science and Technology Austria)
+    </p>
+
+    <p>
+      As modern software and hardware systems grow in complexity, the
+      use of formal methods to ensure their correctness becomes ever
+      more critical. The implementation of these formal tools
+      themselves is complex and error-prone. One promising strategy in
+      automated reasoning is to have the verifier produce certificates
+      as proofs of correctness.
+    </p>
+
+    <p>
+      In this talk, I will present our work on establishing a
+      standardized certificate format for hardware model
+      checking—enabling both efficient certificate generation and
+      validation by an independent checker. I will discuss how we
+      revisited temporal decomposition as a powerful preprocessing
+      technique, and showcase some general strategies for certificate
+      generation. Additionally, I will share the success story of the
+      recent hardware model checking competition, where our
+      certification method was used to ensure the reliability of all
+      participating solvers. I will conclude by outlining the
+      challenges that remain in our pursuit of trusted hardware
+      verification and certification at scale.
+    </p>  
+  
+  <li>
+    <p>
+      Tuesday Apr 22 at 14:00
+      in seminar room N116, Universitetsparken 1, University of Copenhagen,
+      and on Zoom
+      <br>
+      <strong>
+	Catalytic computing: A primer
+      </strong>
+      (<a href="https://youtu.be/ynATAfUwRTQ">video</a>)
+      <br>
+      (Ian Mertz, Charles University)
+    </p>
+
+    <p>
+      Can memory be useful even when it's already full? In the
+      catalytic computing model (Buhrman et al. 2014), we consider a
+      space bounded Turing machine with additional access to a much
+      larger hard drive, with the caveat that the initial contents of
+      this extra space must be restored after any computation. Despite
+      this restriction, catalytic computation gains surprising power
+      over ordinary space-bounded computation, even above and beyond
+      resources such as randomness and non-determinism.      
+    </p>
+
+    <p>
+      In this talk we will survey the field of catalytic
+      computation. We will cover the base catalytic model and where it
+      fits into traditional complexity theory; variants of the model,
+      such as lossy, randomized, non-deterministic, and non-uniform
+      catalytic computation; known techniques, such as register
+      programs and compress-or-random approaches; applications of
+      catalytic ideas to other settings; and potential directions for
+      the future of the field.      
+    </p>
+      
 
   <li>
     <p>
@@ -3837,7 +3853,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2025-04-16
+Updated 2025-04-24
 </div>
 <!--/eri-no-index-->
 
