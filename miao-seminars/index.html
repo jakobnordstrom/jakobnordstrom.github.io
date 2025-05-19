@@ -239,6 +239,80 @@ Jakob Nordström: MIAO seminars</title>
 
   <li>
     <p>
+      Tuesday Sep 16 at 14:00 
+      at the University of Copenhagen and on Zoom
+      <br>
+      <strong>
+	The proof analysis problem
+      </strong>
+      <!--
+	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
+	-->
+      <br>
+      (Noel Arteche, Lund University)
+    </p>
+
+    <p>
+      Atserias and Müller (JACM, 2020) proved that for every
+      unsatisfiable CNF formula F, the Resolution proof system does
+      not have subexponential-size refutations of the formula Ref(F)
+      stating that "F has small Resolution refutations". On the other
+      hand, when F is satisfiable, Pudlák (TCS, 2003) showed that
+      there are polynomial-size Resolution refutations of
+      Ref(F). Pudlák's upper bound builds a refutation around an
+      explicit satisfying assignment of F. A question that had
+      remained open is: do all short Resolution refutations of Ref(F)
+      explicitly leak a satisfying assignment of F?
+    </p>
+
+    <p>
+      We answer this question affirmatively: we provide a
+      polynomial-time algorithm that given a short Resolution
+      refutation of Ref(F) always succeeds in extracting a satisfying
+      assignment for F. The algorithm follows from a new feasibly
+      constructive proof of the Atserias-Müller lower bound. We show
+      that this new proof is formalizable in Cook's theory PV of
+      bounded arithmetic, which further implies that Extended Frege
+      has polynomial-size proofs of a suitable encoding of the
+      statement that automating Resolution is NP-hard.
+    </p>
+
+    <p>
+      Motivated by this algorithm we introduce a new
+      meta-computational problem relating proofs and computation: the
+      Proof Analysis Problem (PAP). For a proof system Q, the problem
+      PAP_Q asks, given a CNF formula F and a Q-proof of the
+      Resolution lower bound statement ¬Ref(F) whether F is
+      satisfiable. In contrast with the algorithm that analyzes
+      Resolution refutations, we prove that the Proof Analysis Problem
+      for Extended Frege (EF) is NP-complete. In particular, EF can
+      prove Resolution lower bounds on satisfiable formulas without
+      necessarily revealing a satisfying assignment.
+    </p>
+
+    <p>
+      As a byproduct of our algorithm and its formalization, we obtain
+      a variety of surprising consequences for proof search and the
+      meta-mathematics of Resolution lower bounds. Amongst other
+      things, we show: (i) for every proof system above EF as well as
+      for Resolution, the system is (weakly) automatable if and only
+      if it can be (weakly) automated exclusively on formulas stating
+      Resolution lower bounds; (ii) we provide explicit Ref formulas
+      that are exponentially hard for constant-depth Frege systems;
+      and (iii) for every strong enough theory T, we construct
+      explicit unsatisfiable CNF formulas that are exponentially hard
+      for Resolution but for which T cannot prove even a subquadratic
+      Resolution lower bound; these results apply to arbitrarily
+      strong theories like PA or ZFC and do not require any
+      complexity-theoretic assumptions.
+    </p>
+
+    <p>
+      Joint work with Albert Atserias, Susanna F. de Rezende, and Erfan Khaniki.
+    </p>
+
+  <li>
+    <p>
       Monday Sep 29 at 14:00 
       on Zoom
       <br>
@@ -3902,7 +3976,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2025-05-08
+Updated 2025-05-19
 </div>
 <!--/eri-no-index-->
 
