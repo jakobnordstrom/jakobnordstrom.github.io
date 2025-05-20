@@ -48,8 +48,9 @@
 
 <p>
   Also, if you have any questions about our tools, or any bug reports,
-  or anything else, please don't hesitate to let us know.
-
+  or anything else, please don't hesitate to
+  <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">let us know</a>.
+  
   Although we are a research group, and have very limited resources for
   software maintenance, we are still trying to do our best to produce
   high-quality code.  
@@ -86,8 +87,8 @@ RoundingSat
   (<strong>Please note</strong>
   that the name of the solver is <strong><em>RoundingSat</em></strong> and nothing else
   &mdash;
-  there is no version of the solver called "HYBRID" or anything else, although for some mysterious reason
-  some other reasearch papers have invented this name for the optimization engine based on <em>RoundingSat</em>.)
+  there is no version of the solver called "HYBRID" or such like, although it appears that 
+  some other reasearch papers have invented this name for the <em>RoundingSat</em> optimization engine.)
 
   
 </p>
@@ -201,10 +202,13 @@ VeriPB
     MaxSAT solving and (linear) pseudo-Boolean optimization
     
   <li>
-    Subgraph solving algorithms (for, e.g.,  clique, subgraph isomorphism, and maximum common subgraph)
+    Subgraph solving (for problems such as clique, subgraph isomorphism, and maximum common subgraph)
     
   <li>
-    Constraint programming solvers
+    Constraint programming
+
+  <li>
+    Automated planning
     
   <li>
     Presolving in 0-1 integer linear programming
@@ -215,8 +219,10 @@ VeriPB
 Since 2023,
 <em>VeriPB</em> has been used as one of the proof checkers in the
 <a href="https://satcompetition.github.io/">SAT Competition</a>,
-and in 2024 it was also used in the
-<a href="https://www.cril.univ-artois.fr/PB24/">Pseudo-Boolean Competition</a>.
+and it is also the proof checker used in the
+<a href="https://www.cril.univ-artois.fr/PB24/">Pseudo-Boolean Competition 2024</a>
+and
+<a href="https://www.cril.univ-artois.fr/PB25/">Pseudo-Boolean Competition 2025</a>.
 
 </p>
 
@@ -262,7 +268,7 @@ and in 2024 it was also used in the
     pages 338-357, September 2020.
     <a href="../docs/publications/CertifyingSolversCliqueMCCS_CP.pdf"><img src="pdf.gif" alt="PDF" border="0"></a>
 
-      <li>	     
+  <li>	     
     Stephan Gocht and Jakob Nordström.
     <strong>
       Certifying Parity Reasoning Efficiently Using Pseudo-Boolean Proofs.
@@ -273,21 +279,6 @@ and in 2024 it was also used in the
     pages 3768-3777,
     February 2021.  
     <a href="../docs/publications/CertifyingParityReasoning_AAAI.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
-
-    <!--
-  <li>
-    Bart Bogaerts, Stephan Gocht, Ciaran McCreesh, and Jakob Nordström.
-    <strong>
-      Certified Symmetry and Dominance Breaking for Combinatorial Optimisation.
-    </strong>
-    In
-    <em>Proceedings of the
-      36th AAAI Conference on Artificial Intelligence (AAAI&nbsp;'22),</em>
-    pages 3698-3707,
-    February 2022.
-    <a href="../docs/publications/CertifiedSymmetryDominanceBreaking_AAAI.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
-    <em>AAAI&nbsp;'22 distinguished paper award</em>.
-    -->
     
   <li>
     Stephan Gocht, Ruben Martins, Jakob Nordström, and Andy Oertel.
@@ -413,31 +404,38 @@ and in 2024 it was also used in the
     September 2024.
     <a href="../docs/publications/Pseudo-BooleanReasoningStatesTransitions_CP.pdf"><img src="pdf.gif" alt="PDF" border=0></a>    
 
-
+  <li>
+    Simon Dold, Malte Helmert, Jakob Nordström, Gabriele Röger, and Tanja Schindler.
+    <strong>Pseudo-Boolean Proof Logging for Optimal
+      Classical Planning.</strong>
+    To appear in
+    <em>Proceedings of the 35th International Conference on
+      Automated Planning and Scheduling (ICAPS&nbsp;'25),</em>
+    November 2025.
+    <a href="../docs/publications/Pseudo-BooleanProofLoggingPlanning_arXiv_2504.18443v1.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
     
 </ul>
 
 
 <p>
-  The most detailed technical documentation of <em>VeriPB</em> is what was submitted for the SAT Competition in 2023:
+  The most detailed technical documentation of <em>VeriPB</em> is what was submitted for the SAT Competition in 2025:
 </p>
 <ul>
   
   <li>
-    Bart Bogaerts, Ciaran McCreesh, Magnus O. Myreen, Jakob Nordström, Andy Oertel, and Yong Kiam Tan.
+    Markus Anders, Bart Bogaerts, Benjamin Bogø, Arthur Gontier,
+    Wietze Koops, Ciaran McCreesh, Magnus O. Myreen, Jakob Nordström,
+    Adrian Rebola-Pardo, Andy Oertel, and Yong Kiam Tan.
     <strong>
-      Documentation of VeriPB and CakePB for the SAT Competition 2023
-    </strong>.
-    March  2023.
-    <a href="../docs/publications/DocumentationVeriPBandCakePBforSATcompetition2023.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
-    <!--
-	https://satcompetition.github.io/2023/downloads/proposals/veripb.pdf
-      -->
+      Documentation of VeriPB and CakePB for the SAT Competition 2025.
+    </strong>
+    April  2025.
+    <a href="../docs/publications/DocumentationVeriPBandCakePBforSATcompetition2025.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
 </ul>
 
 <p>
   However, since the tool is being being developed and extended very dynamically, the most
-  up-to-date description is what can be found in the
+  up-to-date description is usually what can be found in the
   <a href="https://gitlab.com/MIAOresearch/software/VeriPB"><strong><em>VeriPB</em></strong> repository</a>.
   
 </p>
@@ -499,7 +497,7 @@ CNFgen
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-09-01
+Updated 2025-05-20
 </div>
 <!--/eri-no-index-->
 
