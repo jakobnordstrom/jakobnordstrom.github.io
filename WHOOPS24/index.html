@@ -56,17 +56,32 @@ Jakob Nordström: WHOOPS '24</title>
   (WHOOPS&nbsp;'24)
 </h1>
 
-<em>
-  Follow the links to read about the
-  <a href="#background">background and purpose</a>
-  of this workshop,
-  the
-  <a href="#program">workshop program</a>
-  with
-  <a href="#titles-abstracts">titles and abstracts</a> of the presentations,
-  and the
-  <a href="#about-miao">MIAO research group</a>.
-</em>
+<p>
+  <em>
+    Follow the links to read about the
+    <a href="#background">background and purpose</a>
+    of this workshop,
+    the
+    <a href="#program">workshop program</a>
+    with
+    <a href="#titles-abstracts">titles and abstracts</a> of the presentations,
+    the
+    <a href="#organizers">organizers</a>,
+    and the
+    <a href="#about-miao">MIAO research group</a>.
+  </em>
+</p>
+
+<p>
+  <em>
+    Following up on WHOOPS&nbsp;'24, 
+    the
+    <a href="../WHOOPS25/">2nd International Workshop on Highlights in Organizing and
+      Optimizing Proof-logging Systems (WHOOPS&nbsp;'25)</a>
+    will be held on
+    September 13-14, 2025, in Paris.
+  </em>
+</p>
 
 
 <h2>
@@ -95,7 +110,6 @@ Jakob Nordström: WHOOPS '24</title>
 </p>
 
 <p>
-
   For a long time, attempts to extend proof logging to stronger
   algorithmic paradigms such as SAT-based optimization (MaxSAT),
   constraint programming, and mixed integer linear programming
@@ -120,17 +134,6 @@ Jakob Nordström: WHOOPS '24</title>
   but also for 
   MaxSAT solving, subgraph solving, constraint programming, and
   presolving techniques in 0-1 integer linear programming.
-  <!--
-  (see the
-  <a href="https://youtu.be/s_5BIi4I22w"><em>VeriPB</em> tutorial</a>
-  with
-  <a href="../docs/presentations/TutorialProofLogging_Nov2022.pdf">accompanying slides</a> 
-  for more information about this).
-  -->
-  <!--
-  <em>VeriPB</em> is currently being used and developed by a growing
-  number of research groups all over Europe.
-  -->
 </p>
 
 <p>
@@ -144,7 +147,7 @@ Jakob Nordström: WHOOPS '24</title>
   event, it has been named the <em>1st Workshop on Highlights in
     Organizing and Optimizing Proof-logging Systems</em>, or
   <em>WHOOPS&nbsp;'24</em> for short.
-  
+</p>  
 
 <h2>
   <a name="program"></a>
@@ -152,7 +155,8 @@ Jakob Nordström: WHOOPS '24</title>
 </h2>
 
 <p>
-  During the first half of the week, we will have informal research
+  During the first half of the week, we
+  had informal research
   discussions interleaved with a couple of longer seminars
   on Tuesday and Wednesday
   as listed separately on the
@@ -160,9 +164,9 @@ Jakob Nordström: WHOOPS '24</title>
 </p>
 
 <p>
-  On Thursday-Friday we will have a workshop dedicated to proof
+  On Thursday-Friday we had a workshop dedicated to proof
   logging with scheduled talks as listed below.
-  The workshop will be held in
+  The workshop was held in
   <strong>seminar room N116A&amp;B at
   <a href="https://maps.app.goo.gl/hvrzMQfWjHiQ5VDD8">Universitetsparken&nbsp;1</a></strong>
   at the
@@ -170,8 +174,8 @@ Jakob Nordström: WHOOPS '24</title>
   at the
   <a href="https://www.ku.dk/english/">University of Copenhagen</a>.
 
-  We will also try to stream most of the presentations over Zoom.
-
+  We also streamed most of the presentations over Zoom.
+  
   <!--
   Please contact
   <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
@@ -179,17 +183,6 @@ Jakob Nordström: WHOOPS '24</title>
   (virtually or on site).
   -->
 </p>
-
-<!--
-<p>
-  <em>
-    Please note that most of the titles in the schedule below are still provisional.
-  </em>
-</p>
-
-      <a href="slides/AlexanderTesch.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
-
--->
 
 <table>
   <tr>
@@ -457,8 +450,30 @@ Proof trimming may be used to get a smaller proof, a shorter verification time o
 </p>
 
 
+
 <h2>
-  <a name="about-miao"></a>About the MIAO Research Group</h2>
+  <a name="organizers"></a>
+  Organizers
+</h2>
+
+<p>
+  The
+  <em>WHOOPS&nbsp;'24</em> workshop
+  was organized by
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
+  at the University of Copenhagen and Lund University
+  in collaboration with
+  <a href="https://www.bartbogaerts.eu/">Bart Bogaerts</a>
+  at KU Leuven and
+  <a href="https://ciaranm.github.io/">Ciaran McCreesh</a>
+  at the University of Glasgow.
+</p>
+
+
+<h2>
+  <a name="about-miao">
+  </a>About the MIAO Research Group
+</h2>
 
 <p>  
   The
@@ -497,55 +512,6 @@ Proof trimming may be used to get a smaller proof, a shorter verification time o
   discoveries leading to major industrial applications.
 </p>
 
-<!--
-
-**********
-
-<p>
-  In the last few years we have also made
-  research breakthroughs on how to verify the correctness of
-  state-of-the-art algorithms for combinatorial solving and
-  optimization.  Such algorithms are often highly complex, and even
-  mature commercial solvers are known to sometimes produce wrong
-  results.
-
-  Our goal is to usher in a new generation of <em>certifying</em>
-  combinatorial solvers with so-called <em>proof logging</em>, meaning
-  that the solvers output
-  not only a result but also a simple, machine-verifiable
-  proof that the claimed result is correct.
-  For such a certifying solver, the workflow becomes as follows:
-</p>
-
-<ol>
-  <li>
-    Run the solver on a problem instance to obtain not only a
-    computed result, but also a proof of correctness.
-  </li><li>
-    Feed the problem, the result, and the proof of correctness to a special,
-    dedicated <em>proof checker</em> for verification.
-  </li><li>
-    Accept the result if the proof checker says that the proof is valid.
-  </li>
-</ol>
-
-<p>
-  Importantly, these machine-verifiable proofs should be very easy to
-  generate and should require low overhead on the solver side, but
-  should also be very easy to check efficiently on the proof checker
-  side, and should still provide 100% formal guarantees of
-  correctness.
-
-  This might sound just a little bit too good to be true, but the tool
-  <em><a href="https://gitlab.com/MIAOresearch/software/VeriPB">VeriPB</a></em>
-  that we have developed can now provide efficient proof logging for
-  several combinatorial solving paradigms that have previously been beyond reach,
-  and we have recently received several prestigious awards for our work.
-
-</p>    
-
--->    
-
 
 </div>
 </td>
@@ -564,7 +530,7 @@ Proof trimming may be used to get a smaller proof, a shorter verification time o
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2024-11-29
+Updated 2025-05-29
 </div>
 <!--/eri-no-index-->
 
