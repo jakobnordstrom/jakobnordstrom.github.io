@@ -436,37 +436,37 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>09:00-09:30</strong></td>
     <td>
-      <!-- Title -->
+      End-to-end verification for subgraph solving (demo)
     </td>
     <td>
-      <!-- Speaker -->
+      Yong Kiam Tan (remote)
     </td>
   </tr>
   <tr>
     <td><strong>09:30-10:00</strong></td>
     <td>
-      <!-- Title -->
+      Title TBD
     </td>
     <td>
-      <!-- Speaker -->
+      Arthur Gontier
     </td>
   </tr>
   <tr>
     <td><strong>10:00-10:30</strong></td>
     <td>
-      <!-- Title -->
+      Pseudo-Boolean proof logging for optimal classical planning
     </td>
     <td>
-      <!-- Speaker -->
+      Simon Dold 
     </td>
   </tr>
   <tr>
     <td><strong>10:30-11:00</strong></td>
     <td>
-      <!-- Title -->
+      Short, composable proofs without interference
     </td>
     <td>
-      <!-- Speaker -->
+      Adrian Rebola-Pardo
     </td>
   </tr>  
   <tr>
@@ -477,19 +477,19 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>11:30-12:00</strong></td>
     <td>
-      <!-- Title -->
+      Title TBD
     </td>
     <td>
-      <!-- Speaker -->
+      Florian Pollitt
     </td>
   </tr>    
   <tr>
     <td><strong>12:00-12:30</strong></td>
     <td>
-      <!-- Title -->
+      Symmetry breaking in the subgraph isomorphism problem
     </td>
     <td>
-      <!-- Speaker -->
+      Ruth Hoffmann
     </td>
   </tr>  
   <tr>
@@ -528,10 +528,97 @@ Jakob Nordström: WHOOPS '25</title>
 </table>
 
 
-<!--
-<h2><a name="titles-abstracts"></a>Titles and Abstracts of Presentations</h2>
--->
 
+<h2><a name="titles-abstracts"></a>Titles and Abstracts of Presentations</h2>
+
+
+<h3>
+  <a name="yong-kiam-tan">Yong Kiam Tan:</a>
+  End-to-end verification for subgraph solving (demo)
+</h3>
+
+<p>
+  This is a demo-focused talk for the paper "End-to-End Verification
+  for Subgraph Solving" (AAAI'24). I will give a brief tour of
+  CakePB's codebase, showing how to build and formally verify an
+  encoder frontend for certifying maximum clique size using
+  pseudo-Booleam proofs. I will demonstrate the "end-to-end" part of
+  CakePB's verification---a correctness theorem that goes from the
+  high-level mathematical semantics of cliques down to a machine-code
+  correctness theorem about the executable proof checker.
+</p>
+
+<h3>
+  <a name="simon-dold">Simon Dold:</a>
+  Pseudo-Boolean proof logging for optimal classical planning
+</h3>
+
+<p>  
+  The solution to an optimal planning task is a sequence of actions with
+  minimal cost that leads from the initial state to a goal
+  state. Optimal planning is PSPACE-complete, and different approaches
+  are used in practice to find an optimal solution. We introduce
+  lower-bound certificates for classical planning tasks, which can be
+  used to prove the optimality of a solution in a way that can be
+  verified by an independent third party. We describe a general
+  framework for generating lower-bound certificates based on
+  pseudo-Boolean constraints, which is agnostic to the planning
+  algorithm used. We also demonstrate how to modify the A∗ algorithm to
+  produce proofs of optimality.
+</p>
+
+<h3>
+  <a name="adrian-rebola-pardo">Adrian Rebola-Pardo:</a>
+  Short, composable proofs without interference
+</h3>
+
+<p>
+  Interference is a phenomenon where inference rules in several
+  practice-oriented proof systems (including the DRAT family and
+  VeriPB) depend on the whole derived formula rather than specific
+  derived clauses. While these rules generally allow more concise
+  reasoning than interference-free proofs, interference prevents
+  proofs from being easily composable. This creates many problems for
+  trimming, proof logging in incremental solvers, and proof system
+  design. This talk presents a novel approach to proof logging based
+  on propositional dynamic logic, a multimodal logic that seems to
+  suitable capture the semantics of interference-based reasoning
+  without being itself affected by interference. I will also discuss
+  how this can be leveraged to solve some limitations on existing
+  proof systems.
+</p>
+ 
+
+<h3>
+  <a name="ruth-hoffmann">Ruth Hoffmann:</a>
+  Symmetry breaking in the subgraph isomorphism problem
+</h3>
+
+<p>
+  The subgraph isomorphism problem (SIP) asks, given a smaller
+  (pattern) graph can we find it inside a larger (target) graph? The
+  combinatorial search techniques used to answer this question follow
+  the approaches used in SAT and CP, and thus should benefit from
+  symmetry breaking.
+</p>
+ 
+<p>
+  We are introducing novel methods for symmetry breaking for SIP, both
+  static and dynamic which can be applied to pattern graphs
+  (variables) or target graphs (values). These techniques are rooted
+  in group theory and are generic enough to be applicable to (almost)
+  any combinatorial search problem.
+</p>
+ 
+<p>
+  The question that remains is, are we still solving the correct
+  problem? I will talk through the correctness challenges we have
+  encountered in the development of the technique, as well as the
+  challenges that we are facing when going from a decision to an
+  enumeration problem. This will hopefully lead to a discussion around
+  how proof logging of symmetry breaking constraints might work.
+</p>
+ 
 
 <!--
 <h3>
@@ -545,16 +632,6 @@ Jakob Nordström: WHOOPS '25</title>
 
 <p>
 Based on joint work with Jeremias Berg, Bart Bogaerts, Jan Elffers, Ambros Gleixner, Stephan Gocht, Alexander Hoen, Hannes Ihalainen, Matti Järvisalo, Ciaran McCreesh, Matthew McIlree, Magnus O. Myreen, Andy Oertel, Yong Kiam Tan, and Dieter Vandesande.
-</p>
-
-<h3>
-  <a name="bart-bogaerts">Bart Bogaerts:</a>
-  Certified symmetry breaking with <em>VeriPB</em> 
-</h3>
-
-<p>
-I will start by giving an overview of (static and dynamic) symmetry handling methods for SAT. Next, I will dive into details about strengthening rules in the <em>VeriPB</em> proof system and discuss every step of a detailed worked example, demonstrating how to do fully automated static symmetry breaking for SAT in a certified way.
-Finally, I will discuss an open challenge on how to get certification for a framework such as SAT modulo symmetries, and particularly, the question of what it even means to certify this method. 
 </p>
 
 <h3>
@@ -576,48 +653,12 @@ In this talk, I will explain some non-trivial propagators used in constraint pro
 </p>
 
 <h3>
-  <a name="dieter-vandesande">Dieter Vandesande:</a>
-  Proof logging for <em>MaxCDCL</em> and BDDs
-</h3>
-
-<p>
-In earlier work, MaxSAT solvers implementing both solution-improving and core-guided search have been made certifying using the <em>VeriPB</em> proof system. In this talk, I will show the recent developments and ongoing work on proof logging a solver implementing a third solving paradigm: Branch-and-Bound search. More specifically, will we cover the solver <em>MaxCDCL</em>, which combines Branch-and-Bound search with the power of clause learning as it is implemented in SAT solvers. <em>MaxCDCL</em> also makes use of a PB-to-CNF encoding based on BDD's, and we will also show how to provide proof logging for that.
-</p>
-
-<h3>
-  <a name="hannes-ihalainen">Hannes Ihalainen:</a>
-  Certified MaxSAT preprocessing
-</h3>
-
-<p>
-Building on the progress in Boolean satisfiability (SAT) solving over the last decades, maximum satisfiability (MaxSAT) has become a viable approach for solving NP-hard optimization problems. However, ensuring correctness of MaxSAT solvers has remained a considerable concern. For SAT, this is largely a solved problem thanks to the use of proof logging, meaning that solvers emit machine-verifiable proofs to certify correctness. However, for MaxSAT, proof logging solvers have started being developed only very recently. Moreover, these nascent efforts have only targeted the core solving process, ignoring the preprocessing phase where input problem instances can be substantially reformulated before being passed on to the solver proper.
-</p>
-
-<p>
-In this work, we demonstrate how pseudo-Boolean proof logging can be used to certify the correctness of a wide range of modern MaxSAT preprocessing techniques. By combining and extending the <em>VeriPB</em> and <em>CakePB</em> tools, we provide formally verified end-to-end proof checking that the input and preprocessed output MaxSAT problem instances have the same optimal value. An extensive evaluation on applied MaxSAT benchmarks shows that our approach is feasible in practice.
-</p>
-
-<p>
-The talk is based on the work "Certified MaxSAT Preprocessing" by Hannes Ihalainen, Andy Oertel, Yong Kiam Tan, Jeremias Berg, Matti Järvisalo, Magnus O. Myreen, and Jakob Nordström that appeared at IJCAR 2024.
-</p>
-
-
-<h3>
   <a name="andy-oertel">Andy Oertel:</a>
   Certifying MIP-based presolve reductions for 0–1 integer linear programs
 </h3>
 
 <p>
 It is well known that reformulating the original problem can be crucial for the performance of mixed-integer programming (MIP) solvers. To ensure correctness, all transformations must preserve the feasibility status and optimal value of the problem, but there is currently no established methodology to express and verify the equivalence of two mixed-integer programs. In this work, we take a first step in this direction by showing how the correctness of MIP presolve reductions on 0-1 integer linear programs can be certified by using (and suitably extending) the <em>VeriPB</em> tool for pseudo-Boolean proof logging. Our experimental evaluation on both decision and optimization instances demonstrates the computational viability of the approach and leads to suggestions for future revisions of the proof format that will help to reduce the verbosity of the certificates and to accelerate the certification and verification process further.
-</p>
-
-<h3>
-  <a name="joseph-loughney">Joseph Loughney:</a>
-  Symmetry breaking in the subgraph isomorphism problem
-</h3>
-
-<p>
-The Subgraph Isomorphism Problem has many applications, including bioinformatics, computer vision and graph databases. Current state-of-the-art solvers using constraints programming techniques can handle cases with up to 1000 pattern vertices and 10,000 target vertices. Symmetry breaking techniques have shown promising results in improving the efficiency of algorithms for similar combinatorial problems; presented here are two strategies for implementing symmetry breaking using stabiliser chains, alongside initial experimental results.
 </p>
 
 <h3>
@@ -711,7 +752,7 @@ Proof trimming may be used to get a smaller proof, a shorter verification time o
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2025-06-27
+Updated 2025-08-13
 </div>
 <!--/eri-no-index-->
 
