@@ -335,9 +335,8 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>09:00-10:00</strong></td>
     <td>
-      Proof logging basics and pseudo-Boolean proof logging for SAT solving
+      <a href="#jakob-nordstrom">An introduction to pseudo-Boolean proof logging</a>
       <!--
-	  <a href="#jakob-nordstrom">A one-size-fits-all proof logging system?</a>
 	  <a href="../docs/presentations/TalkVeriPB_WHOOPS24.pdf"><img src="pdf.gif" alt="PDF" border=0></a>
 	  <a href="https://youtu.be/GsDv0lwjJbg"><img src="youtube.png" alt="YouTube" border=0></a>
 	  -->
@@ -349,9 +348,8 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>10:00-11:00</strong></td>
     <td>
-      Proof logging for subgraph solving
+      <a href="#ciaran-mccreesh">Proof logging for subgraph solving</a>
       <!--
-      <a href="#bart-bogaerts">Certified symmetry breaking with <em>VeriPB</em></a>
       <a href="slides/BartBogaerts.pdf"><img src="pdf.gif" alt="PDF" border=0></a> 
       <a href="https://youtu.be/2x0HIFwIxy8"><img src="youtube.png" alt="YouTube" border=0></a>
       -->
@@ -370,7 +368,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>11:30-12:30</strong></td>
     <td>
-      Proof logging for constraint programming      
+      <a href="#matthew-mcilree">Proof logging for constraint programming</a>
     </td>
     <td>
       Matthew McIlree
@@ -386,7 +384,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>14:00-15:00</strong></td>
     <td>
-      Proof logging for pseudo-Boolean optimization
+      <a href="#wietze-koops">Proof logging for pseudo-Boolean optimization</a>
     </td>
     <td>
       Wietze Koops
@@ -400,7 +398,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>15:30-16:30</strong></td>
     <td>
-      Proof logging for preprocessing/presolving in  MaxSAT and 0-1 integer linear programming
+      <a href="#andy-oertel">Proof logging for preprocessing/presolving in  MaxSAT and 0-1 integer linear programming</a>
     </td>
     <td>
       Andy Oertel
@@ -409,7 +407,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>16:30-17:30</strong></td>
     <td>
-      Proof logging for symmetry breaking 
+      <a href="#markus-anders">Proof logging for symmetry breaking</a>
     </td>
     <td>
       Markus Anders
@@ -452,7 +450,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>09:00-09:30</strong></td>
     <td>
-      End-to-end verification for subgraph solving (demo)
+      <a href="#yong-kiam-tan">End-to-end verification for subgraph solving (demo)</a>
     </td>
     <td>
       Yong Kiam Tan (remote)
@@ -461,7 +459,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>09:30-10:00</strong></td>
     <td>
-      Title TBD
+      <a href="#arthur-gontier">Title TBD</a>
     </td>
     <td>
       Arthur Gontier
@@ -470,7 +468,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>10:00-10:30</strong></td>
     <td>
-      Pseudo-Boolean proof logging for optimal classical planning
+      <a href="#simon-dold">Pseudo-Boolean proof logging for optimal classical planning</a>
     </td>
     <td>
       Simon Dold 
@@ -479,7 +477,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>10:30-11:00</strong></td>
     <td>
-      Short, composable proofs without interference
+      <a href="#adrian-rebola-pardo">Short, composable proofs without interference</a>
     </td>
     <td>
       Adrian Rebola-Pardo
@@ -493,7 +491,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>11:30-12:00</strong></td>
     <td>
-      Title TBD
+      <a href="#florian-pollitt">Title TBD</a>
     </td>
     <td>
       Florian Pollitt
@@ -502,7 +500,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>12:00-12:30</strong></td>
     <td>
-      Symmetry breaking in the subgraph isomorphism problem
+      <a href="#ruth-hoffmann">Symmetry breaking in the subgraph isomorphism problem</a>
     </td>
     <td>
       Ruth Hoffmann
@@ -546,6 +544,127 @@ Jakob Nordström: WHOOPS '25</title>
 
 
 <h2><a name="titles-abstracts"></a>Titles and Abstracts of Presentations</h2>
+
+
+<h3>
+  <a name="jakob-nordstrom">An introduction to pseudo-Boolean proof logging</a>
+  (Jakob Nordström, University of Copenhagen and Lund University)
+</h3>
+
+<p>
+  This talk is intended to give an overview of <em>VeriPB</em>, a
+  proof system based on pseudo-Boolean reasoning with 0-1 integer
+  linear inequalities that seems well suited to provide a unified
+  proof logging method for a wide range of problems in discrete
+  combinatorial solving and optimization.
+</p>
+
+
+<h3>
+  <a name="ciaran-mccreesh">Proof logging for subgraph solving</a>
+  (Ciaran McCreesh, University of Glasgow)
+  </h3>
+
+<p>  
+  Many interesting problems involve finding a little graph inside a
+  bigger graph: for example, maximum clique asks for the largest set
+  of vertices where everything is adjacent, whilst subgraph
+  isomorphism asks whether a specific pattern occurs inside a given
+  target graph. Although these problems are computationally hard in
+  theory, in practice solvers can often handle these problems
+  extremely quickly, even on graphs with thousands of
+  vertices. However, these solvers are not always perfect, and
+  sometimes contain bugs that lead to wrong answers being
+  produced. I'll explain how, using the VeriPB proof system, we can
+  augment these solvers to produce correctness certificates, allowing
+  us to be confident they have definitely given the right answers. To
+  do this, we'll need to be able to justify a wide range of
+  algorithmic inference steps, including colour bounds, all-different
+  filtering, and degree reasoning; perhaps surprisingly, VeriPB is
+  able to do all of these efficiently, despite not having any notion
+  of what a graph is.
+</p>
+
+
+<h3>
+  <a name="matthew-mcilree">Pseudo-Boolean proof logging for constraint programming</a>
+  (Matthew McIlree, University of Glasgow)
+</h3>
+
+<p>  
+  Constraint Programming is an expressive paradigm for modelling and
+  solving problems stated in terms of finite-domain variables and
+  arbitrary constraints. Many CP solvers are based on backtracking
+  search, with interleaved propagation algorithms, which use
+  sophisticated inference procedures to reduce the search space by
+  filtering inconsistent values from the domains of variables.
+</p>
+
+<p>
+  This talk will be a tutorial on how we can modify a standard CP
+  solver architecture to allow it to output a trustworthy and
+  efficiently checkable certificate of correctness, both for
+  satisfaction and optimisation problems. We'll see how pseudo-Boolean
+  reasoning can be used to represent and derive facts about integer
+  variables, linear inequalities, and even higher-level constraints
+  such as "AllDifferent" (requiring a subset of variables to all take
+  different values).
+</p>
+
+
+<h3>
+  <a name="wietze-koops">Proof logging for pseudo-Boolean optimization</a>
+  (Wietze Koops, Lund University and University of Copenhagen)
+</h3>
+
+<p>
+  Certifying solvers have long been standard for Boolean
+  satisfiability (SAT), allowing for proof logging and checking with
+  very limited overhead. While pseudo-Boolean proof logging has shown
+  great potential to support proof logging for a wide range of
+  combinatorial optimization paradigms, overheads have in most cases
+  been far from what is required for real-world deployment. In this
+  talk, I will show how to implement proof logging for pseudo-Boolean
+  optimization, including techniques such as core-guided search and
+  linear programming integration with Farkas certificates and cut
+  generation, with a focus on how to ensure that proof logging and
+  checking is efficient. Our experimental evaluation shows that proof
+  logging and checking performance is now quite close to the level of
+  SAT solving, and hence clearly practically feasible.
+</p>
+
+
+<h3>
+  <a name="andy-oertel">Proof logging for preprocessing/presolving in MaxSAT and 0-1 integer linear programming</a>
+  (Andy Oertel, Lund University and University of Copenhagen)
+</h3>
+
+<p>
+  It is well-known that reformulating maximum satisfiability (MaxSAT)
+  and mixed-integer programming (MIP) problems before solving is
+  crucial for performance. While both communities share the idea, the
+  techniques used for preprocessing in MaxSAT and presolving in MIP
+  are different. To ensure the correctness of different
+  reformulations, all transformations must preserve the feasibility
+  status and optimal value of the problem, but there is currently no
+  established methodology to express and certify the equivalence
+  between two optimization problems.
+</p>
+
+<p>
+  In this talk, it is presented how pseudo-Boolean proof logging can
+  be used to certify the correctness of a wide range of modern MIP
+  presolving and MaxSAT preprocessing techniques. By combining and
+  extending the VeriPB and CakePB tools, we obtain a formally verified
+  end-to-end proof checking tool chain to verify the correctness of
+  problem reformulations.
+</p>
+
+
+<h3>
+  <a name="markus-anders">Proof logging for symmetry breaking</a>
+  (Markus Anders, RPTU Kaiserslautern-Landau)
+</h3>
 
 
 <h3>
@@ -768,7 +887,7 @@ Proof trimming may be used to get a smaller proof, a shorter verification time o
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2025-09-03
+Updated 2025-09-05
 </div>
 <!--/eri-no-index-->
 
