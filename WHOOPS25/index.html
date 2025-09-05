@@ -459,7 +459,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>09:30-10:00</strong></td>
     <td>
-      <a href="#arthur-gontier">Title TBD</a>
+      <a href="#arthur-gontier">A variety of trimming techniques for pseudo-Boolean proof logs</a>
     </td>
     <td>
       Arthur Gontier
@@ -491,7 +491,7 @@ Jakob Nordström: WHOOPS '25</title>
   <tr>
     <td><strong>11:30-12:00</strong></td>
     <td>
-      <a href="#florian-pollitt">Title TBD</a>
+      <a href="#florian-pollitt">Proof Logging in <em>CaDiCaL</em></a>
     </td>
     <td>
       Florian Pollitt
@@ -575,12 +575,12 @@ Jakob Nordström: WHOOPS '25</title>
   extremely quickly, even on graphs with thousands of
   vertices. However, these solvers are not always perfect, and
   sometimes contain bugs that lead to wrong answers being
-  produced. I'll explain how, using the VeriPB proof system, we can
+  produced. I'll explain how, using the <em>VeriPB</em> proof system, we can
   augment these solvers to produce correctness certificates, allowing
   us to be confident they have definitely given the right answers. To
   do this, we'll need to be able to justify a wide range of
   algorithmic inference steps, including colour bounds, all-different
-  filtering, and degree reasoning; perhaps surprisingly, VeriPB is
+  filtering, and degree reasoning; perhaps surprisingly, <em>VeriPB</em> is
   able to do all of these efficiently, despite not having any notion
   of what a graph is.
 </p>
@@ -592,7 +592,7 @@ Jakob Nordström: WHOOPS '25</title>
 </h3>
 
 <p>  
-  Constraint Programming is an expressive paradigm for modelling and
+  Constraint programming (CP) is an expressive paradigm for modelling and
   solving problems stated in terms of finite-domain variables and
   arbitrary constraints. Many CP solvers are based on backtracking
   search, with interleaved propagation algorithms, which use
@@ -655,7 +655,7 @@ Jakob Nordström: WHOOPS '25</title>
   In this talk, it is presented how pseudo-Boolean proof logging can
   be used to certify the correctness of a wide range of modern MIP
   presolving and MaxSAT preprocessing techniques. By combining and
-  extending the VeriPB and CakePB tools, we obtain a formally verified
+  extending the <em>VeriPB</em> and <em>CakePB</em> tools, we obtain a formally verified
   end-to-end proof checking tool chain to verify the correctness of
   problem reformulations.
 </p>
@@ -668,30 +668,50 @@ Jakob Nordström: WHOOPS '25</title>
 
 
 <h3>
-  <a name="yong-kiam-tan">Yong Kiam Tan:</a>
-  End-to-end verification for subgraph solving (demo)
+  <a name="yong-kiam-tan">End-to-end verification for subgraph solving (demo)</a>
+  (Yong Kiam Tan,
+  Institute for Infocomm Research,
+  A*STAR, and Nanyang Technological University)  
 </h3>
 
 <p>
   This is a demo-focused talk for the paper "End-to-End Verification
-  for Subgraph Solving" (AAAI'24). I will give a brief tour of
-  CakePB's codebase, showing how to build and formally verify an
+  for Subgraph Solving" (AAAI&nbsp;'24). I will give a brief tour of the
+  <em>CakePB</em> codebase, showing how to build and formally verify an
   encoder frontend for certifying maximum clique size using
   pseudo-Booleam proofs. I will demonstrate the "end-to-end" part of
-  CakePB's verification---a correctness theorem that goes from the
+  <em>CakePB</em> verification---a correctness theorem that goes from the
   high-level mathematical semantics of cliques down to a machine-code
   correctness theorem about the executable proof checker.
 </p>
 
+
 <h3>
-  <a name="simon-dold">Simon Dold:</a>
-  Pseudo-Boolean proof logging for optimal classical planning
+  <a name="arthur-gontier">A variety of trimming techniques for pseudo-Boolean proof logs</a>
+  (Arthur Gontier, University of Glasgow)
+</h3>
+
+<p>
+  Trimming of proofs can be performed for multiple reasons. The most
+  important purpose of trimming is to reduce proof checking time, but
+  we can also think of situations where we want to be able to save as
+  small a proof as possible as a certificate, or to use a proof to
+  provide an explanation why a set of constraints is contradiction. We
+  are developing tools for performing these tasks, and will present
+  the main ideas behind the implementation as well as some early
+  results.
+</p>
+
+
+<h3>
+  <a name="simon-dold">Pseudo-Boolean proof logging for optimal classical planning</a>
+  (Simon Dold, University of Basel)
 </h3>
 
 <p>  
   The solution to an optimal planning task is a sequence of actions with
   minimal cost that leads from the initial state to a goal
-  state. Optimal planning is PSPACE-complete, and different approaches
+  state. Optimal planning is <em>PSPACE</em>-complete, and different approaches
   are used in practice to find an optimal solution. We introduce
   lower-bound certificates for classical planning tasks, which can be
   used to prove the optimality of a solution in a way that can be
@@ -703,14 +723,14 @@ Jakob Nordström: WHOOPS '25</title>
 </p>
 
 <h3>
-  <a name="adrian-rebola-pardo">Adrian Rebola-Pardo:</a>
-  Short, composable proofs without interference
+  <a name="adrian-rebola-pardo">Short, composable proofs without interference</a>
+  (Adrian Rebola-Pardo, TU Wien)
 </h3>
 
 <p>
   Interference is a phenomenon where inference rules in several
-  practice-oriented proof systems (including the DRAT family and
-  VeriPB) depend on the whole derived formula rather than specific
+  practice-oriented proof systems (including the <em>DRAT</em> family and
+  <em>VeriPB</em>) depend on the whole derived formula rather than specific
   derived clauses. While these rules generally allow more concise
   reasoning than interference-free proofs, interference prevents
   proofs from being easily composable. This creates many problems for
@@ -722,11 +742,27 @@ Jakob Nordström: WHOOPS '25</title>
   how this can be leveraged to solve some limitations on existing
   proof systems.
 </p>
- 
+
 
 <h3>
-  <a name="ruth-hoffmann">Ruth Hoffmann:</a>
-  Symmetry breaking in the subgraph isomorphism problem
+  <a name="florian-pollitt">Proof Logging in <em>CaDiCaL</em></a>
+  (Florian Pollitt, Universität Freiburg)
+</h3>
+
+<p>
+
+  This talks focuses on showcasing the state-of-the-art proof-logging
+  support of the <em>CaDiCaL</em> SAT solver, covering a range of
+  applications. Within this context, and from the perspective of a
+  solver developer, I will discuss different needs and design
+  decisions of proof formats and their impact on the development of
+  <em>CaDiCaL</em>.
+</p>
+
+
+<h3>
+  <a name="ruth-hoffmann">Symmetry breaking in the subgraph isomorphism problem</a>
+  (Ruth Hoffmann, University of St Andrews)
 </h3>
 
 <p>
@@ -754,58 +790,6 @@ Jakob Nordström: WHOOPS '25</title>
   how proof logging of symmetry breaking constraints might work.
 </p>
  
-
-<!--
-<h3>
-  <a name="jakob-nordstrom">Jakob Nordström:</a>
-  A one-size-fits-all proof logging system? 	
-</h3>
-
-<p>
-  This talk is intended to give an overview of <em>VeriPB</em>, a proof system based on pseudo-Boolean reasoning with 0-1 integer linear inequalities that seems well suited to provide a unified proof logging method for discrete combinatorial problems. We have implemented <em>VeriPB</em> proof logging, together with efficient proof checking, for state-of-the-art solvers in Boolean satisfiability (SAT) solving, SAT-based optimization (MaxSAT solving), graph solving, constraint programming, and a growing list of other combinatorial solving paradigms. We believe there are reasons to hope that ideas from <em>VeriPB</em> could be useful also in the context of mixed integer linear programming, satisfiability modulo theories (SMT) solving, automated planning, and possibly also other combinatorial solving paradigms, and will briefly review these and other future research directions in pseudo-Boolean proof logging.
-</p>
-
-<p>
-Based on joint work with Jeremias Berg, Bart Bogaerts, Jan Elffers, Ambros Gleixner, Stephan Gocht, Alexander Hoen, Hannes Ihalainen, Matti Järvisalo, Ciaran McCreesh, Matthew McIlree, Magnus O. Myreen, Andy Oertel, Yong Kiam Tan, and Dieter Vandesande.
-</p>
-
-<h3>
-  <a name="ciaran-mccreesh">Ciaran McCreesh:</a>
-  Pseudo-Boolean proof logging for things that aren't pseudo-Boolean
-</h3>
-
-<p>
-We've heard a lot about pseudo-Boolean proof logging, but what do we do if our problems aren't pseudo-Boolean and our solvers don't search for cutting planes proofs? I'll showcase a range of applications where <em>VeriPB</em> has been successfully deployed, including subgraph problems like maximum clique and subgraph isomorphism; constraint programming; and if time permits, dynamic programming. These results suggest that for some reason, extended cutting planes seems to be a really helpful way of certifying a wide range of techniques used in combinatorial solving algorithms.
-</p>
-
-<h3>
-  <a name="matthew-mcilree">Matthew McIlree:</a>
-  Proof logging for some interesting constraint propagation algorithms
-</h3>
-
-<p>
-In this talk, I will explain some non-trivial propagators used in constraint programming solvers, and describe how they can be modified to justify their reasoning within the <em>VeriPB</em> proof system. 
-</p>
-
-<h3>
-  <a name="andy-oertel">Andy Oertel:</a>
-  Certifying MIP-based presolve reductions for 0–1 integer linear programs
-</h3>
-
-<p>
-It is well known that reformulating the original problem can be crucial for the performance of mixed-integer programming (MIP) solvers. To ensure correctness, all transformations must preserve the feasibility status and optimal value of the problem, but there is currently no established methodology to express and verify the equivalence of two mixed-integer programs. In this work, we take a first step in this direction by showing how the correctness of MIP presolve reductions on 0-1 integer linear programs can be certified by using (and suitably extending) the <em>VeriPB</em> tool for pseudo-Boolean proof logging. Our experimental evaluation on both decision and optimization instances demonstrates the computational viability of the approach and leads to suggestions for future revisions of the proof format that will help to reduce the verbosity of the certificates and to accelerate the certification and verification process further.
-</p>
-
-<h3>
-  <a name="arthur-gontier">Arthur Gontier:</a>
-  Pseudo-Boolean proof trimming
-</h3>
-
-<p>
-Proof trimming may be used to get a smaller proof, a shorter verification time or to gain some knowledge on the solving method that generated the proof. In this talk, we will present some early results of a trimmer we made for CP proofs on Subgraph Isomorphism Problems, and we open the discussion on several trimming ideas.
-</p>
-
--->
 
 
 <h2>
