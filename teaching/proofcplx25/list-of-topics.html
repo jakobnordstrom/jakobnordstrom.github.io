@@ -1,0 +1,524 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../../index-filer/kod-html.css">
+
+
+<title>
+  Proof Complexity Course 2025: List of Topics
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+  /   <a href="https://www.jakobnordstrom.se/teaching/">Teaching</a>
+  / Proof complexity course 2025: List of topics
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- BEGIN CONTENTS OF COMPUTABILITY AND COMPLEXITY (COCO) PAGE -->
+
+<h1>
+  Proof Complexity Course 2025
+</h1>
+
+<h2><a name="list-of-topics">Tentative List of Topics/Lectures</a></h2>
+
+
+<ol>
+
+  <li>
+    Introduction to proof complexity as a computational lens
+    
+  <li>
+    Resolution and the pigeonhole principle
+    <br>        
+    <strong>References:</strong>
+    Haken '85, Pudlák '00
+    <br>    
+    <strong>Open problems:</strong>
+    None
+    <br>    
+    <strong>Questions/comments:</strong>
+    Should we also try to do the exp(n) upper bound for PHP?
+    
+  <li>
+    Resolution and Tseitin formulas
+    <br>        
+    <strong>References:</strong>
+    Urquhart '87, our notes
+    <br>    
+    <strong>Open problems:</strong>
+    None
+    <br>    
+    <strong>Questions/comments:</strong>
+    Do the upper bound for grid graphs;
+    this will come in handy later.
+    
+  <li>
+    Resolution and the clique problem (1/2)
+    <br>        
+    <strong>References:</strong>
+    Atserias, Bonacina, de Rezende,
+    Lauria, Nordström, &amp; Razborov:
+    <br>    
+    <strong>Open problems:</strong>
+    Clique lower bound for resolution
+    <br>    
+    <strong>Questions/comments:</strong>
+    We will not be able to do the full proof,
+    but it should be possible to get good
+    problem set problems out of this.
+    
+  <li>
+    Resolution and the clique problem (2/2)
+
+
+  <li>
+    Feasible interpolation for resolution
+    <br>        
+    <strong>References:</strong>
+    Pudlák '97
+    <br>    
+    <strong>Open problems:</strong>
+    Interpolation is an important proof technique to understand.
+    <br>        
+    <strong>Questions/comments:</strong>
+    We will assume the required monotone circuit lower bound as a given.
+
+  <li>
+    Resolution size-width lower bound
+    <br>        
+    <strong>References:</strong>
+    Ben-Sasson &amp; Wigderson '01
+    <br>    
+    <strong>Open problems:</strong>
+    None.
+    Or actually: Maybe I should know this, but are the corresponding results for
+    Sherali-Adams and sum-of-squares known to be tight?
+    
+  <li>
+    Polynomial calculus and resolution
+    <br>        
+    <strong>References:</strong>
+    Alekhnovich &amp; Razborov '03,
+    Mik&#353;a &amp; Nordstr&ouml;m
+    <br>    
+    <strong>Open problems:</strong>
+    Combine immunity à la AR03
+    with clustering à la MN24
+    <br>    
+    <strong>Questions/comments:</strong>
+    Talk about
+    dual variables;
+    simulation of resolution by polynomial calculus;
+    resolution width and polynomial calculus degree lower bounds;
+    separations between resolution and polynomial calculus
+    
+  <li>
+    Polynomial calculus degree lower bounds
+    <br>        
+    <strong>References:</strong>
+    Alekhnovich &amp; Razborov '03,
+    Mik&#353;a &amp; Nordstr&ouml;m,
+    and the papers which MN reproves
+    <br>    
+    <strong>Open problems:</strong>
+    As listed in
+    Mik&#353;a &amp; Nordstr&ouml;m
+    <br>    
+    <strong>Questions/comments:</strong>
+    Get lower bounds for random <em>k</em>-CNF formulas,
+    FPHP,
+    ordering principle formulas,
+    et cetera,
+    as corollaries.    
+
+  <li>
+    Polynomial calculus and graph colouring
+    <br>        
+    <strong>References:</strong>
+    Conneryd et al. '23;
+    probably also mention Beame et al. for resolution (do as warm-up?)
+    and Lauria-Nordström '17 (which is strictly speaking incomparable, I believe)
+    <br>    
+    <strong>Open problems:</strong>
+    Graph homomorphism to 5-cycle,
+    dense linear order
+    <br>    
+    <strong>Questions/comments:</strong>
+    Can we save substantial time by doing the lower bound only for 4-colouring?    
+
+  <li>
+    Tightness of relation between size and width/degree for
+    resolution and polynomial calculus
+    <br>        
+    <strong>References:</strong>
+    Stålmarck '96, 
+    Bonet &amp; Galesi '01,
+    Galesi &amp; Lauria '08,
+    Atserias, Lauria, &amp; Nordström '16
+    <br>    
+    <strong>Open problems:</strong>
+    Are there similarly tight versions for clause space and monomial space
+    (without blowing up formula size)?
+    <br>    
+    <strong>Questions/comments:</strong>
+    Bonet-Galesi show that BW01 cannot be improved (essentially).
+    ALN shows that there are formulas refutable in width/degree w
+    that require size n^w.
+    
+  <li>
+    Space complexity in resolution and polynomial calculus;
+    resolution clause space vs. width 
+    <br>        
+    <strong>References:</strong>
+    Esteban-Torán,
+    Alekhnovich et al.,
+    Atserias &amp; Dalmau '08,
+    <br>    
+    <strong>Open problems:</strong>
+    This lecture sets up the discussion of
+    many open problems in ensuing lectures.
+    <br>    
+    <strong>Questions/comments:</strong>
+    Lots of results here that we can just mention without going into details.
+    Mention also version of AD proof in Filmus et al., and maybe give as exercise.
+    
+  <li>
+    Total space in resolution;
+    polynomial calculus monomial space vs. width/degree
+    <br>        
+    <strong>References:</strong>
+    Bonacina,
+    Filmus, Lauria, Mik&#353;a, Nordstr&ouml;m &amp; Vinyals,
+    Galesi-Kołodziejczyk-Thapen         
+    <br>    
+    <strong>Open problems:</strong>
+    Total space lower bounds for polynomial calculus,
+    PC space \geq resolution width
+
+  <li>
+    Pebbling formulas,
+    resolution space-width separation,
+    and 
+    resolution size-space trade-offs    
+    <br>        
+    <strong>References:</strong>
+    Ben-Sasson &amp; Nordström '08, '11
+    <br>    
+    <strong>Open problems:</strong>
+    Get analogous results for polynomial calculus
+    <br>    
+    <strong>Questions/comments:</strong>
+    This is very ambitious for just one lecture, but if we assume everything pebbling-related as black boxes
+    and also leave many details as exercises it might be doable.
+    Maybe do as problem set problem how to get size-space trade-offs for PC
+    except for a log factor loss&mdash;otherwise this might actually be nice to do in class.
+    
+  <li>
+    Supercritical resolution size-space trade-offs for Tseitin formulas
+    <br>        
+    <strong>References:</strong>
+    Beame-Beck-Impagliazzo '16,
+    Beck-Nordström-Tang '13
+    <br>    
+    <strong>Open problems:</strong>
+    Improve parameters!
+    Get results for polynomial calculus that are independent of the characteristic.
+    Extend to other proof systems (which seems plausible).
+    
+  <li>
+    Polynomial calculus space lower bound for random <em>k</em>-CNF formulas
+    <br>        
+    <strong>References:</strong>
+    Bonacina-Galesi,
+    Filmus et al.
+    <br>    
+    <strong>Open problems:</strong>
+    Mention the many polynomial calculus space lower bounds that are open.
+    
+  <li>
+    Size-degree trade-offs for Nullstellensatz and polynomial calculus
+    <br>        
+    <strong>References:</strong>
+    de Rezende, Meir, Nordström, &amp; Robere '21,
+    Lagarde, Nordström, Sokolov, &amp; Swernofsky '20
+    <br>    
+    <strong>Open problems:</strong>
+    Similar results for Sherali-Adams and sum-of-squares.
+    Trade-offs for Nullstellensatz with dual variables(?).
+
+  <li>
+    Polynomial calculus size lower bounds for roots of unity encodings
+    <br>        
+    <strong>References:</strong>
+    Sokolov '20,
+    our paper(?)
+    <br>    
+    <strong>Open problems:</strong>
+    Give a clean general result that says that if the CVIG
+    is an expander and has property P, then PC {+-1} lower bounds follow.
+    When can we get lower bounds over both {0,1} and {+-1}?
+    Deal with more general extension variables.    
+    
+  <li>
+    Cutting planes; more about
+    feasible interpolation
+    <br>        
+    <strong>References:</strong>
+    Pudlák '97
+    <br>    
+    <strong>Open problems:</strong>
+    Lots of open problems for cutting planes&hellip;
+    Potentially discuss how different cut rules compare.
+    <br>    
+    <strong>Questions/comments:</strong>
+    Is there a better reference for the interpolation lower bounds than Pudlák?
+    
+  <li>
+    Cutting planes lower bounds for random CNF formulas
+    <br>        
+    <strong>References:</strong>
+    Hrube&#353; &amp; Pudlák '17,
+    Fleming, Pankratov, Robere, &amp; Pitassi '21,    
+    Sokolov '24
+    <br>    
+    <strong>Open problems:</strong>
+    <em>k</em>-CNF formulas for constant <em>k</em>.
+    Can the Sokolov technique be used for other problems?
+    Can we do lower bounds for BPHP in the same way?
+    <br>    
+    <strong>Questions/comments:</strong>
+    Should we just a assume a perfect split of the variables
+    to avoid a technical complication?
+    
+  <li>
+    Size-space trade-offs for cutting planes (1/2)
+    <br>        
+    <strong>References:</strong>
+    de Rezende, Nordström, &amp; Vinyals '16
+    <br>    
+    <strong>Open problems:</strong>
+    Improve parameters substantially.
+    Prove space lower bounds for CP^*.
+    <br>    
+    <strong>Questions/comments:</strong>
+    When should we mention the constant line space upper bound for cutting planes
+    due to Galesi, Pudlák, &amp; Thapen '15?
+    dRNV would be the first nontrivial lifting result in the course.
+    If we want to do it in detail (especially if we are not happy with
+    CP^* but want CP, but even without this), then it seems reasonable
+    to set aside two lectures.
+    
+  <li>
+    Size-space trade-offs for cutting planes (2/2)
+
+    
+  <li>
+    Trade-offs for
+    cutting planes with polynomially bounded coefficients
+    <br>        
+    <strong>References:</strong>
+    de Rezende, Meir, Nordström, Pitassi, Robere, &amp; Vinyals '20    
+    <br>    
+    <strong>Open problems:</strong>
+    Separate CP and CP^* w.r.t. size, period.
+    More direct lower bound for parity decision trees for pebbling.
+    True size-space trade-offs for CP^*.
+    <br>    
+    <strong>Questions/comments:</strong>
+    This would have to be a selective overview of the paper,
+    since there are lots of technicalities.
+    
+  <li>
+    Lower bounds for cutting planes size from resolution width using lifting
+    (1/2)
+    <br>        
+    <strong>References:</strong>
+    Garg, Göös, Kamath, &amp; Sokolov '20
+    <br>    
+    <strong>Open problems:</strong>
+    This is a key technique to understand for many of the most recent results.
+    <br>    
+    <strong>Questions/comments:</strong>
+    Which version do we want?
+    For our supercritical trade-off paper the slightly different proof
+    in the conference version was apparently more useful?
+    
+  <li>
+    Lower bounds for cutting planes size from resolution width using lifting
+    (2/2)
+    
+  <li>
+    Sherali-Adams and the pigeonhole principle
+    <br>        
+    <strong>References:</strong>
+    What is the reference?
+    <a href="https://www.sciencedirect.com/science/article/pii/S0304397509000127">Dantchev, Martin, &amp; Rhodes '09</a>?    
+    <br>    
+    <strong>Open problems:</strong>
+    Etablish many of the lower bounds we know for resolution and polynomial calculus?
+    <br>    
+    <strong>Questions/comments:</strong>
+    Cover lower bound for PHP but not for graph-PHP;
+    talk about duality    
+
+  <li>
+    Automatability for resolution and polynomial calculus
+    <br>        
+    <strong>References:</strong>
+    Atserias-Müller,
+    de Rezende, Göös, Nordström, Pitassi, Robere, &amp;Sokolov '21
+    <br>    
+    <strong>Open problems:</strong>
+    Non-automatability for
+    Sherali-Adams,
+    sum-of-squares,
+    bounded-depth Frege
+    <br>    
+    <strong>Questions/comments:</strong>
+    Mention, but do not cover, other non-automatability results.
+
+  <li>
+    Final lecture;
+    summary of material covered and
+    outlook for future research
+
+    
+</ol>
+
+<h2>Topics That Will Be Skipped This Time</h2>
+<ol>
+  <li>
+    Stabbing planes
+
+  <li>
+    Sum-of-squares
+    
+  <li>
+    Hierarchy of polynomial calculus over the reals, Sherali-Adams, and sum-of-squares
+    
+  <li>
+    Resolution with parities
+    
+  <li>
+    <em>k</em>-DNF resolution
+    and switching lemmas
+    
+  <li>
+    Bounded-depth Frege
+    and switching lemmas
+
+  <li>
+    Frege and extended Frege
+
+  <li>
+    Ideal proof systems
+
+
+    
+  <li>
+    Non-automatability for cutting planes
+
+  <li>
+    Separation of 
+    unary Sherali-Adams and resolution
+
+  <li>
+    Truly supercritical trade-offs
+    between size/width and depth
+    
+  <li>
+    Weak pigeonhole principle lower bounds
+    
+  <li>
+    Pseudo-random generators
+  
+  <li>
+    Cumulative space
+    
+  <li>
+    TFNP connections
+    
+  <li>
+    Extension complexity
+
+  <li>
+    Separations between different subsystems of resolution
+
+</ol>
+
+<!--
+
+    Toni Pitassi: https://www.cs.columbia.edu/~toni/Courses/ProofComplexity2025/coursepage.html
+    Robert Robere: https://www.cs.mcgill.ca/~robere/comp598/index.html
+    Paul Beame: https://courses.cs.washington.edu/courses/cse599s/20au/
+    Alexander Razborov: https://people.cs.uchicago.edu/~razborov/teaching/winter09.html
+    
+  -->
+
+
+
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- END CONTENTS OF COMPUTABILITY AND COMPLEXITY (COCO) PAGE -->
+<!-- Do not change below this point (except for date) -->
+
+<!-- sidfoten -->
+<div class="fotstreck_smalt"></div>
+<div class="fotstreck_gratt_med_rutor"></div>
+<div class="fotstreck_vitt_med_rutor"></div>
+<div class="sidfottext">
+
+<strong>
+  Published by:</strong> Jakob Nordström
+<a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
+<br>
+
+<!--
+    Use 
+    "date +'Updated %Y-%m-%d' "
+    to generate date string below
+-->
+Updated 2025-10-17
+
+
+</div>
+<!--/eri-no-index-->
+
+
+<!-- Default Statcounter code for Jakob's teaching webpages -->
+
+<!-- INSERT HERE -->
+
+<!-- End of Statcounter Code -->
+
+
+</body></html>
+
