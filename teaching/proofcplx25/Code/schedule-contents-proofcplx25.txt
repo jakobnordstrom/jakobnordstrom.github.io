@@ -1,0 +1,57 @@
+28
+Thursday $ Oct 30 $ 13-16 $ E:2116
+Monday   $ Nov 3  $ 13-16 $ LTH
+Tuesday  $ Nov 4  $ 13-16 $ LTH
+Thursday $ Nov 6  $ 13-16 $ BARC
+Monday   $ Nov 10 $ 13-16 $ E:2116
+Tuesday  $ Nov 11 $ 13-16 $ E:2405
+Thursday $ Nov 13 $ 13-16 $ BARC
+Monday   $ Nov 17 $ 13-16 $ E:2116
+Tuesday  $ Nov 18 $ 13-16 $ E:2405
+Thursday $ Nov 20 $ 13-16 $ BARC
+Monday   $ Nov 24 $ 13-16 $ E:2116
+Tuesday  $ Nov 25 $ 13-16 $ E:2405
+Thursday $ Nov 27 $ 13-16 $ BARC
+Monday   $ Dec 1  $ 13-16 $ E:2405
+Tuesday  $ Dec 2  $ 13-16 $ E:2405
+Thursday $ Dec 4  $ 13-16 $ BARC
+Tuesday  $ Dec 9  $ 13-16 $ E:2116
+Thursday $ Dec 11 $ 13-16 $ BARC
+Tuesday  $ Dec 16 $ 13-16 $ E:2116
+Thursday $ Dec 18 $ 13-16 $ BARC
+Thursday $ Jan 8  $ 13-16 $ E:2405
+Friday   $ Jan 9  $ 13-16 $ E:2405
+Monday   $ Jan 19 $ 13-16 $ E:2116 
+Tuesday  $ Jan 20 $ 13-16 $ E:2116
+Thursday $ Jan 29 $ 13-16 $ BARC
+Friday   $ Jan 30 $ 13-16 $ BARC
+Tuesday  $ Feb 3  $ 13-16 $ BARC
+Friday   $ Feb 6  $ 13-16 $ E:2405
+Introduction to proof complexity as a computational lens $ $
+Resolution and the pigeonhole principle $ $
+Resolution and Tseitin formulas $ $
+Resolution and the clique problem $ $ 
+Resolution and the clique problem (cont.) $ $ 
+Feasible interpolation for resolution $ $
+Resolution size-width lower bound $ $
+Polynomial calculus and resolution  $ $
+Polynomial calculus degree lower bounds $ $
+Polynomial calculus and graph colouring $ $
+Tightness of size-width/degree relations for resolution and polynomial calculus $ $
+Space complexity; resolution clause space vs. width $ $
+Total space in resolution; polynomial calculus space vs. width/degree $ $
+Resolution space-width separation and size-space trade-offs    $ $
+Supercritical resolution size-space trade-offs $ $
+Polynomial calculus space lower bound for random CNF formulas $ $
+Size-degree trade-offs for Nullstellensatz and polynomial calculus $ $
+Polynomial calculus and roots of unity encodings $ $
+Cutting planes; more about feasible interpolation $ $
+Cutting planes lower bounds for random CNF formulas $ $
+Size-space trade-offs for cutting planes $ $
+Size-space trade-offs for cutting planes (cont.) $ $
+Trade-offs for cutting planes with polynomially bounded coefficients $ $
+Lower bounds for cutting planes size from resolution width using lifting $ $
+Lower bounds for cutting planes size from resolution width using lifting (cont.) $ $
+Sherali-Adams and the pigeonhole principle $ $
+Automatability for resolution and polynomial calculus $ $
+Final lecture; summary of material covered and outlook for future research $ $
