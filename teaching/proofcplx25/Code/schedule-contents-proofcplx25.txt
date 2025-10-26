@@ -1,9 +1,7 @@
 28
 Thursday $ Oct 30 $ 13-16 $ E:2116
-Monday   $ Nov 3  $ 13-16 $ LTH
 Tuesday  $ Nov 4  $ 13-16 $ LTH
 Thursday $ Nov 6  $ 13-16 $ BARC
-Monday   $ Nov 10 $ 13-16 $ E:2116
 Tuesday  $ Nov 11 $ 13-16 $ E:2405
 Thursday $ Nov 13 $ 13-16 $ BARC
 Monday   $ Nov 17 $ 13-16 $ E:2116
@@ -27,6 +25,8 @@ Thursday $ Jan 29 $ 13-16 $ BARC
 Friday   $ Jan 30 $ 13-16 $ BARC
 Tuesday  $ Feb 3  $ 13-16 $ BARC
 Friday   $ Feb 6  $ 13-16 $ E:2405
+Tuesday  $ Feb 10 $ 13-16 $ BARC
+Friday   $ Feb 13 $ 13-16 $ E:2405
 Introduction to proof complexity as a computational lens $ $
 Resolution and the pigeonhole principle $ $
 Resolution and Tseitin formulas $ $
