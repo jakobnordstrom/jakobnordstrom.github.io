@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!-- ********************************************************* -->
+<!-- *                                                       * -->
+<!-- * PLEASE NOTE that this file is machine-generated!      * -->
+<!-- * Make sure to edit the source files and not this file! * -->
+<!-- *                                                       * -->
+<!-- ********************************************************* -->
+
+
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="icon" href="https://www.jakobnordstrom.se/MIAOlogo.ico">
+<link rel="stylesheet" type="text/css" href="../../index-filer/kod-html.css">
+
+
+<title>
+  Proof Complexity as a Computational Lens 2025
+</title>
+</head>
+<body>
+
+<table class="innehall_ram" width="634" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+
+<td valign="top">
+<div class="innehall">
+<a name="topofpage"></a>
+
+
+<!-- Hard-coded "menu" at top of page -->
+
+<table width="100%">
+<tbody><tr><td valign="top" align="left">
+<span class="sokvag_nedflyttad">
+  <a href="https://www.jakobnordstrom.se">Jakob Nordström</a>
+  /   <a href="https://www.jakobnordstrom.se/teaching/">Teaching</a>
+  /   Proof Complexity as a Computational Lens 2025
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- BEGIN CONTENTS OF PROOF COMPLEXITY COURSE PAGE -->
+
+
+<h1>
+  Proof Complexity as a Computational Lens 2025
+</h1>
+
+
+<p>
+  <em>
+    Follow these shortcut links to go directly to
+    the
+<!--    <a href="#news">course news</a>,   -->
+    <a href="#short-overview">short overview</a>,
+    <a href="#schedule">schedule and course contents</a>,
+    <a href="#lecturers">lecturers</a>,
+    <a href="#goals">goals</a>,
+    <a href="#requirements">requirements</a>,
+    <a href="#literature">course material</a>,
+    <a href="#psets">problem sets</a>,
+    and
+    <a href="#other-courses">other proof complexity courses</a>.
+  </em>
+</p>    
+    
+
+    <!--
+
+<h2><a name="news">News</a></h2>
+
+<ul>
+
+
+  <li>
+    News item here
+
+  <li>
+    Second news item here
+
+</ul>
+
+
+
+ -->
+
+  
+<h2><a name="short-overview">Short Overview</a></h2>
+
+<p>
+  Very simply put, proof complexity can be said to be the study of how
+  to provide a short and efficiently verifiable certificate of the
+  fact that a given propositional logic formula (typically in conjunctive
+  normal form, or CNF) is unsatisfiable. Note that for <em>satisfiable</em>
+  formulas there are very succinct certificates &mdash; just list a
+  satisfying assignment &mdash; but for unsatisfiable formulas it is not
+  quite clear what to do.
+</p>
+
+<p>
+  It is widely believed that it is not possible in general 
+  to give short
+  certificates for unsatisfiable formulas, which if proven would imply
+  <em>P</em> &ne; <em>NP</em>. 
+  One important research direction in proof complexity is
+  to approach this distant goal by establishing lower bounds for stronger and
+  stronger proof systems.
+</p>
+
+<p>
+  Another reason to study proof complexity is that any algorithm for
+  deciding satisfiability of  CNF formulas, or of related objects
+  such as systems of polynomial equalities or linear inequalities,
+  uses some method of reasoning to determine whether the sets of constraints
+  in the input are feasible or infeasible. 
+  Studying the proof systems corresponding to these methods of
+  reasoning and proving upper and lower bounds for them tells us
+  something about the potential and limitations of such algorithms.
+</p>
+
+<p>
+  As indicated by the title above, this seminar course is mainly
+  motivated by the second reason, and will therefore focus on proof
+  systems that are especially interesting from an algorithmic
+  perspective.
+  
+  We will introduce the proof systems resolution, Nullstellensatz,
+  polynomial calculus, cutting planes, and Sherali-Adams
+  &mdash;
+  corresponding to SAT solving, algebraic reasoning, and geometric reasoning
+  &mdash;
+  survey some of the major research results, and present some open problems
+  right at the research frontier. 
+
+  While the intention is to give a fairly broad coverage, there might
+  be a slight bias towards topics where current and former members of 
+  the
+  <a href="https://jakobnordstrom.se/miao-group/">Mathematical
+    Insights into Algorithms for Optimization (MIAO)</a>
+  group
+  and our collaborators have made significant contributions to the state of the art.
+</p>
+
+
+<h2><a name="schedule">Schedule and Course Contents</a></h2>
+
+<!-- START OF SCHEDULE SECTION -->
+
+<p>
+  This seminar course
+  is
+  given during the winter 2025/26.
+  
+  It
+  is planned to have a total of 25-30 lectures, 
+  with two lectures per week on average.
+</p>
+
+<p>
+  In accordance with the
+  <a href="http://en.wikipedia.org/wiki/Academic_quarter_(class_timing)">academic 
+    quarter</a>
+  tradition,
+  all times are stated <em>cum tempore</em>,
+  so "13" in the lecture schedule below actually means "13:15".
+
+  Regarding the length of the lectures, we will try to use some of the
+  extra flexibility afforded between friends, going over two hours
+  when the complexity of the materials requires it, but we will try
+  not to use the full three hours in the schedule.
+</p>
+  
+<p>
+  Lectures in rooms starting with "E:" are at the
+  <a href="https://www.cs.lth.se/en/">CS department</a>
+  at
+  <a href="https://www.lunduniversity.lu.se/">Lund University</a>
+  at 
+  <a href="https://maps.app.goo.gl/ZpcHqr1aSB2fuS9U7">Klas Anshelms väg 10</a>.
+  The other lectures will  be given in the premises of the
+  <a href="https://barc.ku.dk/">Basic Algorithms Research Copenhagen (BARC)</a>
+  centre at the
+  <a href="https://www.ku.dk/en">University of Copenhagen</a>
+  at
+  <a href="https://maps.app.goo.gl/Gq7gG4cbizmJhqjLA">Vibendshuset</a>.
+
+  We also hope and plan to stream all lectures on Zoom and record
+  them.
+  Please contact
+  <a href="https://jakobnordstrom.se/">Jakob Nordström</a>
+  to get information about the Zoom links used.  
+</p>
+
+  
+</p>
+
+
+<p>
+  <em>
+    Please note that the information below about what will be covered
+    in future lectures is somewhat tentative. The planning might be
+    revised as we go along.
+  </em>
+</p>
+
+<!--
+    The information below about the course planning (including what will
+    be covered in future lectures) should now be fairly stable.
+-->
+
+<p>
+
+
+<!-- INCLUDE SCHEDULE BELOW THIS PART OF THE WEBPAGE -->
