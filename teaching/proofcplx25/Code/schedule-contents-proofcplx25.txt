@@ -1,6 +1,6 @@
 28
 Thursday $ Oct 30 $ 13-16 $ E:2116
-Tuesday  $ Nov 4  $ 13-16 $ LTH
+Tuesday  $ Nov 4  $ 13-16 $ E:1426
 Thursday $ Nov 6  $ 13-16 $ BARC
 Tuesday  $ Nov 11 $ 13-16 $ E:2405
 Thursday $ Nov 13 $ 13-16 $ BARC
@@ -10,15 +10,15 @@ Thursday $ Nov 20 $ 13-16 $ BARC
 Monday   $ Nov 24 $ 13-16 $ E:2116
 Tuesday  $ Nov 25 $ 13-16 $ E:2405
 Thursday $ Nov 27 $ 13-16 $ BARC
-Monday   $ Dec 1  $ 13-16 $ E:2405
+Monday   $ Dec 1  $ 13-16 $ E:1426
 Tuesday  $ Dec 2  $ 13-16 $ E:2405
 Thursday $ Dec 4  $ 13-16 $ BARC
 Tuesday  $ Dec 9  $ 13-16 $ E:2116
 Thursday $ Dec 11 $ 13-16 $ BARC
 Tuesday  $ Dec 16 $ 13-16 $ E:2116
 Thursday $ Dec 18 $ 13-16 $ BARC
-Thursday $ Jan 8  $ 13-16 $ E:2405
-Friday   $ Jan 9  $ 13-16 $ E:2405
+Thursday $ Jan 8  $ 13-16 $ E:1426
+Friday   $ Jan 9  $ 13-16 $ E:1426
 Monday   $ Jan 19 $ 13-16 $ E:2116 
 Tuesday  $ Jan 20 $ 13-16 $ E:2116
 Thursday $ Jan 29 $ 13-16 $ BARC
