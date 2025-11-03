@@ -9,6 +9,11 @@
  *
  * scheduleparser < schedule-contents-proofcplx25.txt > proofcplx25-schedule.html
  *
+ * For the final "Notes" field a PDF file is expected. A file name starting with
+ * 'n' or 'N' is treated as "notes" whereas files starting with 's' or 'S' are
+ * treated as "slides". The files are assumed to reside in the subdirectory
+ * "lecturenotes".
+ *
  */
 
 
