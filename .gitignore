@@ -23,3 +23,5 @@
 /teaching/proofcplx25/index.html.BAK
 /teaching/proofcplx25/Code/schedule-contents-proofcplx25-DENSE.txt
 /teaching/proofcplx25/Code/scheduleparser
+*.d
+*.cc~
