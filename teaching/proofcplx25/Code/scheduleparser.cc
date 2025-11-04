@@ -9,10 +9,13 @@
  *
  * scheduleparser < schedule-contents-proofcplx25.txt > proofcplx25-schedule.html
  *
- * For the final "Notes" field a PDF file is expected. A file name starting with
- * 'n' or 'N' is treated as "notes" whereas files starting with 's' or 'S' are
- * treated as "slides". The files are assumed to reside in the subdirectory
- * "lecturenotes".
+ * For the final two fields 'notes1' and 'notes2', names of PDF files are
+ * expected. The following naming conventions are assumed for the initial
+ * letter of the file name:
+ * - 'h' or 'H': (handwritten) notes
+ * - 'n' or 'N': scribe notes
+ * - 'd' or 'D': draft (scribe) notes
+ * - 's' or 'S': slides
  *
  */
 
@@ -60,14 +63,23 @@ const char   *colours[] = {"#ffffff" , "#ccffff"};
 
 #define NBSP   "&nbsp;"
 
-#define ROW_REFSWITHNOTES_ITEM				\
-    "<td bgcolor=\"%s\" width=\"%d%%\">%s%s "           \
-    "<a href=\"lecturenotes/%s\">notes</a></td> \n"
+#define ROW_REFS_START_PLUS_CITATIONS			\
+    "<td bgcolor=\"%s\" width=\"%d%%\">%s%s "
 
+#define ROW_REFS_HANDWRITTENNOTES_ITEM			\
+    "<a href=\"lecturenotes/%s\">notes</a>%s "
 
-#define ROW_REFSWITHSLIDES_ITEM				\
-    "<td bgcolor=\"%s\" width=\"%d%%\">%s%s "            \
-    "<a href=\"lecturenotes/%s\">slides</a></td> \n"
+#define ROW_REFS_SCRIBENOTES_ITEM			\
+    "<a href=\"lecturenotes/%s\">scribe notes</a>%s "
+
+#define ROW_REFS_DRAFTNOTES_ITEM			\
+    "<a href=\"lecturenotes/%s\">draft notes</a>%s "
+
+#define ROW_REFS_SLIDES_ITEM				\
+    "<a href=\"lecturenotes/%s\">slides</a>%s "
+
+#define ROW_REFS_END					 \
+    "</td> \n"
 
 
 typedef struct Lecture {
@@ -77,7 +89,8 @@ typedef struct Lecture {
     string    room;
     string    content;
     string    refs;
-    string    notes;    
+    string    notes1;    
+    string    notes2;    
 } Lecture;
 
 
@@ -114,9 +127,10 @@ print_row_refs_item (
     const char     *colour, 
     int             width,
     const char     *refs,
-    const char     *notes)
+    const char     *notes1,
+    const char     *notes2)
 {
-    if (strcmp (notes, "") == 0)
+    if (strcmp (notes1, "") == 0)
     {
         printf (ROW_GENERIC_ITEM, 
 		colour,
@@ -124,28 +138,94 @@ print_row_refs_item (
 		refs,
 		"");
     }
-    else if (notes[0] == 'n' || notes[0] == 'N') 
-    {
-        printf (ROW_REFSWITHNOTES_ITEM,
-		colour,
-		width,
-		refs,
-		(strcmp (refs, "") == 0) ? "" : ",",
-		notes);
-    }
-    else if (notes[0] == 's' || notes[0] == 'S') 
-    {
-	printf (ROW_REFSWITHSLIDES_ITEM,
-		colour,
-		width,
-		refs,
-		(strcmp (refs, "") == 0) ? "" : ",",
-		notes);
-    }
     else
     {
-      fprintf (stderr, "Unexpected name of notes/slides file.\n");
-      exit (1);
+	/*
+	 * First print citations (if any)
+	 *
+	 */
+
+	printf (ROW_REFS_START_PLUS_CITATIONS,
+		colour,
+		width,
+		refs,
+		(strcmp (refs, "") == 0) ? "" : ",");
+
+	/*
+	 * Now print links to notes, slides, or similar
+	 * First the notes in 'notes1'
+	 *
+	 */
+	
+	if (notes1[0] == 'h' || notes1[0] == 'H') 
+	{
+	    printf (ROW_REFS_HANDWRITTENNOTES_ITEM,
+		    notes1,
+		    (strcmp (notes2, "") == 0) ? "" : ",");
+	}
+	else if (notes1[0] == 'n' || notes1[0] == 'N') 
+	{
+	    printf (ROW_REFS_SCRIBENOTES_ITEM,
+		    notes1,
+		    (strcmp (notes2, "") == 0) ? "" : ",");
+	}
+	else if (notes1[0] == 's' || notes1[0] == 'S') 
+	{
+	    printf (ROW_REFS_SLIDES_ITEM,
+		    notes1,
+		    (strcmp (notes2, "") == 0) ? "" : ",");
+	}
+	else if (notes1[0] == 'd' || notes1[0] == 'D') 
+	{
+	    printf (ROW_REFS_DRAFTNOTES_ITEM,
+		    notes1,
+		    (strcmp (notes2, "") == 0) ? "" : ",");
+	}
+	else
+	{
+	    fprintf (stderr, "Unexpected name of notes/slides file.\n");
+	    exit (1);
+	}
+
+	/*
+	 * Then print links to notes, slides, or similar in 'notes2'
+	 *
+	 */
+	
+	if (strcmp (notes2, "") != 0)
+	{
+	    if (notes2[0] == 'h' || notes2[0] == 'H') 
+	    {
+		printf (ROW_REFS_HANDWRITTENNOTES_ITEM,
+			notes2,
+			"");
+	    }
+	    else if (notes2[0] == 'n' || notes2[0] == 'N') 
+	    {
+		printf (ROW_REFS_SCRIBENOTES_ITEM,
+			notes2,
+			"");
+	    }
+	    else if (notes2[0] == 's' || notes2[0] == 'S') 
+	    {
+		printf (ROW_REFS_SLIDES_ITEM,
+			notes2,
+			"");
+	    }
+	    else if (notes2[0] == 'd' || notes2[0] == 'D') 
+	    {
+		printf (ROW_REFS_DRAFTNOTES_ITEM,
+			notes2,
+			"");
+	    }
+	    else
+	    {
+		fprintf (stderr, "Unexpected name of notes/slides file.\n");
+		exit (1);
+	    }
+	}
+	
+	printf (ROW_REFS_END);
     }
 }
 
@@ -188,11 +268,13 @@ main ( )
 	
 	getline (tokenizer, lectures[i].content, delimiter);
 	getline (tokenizer, lectures[i].refs, delimiter);
-	getline (tokenizer, lectures[i].notes, delimiter);
+	getline (tokenizer, lectures[i].notes1, delimiter);
+	getline (tokenizer, lectures[i].notes2, delimiter);
 
 	boost::algorithm::trim (lectures[i].content);
 	boost::algorithm::trim (lectures[i].refs);
-	boost::algorithm::trim (lectures[i].notes);
+	boost::algorithm::trim (lectures[i].notes1);
+	boost::algorithm::trim (lectures[i].notes2);
     }
     
     // Output schedule
@@ -246,8 +328,7 @@ main ( )
 			widths[3],
 			"",
 			lectures[i].room.c_str());
-
-
+	
 	print_row_number_item (colours[i % 2],
 			       widths[4],
 			       i + 1);
@@ -260,7 +341,8 @@ main ( )
 	print_row_refs_item (colours[i % 2], 
 			     widths[6],
 			     lectures[i].refs.c_str(),
-			     lectures[i].notes.c_str());
+			     lectures[i].notes1.c_str(),
+			     lectures[i].notes2.c_str());
 
 	printf (ROW_POSTAMBLE);
     }
