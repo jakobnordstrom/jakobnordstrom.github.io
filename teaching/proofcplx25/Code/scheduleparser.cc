@@ -67,13 +67,13 @@ const char   *colours[] = {"#ffffff" , "#ccffff"};
     "<td bgcolor=\"%s\" width=\"%d%%\">%s%s "
 
 #define ROW_REFS_HANDWRITTENNOTES_ITEM			\
-    "<a href=\"lecturenotes/%s\">notes</a>%s "
+    "<a href=\"lecturenotes/%s\">hand notes</a>%s "
 
 #define ROW_REFS_SCRIBENOTES_ITEM			\
     "<a href=\"lecturenotes/%s\">scribe notes</a>%s "
 
 #define ROW_REFS_DRAFTNOTES_ITEM			\
-    "<a href=\"lecturenotes/%s\">draft notes</a>%s "
+    "<a href=\"lecturenotes/%s\">draft scribe notes</a>%s "
 
 #define ROW_REFS_SLIDES_ITEM				\
     "<a href=\"lecturenotes/%s\">slides</a>%s "

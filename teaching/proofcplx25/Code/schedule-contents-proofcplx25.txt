@@ -29,7 +29,7 @@ Tuesday  $ Feb 10 $ 13-16 $ BARC
 Friday   $ Feb 13 $ 13-16 $ E:2405
 Introduction to proof complexity as a computational lens $ <a href="#Nor15">[Nor15]</a>, <a href="#BN21">[BN21]</a> $ SlidesLec01.pdf $ 
 Proof complexity basis, resolution, and the pigeonhole principle $ <a href="#Hak85">[Hak85]</a>, <a href="#Pud00">[Pud00]</a> $ SlidesLec02.pdf $ HandwrittenNotesLec02.pdf 
-Resolution and Tseitin formulas $ <a href="#Urq87">[Urq87]</a> $ DraftScribeNotesLec03.pdf $ 
+Resolution and Tseitin formulas $ <a href="#Urq87">[Urq87]</a> $ HandwrittenNotesLec03.pdf $ DraftScribeNotesLec03.pdf
 Resolution and the clique problem $ <a href="#ABdR21">[ABdR+21]</a> $ $ 
 Resolution and the clique problem (cont.) $ <a href="#ABdR21">[ABdR+21]</a> $ $ 
 Feasible interpolation for resolution $ <a href="#Pud97">[Pud97]</a> $ $ 
