@@ -33,7 +33,7 @@ Resolution and Tseitin formulas $ <a href="#Urq87">[Urq87]</a> $ HandwrittenNote
 Feasible interpolation for resolution $ <a href="#Pud97">[Pud97]</a> $ $ DraftScribeNotesLec04.pdf
 Resolution and the clique problem $ <a href="#ABdR21">[ABdR+21]</a> $ $ 
 Resolution and the clique problem (cont.) $ <a href="#ABdR21">[ABdR+21]</a> $ $ 
-Resolution size-width lower bounds $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a> $ $ 
+Resolution size-width lower bounds $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a> $ $ DraftScribeNotesLec07.pdf
 Nullstellensatz, polynomial calculus, and resolution $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ $ 
 Polynomial calculus degree lower bounds $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ $ 
 Polynomial calculus and graph colouring  $ <a href="#CdRN23">[CdRN+23]</a> $ $ 
