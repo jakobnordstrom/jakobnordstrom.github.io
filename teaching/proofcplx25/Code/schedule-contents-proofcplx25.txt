@@ -3,29 +3,29 @@ Thursday $ Oct 30 $ 13-16 $ E:2116
 Tuesday  $ Nov 4  $ 13-16 $ E:4121
 Thursday $ Nov 6  $ 13-16 $ VH N
 Tuesday  $ Nov 11 $ 13-16 $ E:2405
-Thursday $ Nov 13 $ 13-16 $ BARC
+Thursday $ Nov 13 $ 13-16 $ VH L
 Monday   $ Nov 17 $ 13-16 $ E:2116
 Tuesday  $ Nov 18 $ 13-16 $ E:2405
-Thursday $ Nov 20 $ 13-16 $ BARC
+Thursday $ Nov 20 $ 13-16 $ VH Y
 Monday   $ Nov 24 $ 13-16 $ E:2116
 Tuesday  $ Nov 25 $ 13-16 $ E:2405
-Thursday $ Nov 27 $ 13-16 $ BARC
+Thursday $ Nov 27 $ 13-16 $ VH Y
 Monday   $ Dec 1  $ 13-16 $ E:3316
 Tuesday  $ Dec 2  $ 13-16 $ E:2405
-Thursday $ Dec 4  $ 13-16 $ BARC
+Thursday $ Dec 4  $ 13-16 $ VH L
 Tuesday  $ Dec 9  $ 13-16 $ E:2116
-Thursday $ Dec 11 $ 13-16 $ BARC
+Thursday $ Dec 11 $ 13-16 $ VH L
 Tuesday  $ Dec 16 $ 13-16 $ E:2116
-Thursday $ Dec 18 $ 13-16 $ BARC
+Thursday $ Dec 18 $ 13-16 $ VH L
 Thursday $ Jan 8  $ 13-16 $ E:3316
 Friday   $ Jan 9  $ 13-16 $ E:3316
 Monday   $ Jan 19 $ 13-16 $ E:2116 
 Tuesday  $ Jan 20 $ 13-16 $ E:2116
-Thursday $ Jan 29 $ 13-16 $ BARC
-Friday   $ Jan 30 $ 13-16 $ BARC
-Tuesday  $ Feb 3  $ 13-16 $ BARC
+Thursday $ Jan 29 $ 13-16 $ VH L
+Friday   $ Jan 30 $ 13-16 $ VH L
+Tuesday  $ Feb 3  $ 13-16 $ VH Y
 Friday   $ Feb 6  $ 13-16 $ E:2405
-Tuesday  $ Feb 10 $ 13-16 $ BARC
+Tuesday  $ Feb 10 $ 13-16 $ VH L
 Friday   $ Feb 13 $ 13-16 $ E:2405
 Introduction to proof complexity as a computational lens $ <a href="#Nor15">[Nor15]</a>, <a href="#BN21">[BN21]</a> $ SlidesLec01.pdf $ 
 Proof complexity basics, resolution, and the pigeonhole principle $ <a href="#Hak85">[Hak85]</a>, <a href="#Pud00">[Pud00]</a> $ SlidesLec02.pdf $ HandwrittenNotesLec02.pdf 
