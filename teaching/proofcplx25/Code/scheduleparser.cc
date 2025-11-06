@@ -17,6 +17,10 @@
  * - 'd' or 'D': draft (scribe) notes
  * - 's' or 'S': slides
  *
+ * IMPORTANT: If the 'notes1' field is empty, the parser will NOT check
+ * 'notes2' as the code is currently written! If there is only one set of
+ * notes or slides, then that PDF file should be given in the first field.
+ *
  */
 
 
