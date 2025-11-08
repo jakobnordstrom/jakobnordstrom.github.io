@@ -9,6 +9,20 @@
  *
  * scheduleparser < schedule-contents-proofcplx25.txt > proofcplx25-schedule.html
  *
+ * The schedule-contents file should be formatted as follows:
+ * (1) First a positive integer N.
+ * (2) Then N lines with schedule information on the format:
+ *     Weekday $ Date $ Start-time-to-end-time $ Room
+ *     (for instance: "Thursday $ Oct 30 $ 13-16 $ E:2116"
+ * (3) Then a line with a reminder of the contents format, which needs to
+ *     be successfully parsed but is then ignored. The format is:
+ *     Topics $ Video link $ References $ notes1 (PDF file) or empty $ notes2 (PDF file) or empty
+ *     (For instance:
+ *     Introduction $ <a href="#Nor15">[Nor15]</a>, <a href="#BN21">[BN21]</a> $ SlidesLec01.pdf $ 
+ * 
+ * The field "Video link" is expected to be a YouTube link without the initial
+ * string "https://".
+ * 
  * For the final two fields 'notes1' and 'notes2', names of PDF files are
  * expected. The following naming conventions are assumed for the initial
  * letter of the file name:
@@ -62,6 +76,11 @@ const char   *colours[] = {"#ffffff" , "#ccffff"};
 #define ROW_GENERIC_ITEM				\
     "<td bgcolor=\"%s\" width=\"%d%%\">%s%s</td> \n"
 
+#define ROW_TOPICWITHVIDEOLINK_ITEM			\
+    "<td bgcolor=\"%s\" width=\"%d%%\">%s "             \
+    "<a href=\"https://%s\"><img src=\"youtube.png\" "  \
+    "alt=\"YouTube\" border=0></a> </td> \n"
+
 #define ROW_NUMBER_ITEM					\
     "<td align=\"right\" bgcolor=\"%s\" width=\"%d%%\">%d.</td> \n"
 
@@ -92,6 +111,7 @@ typedef struct Lecture {
     string    time; 
     string    room;
     string    content;
+    string    videolink;
     string    refs;
     string    notes1;    
     string    notes2;    
@@ -113,6 +133,7 @@ print_row_item (
 	    item);
 }
 
+
 static void
 print_row_number_item (
     const char     *colour, 
@@ -123,6 +144,32 @@ print_row_number_item (
             colour,
 	    width, 
 	    number);
+}
+
+
+static void
+print_row_topic_item (
+    const char     *colour, 
+    int             width,
+    const char     *topic,
+    const char     *videolink)
+{
+    if (strcmp (videolink, "") == 0)
+    {
+        printf (ROW_GENERIC_ITEM, 
+		colour,
+		width,
+		"",
+		topic);
+    }
+    else
+    {
+	printf (ROW_TOPICWITHVIDEOLINK_ITEM,
+		colour,
+		width,
+		topic,
+		videolink);
+    }
 }
 
 
@@ -193,6 +240,7 @@ print_row_refs_item (
 
 	/*
 	 * Then print links to notes, slides, or similar in 'notes2'
+	 * (but only if 'notes1' was non-empty)
 	 *
 	 */
 	
@@ -243,11 +291,11 @@ main ( )
 
     scanf ("%d\n", &numlines);
     
-    Lecture    lectures[numlines];
+    Lecture    lectures[numlines + 1];
     string     line;
     
     // Read time and date info
-    for (int i = 0; i < numlines; ++i)
+    for (int i = 1; i <= numlines; ++i)
     {
 	getline (cin, line);
 	
@@ -264,18 +312,20 @@ main ( )
    }
     
     // Read lecture planning
-    for (int i = 0; i < numlines; ++i)
+    for (int i = 0; i <= numlines; ++i)
     {
 	getline (cin, line);
 	
 	istringstream    tokenizer(line);
 	
-	getline (tokenizer, lectures[i].content, delimiter);
-	getline (tokenizer, lectures[i].refs, delimiter);
-	getline (tokenizer, lectures[i].notes1, delimiter);
-	getline (tokenizer, lectures[i].notes2, delimiter);
+	getline (tokenizer, lectures[i].content,   delimiter);
+	getline (tokenizer, lectures[i].videolink, delimiter);
+	getline (tokenizer, lectures[i].refs,      delimiter);
+	getline (tokenizer, lectures[i].notes1,    delimiter);
+	getline (tokenizer, lectures[i].notes2,    delimiter);
 
 	boost::algorithm::trim (lectures[i].content);
+	boost::algorithm::trim (lectures[i].videolink);
 	boost::algorithm::trim (lectures[i].refs);
 	boost::algorithm::trim (lectures[i].notes1);
 	boost::algorithm::trim (lectures[i].notes2);
@@ -309,48 +359,48 @@ main ( )
 	   widths[6]);
 	
 
-    for (int i = 0; i < numlines; ++i)
+    for (int i = 1; i <= numlines; ++i)
     {
 	printf (ROW_PREAMBLE);
 
-	print_row_item (colours[i % 2], 
+	print_row_item (colours[(i + 1) % 2], 
 			widths[0],
 			NBSP,
 			lectures[i].weekday.c_str());
 
-	print_row_item (colours[i % 2], 
+	print_row_item (colours[(i + 1) % 2], 
 			widths[1],
 			"",
 			lectures[i].date.c_str());
 
-	print_row_item (colours[i % 2], 
+	print_row_item (colours[(i + 1) % 2], 
 			widths[2],
 			"",
 			lectures[i].time.c_str());
 
-	print_row_item (colours[i % 2], 
+	print_row_item (colours[(i + 1) % 2], 
 			widths[3],
 			"",
 			lectures[i].room.c_str());
 	
-	print_row_number_item (colours[i % 2],
+	print_row_number_item (colours[(i + 1) % 2],
 			       widths[4],
-			       i + 1);
+			       i);
 
-	print_row_item (colours[i % 2], 
-			widths[5],
-			"",
-			lectures[i].content.c_str());
-
-	print_row_refs_item (colours[i % 2], 
+	print_row_topic_item (colours[(i + 1) % 2], 
+			      widths[5],
+			      lectures[i].content.c_str(),
+			      lectures[i].videolink.c_str());
+	
+	print_row_refs_item (colours[(i + 1) % 2], 
 			     widths[6],
 			     lectures[i].refs.c_str(),
 			     lectures[i].notes1.c_str(),
 			     lectures[i].notes2.c_str());
-
+	
 	printf (ROW_POSTAMBLE);
     }
-
+    
     printf (TABLE_POSTAMBLE);
 }
 
