@@ -7,10 +7,8 @@ Thursday $ Nov 13 $ 13-16 $ VH L
 Monday   $ Nov 17 $ 13-16 $ E:2116
 Tuesday  $ Nov 18 $ 13-16 $ E:2405
 Thursday $ Nov 20 $ 13-16 $ VH Y
-Monday   $ Nov 24 $ 13-16 $ E:2116
 Tuesday  $ Nov 25 $ 13-16 $ E:2405
 Thursday $ Nov 27 $ 13-16 $ VH Y
-Monday   $ Dec 1  $ 13-16 $ E:3316
 Tuesday  $ Dec 2  $ 13-16 $ E:2405
 Thursday $ Dec 4  $ 13-16 $ VH L
 Tuesday  $ Dec 9  $ 13-16 $ E:2116
@@ -27,6 +25,8 @@ Tuesday  $ Feb 3  $ 13-16 $ VH Y
 Friday   $ Feb 6  $ 13-16 $ E:2405
 Tuesday  $ Feb 10 $ 13-16 $ VH L
 Friday   $ Feb 13 $ 13-16 $ E:2405
+Tuesday  $ Feb 17 $ 13-16 $ VH L
+Friday   $ Feb 20 $ 13-16 $ E:2405
 1 TOPICS $ 2 VIDEO LINK $ 3 REFERENCES $ 4 NOTES1 (PDF FILE) OR EMPTY $ 5 NOTES2 (PDF FILE) OR EMPTY
 Introduction to proof complexity as a computational lens $ youtu.be/9NR_RGIs1no $ <a href="#Nor15">[Nor15]</a>, <a href="#BN21">[BN21]</a> $ SlidesLec01.pdf $ 
 Proof complexity basics, resolution, and the pigeonhole principle $ youtu.be/9a3a7PeGEkU $ <a href="#Hak85">[Hak85]</a>, <a href="#Pud00">[Pud00]</a> $ SlidesLec02.pdf $ HandwrittenNotesLec02.pdf 
@@ -34,7 +34,7 @@ Resolution and Tseitin formulas $ youtu.be/srZXj3Gsx0A $ <a href="#Urq87">[Urq87
 Feasible interpolation for resolution $ youtu.be/wSCKxMsvfy4 $ <a href="#Pud97">[Pud97]</a> $ HandwrittenNotesLec04.pdf $ DraftScribeNotesLec04.pdf
 Resolution and the clique problem $ youtu.be/7NmS1G9jjKg $ <a href="#ABdR21">[ABdR+21]</a> $ HandwrittenNotesLec05.pdf $
 Resolution and the clique problem (cont.) $ youtu.be/Yvb88xvDQQM $ <a href="#ABdR21">[ABdR+21]</a> $ HandwrittenNotesLec06.pdf $
-Resolution size-width lower bounds $ $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a>  $ DraftScribeNotesLec07.pdf $ HandwrittenNotesLec07.pdf
+Resolution size-width lower bounds $ youtu.be/Wlie36wSNKo $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a>  $ DraftScribeNotesLec07.pdf $ HandwrittenNotesLec07.pdf
 Nullstellensatz, polynomial calculus, and resolution $ $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ $ 
 Polynomial calculus degree lower bounds $ $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ $ 
 Polynomial calculus and graph colouring  $ $ <a href="#CdRN23">[CdRN+23]</a> $ $ 
