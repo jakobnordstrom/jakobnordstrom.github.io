@@ -35,7 +35,7 @@ Feasible interpolation for resolution $ youtu.be/wSCKxMsvfy4 $ <a href="#Pud97">
 Resolution and the clique problem $ youtu.be/7NmS1G9jjKg $ <a href="#ABdR21">[ABdR+21]</a> $ HandwrittenNotesLec05.pdf $
 Resolution and the clique problem (cont.) $ youtu.be/Yvb88xvDQQM $ <a href="#ABdR21">[ABdR+21]</a> $ HandwrittenNotesLec06.pdf $
 Resolution size-width lower bounds $ youtu.be/Wlie36wSNKo $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a>  $ DraftScribeNotesLec07.pdf $ HandwrittenNotesLec07.pdf
-Nullstellensatz, polynomial calculus, and resolution $ youtu.be/Kn0WzBsu-20 $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $  HandwrittenNotesLec07.pdf $ 
+Nullstellensatz, polynomial calculus, and resolution $ youtu.be/Kn0WzBsu-20 $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $  HandwrittenNotesLec08.pdf $ 
 Polynomial calculus degree lower bounds $ $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ $ 
 Polynomial calculus and graph colouring  $ $ <a href="#CdRN23">[CdRN+23]</a> $ $ 
 Tightness of size-width/degree relations for resolution and polynomial calculus $ $ <a href="#Sta96">[St&aring;96]</a>, <a href="#BG01">[BG01]</a>, <a href="#ALN16">[ALN16]</a> $ $ 
