@@ -37,7 +37,7 @@ Resolution and the clique problem (cont.) $ youtu.be/Yvb88xvDQQM $ <a href="#ABd
 Resolution size-width lower bounds $ youtu.be/Wlie36wSNKo $ <a href="#IPS99">[IPS99]</a>, <a href="#BW01">[BW01]</a>  $ DraftScribeNotesLec07.pdf $ HandwrittenNotesLec07.pdf
 Nullstellensatz, polynomial calculus, and resolution $ youtu.be/Kn0WzBsu-20 $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ HandwrittenNotesLec08.pdf $ 
 A general method for polynomial calculus degree lower bounds: Applications $ youtu.be/LSzBmkD97U8 $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ HandwrittenNotesLec09.pdf $ 
-A general method for polynomial calculus degree lower bounds: Proofs $ $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ HandwrittenNotesLec10.pdf $ 
+A general method for polynomial calculus degree lower bounds: Proofs $ youtu.be/g6H6QmWjBhs $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ HandwrittenNotesLec10.pdf $ 
 Polynomial calculus and graph colouring  $ $ <a href="#CdRN23">[CdRN+23]</a> $ $ 
 Tightness of size-width/degree relations for resolution and polynomial calculus $ $ <a href="#Sta96">[St&aring;96]</a>, <a href="#BG01">[BG01]</a>, <a href="#ALN16">[ALN16]</a> $ $ 
 Space complexity; resolution clause space vs. width $ $ <a href="#ABRW02">[ABRW02]</a>, <a href="#AD08">[AD08]</a>, <a href="#Ben09">[Ben09]</a> $ $ 
