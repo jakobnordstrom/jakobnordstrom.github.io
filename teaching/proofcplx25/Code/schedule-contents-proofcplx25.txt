@@ -40,7 +40,7 @@ A general method for polynomial calculus degree lower bounds: Applications $ you
 A general method for polynomial calculus degree lower bounds: Proofs $ youtu.be/g6H6QmWjBhs $ <a href="#AR03">[AR03]</a>, <a href="#MN24">[MN24]</a> $ HandwrittenNotesLec10.pdf $ 
 Polynomial calculus and graph colouring  $ youtu.be/RwmIp-3ZrDk $ <a href="#CdRN23">[CdRN+23]</a> $ HandwrittenNotesLec11.pdf $ 
 Tightness of size-width/degree relations for resolution and polynomial calculus $ youtu.be/_0dAQoce3pg $ <a href="#Sta96">[St&aring;96]</a>, <a href="#GL10">[GL10]</a>, <a href="#ALN16">[ALN16]</a> $ DraftScribeNotesLec12.pdf $ HandwrittenNotesLec12
-Space complexity; resolution clause space vs. width $ $ <a href="#ABRW02">[ABRW02]</a>, <a href="#AD08">[AD08]</a>, <a href="#Ben09">[Ben09]</a> $ $ 
+Space complexity; resolution clause space vs. width $ $ <a href="#ABRW02">[ABRW02]</a>, <a href="#AD08">[AD08]</a>, <a href="#Ben09">[Ben09]</a> $  DraftScribeNotesLec13.pdf $ 
 Resolution space-width separation and size-space trade-offs $ $ <a href="#BN08">[BN08]</a>, <a href="#BN11">[BN11]</a> $ $ 
 Supercritical resolution size-space trade-offs $ $ <a href="#BBI16">[BBI16]</a>, <a href="#BBI12">[BNT13]</a> $ $ 
 Polynomial calculus space lower bound for random CNF formulas $ $ $ $ 
