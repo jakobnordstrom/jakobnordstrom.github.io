@@ -132,59 +132,7 @@ Jakob Nordström: MIAO seminars</title>
 -->
 
 <ul>
-  <li>
-    <p>
-      Thursday Dec 11 at 10:15 <em>(note the time!)</em>
-      at the BARC piazza,  University of Copenhagen
-      at the Algorithms and Complexity Section at the University of Copenhagen,
-      Vibenshuset, Lyngbyvej 2, 
-      and on Zoom
-      <br>
-      <strong>
-	XOR lemmas and lifting in communication complexity
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
-	-->
-      <br>
-      (Siddharth Iyer, Institute of Mathematics of the Czech Academy of Sciences)
-    </p>
-
-    <p>
-      An XOR lemma states that if a Boolean function <em>f</em> is hard to
-      compute, then computing the XOR of <em>n</em> copies of <em>f</em> is
-      significantly harder. In this talk, I will discuss XOR lemmas
-      for both randomized and deterministic communication complexity
-      and a related lifting theorem for deterministic communication
-      complexity.
-
-      For randomized communication, we show that there is
-      a constant <em>c_0</em> such that if <em>f(x,y)</em> requires <em>C</em> &ge; <em>c_0</em> bits to be
-      computed with success probability 2/3, then computing the XOR of
-      <em>n</em> copies of <em>f</em> with probability 1/2 + exp(-&Omega;(<em>n))</em> &mdash; barely
-      better than random guessing &mdash; requires communication at least
-      &Omega;(sqrt{<em>n</em>} <em>C</em> / log(<em>nC</em>)).
-
-      For deterministic communication, we show that there exists a
-      constant <em>c_0</em> such that if <em>f</em> requires <em>C</em> &ge; <em>c_0</em> bits to be computed,
-      then computing the XOR of <em>n</em> copies of <em>f</em> requires &Omega;(<em>n</em> sqrt{<em>C</em>})
-      bits. Lastly, I will discuss a lifting theorem, which generalizes
-      the previous result and gives a lower bound on the communication
-      required to compute the composition <em>g(f(x_1,y_1),..,f(x_n,y_n))</em>,      
-      where <em>g</em> is an arbitrary Boolean function. We show that there is a
-      constant <em>c_0</em> such that if <em>f</em> requires communication <em>C</em> &ge; <em>c_0</em>,
-      then the communication required to compute the composition of <em>g</em> with <em>f</em> 
-      is at least &Omega;(min{<em>s(g), deg(g)</em>} sqrt{<em>C</em>}), where <em>s(g)</em> and
-      <em>deg(g)</em> are the sensitivity and the degree of <em>g</em>, respectively. These
-      results are based on joint works with Anup Rao.    
-    </p>
-
-    <p>
-      In the first part of the talk, I will give an overview of the
-      lifting theorem and in the second part, I will discuss the
-      randomized XOR lemma.
-    </p>
-    
+  
   <li>
     <p>
       Date TBD at the University of Copenhagen and on Zoom
@@ -285,6 +233,56 @@ Jakob Nordström: MIAO seminars</title>
 <h2>MIAO seminars autumn 2025</h2>
 
 <ul>
+  
+  <li>
+    <p>
+      Thursday Dec 11 at 10:15 <em>(note the time!)</em>
+      at the Algorithms and Complexity Section at the University of Copenhagen,
+      Vibenshuset, Lyngbyvej 2, 
+      and on Zoom
+      <br>
+      <strong>
+	XOR lemmas and lifting in communication complexity
+      </strong>      
+      (<a href="https://youtu.be/UtzJ0G7b_Co">video</a>)
+      <br>
+      (Siddharth Iyer, Institute of Mathematics of the Czech Academy of Sciences)
+    </p>
+
+    <p>
+      An XOR lemma states that if a Boolean function <em>f</em> is hard to
+      compute, then computing the XOR of <em>n</em> copies of <em>f</em> is
+      significantly harder. In this talk, I will discuss XOR lemmas
+      for both randomized and deterministic communication complexity
+      and a related lifting theorem for deterministic communication
+      complexity.
+
+      For randomized communication, we show that there is
+      a constant <em>c_0</em> such that if <em>f(x,y)</em> requires <em>C</em> &ge; <em>c_0</em> bits to be
+      computed with success probability 2/3, then computing the XOR of
+      <em>n</em> copies of <em>f</em> with probability 1/2 + exp(-&Omega;(<em>n))</em> &mdash; barely
+      better than random guessing &mdash; requires communication at least
+      &Omega;(sqrt{<em>n</em>} <em>C</em> / log(<em>nC</em>)).
+
+      For deterministic communication, we show that there exists a
+      constant <em>c_0</em> such that if <em>f</em> requires <em>C</em> &ge; <em>c_0</em> bits to be computed,
+      then computing the XOR of <em>n</em> copies of <em>f</em> requires &Omega;(<em>n</em> sqrt{<em>C</em>})
+      bits. Lastly, I will discuss a lifting theorem, which generalizes
+      the previous result and gives a lower bound on the communication
+      required to compute the composition <em>g(f(x_1,y_1),..,f(x_n,y_n))</em>,      
+      where <em>g</em> is an arbitrary Boolean function. We show that there is a
+      constant <em>c_0</em> such that if <em>f</em> requires communication <em>C</em> &ge; <em>c_0</em>,
+      then the communication required to compute the composition of <em>g</em> with <em>f</em> 
+      is at least &Omega;(min{<em>s(g), deg(g)</em>} sqrt{<em>C</em>}), where <em>s(g)</em> and
+      <em>deg(g)</em> are the sensitivity and the degree of <em>g</em>, respectively. These
+      results are based on joint works with Anup Rao.    
+    </p>
+
+    <p>
+      In the first part of the talk, I will give an overview of the
+      lifting theorem and in the second part, I will discuss the
+      randomized XOR lemma.
+    </p>    
   
   <li>
     <p>
@@ -4374,7 +4372,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2025-12-09
+Updated 2025-12-12
 </div>
 <!--/eri-no-index-->
 
