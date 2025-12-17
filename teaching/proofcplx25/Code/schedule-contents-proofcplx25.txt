@@ -42,7 +42,7 @@ Polynomial calculus and graph colouring  $ youtu.be/RwmIp-3ZrDk $ <a href="#CdRN
 Tightness of size-width/degree relations for resolution and polynomial calculus $ youtu.be/_0dAQoce3pg $ <a href="#Sta96">[St&aring;96]</a>, <a href="#GL10">[GL10]</a>, <a href="#ALN16">[ALN16]</a> $ DraftScribeNotesLec12.pdf $ HandwrittenNotesLec12.pdf
 Space complexity; resolution clause space vs. width $ youtu.be/freOUR8-Ui8 $ <a href="#ABRW02">[ABRW02]</a>, <a href="#AD08">[AD08]</a>, <a href="#Ben09">[Ben09]</a> $ DraftScribeNotesLec13.pdf $ 
 Resolution space-width separation and size-space trade-offs $ youtu.be/pH-M5QrHriA $ <a href="#BN08">[BN08]</a>, <a href="#BN11">[BN11]</a> $ DraftScribeNotesLec14.pdf $  
-Supercritical resolution size-space trade-offs $ $ <a href="#BBI16">[BBI16]</a>, <a href="#BBI12">[BNT13]</a> $ HandwrittenNotesLec15.pdf $ 
+Supercritical size-space trade-offs for resolution and polynomial calculus $ $ <a href="#BBI16">[BBI16]</a>, <a href="#BNT13">[BNT13]</a> $ HandwrittenNotesLec15.pdf $ 
 Polynomial calculus space lower bound for random CNF formulas $ $ $ $ 
 Total space in resolution; polynomial calculus space vs. width/degree $ $ $ $ 
 Size-degree trade-offs for Nullstellensatz and polynomial calculus $ $ $ $ 
