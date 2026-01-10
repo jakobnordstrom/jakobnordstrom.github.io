@@ -45,7 +45,7 @@ Resolution space-width separation and size-space trade-offs $ youtu.be/pH-M5QrHr
 Supercritical size-space trade-offs for resolution and polynomial calculus $ youtu.be/lqha1xAZU6k $ <a href="#BBI16">[BBI16]</a>, <a href="#BNT13">[BNT13]</a> $ HandwrittenNotesLec15.pdf $ 
 Polynomial calculus space lower bounds for random CNF formulas $ youtu.be/34cENABYJ40 $ <a href="#BG15">[BG15]</a>, <a href="#LMNV26">[LMNV26]</a> $ HandwrittenNotesLec16.pdf $ 
 Total space in resolution; polynomial calculus space vs. width/degree $ $ <a href="#Bon16">[Bon16]</a>, <a href="#GKT25">[GKT25]</a> $ HandwrittenNotesLec17.pdf $ 
-Size-degree trade-offs for Nullstellensatz and polynomial calculus $ $ <a href="#LNSS20">[LNSS20]</a>, <a href="#dRMNR21">[dRMNR21]</a> $ HandwrittenNotesLec18.pdf $ 
+PCR space vs. resolution width (cont.); size-degree trade-offs for Nullstellensatz $ $ <a href="#GKT25">[GKT25]</a> <a href="#dRMNR21">[dRMNR21]</a> $ HandwrittenNotesLec18.pdf $ 
 Polynomial calculus and roots of unity encodings $ $ <a href="#Sok20">[Sok20]</a> $ $ 
 Cutting planes; more about feasible interpolation $ $ <a href="#Pud97">[Pud97]</a> $ $ 
 Cutting planes lower bounds for random CNF formulas $ $ <a href="#Sok24">[Sok24]</a> $ $ 
