@@ -47,7 +47,7 @@ Polynomial calculus space lower bounds for random CNF formulas $ youtu.be/34cENA
 Total space in resolution; polynomial calculus space vs. width/degree $ youtu.be/hSWJMI3X48Q $ <a href="#Bon16">[Bon16]</a>, <a href="#GKT25">[GKT25]</a> $ HandwrittenNotesLec17.pdf $ 
 PCR space vs. resolution width (cont.); size-degree trade-offs for Nullstellensatz $ youtu.be/DH-dhSqBcDE $ <a href="#GKT25">[GKT25]</a> <a href="#dRMNR21">[dRMNR21]</a> $ HandwrittenNotesLec18.pdf $ 
 Polynomial calculus and roots of unity encodings $ $ <a href="#Sok20">[Sok20]</a> $ $ 
-Cutting planes; more about feasible interpolation $ $ <a href="#Pud97">[Pud97]</a> $ $ 
+Cutting planes; more about feasible interpolation $ $ <a href="#Pud97">[Pud97]</a> $  DraftScribeNotesLec20.pdf $ 
 Cutting planes lower bounds for random CNF formulas $ $ <a href="#Sok24">[Sok24]</a> $ $ 
 Size-space trade-offs for cutting planes $ $ $ $ 
 Size-space trade-offs for cutting planes (cont.) $ $ $ $ 
