@@ -49,8 +49,8 @@ PCR space vs. resolution width (cont.); size-degree trade-offs for Nullstellensa
 Polynomial calculus and roots of unity encodings $ youtu.be/SLlzmBUTa1A $ <a href="#Sok20">[Sok20]</a> $ HandwrittenNotesLec19.pdf $ 
 Cutting planes, proof systems for pseudo-Boolean solving, and more about feasible interpolation $ youtu.be/WS1XV75cjLA $ <a href="#GNY19">[GNY19]</a>, <a href="#Pud97">[Pud97]</a> $ DraftScribeNotesLec20.pdf $ 
 Cutting planes lower bounds for random CNF formulas $ $ <a href="#Sok24">[Sok24]</a> $ $ 
-Size-space trade-offs for cutting planes $ $ $ $ 
-Size-space trade-offs for cutting planes (cont.) $ $ $ $ 
+Size-space trade-offs for cutting planes $ $ <a href="#dRNV16">[dRNV16]</a> $ SlidesLec01.pdf $ 
+Size-space trade-offs for cutting planes (cont.) $ $  <a href="#dRNV16">[dRNV16]</a> $ $ 
 Trade-offs for cutting planes with polynomially bounded coefficients $ $ $ $ 
 Lower bounds for cutting planes size from resolution width using lifting $ $ $ $ 
 Lower bounds for cutting planes size from resolution width using lifting (cont.) $ $ $ $ 
