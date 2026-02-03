@@ -50,7 +50,7 @@ Polynomial calculus and roots of unity encodings $ youtu.be/SLlzmBUTa1A $ <a hre
 Cutting planes, proof systems for pseudo-Boolean solving, and more about feasible interpolation $ youtu.be/WS1XV75cjLA $ <a href="#GNY19">[GNY19]</a>, <a href="#Pud97">[Pud97]</a> $ DraftScribeNotesLec20.pdf $ 
 Cutting planes lower bounds for random CNF formulas $ youtu.be/hEnZPvt0P_I $ <a href="#Sok24">[Sok24]</a> $ HandwrittenNotesLec21.pdf $ 
 Size-space trade-offs for cutting planes $ youtu.be/MfnMAKdxSv0 $ <a href="#dRNV16">[dRNV16]</a> $ SlidesLec01.pdf $ HandwrittenNotesLec22.pdf
-Size-space trade-offs for cutting planes (cont.) $ $  <a href="#dRNV16">[dRNV16]</a> $ HandwrittenNotesLec23.pdf $ 
+Size-space trade-offs for cutting planes (cont.) $ youtu.be/lrphZ2HAADw $ <a href="#dRNV16">[dRNV16]</a> $ HandwrittenNotesLec23.pdf $ 
 Trade-offs for cutting planes with polynomially bounded coefficients $ $ <a href="#dRMN20">[dRMN+21]</a> $ $ 
 Lower bounds for cutting planes size from resolution width using lifting $ $ <a href="#GGKS20">[GGKS20]</a> $ $ 
 Lower bounds for cutting planes size from resolution width using lifting (cont.) $ $ <a href="#GGKS20">[GGKS20]</a> $ $ 
