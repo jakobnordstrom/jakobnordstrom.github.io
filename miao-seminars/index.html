@@ -245,27 +245,27 @@ Jakob Nordström: MIAO seminars</title>
 
     <p>
       Atserias and Müller (JACM, 2020) proved that for every
-      unsatisfiable CNF formula F, the Resolution proof system does
+      unsatisfiable CNF formula F, the resolution proof system does
       not have subexponential-size refutations of the formula Ref(F)
-      stating that "F has small Resolution refutations". On the other
+      stating that "F has small resolution refutations". On the other
       hand, when F is satisfiable, Pudlák (TCS, 2003) showed that
-      there are polynomial-size Resolution refutations of
+      there are polynomial-size resolution refutations of
       Ref(F). Pudlák's upper bound builds a refutation around an
       explicit satisfying assignment of F. A question that had
-      remained open is: do all short Resolution refutations of Ref(F)
+      remained open is: do all short resolution refutations of Ref(F)
       explicitly leak a satisfying assignment of F?
     </p>
 
     <p>
       We answer this question affirmatively: we provide a
-      polynomial-time algorithm that given a short Resolution
+      polynomial-time algorithm that given a short resolution
       refutation of Ref(F) always succeeds in extracting a satisfying
       assignment for F. The algorithm follows from a new feasibly
       constructive proof of the Atserias-Müller lower bound. We show
       that this new proof is formalizable in Cook's theory PV of
       bounded arithmetic, which further implies that Extended Frege
       has polynomial-size proofs of a suitable encoding of the
-      statement that automating Resolution is NP-hard.
+      statement that automating resolution is NP-hard.
     </p>
 
     <p>
@@ -273,27 +273,27 @@ Jakob Nordström: MIAO seminars</title>
       meta-computational problem relating proofs and computation: the
       Proof Analysis Problem (PAP). For a proof system Q, the problem
       PAP_Q asks, given a CNF formula F and a Q-proof of the
-      Resolution lower bound statement ¬Ref(F) whether F is
+      resolution lower bound statement ¬Ref(F) whether F is
       satisfiable. In contrast with the algorithm that analyzes
-      Resolution refutations, we prove that the Proof Analysis Problem
+      resolution refutations, we prove that the Proof Analysis Problem
       for Extended Frege (EF) is NP-complete. In particular, EF can
-      prove Resolution lower bounds on satisfiable formulas without
+      prove resolution lower bounds on satisfiable formulas without
       necessarily revealing a satisfying assignment.
     </p>
 
     <p>
       As a byproduct of our algorithm and its formalization, we obtain
       a variety of surprising consequences for proof search and the
-      meta-mathematics of Resolution lower bounds. Amongst other
+      meta-mathematics of resolution lower bounds. Amongst other
       things, we show: (i) for every proof system above EF as well as
-      for Resolution, the system is (weakly) automatable if and only
+      for resolution, the system is (weakly) automatable if and only
       if it can be (weakly) automated exclusively on formulas stating
-      Resolution lower bounds; (ii) we provide explicit Ref formulas
+      resolution lower bounds; (ii) we provide explicit Ref formulas
       that are exponentially hard for constant-depth Frege systems;
       and (iii) for every strong enough theory T, we construct
       explicit unsatisfiable CNF formulas that are exponentially hard
-      for Resolution but for which T cannot prove even a subquadratic
-      Resolution lower bound; these results apply to arbitrarily
+      for resolution but for which T cannot prove even a subquadratic
+      resolution lower bound; these results apply to arbitrarily
       strong theories like PA or ZFC and do not require any
       complexity-theoretic assumptions.
     </p>
@@ -2392,19 +2392,19 @@ Jakob Nordström: MIAO seminars</title>
     </p>      
 
     <p>
-      It is well-known that Resolution proofs can be efficiently
+      It is well-known that resolution proofs can be efficiently
       simulated by Sherali-Adams (SA) proofs. We show, however, that
       any such simulation needs to exploit huge coefficients:
-      Resolution cannot be efficiently simulated by SA when the
+      resolution cannot be efficiently simulated by SA when the
       coefficients are written in unary. We also show that Reversible
-      Resolution (a variant of MaxSAT Resolution) cannot be
+      resolution (a variant of MaxSAT resolution) cannot be
       efficiently simulated by Nullstellensatz (NS).
     </p>      
 
     <p>
       These results have consequences for complexity classes of <em>NP</em>
       search problems that seem surprising at first blush. In
-      particular, the result about Resolution vs Sherali Adams
+      particular, the result about resolution vs Sherali Adams
       directly implies that the class <em>PLS</em> is not contained in the
       class <em>PPADS</em> with respect to an oracle. Together with a couple of
       more observations, we showed all remaining oracle separations
@@ -3459,7 +3459,7 @@ Jakob Nordström: MIAO seminars</title>
     is simple: in order to prove a lower bound in a "complicated"
     system that we do not understand (for example, Cutting Planes
     refutations), we will "escalate" the hardness from a "simple"
-    system that we do understand (for example, Resolution refutations)
+    system that we do understand (for example, resolution refutations)
     by taking a hard formula F for the simple system and composing it
     with a specially chosen "gadget function" that removes the power
     of the complicated system. In many cases, it is possible to prove
