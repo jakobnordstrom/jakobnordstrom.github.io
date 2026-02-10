@@ -47,7 +47,7 @@ Polynomial calculus space lower bounds for random CNF formulas $ youtu.be/34cENA
 Total space in resolution; polynomial calculus space vs. width/degree $ youtu.be/hSWJMI3X48Q $ <a href="#Bon16">[Bon16]</a>, <a href="#GKT25">[GKT25]</a> $ HandwrittenNotesLec17.pdf $ 
 PCR space vs. resolution width (cont.); size-degree trade-offs for Nullstellensatz $ youtu.be/DH-dhSqBcDE $ <a href="#GKT25">[GKT25]</a> <a href="#dRMNR21">[dRMNR21]</a> $ HandwrittenNotesLec18.pdf $ 
 Polynomial calculus and roots of unity encodings $ youtu.be/SLlzmBUTa1A $ <a href="#Sok20">[Sok20]</a> $ HandwrittenNotesLec19.pdf $ 
-Cutting planes, proof systems for pseudo-Boolean solving, and more about feasible interpolation $ youtu.be/WS1XV75cjLA $ <a href="#GNY19">[GNY19]</a>, <a href="#Pud97">[Pud97]</a> $ DraftScribeNotesLec20.pdf $ 
+Cutting planes, proof systems for pseudo-Boolean solving, and more about feasible interpolation $ youtu.be/WS1XV75cjLA $ <a href="#Pud97">[Pud97]</a>, <a href="#GNY19">[GNY19]</a> $ DraftScribeNotesLec20.pdf $ 
 Cutting planes lower bounds for random CNF formulas $ youtu.be/hEnZPvt0P_I $ <a href="#Sok24">[Sok24]</a> $ HandwrittenNotesLec21.pdf $ 
 Size-space trade-offs for cutting planes $ youtu.be/MfnMAKdxSv0 $ <a href="#dRNV16">[dRNV16]</a> $ SlidesLec22.pdf $ HandwrittenNotesLec22.pdf
 Size-space trade-offs for cutting planes (cont.) $ youtu.be/lrphZ2HAADw $ <a href="#dRNV16">[dRNV16]</a> $ HandwrittenNotesLec23.pdf $ 
