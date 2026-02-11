@@ -51,7 +51,7 @@ Cutting planes, proof systems for pseudo-Boolean solving, and more about feasibl
 Cutting planes lower bounds for random CNF formulas $ youtu.be/hEnZPvt0P_I $ <a href="#Sok24">[Sok24]</a> $ HandwrittenNotesLec21.pdf $ 
 Size-space trade-offs for cutting planes $ youtu.be/MfnMAKdxSv0 $ <a href="#dRNV16">[dRNV16]</a> $ SlidesLec22.pdf $ HandwrittenNotesLec22.pdf
 Size-space trade-offs for cutting planes (cont.) $ youtu.be/lrphZ2HAADw $ <a href="#dRNV16">[dRNV16]</a> $ HandwrittenNotesLec23.pdf $ 
-Lower bounds for cutting planes size from resolution width using lifting $ $ <a href="#GGKS20">[GGKS20]</a> $ $ 
+Lower bounds for cutting planes size from resolution width using lifting $ youtu.be/uyOT_yeWiC4 $ <a href="#GGKS20">[GGKS20]</a> $ $ 
 Lower bounds for cutting planes size from resolution width using lifting (cont.) $ $ <a href="#GGKS20">[GGKS20]</a> $ $ 
 Trade-offs for cutting planes with polynomially bounded coefficients $ $ <a href="#dRMN20">[dRMN+21]</a> $ $ 
 Automatability for resolution and polynomial calculus $ $ <a href="#AM20">[AM20]</a>, <a href="#dRGN21">[dRGN+21]</a> $ $ 
