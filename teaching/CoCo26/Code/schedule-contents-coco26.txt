@@ -37,7 +37,7 @@ Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>c
 <em>coNP</em> &sube; <em>IP</em> (cont.), zero-knowledge (ZK) proofs                                                  $ Chs 8-9  $ NotesLec15.pdf
 Monotone circuits, clique lower bound                                                                            $ Ch 14    $ NotesLec16.pdf
 Clique lower bound for monotone circuits (cont.)                                                                 $ Ch 14    $ NotesLec17.pdf
+  $     $ 
+  $     $ 
 Communication complexity                                                                                         $ Ch 13    $ 
 Communication complexity (cont.)                                                                                 $ Ch 13    $ 
-  $     $ 
-  $     $ 
