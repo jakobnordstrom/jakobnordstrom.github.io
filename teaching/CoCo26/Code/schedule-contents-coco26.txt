@@ -26,11 +26,11 @@ Complexity classes, reductions, <em>P</em>, <em>NP</em>, nondeterministic comput
 <em>NP</em>-reductions, <em>coNP</em>, decision vs. search                                                            $ Ch 2     $ NotesLec04.pdf
 <em>EXP</em> vs. <em>NEXP</em>, diagonalization, time hierarchy theorems, Ladner's theorem                            $ Chs 2-3  $ NotesLec05.pdf
 Oracle Turing machines, limits of diagonalization                                                                     $ Ch 3     $ NotesLec06.pdf
-Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                     $ Ch4      $ NotesLecs07-08.pdf
-Savitch's theorem, <em>L</em>, <em>NL</em>                                                                            $ Ch 4     $ NotesLecs07-08.pdf
-Immerman-Szelepcs&eacute;nyi theorem                                                                                  $ Chs 4-5  $ NotesLec09.pdf
-Polynomial hierarchy (<em>PH</em>)                                                                                    $ Ch 5     $ NotesLec10.pdf
-Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems                                                               $ Ch 6     $ NotesLec11.pdf
+Space complexity, <em>PSPACE</em>, <em>NPSPACE</em>, <em>PSPACE</em>-completeness                                     $ Ch4      $ SlidesLecs07-09.pdf
+Savitch's theorem, <em>L</em>, <em>NL</em>                                                                            $ Ch 4     $ SlidesLecs07-09.pdf
+Immerman-Szelepcs&eacute;nyi theorem                                                                                  $ Chs 4-5  $ SlidesLecs07-09.pdf
+Polynomial hierarchy (<em>PH</em>)                                                                                    $ Ch 5     $ SlidesLec10.pdf
+Boolean circuits, <em>P/poly</em>, Karp-Lipton theorems                                                               $ Ch 6     $ SlidesLec11.pdf
 Randomized computation, <em>BPP</em>, polynomial identity testing (PIT), <em>RP</em>, <em>coRP</em>, <em>ZPP</em>     $ Ch 7     $ NotesLecs12-13.pdf
 Error reduction and applications                                                                                      $ Ch 7     $ NotesLecs12-13.pdf
 Interactive proofs, <em>IP</em>, <em>IP</em>=<em>PSPACE</em> (but proof of <em>coNP</em> &sube; <em>IP</em>)          $ Ch 8     $ NotesLec14.pdf
