@@ -55,4 +55,4 @@ Lower bounds for cutting planes size from resolution width using lifting $ youtu
 Lower bounds for cutting planes size from resolution width using lifting (cont.) $ youtu.be/3jRRdieTB0c $ <a href="#GGKS20">[GGKS20]</a> $ HandwrittenNotesLec25.pdf $ 
 Trade-offs for cutting planes with polynomially bounded coefficients $ youtu.be/PvEL5rQxUEc $ <a href="#dRMN20">[dRMN+21]</a> $ HandwrittenNotesLec26.pdf $ 
 Automatability for resolution and polynomial calculus $ $ <a href="#AM20">[AM20]</a>, <a href="#dRGN21">[dRGN+21]</a> $ HandwrittenNotesLec27.pdf $ 
-Final lecture; summary of material covered and outlook for future research $ $ $ $ 
+Final lecture; summary of material covered and outlook for future research $ $ $ SlidesLec28.pdf $ 
