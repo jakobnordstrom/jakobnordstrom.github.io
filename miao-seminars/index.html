@@ -126,16 +126,6 @@ Jakob Nordström: MIAO seminars</title>
 -->
 
 
-<p>  
-  <em>
-    This semester, in addition to our MIAO seminars 
-    you can also check out our lectures / seminars in the course
-    <a href="https://jakobnordstrom.se/teaching/proofcplx25/"><em>Proof Complexity as a Computational Lens</em></a>
-    in January and February.
-  </em>    
-</p>
-
-
 
 <!--
 <p>
@@ -153,46 +143,69 @@ Jakob Nordström: MIAO seminars</title>
 
 <ul>
 
+  
   <li>
     <p>
-      Tuesday Mar 10 at 14:00
+      Tuesday Apr 21 at 14:00
       at the Algorithms and Complexity Section at the University of Copenhagen,
       Vibenshuset, Lyngbyvej 2, 
       and on Zoom
       <br>
       <strong>
-	Algorithmic structure in weak memory and RDMA verification
+	Extending CDCL to disjunctions of parity equations
       </strong>
       <!--
 	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
 	-->
       <br>
-      (Stephan Spengler, Uppsala University)
+      (Paul Beame, University of Washington)
     </p>
     
 
-    <p>    
-      Weak memory models invalidate many classical assumptions
-      underlying program verification, giving rise to subtle and often
-      infinite-state behaviours. In this talk, I present structural
-      and algorithmic approaches to analysing such systems.  First, I
-      discuss a game-theoretic formulation of concurrent programs
-      under Total Store Order (TSO), separating program control from
-      memory nondeterminism. This perspective yields finite-state
-      behaviour for reachability and safety under adversarial
-      scheduling, while natural fairness assumptions restore
-      undecidability.  Second, I consider Remote Direct Memory Access
-      (RDMA), a high-performance communication model with even more
-      pronounced weak memory effects. Although reachability is
-      undecidable, I show that robustness &mdash; equivalence with
-      sequential consistency &mdash; is decidable via a normal form theorem
-      for violations, leading to tight <em>ExpSpace</em> and <em>PSpace</em> complexity
-      bounds.  The results illustrate how structural insights can
-      clarify the algorithmic and complexity landscape of modern weak
-      memory models.
+    <p>
+      Because
+      conflict-driven clause learning (CDCL) SAT solvers
+      produce proofs in the Resolution proof system,
+      problems provably hard for Resolution are also provably hard for
+      CDCL. Exponentially shorter proofs can sometimes be found using
+      stronger proof systems such as Res(⊕), a generalization of
+      Resolution to XNF formulas, whose constraints are disjunctions
+      of parity equations ("linear clauses") such as
+      (x ⊕ y) ∨ ¬(y ⊕ z).
+      While some modern solvers like CryptoMiniSAT reason on
+      Boolean clauses with separate parity equations, reasoning about
+      more general linear clauses is less explored.
     </p>
 
-  
+    <p>
+      We present CDCL(⊕), a generalization of CDCL to XNF formulas,
+      and prove a bidirectional connection with Res(⊕): CDCL(⊕) not
+      only produces Res(⊕) proofs, but also polynomially simulates
+      Res(⊕) given nondeterministic decisions and restarts, mirroring
+      the classical relationship between CDCL and Resolution. Our key
+      technical tool is a new set of inference rules for Res(⊕) that
+      helps us translate Resolution-based subroutines such as 1-UIP
+      clause learning. Altogether, CDCL(⊕)'s parity reasoning includes
+      branching on arbitrary parity equations, linear-algebraic
+      reasoning during unit propagation, and learning linear clauses
+      through conflict analysis.
+    </p>
+
+    <p>
+      We provide a proof-of-concept implementation of CDCL(⊕) called
+      Xorcle, which includes adaptations of existing CDCL heuristics
+      to XNF formulas and an extension of LRUP proof logging that we
+      call LRUP(⊕). On a selected suite of benchmarks focusing on
+      native XNF formulas, Xorcle outperforms existing solvers such as
+      Kissat and CryptoMiniSAT. Additionally, on Tseitin formulas
+      written in CNF, even without preprocessing, Xorcle’s running
+      time appears to scale nearly polynomially.
+    </p>
+
+    <p>
+      Joint work with Glenn Sun.
+    </p>
+
   <li>
     <p>
       Date TBD at the University of Copenhagen and on Zoom
@@ -337,7 +350,58 @@ Jakob Nordström: MIAO seminars</title>
 
 <h2>MIAO seminars spring 2026</h2>
 
+
+<p>  
+  <em>
+    During January and February 2026,  in addition to our MIAO seminars 
+    we also had a fairly dense schedule of lectures / seminars in the course
+    <a href="https://jakobnordstrom.se/teaching/proofcplx25/"><em>Proof Complexity as a Computational Lens</em></a>
+    (for which you find video and lecture notes on the 
+    <a href="https://jakobnordstrom.se/teaching/proofcplx25/">course webpage</a>).
+  </em>    
+</p>
+
+
 <ul>
+  
+  <li>
+    <p>
+      Tuesday Mar 10 at 14:00
+      at the Algorithms and Complexity Section at the University of Copenhagen,
+      Vibenshuset, Lyngbyvej 2, 
+      and on Zoom
+      <br>
+      <strong>
+	Algorithmic structure in weak memory and RDMA verification
+      </strong>
+      <!--
+	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
+	-->
+      <br>
+      (Stephan Spengler, Uppsala University)
+    </p>
+    
+
+    <p>    
+      Weak memory models invalidate many classical assumptions
+      underlying program verification, giving rise to subtle and often
+      infinite-state behaviours. In this talk, I present structural
+      and algorithmic approaches to analysing such systems.  First, I
+      discuss a game-theoretic formulation of concurrent programs
+      under Total Store Order (TSO), separating program control from
+      memory nondeterminism. This perspective yields finite-state
+      behaviour for reachability and safety under adversarial
+      scheduling, while natural fairness assumptions restore
+      undecidability.  Second, I consider Remote Direct Memory Access
+      (RDMA), a high-performance communication model with even more
+      pronounced weak memory effects. Although reachability is
+      undecidable, I show that robustness &mdash; equivalence with
+      sequential consistency &mdash; is decidable via a normal form theorem
+      for violations, leading to tight <em>ExpSpace</em> and <em>PSpace</em> complexity
+      bounds.  The results illustrate how structural insights can
+      clarify the algorithmic and complexity landscape of modern weak
+      memory models.
+    </p>
   
   <li>
     <p>
@@ -527,9 +591,11 @@ Jakob Nordström: MIAO seminars</title>
 <p>  
   <em>
     During the latter half of the autumn semester of 2025,
-    we had a fairly dense schedule of lectures / seminars in the course
-    <a href="https://jakobnordstrom.se/teaching/proofcplx25/"><em>Proof Complexity as a Computational Lens</em></a>,
-    but in addition to this we also had seminars as listed below.
+    in addition to our MIAO seminars 
+    we also had a fairly dense schedule of lectures / seminars in the course
+    <a href="https://jakobnordstrom.se/teaching/proofcplx25/"><em>Proof Complexity as a Computational Lens</em></a>
+    (for which you find video and lecture notes on the 
+    <a href="https://jakobnordstrom.se/teaching/proofcplx25/">course webpage</a>).
   </em>    
 </p>
 
@@ -4673,7 +4739,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-02-26
+Updated 2026-04-13
 </div>
 <!--/eri-no-index-->
 
