@@ -145,44 +145,6 @@ Jakob Nordström: MIAO seminars</title>
   
   <li>
     <p>
-      Wednesday May 20 at 14:00
-      in seminar room E:2405, Ole Römers väg 3, Lund University,
-      and on Zoom
-      <br>
-      <strong>
-	Introducing automatically derived subproblem relaxations in a logic-based Benders decomposition solver
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/oC-j_-WfgSg">video</a>)
-	-->
-      <br>
-      (Sachin Rajendran, Linköping University)
-    </p>
-
-    <p>
-      Logic-based Benders decomposition (LBBD) effectively combines
-      mixed integer programming and constraint programming to solve
-      difficult optimisation problems. While the decomposition
-      exploits different solution and modelling paradigms, the
-      separation destroys problem information connecting master and
-      subproblem decisions. Alongside cut generation, a standard way
-      of re-introducing this connection is through the addition of
-      valid inequalities in the master problem. These inequalities
-      typically constitute subproblem relaxations and they are usually
-      problem specific and derived by hand. This paper proposes a
-      general approach for deriving valid inequalities and
-      demonstrates how they can be applied to cumulative and
-      disjunctive constraints. In an effort to develop a general
-      purpose LBBD solver, the general derivation of valid
-      inequalities have been implemented as part of a new cumulative
-      constraint handler for SCIP and the effectiveness is evaluated
-      on two variants of scheduling problems. The computational
-      experiments show the potential of applying these general valid
-      inequalities to the master problem.
-    </p>
-  
-  <li>
-    <p>
       Tuesday May 26 at 14:00
       at the Algorithms and Complexity Section at the University of Copenhagen,
       Vibenshuset, Lyngbyvej 2, 
@@ -220,6 +182,52 @@ Jakob Nordström: MIAO seminars</title>
       decision trees to represent MFOTL explanations and package the
       approach into the WhyMon tool with a graphical interface for
       interactively exploring the explanations.
+    </p>
+
+  <li>
+    <p>
+      Thursday May 28 at 15:15  <em>(note the time!)</em>
+      in seminar room E:2405, Ole Römers väg 3, Lund University,
+      and on Zoom
+      <br>
+      <strong>
+	Checkable proofs for model counting and knowledge compilation
+      </strong>
+      <!--
+	  (<a href="https://youtu.be/oC-j_-WfgSg">video</a>)
+	-->
+      <br>
+      (Randal E. Bryant, Carnegie Mellon University)
+    </p>
+
+    <p>
+      Automated reasoning tools, such as Boolean and Pseudo-Boolean
+      satisfiability solvers, provide powerful capabilities that can
+      be applied to a variety of tasks.  As with any complex software
+      system, however, these tools can have errors in their underlying
+      algorithms and in their implementations.  Certifying tools
+      overcome this limitation by also generating checkable proofs
+      that the answers they provide are correct.
+    </p>
+
+    <p>
+      Knowledge compilers convert Boolean formulas, given in
+      conjunctive normal form (CNF), into representations that enable
+      efficient evaluation of unweighted and weighted model counts, as
+      well as a variety of other useful properties.  Certifying the
+      correctness of a knowledge compiler's output requires proving
+      that 1)&nbsp;the generated formula is logically equivalent to the
+      input formula, and 2)&nbsp;the generated formula satisfies the
+      structural properties that enable efficient model counting.
+    </p>
+
+    <p>
+      Our Certified Partitioned-Operation Graph (CPOG) proof framework
+      provides a way to encode the output of a knowledge compiler as
+      well as a set of steps providing a checkable proof of
+      correctness.  We have developed two formally verified checkers
+      for CPOG, one in Lean4 and the other in CakeML/HOL.  In doing
+      so, we formally verified the soundness of the frameworks.
     </p>
     
   <li>
@@ -363,6 +371,44 @@ Jakob Nordström: MIAO seminars</title>
 
 <ul>
 
+  <li>
+    <p>
+      Wednesday May 20 at 14:00
+      in seminar room E:2405, Ole Römers väg 3, Lund University,
+      and on Zoom
+      <br>
+      <strong>
+	Introducing automatically derived subproblem relaxations in a logic-based Benders decomposition solver
+      </strong>
+      <!--
+	  (<a href="https://youtu.be/oC-j_-WfgSg">video</a>)
+	-->
+      <br>
+      (Sachin Rajendran, Linköping University)
+    </p>
+
+    <p>
+      Logic-based Benders decomposition (LBBD) effectively combines
+      mixed integer programming and constraint programming to solve
+      difficult optimisation problems. While the decomposition
+      exploits different solution and modelling paradigms, the
+      separation destroys problem information connecting master and
+      subproblem decisions. Alongside cut generation, a standard way
+      of re-introducing this connection is through the addition of
+      valid inequalities in the master problem. These inequalities
+      typically constitute subproblem relaxations and they are usually
+      problem specific and derived by hand. This paper proposes a
+      general approach for deriving valid inequalities and
+      demonstrates how they can be applied to cumulative and
+      disjunctive constraints. In an effort to develop a general
+      purpose LBBD solver, the general derivation of valid
+      inequalities have been implemented as part of a new cumulative
+      constraint handler for SCIP and the effectiveness is evaluated
+      on two variants of scheduling problems. The computational
+      experiments show the potential of applying these general valid
+      inequalities to the master problem.
+    </p>
+    
   <li>
     <p>
       Tuesday Apr 21 at 14:00
@@ -4795,7 +4841,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-05-10
+Updated 2026-05-21
 </div>
 <!--/eri-no-index-->
 
