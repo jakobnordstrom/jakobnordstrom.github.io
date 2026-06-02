@@ -145,136 +145,6 @@ Jakob Nordström: MIAO seminars</title>
   
   <li>
     <p>
-      Tuesday May 26 at 14:00
-      at the Algorithms and Complexity Section at the University of Copenhagen,
-      Vibenshuset, Lyngbyvej 2, 
-      and on Zoom
-      <br>
-      <strong>
-	Certified runtime monitoring
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
-	-->
-      <br>
-      (Dmitriy Traytel, University of Copenhagen)
-    </p>
-
-    <p>
-      Runtime monitoring is concerned with checking, event by event,
-      whether a running system satisfies a formal
-      specification. Runtime monitors traditionally emit bare
-      verdicts, offering users little explanation and no way to
-      independently verify the answer. This talk surveys a line of
-      work that replaces verdicts with proof objects &mdash;
-      tree-structured witnesses close to the specification's semantics
-      that serve simultaneously as human-readable explanations and
-      machine-checkable certificates. Our starting point is a sound
-      and complete local proof system for linear temporal logic (LTL)
-      on lasso words that provides explanations for counterexample
-      outputs of model checkers. We then adjust the local proof system
-      to the online monitoring setting and to metric temporal logic
-      (MTL) over time-stamped event streams, while also adding a proof
-      checker, proved correct in Isabelle/HOL. Finally, we lift the
-      approach to metric first-order temporal logic (MFOTL) by
-      exploiting an active domain argument that yields finite
-      first-order proof objects. We introduce and use partitioned
-      decision trees to represent MFOTL explanations and package the
-      approach into the WhyMon tool with a graphical interface for
-      interactively exploring the explanations.
-    </p>
-
-  <li>
-    <p>
-      Thursday May 28 at 15:15  <em>(note the time!)</em>
-      in seminar room E:2405, Ole Römers väg 3, Lund University,
-      and on Zoom
-      <br>
-      <strong>
-	Checkable proofs for model counting and knowledge compilation
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/oC-j_-WfgSg">video</a>)
-	-->
-      <br>
-      (Randal E. Bryant, Carnegie Mellon University)
-    </p>
-
-    <p>
-      Automated reasoning tools, such as Boolean and Pseudo-Boolean
-      satisfiability solvers, provide powerful capabilities that can
-      be applied to a variety of tasks.  As with any complex software
-      system, however, these tools can have errors in their underlying
-      algorithms and in their implementations.  Certifying tools
-      overcome this limitation by also generating checkable proofs
-      that the answers they provide are correct.
-    </p>
-
-    <p>
-      Knowledge compilers convert Boolean formulas, given in
-      conjunctive normal form (CNF), into representations that enable
-      efficient evaluation of unweighted and weighted model counts, as
-      well as a variety of other useful properties.  Certifying the
-      correctness of a knowledge compiler's output requires proving
-      that 1)&nbsp;the generated formula is logically equivalent to the
-      input formula, and 2)&nbsp;the generated formula satisfies the
-      structural properties that enable efficient model counting.
-    </p>
-
-    <p>
-      Our Certified Partitioned-Operation Graph (CPOG) proof framework
-      provides a way to encode the output of a knowledge compiler as
-      well as a set of steps providing a checkable proof of
-      correctness.  We have developed two formally verified checkers
-      for CPOG, one in Lean4 and the other in CakeML/HOL.  In doing
-      so, we formally verified the soundness of the frameworks.
-    </p>
-    
-  <li>
-    <p>
-      Monday Jun 1 at 14:00
-      on Zoom
-      <br>
-      <strong>
-	SAT solving and beyond: A fresh intro and recent developments
-      </strong>
-      <!--
-	  (<a href="https://youtu.be/-ydHfp05OFQ">video</a>)
-	-->
-      <br>
-      (Alexander Nadel, Nvidia &amp; Technion)      
-    </p>
-
-    <p>
-      This talk presents a brief yet fresh introduction to SAT solving
-      before surveying recent developments in the field. We introduce
-      core SAT as <em>resoluting backtrack search</em>, presenting BCP and 1UIP
-      learning without implication graphs. We then survey recent
-      advances in sequential SAT solving. First, we examine SAT
-      Competition (SC) winners from the very first competition to
-      2025, with a particular focus on the last 5 years, including the
-      LLM-empowered latest SC winner AE_kissat2025_MAB. Then we
-      explore developments in SAT beyond competitions, including API
-      extension for broader applicability (IPASIR-UP), domain-specific
-      SAT solving for IC3 (GipSAT), and chronological backtracking's
-      impact on enumeration, model counting, and its promise for SAT
-      applications. Finally, we discuss the solution generalization
-      hierarchy, demonstrating that CNF-level generalization is
-      outperformed by circuit-level approaches, which are in turn
-      surpassed by dual (negated) circuit-based methods.
-    </p>
-
-    <p>
-      This is an extended version of the talk
-      <em>SAT solving: A fresh intro and
-	recent developments</em>
-      presented at the BIRS workshop
-      <a href="https://www.birs.ca/events/2026/5-day-workshops/26w5626/"><em>Theory and
-      practice of SAT and combinatorial solving</em></a> in January 2026.
-    </p>
-
-  <li>
-    <p>
       Date TBD
       at the University of Copenhagen and on Zoom      
       <!--
@@ -373,6 +243,130 @@ Jakob Nordström: MIAO seminars</title>
 
   <li>
     <p>
+      Monday Jun 1 at 14:00
+      on Zoom
+      <br>
+      <strong>
+	SAT solving and beyond: A fresh intro and recent developments
+      </strong>
+      (<a href="https://youtu.be/iUHc-WWNQw4">video</a>)
+      <br>
+      (Alexander Nadel, Nvidia &amp; Technion)      
+    </p>
+
+    <p>
+      This talk presents a brief yet fresh introduction to SAT solving
+      before surveying recent developments in the field. We introduce
+      core SAT as <em>resoluting backtrack search</em>, presenting BCP and 1UIP
+      learning without implication graphs. We then survey recent
+      advances in sequential SAT solving. First, we examine SAT
+      Competition (SC) winners from the very first competition to
+      2025, with a particular focus on the last 5 years, including the
+      LLM-empowered latest SC winner AE_kissat2025_MAB. Then we
+      explore developments in SAT beyond competitions, including API
+      extension for broader applicability (IPASIR-UP), domain-specific
+      SAT solving for IC3 (GipSAT), and chronological backtracking's
+      impact on enumeration, model counting, and its promise for SAT
+      applications. Finally, we discuss the solution generalization
+      hierarchy, demonstrating that CNF-level generalization is
+      outperformed by circuit-level approaches, which are in turn
+      surpassed by dual (negated) circuit-based methods.
+    </p>
+
+    <p>
+      This is an extended version of the talk
+      <em>SAT solving: A fresh intro and
+	recent developments</em>
+      presented at the BIRS workshop
+      <a href="https://www.birs.ca/events/2026/5-day-workshops/26w5626/"><em>Theory and
+      practice of SAT and combinatorial solving</em></a> in January 2026.
+    </p>
+
+  <li>
+    <p>
+      Thursday May 28 at 15:15  <em>(note the time!)</em>
+      in seminar room E:2405, Ole Römers väg 3, Lund University,
+      and on Zoom
+      <br>
+      <strong>
+	Checkable proofs for model counting and knowledge compilation
+      </strong>
+      (<a href="https://youtu.be/Sj_G5luTVII">video</a>)
+      <br>
+      (Randal E. Bryant, Carnegie Mellon University)
+    </p>
+
+    <p>
+      Automated reasoning tools, such as Boolean and Pseudo-Boolean
+      satisfiability solvers, provide powerful capabilities that can
+      be applied to a variety of tasks.  As with any complex software
+      system, however, these tools can have errors in their underlying
+      algorithms and in their implementations.  Certifying tools
+      overcome this limitation by also generating checkable proofs
+      that the answers they provide are correct.
+    </p>
+
+    <p>
+      Knowledge compilers convert Boolean formulas, given in
+      conjunctive normal form (CNF), into representations that enable
+      efficient evaluation of unweighted and weighted model counts, as
+      well as a variety of other useful properties.  Certifying the
+      correctness of a knowledge compiler's output requires proving
+      that 1)&nbsp;the generated formula is logically equivalent to the
+      input formula, and 2)&nbsp;the generated formula satisfies the
+      structural properties that enable efficient model counting.
+    </p>
+
+    <p>
+      Our Certified Partitioned-Operation Graph (CPOG) proof framework
+      provides a way to encode the output of a knowledge compiler as
+      well as a set of steps providing a checkable proof of
+      correctness.  We have developed two formally verified checkers
+      for CPOG, one in Lean4 and the other in CakeML/HOL.  In doing
+      so, we formally verified the soundness of the frameworks.
+    </p>
+    
+  <li>
+    <p>
+      Tuesday May 26 at 14:00
+      at the Algorithms and Complexity Section at the University of Copenhagen,
+      Vibenshuset, Lyngbyvej 2, 
+      and on Zoom
+      <br>
+      <strong>
+	Certified runtime monitoring
+      </strong>
+      (<a href="https://youtu.be/52dr-OKCteo">video</a>)
+      <br>
+      (Dmitriy Traytel, University of Copenhagen)
+    </p>
+    
+    <p>
+      Runtime monitoring is concerned with checking, event by event,
+      whether a running system satisfies a formal
+      specification. Runtime monitors traditionally emit bare
+      verdicts, offering users little explanation and no way to
+      independently verify the answer. This talk surveys a line of
+      work that replaces verdicts with proof objects &mdash;
+      tree-structured witnesses close to the specification's semantics
+      that serve simultaneously as human-readable explanations and
+      machine-checkable certificates. Our starting point is a sound
+      and complete local proof system for linear temporal logic (LTL)
+      on lasso words that provides explanations for counterexample
+      outputs of model checkers. We then adjust the local proof system
+      to the online monitoring setting and to metric temporal logic
+      (MTL) over time-stamped event streams, while also adding a proof
+      checker, proved correct in Isabelle/HOL. Finally, we lift the
+      approach to metric first-order temporal logic (MFOTL) by
+      exploiting an active domain argument that yields finite
+      first-order proof objects. We introduce and use partitioned
+      decision trees to represent MFOTL explanations and package the
+      approach into the WhyMon tool with a graphical interface for
+      interactively exploring the explanations.
+    </p>
+  
+  <li>
+    <p>
       Wednesday May 20 at 14:00
       in seminar room E:2405, Ole Römers väg 3, Lund University,
       and on Zoom
@@ -380,9 +374,7 @@ Jakob Nordström: MIAO seminars</title>
       <strong>
 	Introducing automatically derived subproblem relaxations in a logic-based Benders decomposition solver
       </strong>
-      <!--
-	  (<a href="https://youtu.be/oC-j_-WfgSg">video</a>)
-	-->
+      (<a href="https://youtu.be/88VX3pGJyMI">video</a>)
       <br>
       (Sachin Rajendran, Linköping University)
     </p>
@@ -4841,7 +4833,7 @@ performance of PB solvers.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-05-21
+Updated 2026-06-02
 </div>
 <!--/eri-no-index-->
 
