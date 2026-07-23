@@ -131,6 +131,41 @@ By appointment
     -->
 
   <li>
+    Great news from the competitive events affiliated with the
+    <a href="http://satisfiability.org/SAT26/"><em>SAT 2026</em> conference</a>:
+    <ul>
+      <li>
+	Our proof checker
+	<a href="https://veripb.org/"><em>VeriPB</em></a>
+	was used as one of the checkers in the 
+	<a href="https://satcompetition.github.io/2026/">SAT Competition 2026</a>
+	verifying machine-generated proofs that solvers had computed correct answers,
+	and it is the only proof checker that is advanced enough to also check proofs for the solvers in the
+	<a href="https://www.cril.univ-artois.fr/PB26/">Pseudo-Boolean Competition</a>.
+	
+      <li>
+	In the SAT Competition 2026, we submitted a modification of the Kissat SAT solver that used
+	<em>VeriPB</em> proof logging to be able to support fully general symmetry breaking. This solver placed
+	3rd in the main track (overall and also in the subcategory of unsatisfiable instances) thanks to
+	the powerful symmetry breaking and proof logging.
+
+      <li>
+	In the Pseudo-Boolean Competition 2026, the main tracks do not (yet) require proof logging.
+	Still, our pseudo-Boolean solver 
+	<a href="https://gitlab.com/MIAOresearch/software/roundingsat"><em>RoundingSat</em></a>
+	had a good showing even when competing with solvers that do not have to produce proof, and so can use potentially
+	unsound floating-point reasoning, and placed 3rd in the decision track and 12th in the optimization track.
+
+	In the certified tracks, 
+	<em>RoundingSat</em>
+	had a very dominant performance, and different versions of the solver was awarded
+	1st, 2nd, and 3rd place in both the decision track and the optimization track.
+
+	As in previous years, several of the other best solvers also made heavy use of the
+	<em>RoundingSat</em> code base.
+    </ul>
+    
+  <li>
     Congratulations to 
     my PhD student
     <a href="https://aoertel.de/"><strong>Andy Oertel</strong></a>,
@@ -205,6 +240,7 @@ By appointment
     together with
     <a href="https://jeremiasberg.com/">Jeremias Berg</a>.
 
+<!--    
   <li>
     In the competitive events affiliated with the
     <a href="http://satisfiability.org/SAT25/"><em>SAT 2025</em> conference</a>,
@@ -221,7 +257,8 @@ By appointment
     certifying correctness of results.
     As last year, many of the other best solvers were built on top of the 
     <em>RoundingSat</em> code base.
-
+    -->
+    
   <li>
     In June
     I  organized the workshop
@@ -438,7 +475,7 @@ By appointment
 <strong>
 Published by:</strong> Jakob Nordstr&ouml;m  <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-05-29
+Updated 2026-07-23
 </div>
 <!--/eri-no-index-->
 
