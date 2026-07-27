@@ -90,10 +90,17 @@ Jakob Nordström: MIAO group</title>
       <li>
 	In the SAT Competition 2026,
 	we showed that just taking a previously existing SAT solver and doing nothing more
-	than adding symmetry breaking with <em>VeriPB</em>proof logging support
+	than adding symmetry breaking with <em>VeriPB</em> proof logging support
 	was enough to finish 3rd in the main track of the competition
 	(and also in the subcategory for unsatisfiable instances).
 
+      <li>
+	Somewhat intriguingly, the best solver in the subcategory of
+	satisfiable instances in the SAt Competition main track, which was AI-generated,
+	also used the <em>VeriPB</em> proof format to generate proofs
+	(to be able to capture the high-level reasoning required for
+	some crafted combinatorial problem instances).	
+	
       <li>
 	In the Pseudo-Boolean Competition 2026, the main non-certified tracks do not (yet) require proof logging.
 	Still, our pseudo-Boolean solver 
@@ -103,7 +110,7 @@ Jakob Nordström: MIAO group</title>
 	The best versions of 
 	<em>RoundingSat</em>
 	placed 3rd in the decision track and 12th in the optimization track.
-	Also, as in previous years many of the other best solvers also made
+	As in previous years many of the other best solvers also made
 	heavy use of the
 	<em>RoundingSat</em> code base
 	(five out of ten solvers in the top-10 list for the optimization track).
@@ -115,13 +122,17 @@ Jakob Nordström: MIAO group</title>
 
     </ul>
 
-    The take-away from this is that a fair argument can be made that
+    The take-away from this is that    
+    since pseudo-Boolean solving is currently the strongest
+    combinatorial paradigm for which proof logging with formally
+    verified checking is available,    
+    a fair argument can be made that
     <strong>
       <a href="https://gitlab.com/MIAOresearch/software/roundingsat"><em>RoundingSat</em></a>
       is the most powerful combinatorial solver in the world with formally certified correct results
     </strong>
-    (with the proof logging incurs only very mild overhead),
-    and that the
+    (with proof logging incurring only very mild overhead),
+    and that
     <strong>
       <a href="https://veripb.org/"><em>VeriPB</em></a>
       proof logging is what makes this possible.
@@ -3163,7 +3174,7 @@ pages 401-416, January 2011.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-07-23
+Updated 2026-07-27
 </div>
 <!--/eri-no-index-->
 
