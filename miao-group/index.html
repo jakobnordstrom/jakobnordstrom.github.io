@@ -68,13 +68,25 @@ Jakob Nordström: MIAO group</title>
     Please check out the
     <a href="../openings/">open positions</a> webpage
     for news about current and/or upcoming openings.
- 
+
+  <li>
+    The
+    <a href="https://school.a4cp.org/summer2026/"><em>ACP Summer School 2026</em></a>
+    in August 2026 
+    in Changchun, China,
+    will feature lectures on
+    proof logging for automated reasoning and combinatorial solving
+    by
+    <a href="https://ciaranm.github.io/">Ciaran McCreesh</a>
+    and
+    <a href="https://jakobnordstrom.se/miao-group/">Jakob Nordström</a>.
+    
   <li>
     Great news from the competitive events affiliated with the
     <a href="http://satisfiability.org/SAT26/"><em>SAT 2026</em> conference</a>
     at the
     <a href="https://www.floc26.org/"><em>Federated Logic Conference (FLoC&nbsp;'26)</em></a>
-    in Lisbon, Portugal!
+    in Lisbon, Portugal! 
     <ul>
       <li>
 	Our proof checker
@@ -96,7 +108,7 @@ Jakob Nordström: MIAO group</title>
 
       <li>
 	Somewhat intriguingly, the best solver in the subcategory of
-	satisfiable instances in the SAt Competition main track, which was AI-generated,
+	satisfiable instances in the SAT Competition main track, which was AI-generated,
 	also used the <em>VeriPB</em> proof format to produce proofs
 	(to be able to capture the high-level reasoning required for
 	some crafted combinatorial problem instances).	
@@ -105,11 +117,15 @@ Jakob Nordström: MIAO group</title>
 	In the Pseudo-Boolean Competition 2026, the main non-certified tracks do not (yet) require proof logging.
 	Still, our pseudo-Boolean solver 
 	<a href="https://gitlab.com/MIAOresearch/software/roundingsat"><em>RoundingSat</em></a>
-	had a good showing even when competing with solvers that do not have to produce proofs
-	and therefore can (and typically do) use floating-point-based reasoning that can introduce errors.
+	had a good showing even when competing with solvers that do
+	not have to produce proofs and can therefore use portfolios of
+	algorithms and/or inexact (and possibly unsound)
+	floating-point-based reasoning.
+
 	The best versions of 
 	<em>RoundingSat</em>
 	placed 3rd in the decision track and 12th in the optimization track.
+
 	As in previous years many of the other best solvers also made
 	heavy use of the
 	<em>RoundingSat</em> code base
@@ -122,22 +138,26 @@ Jakob Nordström: MIAO group</title>
 
     </ul>
 
-    The take-away from this is that    
+    The take-away from this is that
     since pseudo-Boolean solving is currently the strongest
     combinatorial paradigm for which proof logging with formally
-    verified checking is available,    
-    a fair argument can be made that
+    verified checking is available,
+    this arguably makes
     <strong>
       <a href="https://gitlab.com/MIAOresearch/software/roundingsat"><em>RoundingSat</em></a>
-      is the most powerful combinatorial solver in the world with formally certified correct results
+      the most powerful combinatorial solver in the world with formally certified correct results.
     </strong>
-    (and with proof logging incurring only very mild overhead),
-    and that
+    And
     <strong>
       <a href="https://veripb.org/"><em>VeriPB</em></a>
-      proof logging is what makes this possible.
+      is the tool that makes this possible.
     </strong>
-                
+    It is not only used for SAT and pseudo-Boolean solving, including
+    in high-performance competition settings, but has also been shown
+    to support proof logging for many other combinatorial solving
+    paradigms where it was not previously known how to make
+    state-of-the-art solvers certifying.
+                    
   <li>
     Congratulations to MIAO group PhD student
     <a href="https://aoertel.de/"><strong>Andy Oertel</strong></a>,
@@ -502,8 +522,8 @@ Jakob Nordström: MIAO group</title>
 
   See the presentation
   <strong><a href="https://youtu.be/9NR_RGIs1no">Proof Complexity as a Computational Lens</a></strong>      
-  <a href="../docs/presentations/LectureProofCplxLens25.pdf">slides
-    <img src="pdf.gif" alt="PDF" border=0></a> 
+  (with <a href="../docs/presentations/LectureProofCplxLens25.pdf">slides
+    <img src="pdf.gif" alt="PDF" border=0></a>) 
   for an overview of this area (with a bias towards connections to algorithms),
   or look at the the other lectures on the course
   <a href="../teaching/proofcplx25/"><em>Proof Complexity as a Computational Lens</em></a>
@@ -562,12 +582,12 @@ Jakob Nordström: MIAO group</title>
 <p>  
   In the last few years we have also made research breakthroughs on
   how to verify the correctness of state-of-the-art algorithms for
-  combinatorial solving and optimization.  Such algorithms are often
+  combinatorial solving and automated reasoning.  Such algorithms are often
   highly complex, and even mature commercial solvers are known to
   sometimes produce wrong results.
 
-  Our goal is to usher in a new generation of <em>certifying</em>
-  combinatorial solvers with so-called <em>proof logging</em>, meaning
+  Our goal is to usher in a new generation of <em>certifying solvers</em>
+  with so-called <em>proof logging</em>, meaning
   that the solvers output
   not only a result but also a simple, machine-verifiable
   proof that the claimed result is correct.
@@ -597,10 +617,10 @@ Jakob Nordström: MIAO group</title>
   <em><a href="http://veripb.org/">VeriPB</a></em>
   that we have developed can now provide efficient proof logging for
   several combinatorial solving paradigms that have previously been beyond reach,
-  and we have recently received several prestigious awards for our work.
+  and we have received several prestigious awards for this work.
 
   Since 2023,
-  <em>VeriPB</em> is also used as one of the
+  <em>VeriPB</em> is used as one of the
   proof checkers in the
   in the 
   <a href="https://satcompetition.github.io/">SAT competitions</a>,
@@ -610,7 +630,7 @@ Jakob Nordström: MIAO group</title>
   previous SAT proof logging tools.
   <em>VeriPB</em> 
   is also the only proof checker that is advanced enough to check proofs for the solvers in the
-  <a href="https://www.cril.univ-artois.fr/PB26/">pseudo-Boolean competitions (most recently in 2026)</a>.
+  <a href="https://www.cril.univ-artois.fr/PB26/">pseudo-Boolean competitions</a>.
   
   For more details,
   see the
@@ -691,7 +711,15 @@ Researchers
   <li>
     <a href="https://aoertel.de/">Andy Oertel</a>,
     PhD student
-    (since 2021; <a href="../docs/publications/AO_LicThesis.pdf">licentiate thesis</a> 2025)
+    (since 2021;
+    <a href="../docs/publications/AO_LicThesis.pdf">licentiate thesis</a> 2025;
+    <a href="../docs/publications/AO_PhDthesis.pdf">PhD thesis</a> 2026)
+<!--
+    PhD thesis
+    <em><a href="../docs/publications/AO_PhDthesis.pdf">CertifyingCombinatorial
+	Optimization: A Unified Approach Using Pseudo-Boolean Reasoning</a></em>
+    https://portal.research.lu.se/sv/publications/certifying-combinatorial-optimization-a-unified-approach-using-ps/    
+-->
   </li>
   
 </ul>
@@ -728,14 +756,8 @@ https://kilianrisse.github.io/
     <a href="https://noahrfleming.github.io/">Noah Fleming</a>,
     assistant professor at the Department of Computer Science at Lund University 
 
-<!--    
   <li>
-    <a href="http://www.itu.dk/~palt/">Paloma T. Lima</a>,
-    associate professor at the IT University of Copenhagen
--->
-    
-  <li>
-    <a href="http://www.itu.dk/~nuli/">Nutan Limaye</a>,
+    <a href="https://nutanlimaye.github.io/">Nutan Limaye</a>,
     associate professor at the IT University of Copenhagen
     
   <li>
@@ -1641,12 +1663,17 @@ May 2011
     the Knut and Alice Wallenberg Foundation,
     
   </li><li>
-    a Research project 2 grant from the Independent Research Fund
+    two Research Project 2 grants from the Independent Research Fund
     Denmark,
     
   </li><li>
+    a project grant
+    from the Swedish Research Council,
+
+  </li><li>
     several academic doctoral student grants from 
     the Wallenberg AI, Autonomous Systems and Software Program (WASP). 
+    
 </li></ul>
   
 
@@ -3205,7 +3232,7 @@ pages 401-416, January 2011.
   Published by:</strong> Jakob Nordström
 <a href="mailto:jn~at-sign~di~dot~ku~dot~dk">&lt;jn~at-sign~di~dot~ku~dot~dk&gt;</a>
 <br>
-Updated 2026-08-07
+Updated 2026-08-08
 </div>
 <!--/eri-no-index-->
 
